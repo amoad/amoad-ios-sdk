@@ -12,11 +12,11 @@
 
 === モジュール ダウンロード
 [horizontal]
-link::https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdLogger.h[AMoAdLogger.h]::
+link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdLogger.h[AMoAdLogger.h]::
 ログ出力制御ヘッダ
-link::https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdNativeView.h[AMoAdNativeView.h]::
+link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdNativeView.h[AMoAdNativeView.h]::
 メインヘッダ
-link::https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd.a[libAMoAd.a]::
+link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd.a[libAMoAd.a]::
 ライブラリ
 link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd_staging.a[libAMoAd_staging.a]::
 ライブラリ（ステージング環境用）
