@@ -1,1 +1,0 @@
-# amoad-ios-sdk

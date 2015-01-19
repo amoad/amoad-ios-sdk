@@ -1,0 +1,374 @@
+:Version: 3.1.0 beta 2
+:VersionUnderScore: 3_1_0_beta_02
+== AMoAdネイティブ広告 SDK {version} Guide for iOS - listView
+
+=== 対応環境
+
+==== デバイス
+以下の環境がサポート対象です。
+
+|===
+|デバイス |モデル
+|iPhone |iPhone3GS、iPhone4、iPhone4S、iPhone5、iPhone5S、iPhone5C、iPhone6、iPhone6 Plus
+|iPad |iPad、iPad2、iPad(第3世代以降)、iPad mini、iPad Air、iPad mini Retina
+|===
+
+==== OSバージョン
+iOS 6.0以上がサポート対象です。
+
+==== 開発環境
+
+Xcode 5.X以降が必要です。
+
+=== 組み込み手順
+
+==== プロジェクトへのSDK追加
+Xcode 上で対象プロジェクトに
+__libAMoAd_{versionUnderScore}.a__と
+__AMoAdNativeView.h__をドラッグ&ドロップします。
+image:https://qiita-image-store.s3.amazonaws.com/1726/4107/b88f82bd-dc11-e439-dbee-9d3ae7272981.png[
+"ファイル追加", width="100%"]
+
+下記、ダイアログの表示で「Finish」をクリックします。
+image:https://qiita-image-store.s3.amazonaws.com/1726/4107/76d04603-c841-2649-399b-6ec4c6416467.png[
+"ダイアログ", width="100%"]
+
+ドラッグ&ドロップしたファイルが追加されていれば、
+SDKの追加は完了です。
+image:https://qiita-image-store.s3.amazonaws.com/1726/4107/ff7eaaf3-c3e2-5453-47d4-1e39a36c0361.png[
+"完了", width="100%"]
+
+==== 必須フレームワークの追加￼
+本SDKでは下記のフレームワークの追加が必要です。
+
+|===
+|Name |Status
+|AdSupport.framework |Required
+|ImageIO.framework |Required
+|===
+
+追加先は、_General_の_Linked Frameworks and Libraries_もしくは
+image:https://qiita-image-store.s3.amazonaws.com/1726/4107/dc7c7ed4-470c-1922-e441-bcca7b644cf6.png[
+"追加先1", width="100%"]
+
+_Build Phases_の_Link Binary With Libraries_にて
+フレームワーク追加します。
+image:https://qiita-image-store.s3.amazonaws.com/1726/4107/f3800a0e-1ba5-21b6-2e66-9f01b6922edb.png[
+"追加先2", width="100%"]
+
+上記のようにImageIO.framework、AdSupport.framework、libAMoAd_{versionUnderScore}.a（SDKの追加時に説明済み）が追加されていれば完了です。
+
+==== リンクオプションの追加
+
+ターゲットの Build Settings タブを開き、
+Linking カテゴリの Other Linker Flags に「-ObjC」 を設定してください。
+
+=== 導入に必要な実装手順（UITableView）
+
+==== ViewControllerへの実装について
+この説明内における下記ファイルは、UITableViewを表示する対象のUIViewControllerを指しています。
+（このUIViewControllerにてUITableViewDataSource、UITableViewDelegateプロトコルを実装している想定）
+
+* `SampleTableViewController.h（SampleCollectionViewController.h）`
+* `SampleTableViewController.m（SampleCollectionViewController.m）`
+
+==== importが必要なヘッダーファイル
+必要なヘッダーファイルは下記のみです。
+
+* `AMoAdNativeView.h`
+
+==== 広告準備および事前取得（prepareAdWithSid）
+この処理を実行する事により、SID毎に必要な広告の事前取得および、広告表示位置のデフォルト設定を行う。
+（上記デフォルト値は、サーバに初回アクセス時まで有効、初回アクセス以降は管理画面上で設定した広告表示位置が基準値となる）
+
+表示広告種類毎に使用するメソッドを実装してください。
+
+1行テキスト::
+_prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:_
+
+アイコン画像+テキスト::
+_prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:_
+
+メイン画像+テキスト::
+_prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:_
+
+下記はアイコン画像+テキスト用の実装サンプルです。
+
+.SampleTableViewController.m
+[source,objective-c]
+----
+#import "AMoAdNativeView.h"
+
+- (void)viewDidLoad {
+  /* 省略 */
+  [[AMoAdNativeViewManager sharedManager] prepareAdWithSid:self.sid tag:self.tableTag defaultBeginIndex:2 defaultInterval:5 iconPreloading:YES];
+  /* 省略 */
+}
+----
+
+引数については、下記一覧を参照してください。
+
+|===
+|引数名 |表示種類 |説明
+|sid |共通 |管理画面から発行される SID を設定してください
+|tag |共通 |同一リストに対し同一 SID を設定したい場合は Tag (名称任意) を設定する必要がある（同一リスト内において sid + tagがユニークであること）
+|defaultBeginIndex |共通 |広告の開始位置(初回、サーバから取得するまでのデフォルト値)
+|defaultInterval |共通 |広告の表示間隔(初回、サーバから取得するまでのデフォルト値)
+|iconPreloading |アイコン画像＋テキスト |アイコン画像の読み込み処理タイミングについて。YES：広告取得時に読み込み処理を実施する。NO（デフォルト値）：広告表示時に読み込み処理を実施
+|imagePreloading |メイン画像＋テキスト |メイン画像の読み込み処理タイミングについて。YES：広告取得時に読み込み処理を実施する。NO（デフォルト値）：広告表示時に読み込み処理を実施
+|===
+
+==== 広告準備および事前取得（registerTableView）
+sid(およびtag)毎にUITableViewとnibNameを管理、広告用セルの登録を実施
+
+.SampleTableViewController.m
+[source,objective-c]
+----
+#import "AMoAdNativeView.h"
+
+- (void)viewDidLoad {
+  /* 省略 */
+  [[AMoAdNativeViewManager sharedManager] registerTableView:self.tableView sid:self.sid tag:self.tableTag nibName:self.tableAdCellNibName];
+  /* 省略 */
+}
+----
+
+引数については、下記一覧を参照のこと。
+
+|===
+|引数名 |説明
+|tableView |ViewController内で表示するUITableViewオブジェクト
+|sid |管理画面から発行される SID を設定してください
+|tag |同一リストに対し同一 SID を設定したい場合は Tag (名称任意) を設定する必要がある<br>（同一リスト内において sid + tagがユニークであること）
+|nibName |広告用のレイアウトを記述したxibファイルの名称
+|===
+
+==== 広告を含んだデータソース元となる配列を作成（arrayWithSid）
+広告を含んだデータソース元となる配列を作成し、この配列をベースにUITableViewDataSourceの実装に対応する。
+なお、リスト表示更新時の注意事項については、別項を参照のこと。
+
+__注意）初回時にarrayWithSidで広告を含んだ配列を生成する前に、prepareAdWithSid、registerTableView（registerCollectionView）を呼び出しておくこと__
+
+.SampleTableViewController.m
+[source,objective-c]
+----
+#import "AMoAdNativeView.h"
+
+@interface SampleTableViewController () <UITableViewDelegate, UITableViewDataSource>
+// SDK導入以前にリスト表示用としてAdapterクラスへ渡していたデータソース元の配列
+@property(nonatomic) NSMutableArray *newsDataSource;
+
+// SDK導入後に新規に用意する広告データを含んだデータソース元の配列
+@property(nonatomic) NSMutableArray *tableDataSource;
+@end
+
+@implementation SampleTableViewController
+- (void)viewDidLoad {
+  /* 省略 */
+  [[[AMoAdNativeViewManager sharedManager] arrayWithSid:self.sid tag:self.tableTag originalArray:self.newsDataSource updateAd:NO] mutableCopy];
+  /* 省略 */
+}
+@end
+----
+
+引数については、下記一覧を参照のこと。
+
+|===
+|引数名 |説明
+|sid |管理画面から発行される SID を設定してください
+|tag |同一リストに対し同一 SID を設定したい場合は Tag (名称任意) を設定する必要がある（同一リスト内において sid + tagがユニークであること）
+|originalArray |ユーザが元々用意していたデータソース元となる配列
+|updateAd |YES:広告の更新が必要。NO:広告の更新が不要
+|===
+
+==== 広告用のレイアウトファイル作成
+
+Interface Builderを使用して、広告レイアウトパターン毎にxibファイルを作成する。
+
+* レイアウトパターン
+* １行テキスト
+* アイコン画像＋テキスト
+* メイン画像＋テキスト
+
+===== 各パターン毎に必要なレイアウトを作成する
+下記表を参考にレイアウトを作成する
+
+|===
+|パターン |オブジェクト |クラス |タグ番号
+|アイコン画像＋テキスト |アイコン画像 |UIImageView |1
+|メイン画像＋テキスト |メイン画像 |UIImageView |2
+|共通 |タイトルショート |UILabel |3
+|共通 |タイトルロング |UILabel |4
+|共通 |サービス名 |UILabel |5
+|===
+
+===== レイアウト作成サンプル（アイコン画像＋テキスト）
+
+クラスはUITableViewCellのままで良い
+image:https://qiita-image-store.s3.amazonaws.com/1726/4107/81dcb936-6569-7925-c63b-e4b091e83cd8.png[
+"レイアウトサンプル01", width="80%"]
+
+アイコン画像のタグには _1_ を設定する
+image:https://qiita-image-store.s3.amazonaws.com/1726/4107/1a91b05b-5673-8442-62a6-1ffa2e3aa606.png[
+"レイアウトサンプル02", width="80%"]
+
+タイトルロングのタグには _4_ を設定する
+image:https://qiita-image-store.s3.amazonaws.com/1726/4107/edfe7cc6-9cb7-adcc-2816-a080bb0b743f.png[
+"レイアウトサンプル03", width="80%"]
+
+サービス名のタグには _5_ を設定する
+image:https://qiita-image-store.s3.amazonaws.com/1726/4107/55e0d980-ff12-2134-4ff0-686b4d756194.png[
+"レイアウトサンプル04", width="80%"]
+
+==== UITableViewDataSourceの実装時における注意事項
+
+__tableView:numberOfRowsInSection:__
+広告を含んだデータソース元となる配列のカウントを使用すれば良い。
+
+.SampleTableViewController.m
+[source,objective-c]
+----
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+  return self.tableDataSource.count;
+}
+----
+
+__tableView:cellForRowAtIndexPath:__
+広告を含んだデータソース元となる配列を利用し、広告行の判定および広告表示用のセルを取得し利用する。
+
+.SampleTableViewController.m
+[source,objective-c]
+----
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+  UITableViewCell *cell;
+
+  // 広告行を判定する場合は AMoAdNativeViewItem.class か否かを判定すること
+  if ([self.tableDataSource[indexPath.row] isKindOfClass:AMoAdNativeViewItem.class]) {
+    AMoAdNativeViewItem *item = self.tableDataSource[indexPath.row];
+
+    // 広告行のセル情報を取得する
+    cell = [item tableView:tableView cellForRowAtIndexPath:indexPath];
+  } else {
+    // 今まで通り、セル取得に使用していたidentifierを指定して、セルを取得する
+    cell = [tableView dequeueReusableCellWithIdentifier:self.newsCellIdentifier forIndexPath:indexPath];
+
+    // 使用するデータソース元は新規に作成したself.tableDataSourceを使用すること
+    NSDictionary *userContents = self.tableDataSource[indexPath.row];
+
+    // 以降、既存のリスト表示に使用していたcellへのデータ設定を実施するなど
+    // 略
+  }
+  // 略
+  return cell;
+}
+----
+
+==== (任意) リスト表示を更新する際の注意
+ユーザデータのプルリフレッシュ（pull to refresh）、
+追加読み込み（load more）時にUITableView#reloadDataを実行する前に必ず、
+`arrayWithSid:tag:originalArray:updateAd:`を呼び、
+更新されたoriginalArrayを渡すとともに、
+広告データの更新が必要な場合は`updateAd`にYESを設定してください。
+
+下記は広告の更新が必要な場合のサンプルです。
+
+.SampleTableViewController.m
+[source,objective-c]
+----
+- (void)onRefresh:(UIRefreshControl *)refreshControl {
+  // UITableViewに対しUIRefreshControlをaddSubViewし、イベントを設定していると想定
+  [refreshControl beginRefreshing];
+  [self.sampleDataSource removeAllObjects];
+  [self.tableDataSource removeAllObjects];
+  self.sampleDataSource = [self createDatasource];
+
+  // (AMoAd) updateAdをYESに指定すると表示中の広告が一新される
+  self.tableDataSource = [[[AMoAdNativeViewManager sharedManager] arrayWithSid:self.sid tag:self.tableTag originalArray:self.sampleDataSource updateAd:YES] mutableCopy];
+
+  [self.tableView reloadData];
+  [refreshControl endRefreshing];
+}
+----
+
+また、`originalArray`は、下記のいずれのパターンでも構いません。
+
+* ユーザデータ（self.sampleDataSource）に追加のデータを挿入し、
+originalArrayとして渡す場合
+* self.tableDataSourceをコピーして、追加のデータを挿入し、
+originalArrayとして渡す場合
+
+下記がそのサンプルです。
+
+.SampleTableViewController.m
+[source,objective-c]
+----
+- (void)onLoadMore {
+
+  // (AMoAd) ユーザデータ（self.sampleDataSource）に追加のデータを挿入し、originalArrayとして渡す場合
+//   NSUInteger currentCount = self.sampleDataSource.count;
+//   NSUInteger maxCount = currentCount + PAGE_COUNT;
+//   for (NSUInteger i = currentCount; i < maxCount; i++) {
+//   NSString *title = [NSString stringWithFormat:@"News%ld", (long)i];
+//   self.sampleDataSource[i] = @{ @"title" : title };
+//   }
+//   self.tableDataSource = [[[AMoAdNativeViewManager sharedManager] arrayWithSid:self.sid tag:self.tableTag originalArray:self.sampleDataSource updateAd:NO] mutableCopy];
+
+
+  // (AMoAd) self.tableDataSourceをコピーして、追加のデータを挿入し、originalArrayとして渡す場合
+  NSUInteger currentCount = self.tableDataSource.count;
+  NSUInteger maxCount = currentCount + PAGE_COUNT;
+  NSMutableArray *tableDataSource = [NSMutableArray arrayWithArray:[self.tableDataSource copy]];
+  for (NSUInteger i = currentCount; i < maxCount; i++) {
+    NSString *title = [NSString stringWithFormat:@"News%ld", (long)i];
+    tableDataSource[i] = @{ @"title" : title };
+  }
+  self.tableDataSource = [[[AMoAdNativeViewManager sharedManager] arrayWithSid:self.sid tag:self.tableTag originalArray:tableDataSource updateAd:NO] mutableCopy];
+
+  [self.tableView reloadData];
+}
+----
+
+====  (その他) セルごとの高さ設定
+既存コンテンツのセルと広告セルの高さが異なる場合のサンプル
+(UITableViewDelegateを実装している場合)
+
+.SampleTableViewController.m
+[source,objective-c]
+----
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+  // (AMoAd) 広告行か否かを判定する
+  if ([self.tableDataSource[indexPath.row] isKindOfClass:AMoAdNativeViewItem.class]) {
+
+    // (AMoAd) サンプルの場合、AdMainImageTextTableViewCellのみ height = 264, 他は height = 44
+    return 44;
+  } else {
+    return 44;
+  }
+}
+----
+
+=== 導入に必要な実装手順（UICollectionView）
+現在、作成中です。
+
+=== その他の実装について
+
+==== ログ出力方法
+
+開発時にSDKのログを出力をしたい場合は、
+`AMoAdLogger.h` をimportした上で下記実装を実施する。
+
+.SampleTableViewController.m
+[source,objective-c]
+----
+#import "AMoAdLogger.h"
+
+- (void)viewDidLoad {
+  // 略
+  [AMoAdLogger sharedLogger].logging = YES;
+  // 略
+}
+----
