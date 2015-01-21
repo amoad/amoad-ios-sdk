@@ -153,7 +153,10 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/55e0d980-ff12-2134-4f
 - (void)viewDidLoad {
   UIView *adView =
     [[AMoAdNativeViewManager sharedManager]
-      viewWithSid:kSid tag:kTag nibName:kNibName];
+      viewWithSid:kSid tag:kTag nibName:kNibName onFailure:
+      ^(NSString *sid, NSString *tag, UIView *view) {
+        NSLog(@"onFailure: sid=%@ tag=%@ view=%@", sid, tag, view);
+      }];
   [adView setFrame:CGRectMake(0, 100, 320, 100)];
   [self.view addSubview:adView];
 }
