@@ -1,5 +1,23 @@
 = AMoAd SDK for iOS
 
+3.1.0 beta 3-1::
+広告の取得に失敗した時のコールバック関数を指定できるようになりました。
+
+.SampleViewController.m
+[source,objective-c]
+----
+- (void)viewDidLoad {
+  UIView *adView =
+    [[AMoAdNativeViewManager sharedManager]
+      viewWithSid:kSid tag:kTag nibName:kNibName onFailure:
+      ^(NSString *sid, NSString *tag, UIView *view) {
+        NSLog(@"onFailure: sid=%@ tag=%@ view=%@", sid, tag, view);
+      }];
+  [adView setFrame:CGRectMake(0, 100, 320, 100)];
+  [self.view addSubview:adView];
+}
+----
+
 == ネイティブ広告
 === ネイティブApp
 
