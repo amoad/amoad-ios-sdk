@@ -19,6 +19,8 @@
 ----
 
 == ネイティブ広告
+* link:https://rawgit.com/amoad/amoad-ios-sdk/master/Documents/Native/appledoc/index.html[AppleDoc]
+
 === ネイティブApp
 
 * link:Documents/Native/Overview_nativeApp.asciidoc[概要]
