@@ -5,7 +5,15 @@
 //
 #import <Foundation/Foundation.h>
 
-/// ログを出力する
+/// <p>ログを出力する</p>
+/// <p>サンプルコード</p>
+///    - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+///      // 広告ログ設定
+///      [AMoAdLogger sharedLogger].logging = YES; // ログを出力する
+///      [AMoAdLogger sharedLogger].onLogging = ^(NSString *message, NSError *error) {
+///        NSLog(@"【ユーザ定義】%@:%@", message, error); // ログの出力方法をカスタマイズする（オプショナル：設定しなくてもログは表示されます）
+///      };
+///    }
 @interface AMoAdLogger : NSObject
 /// SDKエラーをログ出力する（YES / NO:デフォルト）
 @property (nonatomic,readwrite,assign) BOOL logging;
