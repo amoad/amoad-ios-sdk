@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E99F51EC1A70F35F001B6EC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F51EB1A70F35F001B6EC4 /* main.m */; };
+		E99F51EF1A70F35F001B6EC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F51EE1A70F35F001B6EC4 /* AppDelegate.m */; };
+		E99F51F21A70F35F001B6EC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F51F11A70F35F001B6EC4 /* ViewController.m */; };
+		E99F51F51A70F35F001B6EC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E99F51F31A70F35F001B6EC4 /* Main.storyboard */; };
+		E99F51F71A70F35F001B6EC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E99F51F61A70F35F001B6EC4 /* Images.xcassets */; };
+		E99F51FA1A70F35F001B6EC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E99F51F81A70F35F001B6EC4 /* LaunchScreen.xib */; };
+		E99F52061A70F35F001B6EC4 /* AMoAdNativeListViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F52051A70F35F001B6EC4 /* AMoAdNativeListViewTests.m */; };
+		E99F52101A70F380001B6EC4 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F520F1A70F380001B6EC4 /* AdSupport.framework */; };
+		E99F52121A70F38B001B6EC4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F52111A70F38B001B6EC4 /* ImageIO.framework */; };
+		E99F52171A70F457001B6EC4 /* libAMoAd_staging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E99F52161A70F457001B6EC4 /* libAMoAd_staging.a */; };
+		E99F52191A70F5BD001B6EC4 /* AdIconTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E99F52181A70F5BD001B6EC4 /* AdIconTextTableViewCell.xib */; };
+		E99F521B1A7102F4001B6EC4 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E99F521A1A7102F4001B6EC4 /* UserTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E99F52001A70F35F001B6EC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E99F51DE1A70F35E001B6EC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E99F51E51A70F35E001B6EC4;
+			remoteInfo = AMoAdNativeListView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E99F51E61A70F35E001B6EC4 /* AMoAdNativeListView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdNativeListView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99F51EA1A70F35F001B6EC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99F51EB1A70F35F001B6EC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E99F51ED1A70F35F001B6EC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E99F51EE1A70F35F001B6EC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E99F51F01A70F35F001B6EC4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E99F51F11A70F35F001B6EC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E99F51F41A70F35F001B6EC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E99F51F61A70F35F001B6EC4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E99F51F91A70F35F001B6EC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E99F51FF1A70F35F001B6EC4 /* AMoAdNativeListViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMoAdNativeListViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99F52041A70F35F001B6EC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E99F52051A70F35F001B6EC4 /* AMoAdNativeListViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMoAdNativeListViewTests.m; sourceTree = "<group>"; };
+		E99F520F1A70F380001B6EC4 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E99F52111A70F38B001B6EC4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E99F52141A70F457001B6EC4 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdLogger.h; path = AMoAdSdk/AMoAdLogger.h; sourceTree = "<group>"; };
+		E99F52151A70F457001B6EC4 /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdNativeView.h; path = AMoAdSdk/AMoAdNativeView.h; sourceTree = "<group>"; };
+		E99F52161A70F457001B6EC4 /* libAMoAd_staging.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAMoAd_staging.a; path = AMoAdSdk/libAMoAd_staging.a; sourceTree = "<group>"; };
+		E99F52181A70F5BD001B6EC4 /* AdIconTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdIconTextTableViewCell.xib; sourceTree = "<group>"; };
+		E99F521A1A7102F4001B6EC4 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E99F51E31A70F35E001B6EC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99F52121A70F38B001B6EC4 /* ImageIO.framework in Frameworks */,
+				E99F52101A70F380001B6EC4 /* AdSupport.framework in Frameworks */,
+				E99F52171A70F457001B6EC4 /* libAMoAd_staging.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99F51FC1A70F35F001B6EC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E99F51DD1A70F35E001B6EC4 = {
+			isa = PBXGroup;
+			children = (
+				E99F52111A70F38B001B6EC4 /* ImageIO.framework */,
+				E99F520F1A70F380001B6EC4 /* AdSupport.framework */,
+				E99F51E81A70F35E001B6EC4 /* AMoAdNativeListView */,
+				E99F52021A70F35F001B6EC4 /* AMoAdNativeListViewTests */,
+				E99F51E71A70F35E001B6EC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E99F51E71A70F35E001B6EC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E99F51E61A70F35E001B6EC4 /* AMoAdNativeListView.app */,
+				E99F51FF1A70F35F001B6EC4 /* AMoAdNativeListViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E99F51E81A70F35E001B6EC4 /* AMoAdNativeListView */ = {
+			isa = PBXGroup;
+			children = (
+				E99F521A1A7102F4001B6EC4 /* UserTableViewCell.xib */,
+				E99F52181A70F5BD001B6EC4 /* AdIconTextTableViewCell.xib */,
+				E99F52131A70F3D4001B6EC4 /* AMoAdSdk */,
+				E99F51ED1A70F35F001B6EC4 /* AppDelegate.h */,
+				E99F51EE1A70F35F001B6EC4 /* AppDelegate.m */,
+				E99F51F01A70F35F001B6EC4 /* ViewController.h */,
+				E99F51F11A70F35F001B6EC4 /* ViewController.m */,
+				E99F51F31A70F35F001B6EC4 /* Main.storyboard */,
+				E99F51F61A70F35F001B6EC4 /* Images.xcassets */,
+				E99F51F81A70F35F001B6EC4 /* LaunchScreen.xib */,
+				E99F51E91A70F35F001B6EC4 /* Supporting Files */,
+			);
+			path = AMoAdNativeListView;
+			sourceTree = "<group>";
+		};
+		E99F51E91A70F35F001B6EC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E99F51EA1A70F35F001B6EC4 /* Info.plist */,
+				E99F51EB1A70F35F001B6EC4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E99F52021A70F35F001B6EC4 /* AMoAdNativeListViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				E99F52051A70F35F001B6EC4 /* AMoAdNativeListViewTests.m */,
+				E99F52031A70F35F001B6EC4 /* Supporting Files */,
+			);
+			path = AMoAdNativeListViewTests;
+			sourceTree = "<group>";
+		};
+		E99F52031A70F35F001B6EC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E99F52041A70F35F001B6EC4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E99F52131A70F3D4001B6EC4 /* AMoAdSdk */ = {
+			isa = PBXGroup;
+			children = (
+				E99F52141A70F457001B6EC4 /* AMoAdLogger.h */,
+				E99F52151A70F457001B6EC4 /* AMoAdNativeView.h */,
+				E99F52161A70F457001B6EC4 /* libAMoAd_staging.a */,
+			);
+			name = AMoAdSdk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E99F51E51A70F35E001B6EC4 /* AMoAdNativeListView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99F52091A70F35F001B6EC4 /* Build configuration list for PBXNativeTarget "AMoAdNativeListView" */;
+			buildPhases = (
+				E99F51E21A70F35E001B6EC4 /* Sources */,
+				E99F51E31A70F35E001B6EC4 /* Frameworks */,
+				E99F51E41A70F35E001B6EC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMoAdNativeListView;
+			productName = AMoAdNativeListView;
+			productReference = E99F51E61A70F35E001B6EC4 /* AMoAdNativeListView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E99F51FE1A70F35F001B6EC4 /* AMoAdNativeListViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E99F520C1A70F35F001B6EC4 /* Build configuration list for PBXNativeTarget "AMoAdNativeListViewTests" */;
+			buildPhases = (
+				E99F51FB1A70F35F001B6EC4 /* Sources */,
+				E99F51FC1A70F35F001B6EC4 /* Frameworks */,
+				E99F51FD1A70F35F001B6EC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E99F52011A70F35F001B6EC4 /* PBXTargetDependency */,
+			);
+			name = AMoAdNativeListViewTests;
+			productName = AMoAdNativeListViewTests;
+			productReference = E99F51FF1A70F35F001B6EC4 /* AMoAdNativeListViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E99F51DE1A70F35E001B6EC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "AMoAd, Inc.";
+				TargetAttributes = {
+					E99F51E51A70F35E001B6EC4 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E99F51FE1A70F35F001B6EC4 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E99F51E51A70F35E001B6EC4;
+					};
+				};
+			};
+			buildConfigurationList = E99F51E11A70F35E001B6EC4 /* Build configuration list for PBXProject "AMoAdNativeListView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E99F51DD1A70F35E001B6EC4;
+			productRefGroup = E99F51E71A70F35E001B6EC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E99F51E51A70F35E001B6EC4 /* AMoAdNativeListView */,
+				E99F51FE1A70F35F001B6EC4 /* AMoAdNativeListViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E99F51E41A70F35E001B6EC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99F51F51A70F35F001B6EC4 /* Main.storyboard in Resources */,
+				E99F51FA1A70F35F001B6EC4 /* LaunchScreen.xib in Resources */,
+				E99F52191A70F5BD001B6EC4 /* AdIconTextTableViewCell.xib in Resources */,
+				E99F51F71A70F35F001B6EC4 /* Images.xcassets in Resources */,
+				E99F521B1A7102F4001B6EC4 /* UserTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99F51FD1A70F35F001B6EC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E99F51E21A70F35E001B6EC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99F51F21A70F35F001B6EC4 /* ViewController.m in Sources */,
+				E99F51EF1A70F35F001B6EC4 /* AppDelegate.m in Sources */,
+				E99F51EC1A70F35F001B6EC4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E99F51FB1A70F35F001B6EC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E99F52061A70F35F001B6EC4 /* AMoAdNativeListViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E99F52011A70F35F001B6EC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E99F51E51A70F35E001B6EC4 /* AMoAdNativeListView */;
+			targetProxy = E99F52001A70F35F001B6EC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E99F51F31A70F35F001B6EC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99F51F41A70F35F001B6EC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E99F51F81A70F35F001B6EC4 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E99F51F91A70F35F001B6EC4 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E99F52071A70F35F001B6EC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E99F52081A70F35F001B6EC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E99F520A1A70F35F001B6EC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AMoAdNativeListView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdNativeListView/AMoAdSdk",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E99F520B1A70F35F001B6EC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AMoAdNativeListView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdNativeListView/AMoAdSdk",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E99F520D1A70F35F001B6EC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AMoAdNativeListViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdNativeListView.app/AMoAdNativeListView";
+			};
+			name = Debug;
+		};
+		E99F520E1A70F35F001B6EC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AMoAdNativeListViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdNativeListView.app/AMoAdNativeListView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E99F51E11A70F35E001B6EC4 /* Build configuration list for PBXProject "AMoAdNativeListView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99F52071A70F35F001B6EC4 /* Debug */,
+				E99F52081A70F35F001B6EC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E99F52091A70F35F001B6EC4 /* Build configuration list for PBXNativeTarget "AMoAdNativeListView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99F520A1A70F35F001B6EC4 /* Debug */,
+				E99F520B1A70F35F001B6EC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E99F520C1A70F35F001B6EC4 /* Build configuration list for PBXNativeTarget "AMoAdNativeListViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E99F520D1A70F35F001B6EC4 /* Debug */,
+				E99F520E1A70F35F001B6EC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E99F51DE1A70F35E001B6EC4 /* Project object */;
+}
