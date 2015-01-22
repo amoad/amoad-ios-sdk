@@ -1,0 +1,1104 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>AMoAdNativeViewManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">AMoAd </a></h1>
+				<a id="developerHome" href="../index.html">AMoAd, Inc.</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">AMoAdNativeViewManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/sharedManager">&nbsp;&nbsp;&nbsp;&nbsp;+ sharedManager</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/arrayWithSid:tag:originalArray:updateAd:">&nbsp;&nbsp;&nbsp;&nbsp;- arrayWithSid:tag:originalArray:updateAd:</option>
+	
+	<option value="//api/name/prepareAdWithSid:tag:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareAdWithSid:tag:</option>
+	
+	<option value="//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:</option>
+	
+	<option value="//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:</option>
+	
+	<option value="//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:</option>
+	
+	<option value="//api/name/prepareAdWithSid:tag:iconPreloading:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareAdWithSid:tag:iconPreloading:</option>
+	
+	<option value="//api/name/prepareAdWithSid:tag:iconPreloading:imagePreloading:">&nbsp;&nbsp;&nbsp;&nbsp;- prepareAdWithSid:tag:iconPreloading:imagePreloading:</option>
+	
+	<option value="//api/name/registerCollectionView:sid:tag:nibName:">&nbsp;&nbsp;&nbsp;&nbsp;- registerCollectionView:sid:tag:nibName:</option>
+	
+	<option value="//api/name/registerTableView:sid:tag:nibName:">&nbsp;&nbsp;&nbsp;&nbsp;- registerTableView:sid:tag:nibName:</option>
+	
+	<option value="//api/name/updateAdWithSid:tag:">&nbsp;&nbsp;&nbsp;&nbsp;- updateAdWithSid:tag:</option>
+	
+	<option value="//api/name/viewWithSid:tag:nibName:onFailure:">&nbsp;&nbsp;&nbsp;&nbsp;- viewWithSid:tag:nibName:onFailure:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sharedManager">sharedManager</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/arrayWithSid:tag:originalArray:updateAd:">arrayWithSid:tag:originalArray:updateAd:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareAdWithSid:tag:">prepareAdWithSid:tag:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:">prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:">prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:">prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareAdWithSid:tag:iconPreloading:">prepareAdWithSid:tag:iconPreloading:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/prepareAdWithSid:tag:iconPreloading:imagePreloading:">prepareAdWithSid:tag:iconPreloading:imagePreloading:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerCollectionView:sid:tag:nibName:">registerCollectionView:sid:tag:nibName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerTableView:sid:tag:nibName:">registerTableView:sid:tag:nibName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateAdWithSid:tag:">updateAdWithSid:tag:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewWithSid:tag:nibName:onFailure:">viewWithSid:tag:nibName:onFailure:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="AMoAdNativeViewManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">AMoAdNativeViewManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">AMoAdNativeView.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ネイティブ広告マネージャ</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sharedManager">+&nbsp;sharedManager</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareAdWithSid:tag:">&ndash;&nbsp;prepareAdWithSid:tag:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareAdWithSid:tag:iconPreloading:">&ndash;&nbsp;prepareAdWithSid:tag:iconPreloading:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareAdWithSid:tag:iconPreloading:imagePreloading:">&ndash;&nbsp;prepareAdWithSid:tag:iconPreloading:imagePreloading:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:">&ndash;&nbsp;prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:">&ndash;&nbsp;prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:">&ndash;&nbsp;prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/arrayWithSid:tag:originalArray:updateAd:">&ndash;&nbsp;arrayWithSid:tag:originalArray:updateAd:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerTableView:sid:tag:nibName:">&ndash;&nbsp;registerTableView:sid:tag:nibName:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/registerCollectionView:sid:tag:nibName:">&ndash;&nbsp;registerCollectionView:sid:tag:nibName:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewWithSid:tag:nibName:onFailure:">&ndash;&nbsp;viewWithSid:tag:nibName:onFailure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateAdWithSid:tag:">&ndash;&nbsp;updateAdWithSid:tag:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sharedManager" title="sharedManager"></a>
+	<h3 class="subsubtitle method-title">sharedManager</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>ネイティブ広告マネージャの取得する</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (AMoAdNativeViewManager *)sharedManager</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/arrayWithSid:tag:originalArray:updateAd:" title="arrayWithSid:tag:originalArray:updateAd:"></a>
+	<h3 class="subsubtitle method-title">arrayWithSid:tag:originalArray:updateAd:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【リストビュー】データソース配列に広告を挿入する</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)arrayWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> originalArray:(NSArray *)<em>originalArray</em> updateAd:(BOOL)<em>updateAd</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>originalArray</em></dt>
+			<dd><p>コンテンツデータの配列</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>updateAd</em></dt>
+			<dd><p>YES&hellip;既にoriginalArrayに入っている広告内容を更新する<br />広告の追加のみ（既に配列に入っている広告は更新されない）</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>NSArray * コンテンツデータの配列に広告を挿入した配列</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareAdWithSid:tag:" title="prepareAdWithSid:tag:"></a>
+	<h3 class="subsubtitle method-title">prepareAdWithSid:tag:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【ネイティブ（App）】1行テキスト広告の準備を行なう</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)prepareAdWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:" title="prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:"></a>
+	<h3 class="subsubtitle method-title">prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【リストビュー】1行テキスト広告の準備を行なう</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)prepareAdWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> defaultBeginIndex:(NSInteger)<em>defaultBeginIndex</em> defaultInterval:(NSInteger)<em>defaultInterval</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>defaultBeginIndex</em></dt>
+			<dd><p>広告の開始位置（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>defaultInterval</em></dt>
+			<dd><p>広告の表示間隔（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:" title="prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:"></a>
+	<h3 class="subsubtitle method-title">prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【リストビュー】アイコン画像＋テキスト広告の準備を行なう</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)prepareAdWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> defaultBeginIndex:(NSInteger)<em>defaultBeginIndex</em> defaultInterval:(NSInteger)<em>defaultInterval</em> iconPreloading:(BOOL)<em>iconPreloading</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>defaultBeginIndex</em></dt>
+			<dd><p>広告の開始位置（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>defaultInterval</em></dt>
+			<dd><p>広告の表示間隔（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iconPreloading</em></dt>
+			<dd><p>YES&hellip;アイコン画像をすぐに先読みする<br />NO&hellip;アイコン画像をビュー取得時に読み込む</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:" title="prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:"></a>
+	<h3 class="subsubtitle method-title">prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【リストビュー】メイン画像＋テキスト広告の準備を行なう</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)prepareAdWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> defaultBeginIndex:(NSInteger)<em>defaultBeginIndex</em> defaultInterval:(NSInteger)<em>defaultInterval</em> iconPreloading:(BOOL)<em>iconPreloading</em> imagePreloading:(BOOL)<em>imagePreloading</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>defaultBeginIndex</em></dt>
+			<dd><p>広告の開始位置（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>defaultInterval</em></dt>
+			<dd><p>広告の表示間隔（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iconPreloading</em></dt>
+			<dd><p>YES&hellip;アイコン画像をすぐに先読みする<br />NO&hellip;アイコン画像をビュー取得時に読み込む</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>imagePreloading</em></dt>
+			<dd><p>YES&hellip;メイン画像をすぐに先読みする<br />NO&hellip;メイン画像をビュー取得時に読み込む</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareAdWithSid:tag:iconPreloading:" title="prepareAdWithSid:tag:iconPreloading:"></a>
+	<h3 class="subsubtitle method-title">prepareAdWithSid:tag:iconPreloading:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【ネイティブ（App）】アイコン画像＋テキスト広告の準備を行なう</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)prepareAdWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> iconPreloading:(BOOL)<em>iconPreloading</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iconPreloading</em></dt>
+			<dd><p>YES&hellip;アイコン画像をすぐに先読みする<br />NO&hellip;アイコン画像をビュー取得時に読み込む</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/prepareAdWithSid:tag:iconPreloading:imagePreloading:" title="prepareAdWithSid:tag:iconPreloading:imagePreloading:"></a>
+	<h3 class="subsubtitle method-title">prepareAdWithSid:tag:iconPreloading:imagePreloading:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【ネイティブ（App）】メイン画像＋テキスト広告の準備を行なう</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)prepareAdWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> iconPreloading:(BOOL)<em>iconPreloading</em> imagePreloading:(BOOL)<em>imagePreloading</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>iconPreloading</em></dt>
+			<dd><p>YES&hellip;アイコン画像をすぐに先読みする<br />NO&hellip;アイコン画像をビュー取得時に読み込む</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>imagePreloading</em></dt>
+			<dd><p>YES&hellip;メイン画像をすぐに先読みする<br />NO&hellip;メイン画像をビュー取得時に読み込む</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerCollectionView:sid:tag:nibName:" title="registerCollectionView:sid:tag:nibName:"></a>
+	<h3 class="subsubtitle method-title">registerCollectionView:sid:tag:nibName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【リストビュー】コレクション（UICollectionView）に広告テンプレート（nibName）を登録する</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registerCollectionView:(UICollectionView *)<em>collectionView</em> sid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> nibName:(NSString *)<em>nibName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>collectionView</em></dt>
+			<dd><p>広告セルを含んだコレクション型のリストを表示する</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nibName</em></dt>
+			<dd><p>広告セル用のリソース名</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerTableView:sid:tag:nibName:" title="registerTableView:sid:tag:nibName:"></a>
+	<h3 class="subsubtitle method-title">registerTableView:sid:tag:nibName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【リストビュー】テーブル（UITableView）に広告テンプレート（nibName）を登録する</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registerTableView:(UITableView *)<em>tableView</em> sid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> nibName:(NSString *)<em>nibName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableView</em></dt>
+			<dd><p>広告セルを含んだテーブル型のリストを表示する</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nibName</em></dt>
+			<dd><p>広告セル用のリソース名</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateAdWithSid:tag:" title="updateAdWithSid:tag:"></a>
+	<h3 class="subsubtitle method-title">updateAdWithSid:tag:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【ネイティブ（App）】広告ビューの内容を更新する</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)updateAdWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>UIView * 広告ビュー</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/viewWithSid:tag:nibName:onFailure:" title="viewWithSid:tag:nibName:onFailure:"></a>
+	<h3 class="subsubtitle method-title">viewWithSid:tag:nibName:onFailure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【ネイティブ（App）】広告ビューを取得する</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIView *)viewWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> nibName:(NSString *)<em>nibName</em> onFailure:(void ( ^ ) ( NSString *sid , NSString *tag , UIView *view ))<em>onFailure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nibName</em></dt>
+			<dd><p>広告ビュー用のリソース名</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>onFailure</em></dt>
+			<dd><p>広告に失敗した時のコールバック関数</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>UIView * 広告ビュー</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2015 AMoAd, Inc.. All rights reserved. (Last updated: 2015-01-22)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
