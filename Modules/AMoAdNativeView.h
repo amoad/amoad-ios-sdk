@@ -6,15 +6,10 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-/// 広告情報<br />
-/// 広告用View（ViewCell）に表示する広告の情報が入ったクラス。
-@class AMoAdNativeInfo;
+#pragma mark - 広告テンプレート
 
-#pragma mark - native view tag
-
-/// 広告用セルの指定するタグ<br />
-/// Interface Builder上で、広告用View（ViewCell）の
-/// Attributes Inspector -> View -> Tagに、下記のタグ番号を指定する。
+/// <p>広告テンプレートに指定するタグ番号</p>
+/// 広告テンプレート（Xib）のAttributes Inspector -> View -> Tagに指定する番号。
 /// この指定を行うことで、自動的に広告情報を埋めて表示する。
 typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 
@@ -34,130 +29,154 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
   AMoAdNativeViewUILabelServiceName = 5
 };
 
-#pragma mark - native view item
+#pragma mark - 【リストビュー】広告表示アイテム
 
-/// 広告表示項目<br />
-/// リストビュー型（UITableView / UICollectionViewCell）の広告を表示するため、
-/// データソースの元となる配列（NSArray）に追加される。<br />
-///
-/// テーブルの場合、UITableViewDataSource#tableView:cellForRowAtIndexPath:内で判定し
-/// AMoAdNativeViewItemクラスのインスタンスであれば、
-/// tableView:cellForRowAtIndexPath:を呼び出して戻り値をreturnする。<br />
-///
-/// コレクションの場合、UICollectionViewDataSource#collectionView:cellForItemAtIndexPath:から、
-/// collectionView:cellForItemAtIndexPath:を呼び出して戻り値をreturnする。
+/// <p>【リストビュー】広告表示アイテム</p>
+/// データソース配列（NSArray）に追加される。
 @interface AMoAdNativeViewItem : NSObject
 
-/// indexPathで指定した広告セル（UITableViewCell）を取得する
-/// @param tableView 表示するテーブルビュー
+/// <p>【リストビュー】広告セルを取得する</p>
+/// UITableViewDataSource#tableView:cellForRowAtIndexPath:メソッド内で、
+/// データソース配列のindexPath番目がAMoAdNativeViewItem型だったら、このメソッドで広告セルを取得する。
+/// <p>サンプルコード</p>
+///    - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+///    {
+///      if ([self.ads[indexPath.row] isKindOfClass:[AMoAdNativeViewItem class]]) {
+///        // 広告セル
+///        AMoAdNativeViewItem *item = self.ads[indexPath.row];
+///        return [item tableView:tableView cellForRowAtIndexPath:indexPath];
+///      } else {
+///        // コンテンツセル
+///        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ABCD" forIndexPath:indexPath];
+///        // （コンテンツを設定...）
+///        return cell;
+///      }
+///    }
+/// @param tableView 対象テーブル
 /// @param indexPath 表示位置
 /// @return UITableViewCell * 広告セル
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
-/// indexPathで指定した広告セル（UICollectionViewCell）を取得する
-/// @param collectionView 表示するコレクションビュー
+/// <p>【リストビュー】広告セルを取得する</p>
+/// UICollectionViewDataSource#collectionView:cellForRowAtIndexPath:メソッド内で、
+/// データソース配列のindexPath番目がAMoAdNativeViewItem型だったら、このメソッドで広告セルを取得する。
+/// <p>サンプルコード</p>
+///    - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+///    {
+///      if ([self.ads[indexPath.row] isKindOfClass:[AMoAdNativeViewItem class]]) {
+///        // 広告セル
+///        AMoAdNativeViewItem *item = self.ads[indexPath.row];
+///        return [item collectionView:collectionView cellForRowAtIndexPath:indexPath];
+///      } else {
+///        // コンテンツセル
+///        UICollectionViewCell *cell = [collectionView dequeueReusableCellWithIdentifier:@"ABCD" forIndexPath:indexPath];
+///        // （コンテンツを設定...）
+///        return cell;
+///      }
+///    }
+/// @param collectionView 対象コレクション
 /// @param indexPath 表示位置
-/// @return UITableViewCell * 広告セル
+/// @return UICollectionViewCell * 広告セル
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 @end
 
-#pragma mark - native view manager
+#pragma mark - ネイティブ広告マネージャ
 
-/// 広告表示管理体<br />
-/// 管理画面から取得するsidと任意に決めたtagを指定して、
-/// 広告の準備、配列（NSArray）への広告表示項目追加、リストビューへのXib登録、
-/// 1−View型の場合のView取得／更新などを行う。<br />
-/// tagは同じsidの広告を複数の場所に表示するために指定する任意の文字列である。
+/// ネイティブ広告マネージャ
 @interface AMoAdNativeViewManager : NSObject
+
+#pragma mark - マネージャの取得
+
+/// ネイティブ広告マネージャの取得する
 + (AMoAdNativeViewManager *)sharedManager;
 
-#pragma mark - prepare Ad
-#pragma mark nativeApp Type
+#pragma mark - 【ネイティブ（App）】広告の準備を行なう
 
-/// 広告準備（表示方式: ネイティブ(App) 表示広告種類: 1行テキスト）
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のtable（画面）で使用する場合、一意に管理する為に使用する
+/// 【ネイティブ（App）】1行テキスト広告の準備を行なう
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 - (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag;
 
-/// 広告準備（表示方式: ネイティブ(App) 表示広告種類: アイコン画像+テキスト）
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のtable（画面）で使用する場合、一意に管理する為に使用する
-/// @param iconPreloading 自動的にアイコンを読み込む
+/// 【ネイティブ（App）】アイコン画像＋テキスト広告の準備を行なう
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param iconPreloading YES...アイコン画像をすぐに先読みする<br />NO...アイコン画像をビュー取得時に読み込む
 - (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag iconPreloading:(BOOL)iconPreloading;
 
-/// 広告準備（表示方式: ネイティブ(App) 表示広告種類: メイン画像+テキスト）
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のtable（画面）で使用する場合、一意に管理する為に使用する
-/// @param iconPreloading 自動的にアイコンを読み込む
-/// @param imagePreloading 自動的にメイン画像を読み込む
+/// 【ネイティブ（App）】メイン画像＋テキスト広告の準備を行なう
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param iconPreloading YES...アイコン画像をすぐに先読みする<br />NO...アイコン画像をビュー取得時に読み込む
+/// @param imagePreloading YES...メイン画像をすぐに先読みする<br />NO...メイン画像をビュー取得時に読み込む
 - (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag iconPreloading:(BOOL)iconPreloading imagePreloading:(BOOL)imagePreloading;
 
-#pragma mark listView Type
+#pragma mark - 【リストビュー】広告の準備を行なう
 
-/// 広告準備（表示方式: リストビュー 表示広告種類: 1行テキスト）
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のtable（画面）で使用する場合、一意に管理する為に使用する
-/// @param defaultBeginIndex 広告の開始位置(初回、サーバから取得するまでのデフォルト値)
-/// @param defaultInterval 広告の表示間隔(初回、サーバから取得するまでのデフォルト値)
+/// 【リストビュー】1行テキスト広告の準備を行なう
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
+/// @param defaultBeginIndex 広告の開始位置（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
+/// @param defaultInterval 広告の表示間隔（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
 - (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag defaultBeginIndex:(NSInteger)defaultBeginIndex defaultInterval:(NSInteger)defaultInterval;
 
-/// 広告準備（表示方式: リストビュー 表示広告種類: アイコン画像+テキスト）
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のtable（画面）で使用する場合、一意に管理する為に使用する
-/// @param iconPreloading 自動的にアイコンを読み込む
-/// @param defaultBeginIndex 広告の開始位置(初回、サーバから取得するまでのデフォルト値)
-/// @param defaultInterval 広告の表示間隔(初回、サーバから取得するまでのデフォルト値)
+/// 【リストビュー】アイコン画像＋テキスト広告の準備を行なう
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
+/// @param defaultBeginIndex 広告の開始位置（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
+/// @param defaultInterval 広告の表示間隔（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
+/// @param iconPreloading YES...アイコン画像をすぐに先読みする<br />NO...アイコン画像をビュー取得時に読み込む
 - (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag defaultBeginIndex:(NSInteger)defaultBeginIndex defaultInterval:(NSInteger)defaultInterval iconPreloading:(BOOL)iconPreloading;
 
-/// 広告準備（表示方式: リストビュー 表示広告種類: メイン画像+テキスト）
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のtable（画面）で使用する場合、一意に管理する為に使用する
-/// @param iconPreloading 自動的にアイコンを読み込む
-/// @param imagePreloading 自動的にメイン画像を読み込む
-/// @param defaultBeginIndex 広告の開始位置(初回、サーバから取得するまでのデフォルト値)
-/// @param defaultInterval 広告の表示間隔(初回、サーバから取得するまでのデフォルト値)
+/// 【リストビュー】メイン画像＋テキスト広告の準備を行なう
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
+/// @param defaultBeginIndex 広告の開始位置（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
+/// @param defaultInterval 広告の表示間隔（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
+/// @param iconPreloading YES...アイコン画像をすぐに先読みする<br />NO...アイコン画像をビュー取得時に読み込む
+/// @param imagePreloading YES...メイン画像をすぐに先読みする<br />NO...メイン画像をビュー取得時に読み込む
 - (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag defaultBeginIndex:(NSInteger)defaultBeginIndex defaultInterval:(NSInteger)defaultInterval iconPreloading:(BOOL)iconPreloading imagePreloading:(BOOL)imagePreloading;
 
-#pragma mark - data source array
+#pragma mark - 【リストビュー】データソース配列を作成する
 
-/// データソースの配列に広告を挿入する
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のtable（画面）で使用する場合、一意に管理する為に使用する
-/// @param originalArray ユーザー自身のデータソース元となるNSArray
-/// @param updateAd 広告を更新する
+/// 【リストビュー】データソース配列に広告を挿入する
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
+/// @param originalArray コンテンツデータの配列
+/// @param updateAd YES...既にoriginalArrayに入っている広告内容を更新する<br />広告の追加のみ（既に配列に入っている広告は更新されない）
+/// @return NSArray * コンテンツデータの配列に広告を挿入した配列
 - (NSArray *)arrayWithSid:(NSString *)sid tag:(NSString *)tag originalArray:(NSArray *)originalArray updateAd:(BOOL)updateAd;
 
-#pragma mark - table view
+#pragma mark - 【リストビュー】テーブル
 
-/// sid(およびtag)ごとにUITableViewとnibNameを管理およびテーブルに広告用セルを登録する
+/// 【リストビュー】テーブル（UITableView）に広告テンプレート（nibName）を登録する
 /// @param tableView 広告セルを含んだテーブル型のリストを表示する
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のtable（画面）で使用する場合、一意に管理する為に使用する
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
 /// @param nibName 広告セル用のリソース名
 - (void)registerTableView:(UITableView *)tableView sid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName;
 
-#pragma mark - collection view
+#pragma mark - 【リストビュー】コレクション
 
-/// sid(およびtag)ごとにUITableViewとnibNameを管理およびテーブルに広告用セルを登録する
+/// 【リストビュー】コレクション（UICollectionView）に広告テンプレート（nibName）を登録する
 /// @param collectionView 広告セルを含んだコレクション型のリストを表示する
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のtable（画面）で使用する場合、一意に管理する為に使用する
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
 /// @param nibName 広告セル用のリソース名
 - (void)registerCollectionView:(UICollectionView *)collectionView sid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName;
 
-#pragma mark - view
+#pragma mark - 【ネイティブ（App）】ビュー
 
-/// sid(およびtag)で指定された広告ビューを取得する
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のビューで使用する場合、一意に管理する為に使用する
+/// 【ネイティブ（App）】広告ビューを取得する
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 /// @param nibName 広告ビュー用のリソース名
-/// @param onFailure 広告の取得に失敗した時のコールバック関数
+/// @param onFailure 広告に失敗した時のコールバック関数
 /// @return UIView * 広告ビュー
 - (UIView *)viewWithSid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
 
-/// sid(およびtag)で指定された広告ビューの内容を更新する
-/// @param sid 管理画面から取得したID
-/// @param tag 同じsidを複数のビューで使用する場合、一意に管理する為に使用する
+/// 【ネイティブ（App）】広告ビューの内容を更新する
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 /// @return UIView * 広告ビュー
 - (void)updateAdWithSid:(NSString *)sid tag:(NSString *)tag;
 
