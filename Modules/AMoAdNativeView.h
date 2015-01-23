@@ -174,10 +174,21 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @return UIView * 広告ビュー
 - (UIView *)viewWithSid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
 
+/// 【ネイティブ（App）】既存の広告ビューに広告をレンダリングする
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param UIView * 広告ビュー
+/// @param onFailure 広告に失敗した時のコールバック関数
+- (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
+
 /// 【ネイティブ（App）】広告ビューの内容を更新する
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
-/// @return UIView * 広告ビュー
 - (void)updateAdWithSid:(NSString *)sid tag:(NSString *)tag;
+
+/// 【ネイティブ（App）】広告ビューの内容をクリアする
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+- (void)clearAdWithSid:(NSString *)sid tag:(NSString *)tag;
 
 @end
