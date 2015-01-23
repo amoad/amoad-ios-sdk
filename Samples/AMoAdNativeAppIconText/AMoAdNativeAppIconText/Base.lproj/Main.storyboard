@@ -23,17 +23,28 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="performButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h83-C5-zyp"/>
+                                    <action selector="performUpdate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8H2-tA-z0J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKE-Ph-2ae">
+                                <rect key="frame" x="362" y="490" width="45" height="30"/>
+                                <state key="normal" title="クリア">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="performClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z0o-f6-M4I"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0kp-Mp-hpL" secondAttribute="bottom" constant="80" id="Fb7-xL-Gna"/>
+                            <constraint firstItem="FKE-Ph-2ae" firstAttribute="baseline" secondItem="0kp-Mp-hpL" secondAttribute="baseline" id="TW1-MH-6ra"/>
                             <constraint firstItem="0kp-Mp-hpL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XbM-IA-ODc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0kp-Mp-hpL" secondAttribute="bottom" constant="80" id="d20-vQ-c0p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0kp-Mp-hpL" secondAttribute="trailing" constant="254" id="dXs-Qx-bh9"/>
                             <constraint firstItem="0kp-Mp-hpL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="254" id="eO7-ff-47M"/>
+                            <constraint firstItem="FKE-Ph-2ae" firstAttribute="leading" secondItem="0kp-Mp-hpL" secondAttribute="trailing" constant="32" id="fPR-oK-KvK"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">

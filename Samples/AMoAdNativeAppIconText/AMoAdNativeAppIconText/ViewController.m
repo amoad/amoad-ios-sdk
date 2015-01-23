@@ -42,10 +42,16 @@ static NSString *const kNibName = @"AdIconTextView";
   [self.view addSubview:adView];
 }
 
-- (IBAction)performButton:(id)sender
+- (IBAction)performUpdate:(id)sender
 {
   // [SDK] 広告更新（updateAd）
   [[AMoAdNativeViewManager sharedManager] updateAdWithSid:kSid tag:kTag];
+}
+
+- (IBAction)performClear:(id)sender
+{
+  // [SDK] 広告更新（updateAd）
+  [[AMoAdNativeViewManager sharedManager] clearAdWithSid:kSid tag:kTag];
 }
 
 - (void)didReceiveMemoryWarning {
