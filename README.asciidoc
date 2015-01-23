@@ -1,9 +1,38 @@
 = AMoAd SDK for iOS
 
+3.1.0 beta 3-3::
+既存のViewを指定して広告をレンダリングすることができるように
+なりました。 +
+広告がメインビューに埋め込まれている場合、
+IBOutletで取り出したViewに対して描画する。
+
+[source,objective-c]
+----
+- (void)viewDidLoad {
+  [[AMoAdNativeViewManager sharedManager]
+  renderAdWithSid:kSid tag:kTag view:self.adView onFailure:
+  ^(NSString *sid, NSString *tag, UIView *view) {
+    NSLog(@"onFailure: sid=%@ tag=%@ view=%@", sid, tag, view);
+    }];
+  }
+----
+
+3.1.0 beta 3-2::
+不要になった広告表示をクリアできるようになりました。
+
+[source,objective-c]
+----
+- (IBAction)performClear:(id)sender
+{
+  [[AMoAdNativeViewManager sharedManager]
+    clearAdWithSid:kSid tag:kTag];
+}
+----
+
+
 3.1.0 beta 3-1::
 広告の取得に失敗した時のコールバック関数を指定できるようになりました。
 
-.SampleViewController.m
 [source,objective-c]
 ----
 - (void)viewDidLoad {

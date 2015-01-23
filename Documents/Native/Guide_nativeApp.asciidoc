@@ -85,7 +85,7 @@ _prepareAdWithSid:tag:iconPreloading:imagePreloading:_
 
 下記はアイコン画像+テキスト用の実装サンプルです。
 
-.SampleViewController.m
+.ViewController.m
 [source,objective-c]
 ----
 #import "AMoAdNativeView.h"
@@ -144,10 +144,12 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/edfe7cc6-9cb7-adcc-28
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/55e0d980-ff12-2134-4ff0-686b4d756194.png[
 "レイアウトサンプル04", width="80%"]
 
-==== 広告表示を表示する
+==== 広告を表示する
 下記は広告を表示するサンプルです。
 
-.SampleViewController.m
+* リソース名を指定してViewを生成する
+
+.ViewController.m
 [source,objective-c]
 ----
 - (void)viewDidLoad {
@@ -162,16 +164,46 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/55e0d980-ff12-2134-4f
 }
 ----
 
+* 既存のViewを指定して広告をレンダリングする
+
+広告がメインビューに埋め込まれている場合、
+IBOutletで取り出したViewに対して描画する
+
+.ViewController.m
+[source,objective-c]
+----
+- (void)viewDidLoad {
+  [[AMoAdNativeViewManager sharedManager]
+  renderAdWithSid:kSid tag:kTag view:self.adView onFailure:
+  ^(NSString *sid, NSString *tag, UIView *view) {
+    NSLog(@"onFailure: sid=%@ tag=%@ view=%@", sid, tag, view);
+    }];
+  }
+----
+
 ==== 広告表示を更新する
 下記は広告を更新するサンプルです。
 
-.SampleViewController.m
+.ViewController.m
 [source,objective-c]
 ----
-- (IBAction)performButton:(id)sender
+- (IBAction)performUpdate:(id)sender
 {
   [[AMoAdNativeViewManager sharedManager]
     updateAdWithSid:kSid tag:kTag];
+}
+----
+
+==== 広告表示をクリアする
+下記は広告をクリアするサンプルです。
+
+.ViewController.m
+[source,objective-c]
+----
+- (IBAction)performClear:(id)sender
+{
+  [[AMoAdNativeViewManager sharedManager]
+    clearAdWithSid:kSid tag:kTag];
 }
 ----
 
@@ -183,7 +215,7 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/55e0d980-ff12-2134-4f
 `AMoAdLogger.h` をimportした上で下記実装を実施する。
 `onLogging` ブロックを登録することでログ出力をフックしてカスタマイズできます。
 
-.SampleViewController.m
+.ViewController.m
 [source,objective-c]
 ----
 #import "AMoAdLogger.h"
