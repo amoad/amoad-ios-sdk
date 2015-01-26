@@ -30,7 +30,7 @@ static NSString *const kNibName = @"AdIconTextView";
   // [SDK] 広告準備（prepareAd）
   [[AMoAdNativeViewManager sharedManager] prepareAdWithSid:kSid
                                                        tag:kTag
-                                            iconPreloading:true];
+                                            iconPreloading:YES];
   // [SDK] 広告取得（view）
   UIView *adView = [[AMoAdNativeViewManager sharedManager]
                        viewWithSid:kSid
