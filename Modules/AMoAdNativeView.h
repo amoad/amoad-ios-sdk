@@ -142,9 +142,8 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
 /// @param originalArray コンテンツデータの配列
-/// @param updateAd YES...既にoriginalArrayに入っている広告内容を更新する<br />広告の追加のみ（既に配列に入っている広告は更新されない）
 /// @return NSArray * コンテンツデータの配列に広告を挿入した配列
-- (NSArray *)arrayWithSid:(NSString *)sid tag:(NSString *)tag originalArray:(NSArray *)originalArray updateAd:(BOOL)updateAd;
+- (NSArray *)arrayWithSid:(NSString *)sid tag:(NSString *)tag originalArray:(NSArray *)originalArray;
 
 #pragma mark - 【リストビュー】テーブル
 
@@ -181,14 +180,16 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param onFailure 広告に失敗した時のコールバック関数
 - (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
 
-/// 【ネイティブ（App）】広告ビューの内容を更新する
-/// @param sid 管理画面から取得した64文字の英数字
-/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
-- (void)updateAdWithSid:(NSString *)sid tag:(NSString *)tag;
-
 /// 【ネイティブ（App）】広告ビューの内容をクリアする
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 - (void)clearAdWithSid:(NSString *)sid tag:(NSString *)tag;
+
+#pragma mark - 【ネイティブ（App）】【リストビュー】
+
+/// 【ネイティブ（App）】【リストビュー】広告ビューの内容を更新する
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+- (void)updateAdWithSid:(NSString *)sid tag:(NSString *)tag;
 
 @end
