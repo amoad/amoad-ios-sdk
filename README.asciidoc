@@ -67,5 +67,3 @@ link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdNativeView.h
 メインヘッダ
 link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd.a[libAMoAd.a]::
 ライブラリ
-link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd_staging.a[libAMoAd_staging.a]::
-ライブラリ（ステージング環境用）
