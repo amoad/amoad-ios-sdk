@@ -1,5 +1,19 @@
 = AMoAd SDK for iOS
 
+3.1.0 beta 4::
+. リストビュー型のupdateAd、arrayWithSidの挙動が修正されました
+（使い方の詳細はサンプルコードを参照）。
+. トレース表示ができるようになりました
+（使い方の詳細はGuide、もしくはサンプルコードを参照）。
+
+. prepareAdは、1 sidに対して1回、呼び出すという仕様に変りました
+（prepareAdでtagを指定しない）。
+
+[source,objective-c]
+----
+[[AMoAdNativeViewManager sharedManager] prepareAdWithSid:self.sid defaultBeginIndex:2 defaultInterval:5 iconPreloading:YES];
+----
+
 3.1.0 beta 3-3::
 既存のViewを指定して広告をレンダリングすることができるように
 なりました。 +

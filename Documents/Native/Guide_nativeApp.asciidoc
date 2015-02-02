@@ -75,13 +75,13 @@ Linking カテゴリの Other Linker Flags に「-ObjC」 を設定してくだ�
 表示広告種類毎に使用するメソッドを実装してください。
 
 1行テキスト::
-_prepareAdWithSid:tag:_
+_prepareAdWithSid:_
 
 アイコン画像+テキスト::
-_prepareAdWithSid:tag:iconPreloading:_
+_prepareAdWithSid:iconPreloading:_
 
 メイン画像+テキスト::
-_prepareAdWithSid:tag:iconPreloading:imagePreloading:_
+_prepareAdWithSid:iconPreloading:imagePreloading:_
 
 下記はアイコン画像+テキスト用の実装サンプルです。
 
@@ -92,7 +92,7 @@ _prepareAdWithSid:tag:iconPreloading:imagePreloading:_
 
 - (void)viewDidLoad {
   [[AMoAdNativeViewManager sharedManager]
-    prepareAdWithSid:kSid tag:kTag iconPreloading:YES];
+    prepareAdWithSid:kSid iconPreloading:YES];
 }
 ----
 
@@ -101,7 +101,6 @@ _prepareAdWithSid:tag:iconPreloading:imagePreloading:_
 |===
 |引数名 |表示種類 |説明
 |sid |共通 |管理画面から発行される SID を設定してください
-|tag |共通 |同一リストに対し同一 SID を設定したい場合は Tag (名称任意) を設定する必要がある（同一リスト内において sid + tagがユニークであること）
 |iconPreloading |アイコン画像＋テキスト |アイコン画像の読み込み処理タイミングについて。YES：広告取得時に読み込み処理を実施する。NO（デフォルト値）：広告表示時に読み込み処理を実施
 |imagePreloading |メイン画像＋テキスト |メイン画像の読み込み処理タイミングについて。YES：広告取得時に読み込み処理を実施する。NO（デフォルト値）：広告表示時に読み込み処理を実施
 |===
@@ -226,5 +225,25 @@ IBOutletで取り出したViewに対して描画する
     ^(NSString *message, NSError *error) {
       NSLog(@"【ユーザ定義】%@:%@", message, error);
     };
+}
+----
+
+==== トレース出力方法
+
+開発時にSDKのトレースを出力をしたい場合は、
+`AMoAdLogger.h` をimportした上で下記実装を実施する。
+`onTrace` ブロックを登録することでトレース出力をフックしてカスタマイズできます。
+
+.ViewController.m
+[source,objective-c]
+----
+#import "AMoAdLogger.h"
+
+- (void)viewDidLoad {
+  [AMoAdLogger sharedLogger].trace = YES;
+  [AMoAdLogger sharedLogger].onTrace =
+  ^(NSString *message, NSObject *target) {
+    NSLog(@"【ユーザ定義】%@:%@", message, target);
+  };
 }
 ----

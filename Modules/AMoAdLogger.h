@@ -21,8 +21,15 @@
 /// ログをNSLog以外に出力する場合、このブロックを設定する
 @property (nonatomic,readwrite,strong) void (^onLogging)(NSString *message, NSError *error);
 
+/// トレース出力する（YES / NO:デフォルト）
+@property (nonatomic,readwrite,assign) BOOL trace;
+
+/// トレースをNSLog以外に出力する場合、このブロックを設定する
+@property (nonatomic,readwrite,strong) void (^onTrace)(NSString *message, NSObject *target);
+
 /// ロガー・オブジェクトを取得する
 + (AMoAdLogger *)sharedLogger;
 
 - (void)log:(NSString * const)format param:(NSObject *)param error:(NSError *)error;
+- (void)trace:(NSString * const)format param:(NSObject *)param target:(NSObject *)target;
 @end
