@@ -85,13 +85,13 @@ Linking カテゴリの Other Linker Flags に「-ObjC」 を設定してくだ�
 表示広告種類毎に使用するメソッドを実装してください。
 
 1行テキスト::
-_prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:_
+_prepareAdWithSid:defaultBeginIndex:defaultInterval:_
 
 アイコン画像+テキスト::
-_prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:_
+_prepareAdWithSid:defaultBeginIndex:defaultInterval:iconPreloading:_
 
 メイン画像+テキスト::
-_prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:_
+_prepareAdWithSid:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloading:_
 
 下記はアイコン画像+テキスト用の実装サンプルです。
 
@@ -102,7 +102,7 @@ _prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePrel
 
 - (void)viewDidLoad {
   /* 省略 */
-  [[AMoAdNativeViewManager sharedManager] prepareAdWithSid:self.sid tag:self.tableTag defaultBeginIndex:2 defaultInterval:5 iconPreloading:YES];
+  [[AMoAdNativeViewManager sharedManager] prepareAdWithSid:self.sid defaultBeginIndex:2 defaultInterval:5 iconPreloading:YES];
   /* 省略 */
 }
 ----
@@ -112,7 +112,6 @@ _prepareAdWithSid:tag:defaultBeginIndex:defaultInterval:iconPreloading:imagePrel
 |===
 |引数名 |表示種類 |説明
 |sid |共通 |管理画面から発行される SID を設定してください
-|tag |共通 |同一リストに対し同一 SID を設定したい場合は Tag (名称任意) を設定する必要がある（同一リスト内において sid + tagがユニークであること）
 |defaultBeginIndex |共通 |広告の開始位置(初回、サーバから取得するまでのデフォルト値)
 |defaultInterval |共通 |広告の表示間隔(初回、サーバから取得するまでのデフォルト値)
 |iconPreloading |アイコン画像＋テキスト |アイコン画像の読み込み処理タイミングについて。YES：広告取得時に読み込み処理を実施する。NO（デフォルト値）：広告表示時に読み込み処理を実施
@@ -371,5 +370,25 @@ originalArrayとして渡す場合
   // 略
   [AMoAdLogger sharedLogger].logging = YES;
   // 略
+}
+----
+
+==== トレース出力方法
+
+開発時にSDKのトレースを出力をしたい場合は、
+`AMoAdLogger.h` をimportした上で下記実装を実施する。
+`onTrace` ブロックを登録することでトレース出力をフックしてカスタマイズできます。
+
+.ViewController.m
+[source,objective-c]
+----
+#import "AMoAdLogger.h"
+
+- (void)viewDidLoad {
+  [AMoAdLogger sharedLogger].trace = YES;
+  [AMoAdLogger sharedLogger].onTrace =
+  ^(NSString *message, NSObject *target) {
+    NSLog(@"【ユーザ定義】%@:%@", message, target);
+  };
 }
 ----

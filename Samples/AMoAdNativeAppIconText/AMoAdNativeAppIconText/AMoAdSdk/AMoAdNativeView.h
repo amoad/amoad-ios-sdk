@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// <p>サンプルコード</p>
 ///    - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 ///    {
-///      if ([self.ads[indexPath.row] isKindOfClass:[AMoAdNativeViewItem class]]) {
+///      if ([self.ads[indexPath.row] isKindOfClass:AMoAdNativeViewItem.class]) {
 ///        // 広告セル
 ///        AMoAdNativeViewItem *item = self.ads[indexPath.row];
 ///        return [item tableView:tableView cellForRowAtIndexPath:indexPath];
@@ -63,7 +63,7 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// <p>サンプルコード</p>
 ///    - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 ///    {
-///      if ([self.ads[indexPath.row] isKindOfClass:[AMoAdNativeViewItem class]]) {
+///      if ([self.ads[indexPath.row] isKindOfClass:AMoAdNativeViewItem.class]) {
 ///        // 広告セル
 ///        AMoAdNativeViewItem *item = self.ads[indexPath.row];
 ///        return [item collectionView:collectionView cellForRowAtIndexPath:indexPath];
@@ -94,47 +94,41 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 
 /// 【ネイティブ（App）】1行テキスト広告の準備を行なう
 /// @param sid 管理画面から取得した64文字の英数字
-/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
-- (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag;
+- (void)prepareAdWithSid:(NSString *)sid;
 
 /// 【ネイティブ（App）】アイコン画像＋テキスト広告の準備を行なう
 /// @param sid 管理画面から取得した64文字の英数字
-/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 /// @param iconPreloading YES...アイコン画像をすぐに先読みする<br />NO...アイコン画像をビュー取得時に読み込む
-- (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag iconPreloading:(BOOL)iconPreloading;
+- (void)prepareAdWithSid:(NSString *)sid iconPreloading:(BOOL)iconPreloading;
 
 /// 【ネイティブ（App）】メイン画像＋テキスト広告の準備を行なう
 /// @param sid 管理画面から取得した64文字の英数字
-/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 /// @param iconPreloading YES...アイコン画像をすぐに先読みする<br />NO...アイコン画像をビュー取得時に読み込む
 /// @param imagePreloading YES...メイン画像をすぐに先読みする<br />NO...メイン画像をビュー取得時に読み込む
-- (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag iconPreloading:(BOOL)iconPreloading imagePreloading:(BOOL)imagePreloading;
+- (void)prepareAdWithSid:(NSString *)sid iconPreloading:(BOOL)iconPreloading imagePreloading:(BOOL)imagePreloading;
 
 #pragma mark - 【リストビュー】広告の準備を行なう
 
 /// 【リストビュー】1行テキスト広告の準備を行なう
 /// @param sid 管理画面から取得した64文字の英数字
-/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
 /// @param defaultBeginIndex 広告の開始位置（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
 /// @param defaultInterval 広告の表示間隔（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
-- (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag defaultBeginIndex:(NSInteger)defaultBeginIndex defaultInterval:(NSInteger)defaultInterval;
+- (void)prepareAdWithSid:(NSString *)sid defaultBeginIndex:(NSInteger)defaultBeginIndex defaultInterval:(NSInteger)defaultInterval;
 
 /// 【リストビュー】アイコン画像＋テキスト広告の準備を行なう
 /// @param sid 管理画面から取得した64文字の英数字
-/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
 /// @param defaultBeginIndex 広告の開始位置（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
 /// @param defaultInterval 広告の表示間隔（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
 /// @param iconPreloading YES...アイコン画像をすぐに先読みする<br />NO...アイコン画像をビュー取得時に読み込む
-- (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag defaultBeginIndex:(NSInteger)defaultBeginIndex defaultInterval:(NSInteger)defaultInterval iconPreloading:(BOOL)iconPreloading;
+- (void)prepareAdWithSid:(NSString *)sid defaultBeginIndex:(NSInteger)defaultBeginIndex defaultInterval:(NSInteger)defaultInterval iconPreloading:(BOOL)iconPreloading;
 
 /// 【リストビュー】メイン画像＋テキスト広告の準備を行なう
 /// @param sid 管理画面から取得した64文字の英数字
-/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
 /// @param defaultBeginIndex 広告の開始位置（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
 /// @param defaultInterval 広告の表示間隔（初回、サーバから取得するまでのデフォルト値：リリース時は管理画面の設定に合わせることをお勧めします）
 /// @param iconPreloading YES...アイコン画像をすぐに先読みする<br />NO...アイコン画像をビュー取得時に読み込む
 /// @param imagePreloading YES...メイン画像をすぐに先読みする<br />NO...メイン画像をビュー取得時に読み込む
-- (void)prepareAdWithSid:(NSString *)sid tag:(NSString *)tag defaultBeginIndex:(NSInteger)defaultBeginIndex defaultInterval:(NSInteger)defaultInterval iconPreloading:(BOOL)iconPreloading imagePreloading:(BOOL)imagePreloading;
+- (void)prepareAdWithSid:(NSString *)sid defaultBeginIndex:(NSInteger)defaultBeginIndex defaultInterval:(NSInteger)defaultInterval iconPreloading:(BOOL)iconPreloading imagePreloading:(BOOL)imagePreloading;
 
 #pragma mark - 【リストビュー】データソース配列を作成する
 
@@ -176,7 +170,7 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// 【ネイティブ（App）】既存の広告ビューに広告をレンダリングする
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
-/// @param UIView * 広告ビュー
+/// @param view 広告ビュー
 /// @param onFailure 広告に失敗した時のコールバック関数
 - (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
 
@@ -184,6 +178,10 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 - (void)clearAdWithSid:(NSString *)sid tag:(NSString *)tag;
+
+/// 【ネイティブ（App）】広告ビューの内容をクリアする（すべてのtag）
+/// @param sid 管理画面から取得した64文字の英数字
+- (void)clearAdsWithSid:(NSString *)sid;
 
 #pragma mark - 【ネイティブ（App）】【リストビュー】
 

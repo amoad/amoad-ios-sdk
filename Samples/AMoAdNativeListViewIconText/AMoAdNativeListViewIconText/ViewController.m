@@ -32,9 +32,12 @@ static const NSInteger kInterval = 4; // アプリリリース時は管理画面
   [AMoAdLogger sharedLogger].onLogging = ^(NSString *message, NSError *error) { // 出力方法をカスタマイズ（オプショナル）
     NSLog(@"【%@】%@:%@", [[NSBundle mainBundle] bundleIdentifier], message, error);
   };
+  [AMoAdLogger sharedLogger].trace = YES; // YES...トレースを出力する
+  [AMoAdLogger sharedLogger].onTrace = ^(NSString *message, NSObject *target) { // 出力方法をカスタマイズ（オプショナル）
+    NSLog(@"【%@】%@:%@", [[NSBundle mainBundle] bundleIdentifier], message, target);
+  };
   // [SDK] 広告準備（prepareAd）
   [[AMoAdNativeViewManager sharedManager] prepareAdWithSid:kSid
-                                                       tag:kTag
                                          defaultBeginIndex:kBeginIndex
                                            defaultInterval:kInterval
                                             iconPreloading:YES];
