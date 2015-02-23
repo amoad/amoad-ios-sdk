@@ -26,7 +26,10 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
   AMoAdNativeViewUILabelTitleLong = 4,
 
   /// サービス名（UILabel）
-  AMoAdNativeViewUILabelServiceName = 5
+  AMoAdNativeViewUILabelServiceName = 5,
+
+  /// リンク（UIView）
+  AMoAdNativeViewLink = 6
 };
 
 #pragma mark - 【リストビュー】広告表示アイテム
