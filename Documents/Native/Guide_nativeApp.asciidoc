@@ -123,25 +123,31 @@ Interface Builderを使用して、表示広告種類に応じたxibファイル
 |タイトルショート |UILabel |3
 |タイトルロング |UILabel |4
 |サービス名 |UILabel |5
+|リンク |UIButton、UIImageView、UILabelなど、
+UIViewのサブクラス |6
 |===
 
 ===== レイアウト作成サンプル（アイコン画像＋テキスト）
 
-空のXibファイルを新規作成し、UIViewを配置する
+.空のXibファイルを新規作成し、UIViewを配置する
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/81dcb936-6569-7925-c63b-e4b091e83cd8.png[
 "レイアウトサンプル01", width="80%"]
 
-アイコン画像のタグには _1_ を設定する
+.アイコン画像のタグには _1_ を設定する
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/1a91b05b-5673-8442-62a6-1ffa2e3aa606.png[
 "レイアウトサンプル02", width="80%"]
 
-タイトルロングのタグには _4_ を設定する
+.タイトルロングのタグには _4_ を設定する
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/edfe7cc6-9cb7-adcc-2816-a080bb0b743f.png[
 "レイアウトサンプル03", width="80%"]
 
-サービス名のタグには _5_ を設定する
+.サービス名のタグには _5_ を設定する
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/55e0d980-ff12-2134-4ff0-686b4d756194.png[
 "レイアウトサンプル04", width="80%"]
+
+.リンクのタグには _6_ を設定する
+image:images/n-link.png[
+"Interface Builder", width=320]
 
 ==== 広告を表示する
 下記は広告を表示するサンプルです。
