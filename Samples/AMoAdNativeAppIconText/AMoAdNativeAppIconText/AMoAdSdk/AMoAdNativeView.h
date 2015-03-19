@@ -83,6 +83,21 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 @end
 
+#pragma mark - 【リストビュー】広告表示アイテム
+
+/// 広告描画情報
+@interface AMoAdNativeViewCoder : NSObject
+/// タイトルショートの文字属性
+@property (nonatomic,strong,readwrite) NSDictionary *titleShortAttributes;
+/// タイトルロングの文字属性
+@property (nonatomic,strong,readwrite) NSDictionary *titleLongAttributes;
+/// サービス名の文字属性
+@property (nonatomic,strong,readwrite) NSDictionary *serviceNameAttributes;
+
+/// <p>広告描画情報を生成する</p>
+- (instancetype)init;
+@end
+
 #pragma mark - ネイティブ広告マネージャ
 
 /// ネイティブ広告マネージャ
@@ -151,6 +166,14 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param nibName 広告セル用のリソース名
 - (void)registerTableView:(UITableView *)tableView sid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName;
 
+/// 【リストビュー】テーブル（UITableView）に広告テンプレート（nibName）を登録する（描画情報を設定する）
+/// @param tableView 広告セルを含んだテーブル型のリストを表示する
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
+/// @param nibName 広告セル用のリソース名
+/// @param coder 広告描画情報
+- (void)registerTableView:(UITableView *)tableView sid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName coder:(AMoAdNativeViewCoder *)coder;
+
 #pragma mark - 【リストビュー】コレクション
 
 /// 【リストビュー】コレクション（UICollectionView）に広告テンプレート（nibName）を登録する
@@ -160,15 +183,15 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param nibName 広告セル用のリソース名
 - (void)registerCollectionView:(UICollectionView *)collectionView sid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName;
 
-#pragma mark - 【ネイティブ（App）】ビュー
-
-/// 【ネイティブ（App）】広告ビューを取得する
+/// 【リストビュー】コレクション（UICollectionView）に広告テンプレート（nibName）を登録する（描画情報を設定する）
+/// @param collectionView 広告セルを含んだコレクション型のリストを表示する
 /// @param sid 管理画面から取得した64文字の英数字
-/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
-/// @param nibName 広告ビュー用のリソース名
-/// @param onFailure 広告に失敗した時のコールバック関数
-/// @return UIView * 広告ビュー
-- (UIView *)viewWithSid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
+/// @param nibName 広告セル用のリソース名
+/// @param coder 広告描画情報
+- (void)registerCollectionView:(UICollectionView *)collectionView sid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName coder:(AMoAdNativeViewCoder *)coder;
+
+#pragma mark - 【ネイティブ（App）】ビュー
 
 /// 【ネイティブ（App）】既存の広告ビューに広告をレンダリングする
 /// @param sid 管理画面から取得した64文字の英数字
@@ -176,6 +199,14 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param view 広告ビュー
 /// @param onFailure 広告に失敗した時のコールバック関数
 - (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
+
+/// 【ネイティブ（App）】既存の広告ビューに広告をレンダリングする（描画情報を設定する）
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
+/// @param coder 広告描画情報
+/// @param onFailure 広告に失敗した時のコールバック関数
+- (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view coder:(AMoAdNativeViewCoder *)coder onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
 
 /// 【ネイティブ（App）】広告ビューの内容をクリアする
 /// @param sid 管理画面から取得した64文字の英数字
@@ -192,5 +223,25 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 - (void)updateAdWithSid:(NSString *)sid tag:(NSString *)tag;
+
+
+#pragma mark - 今後、削除予定のメソッド
+
+/// 【ネイティブ（App）】広告ビューを取得する => renderAdWithSid
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param nibName 広告ビュー用のリソース名
+/// @param onFailure 広告に失敗した時のコールバック関数
+/// @return UIView * 広告ビュー
+- (UIView *)viewWithSid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure DEPRECATED_ATTRIBUTE;
+
+/// 【ネイティブ（App）】広告ビューを取得する（描画情報を設定する） => renderAdWithSid
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param nibName 広告ビュー用のリソース名
+/// @param coder 広告描画情報
+/// @param onFailure 広告に失敗した時のコールバック関数
+/// @return UIView * 広告ビュー
+- (UIView *)viewWithSid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName coder:(AMoAdNativeViewCoder *)coder onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure DEPRECATED_ATTRIBUTE;
 
 @end

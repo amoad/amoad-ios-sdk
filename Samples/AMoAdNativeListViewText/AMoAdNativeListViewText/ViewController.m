@@ -11,7 +11,7 @@
 #import "AMoAdNativeView.h"
 #import "AMoAdLogger.h"
 
-static NSString *const kSid = @"管理画面から取得したリストビュー、メイン画像＋テキストのsidを指定してください";
+static NSString *const kSid = @"管理画面から取得したリストビュー、一行テキストのsidを指定してください";
 static NSString *const kTag = @"Ad01";
 static NSString *const kNibName = @"AdTextTableViewCell";
 static const NSInteger kBeginIndex = 2; // アプリリリース時は管理画面と同じ値を指定することを推奨します（0以上）
