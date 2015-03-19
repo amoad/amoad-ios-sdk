@@ -186,6 +186,40 @@ IBOutletで取り出したViewに対して描画する
   }
 ----
 
+==== 文字列に属性を設定する
+
+AMoAdNativeViewCoderを生成し、サービス名、テキストショート、テキストロングの
+各プロパティにNSDictionaryオブジェクトでNSAttributedStringに設定する
+attributes引数の値を指定してください。
+renderAdにcoderを渡すことで文字列に属性を設定できます。
+
+[source,objective-c]
+----
+// [SDK] 描画情報を生成する
+AMoAdNativeViewCoder *coder = [[AMoAdNativeViewCoder alloc] init];
+NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+[paragraphStyle setMinimumLineHeight:24.0];
+[paragraphStyle setMaximumLineHeight:24.0];
+coder.serviceNameAttributes = @{ NSForegroundColorAttributeName : [UIColor yellowColor],
+                                 NSFontAttributeName : [UIFont systemFontOfSize:14.0f],
+                                 NSParagraphStyleAttributeName : paragraphStyle };
+[paragraphStyle setMinimumLineHeight:16.0];
+[paragraphStyle setMaximumLineHeight:16.0];
+coder.titleShortAttributes = @{ NSForegroundColorAttributeName : [UIColor blueColor],
+                                NSFontAttributeName : [UIFont systemFontOfSize:13.0f],
+                                NSParagraphStyleAttributeName : paragraphStyle };
+[paragraphStyle setMinimumLineHeight:14.0];
+[paragraphStyle setMaximumLineHeight:14.0];
+coder.titleLongAttributes = @{ NSForegroundColorAttributeName : [UIColor redColor],
+                               NSFontAttributeName : [UIFont systemFontOfSize:12.0f],
+                               NSParagraphStyleAttributeName : paragraphStyle };
+
+// [SDK] 広告取得描画（既にあるViewに描画する）
+[[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag1 view:self.adView01 coder:coder onFailure:^(NSString *sid, NSString *tag, UIView *view) {
+  NSLog(@"【%@】広告描画失敗！", [[NSBundle mainBundle] bundleIdentifier]);
+}];
+----
+
 ==== 広告表示を更新する
 下記は広告を更新するサンプルです。
 
