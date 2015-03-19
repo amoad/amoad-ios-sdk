@@ -68,11 +68,19 @@
 	
 	<option value="//api/name/registerCollectionView:sid:tag:nibName:">&nbsp;&nbsp;&nbsp;&nbsp;- registerCollectionView:sid:tag:nibName:</option>
 	
+	<option value="//api/name/registerCollectionView:sid:tag:nibName:coder:">&nbsp;&nbsp;&nbsp;&nbsp;- registerCollectionView:sid:tag:nibName:coder:</option>
+	
 	<option value="//api/name/registerTableView:sid:tag:nibName:">&nbsp;&nbsp;&nbsp;&nbsp;- registerTableView:sid:tag:nibName:</option>
+	
+	<option value="//api/name/registerTableView:sid:tag:nibName:coder:">&nbsp;&nbsp;&nbsp;&nbsp;- registerTableView:sid:tag:nibName:coder:</option>
+	
+	<option value="//api/name/renderAdWithSid:tag:view:coder:onFailure:">&nbsp;&nbsp;&nbsp;&nbsp;- renderAdWithSid:tag:view:coder:onFailure:</option>
 	
 	<option value="//api/name/renderAdWithSid:tag:view:onFailure:">&nbsp;&nbsp;&nbsp;&nbsp;- renderAdWithSid:tag:view:onFailure:</option>
 	
 	<option value="//api/name/updateAdWithSid:tag:">&nbsp;&nbsp;&nbsp;&nbsp;- updateAdWithSid:tag:</option>
+	
+	<option value="//api/name/viewWithSid:tag:nibName:coder:onFailure:">&nbsp;&nbsp;&nbsp;&nbsp;- viewWithSid:tag:nibName:coder:onFailure:</option>
 	
 	<option value="//api/name/viewWithSid:tag:nibName:onFailure:">&nbsp;&nbsp;&nbsp;&nbsp;- viewWithSid:tag:nibName:onFailure:</option>
 	
@@ -130,11 +138,19 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerCollectionView:sid:tag:nibName:">registerCollectionView:sid:tag:nibName:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerCollectionView:sid:tag:nibName:coder:">registerCollectionView:sid:tag:nibName:coder:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerTableView:sid:tag:nibName:">registerTableView:sid:tag:nibName:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerTableView:sid:tag:nibName:coder:">registerTableView:sid:tag:nibName:coder:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/renderAdWithSid:tag:view:coder:onFailure:">renderAdWithSid:tag:view:coder:onFailure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/renderAdWithSid:tag:view:onFailure:">renderAdWithSid:tag:view:onFailure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateAdWithSid:tag:">updateAdWithSid:tag:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewWithSid:tag:nibName:coder:onFailure:">viewWithSid:tag:nibName:coder:onFailure:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/viewWithSid:tag:nibName:onFailure:">viewWithSid:tag:nibName:onFailure:</a></span></li>
 	
@@ -247,19 +263,31 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/registerTableView:sid:tag:nibName:coder:">&ndash;&nbsp;registerTableView:sid:tag:nibName:coder:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/registerCollectionView:sid:tag:nibName:">&ndash;&nbsp;registerCollectionView:sid:tag:nibName:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/viewWithSid:tag:nibName:onFailure:">&ndash;&nbsp;viewWithSid:tag:nibName:onFailure:</a></code>
+		<code><a href="#//api/name/registerCollectionView:sid:tag:nibName:coder:">&ndash;&nbsp;registerCollectionView:sid:tag:nibName:coder:</a></code>
 	</span>
 	
 	
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/renderAdWithSid:tag:view:onFailure:">&ndash;&nbsp;renderAdWithSid:tag:view:onFailure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/renderAdWithSid:tag:view:coder:onFailure:">&ndash;&nbsp;renderAdWithSid:tag:view:coder:onFailure:</a></code>
 	</span>
 	
 	
@@ -278,6 +306,18 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/updateAdWithSid:tag:">&ndash;&nbsp;updateAdWithSid:tag:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewWithSid:tag:nibName:onFailure:">&ndash;&nbsp;viewWithSid:tag:nibName:onFailure:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/viewWithSid:tag:nibName:coder:onFailure:">&ndash;&nbsp;viewWithSid:tag:nibName:coder:onFailure:</a></code>
 	</span>
 	
 	
@@ -896,6 +936,72 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/registerCollectionView:sid:tag:nibName:coder:" title="registerCollectionView:sid:tag:nibName:coder:"></a>
+	<h3 class="subsubtitle method-title">registerCollectionView:sid:tag:nibName:coder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【リストビュー】コレクション（UICollectionView）に広告テンプレート（nibName）を登録する（描画情報を設定する）</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registerCollectionView:(UICollectionView *)<em>collectionView</em> sid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> nibName:(NSString *)<em>nibName</em> coder:(AMoAdNativeViewCoder *)<em>coder</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>collectionView</em></dt>
+			<dd><p>広告セルを含んだコレクション型のリストを表示する</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nibName</em></dt>
+			<dd><p>広告セル用のリソース名</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>coder</em></dt>
+			<dd><p>広告描画情報</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/registerTableView:sid:tag:nibName:" title="registerTableView:sid:tag:nibName:"></a>
 	<h3 class="subsubtitle method-title">registerTableView:sid:tag:nibName:</h3>
 	
@@ -932,6 +1038,138 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>nibName</em></dt>
 			<dd><p>広告セル用のリソース名</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerTableView:sid:tag:nibName:coder:" title="registerTableView:sid:tag:nibName:coder:"></a>
+	<h3 class="subsubtitle method-title">registerTableView:sid:tag:nibName:coder:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【リストビュー】テーブル（UITableView）に広告テンプレート（nibName）を登録する（描画情報を設定する）</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)registerTableView:(UITableView *)<em>tableView</em> sid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> nibName:(NSString *)<em>nibName</em> coder:(AMoAdNativeViewCoder *)<em>coder</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableView</em></dt>
+			<dd><p>広告セルを含んだテーブル型のリストを表示する</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nibName</em></dt>
+			<dd><p>広告セル用のリソース名</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>coder</em></dt>
+			<dd><p>広告描画情報</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/renderAdWithSid:tag:view:coder:onFailure:" title="renderAdWithSid:tag:view:coder:onFailure:"></a>
+	<h3 class="subsubtitle method-title">renderAdWithSid:tag:view:coder:onFailure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【ネイティブ（App）】既存の広告ビューに広告をレンダリングする（描画情報を設定する）</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)renderAdWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> view:(UIView *)<em>view</em> coder:(AMoAdNativeViewCoder *)<em>coder</em> onFailure:(void ( ^ ) ( NSString *sid , NSString *tag , UIView *view ))<em>onFailure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>view</em></dt>
+			<dd><p>広告ビュー</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>coder</em></dt>
+			<dd><p>広告描画情報</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>onFailure</em></dt>
+			<dd><p>広告に失敗した時のコールバック関数</p></dd>
 		</dl>
 		
 	</div>
@@ -1069,13 +1307,84 @@
 </div>
 						
 						<div class="section-method">
+	<a name="//api/name/viewWithSid:tag:nibName:coder:onFailure:" title="viewWithSid:tag:nibName:coder:onFailure:"></a>
+	<h3 class="subsubtitle method-title">viewWithSid:tag:nibName:coder:onFailure:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【ネイティブ（App）】広告ビューを取得する（描画情報を設定する） => renderAdWithSid</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIView *)viewWithSid:(NSString *)<em>sid</em> tag:(NSString *)<em>tag</em> nibName:(NSString *)<em>nibName</em> coder:(AMoAdNativeViewCoder *)<em>coder</em> onFailure:(void ( ^ ) ( NSString *sid , NSString *tag , UIView *view ))<em>onFailure</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sid</em></dt>
+			<dd><p>管理画面から取得した64文字の英数字</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nibName</em></dt>
+			<dd><p>広告ビュー用のリソース名</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>coder</em></dt>
+			<dd><p>広告描画情報</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>onFailure</em></dt>
+			<dd><p>広告に失敗した時のコールバック関数</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>UIView * 広告ビュー</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/viewWithSid:tag:nibName:onFailure:" title="viewWithSid:tag:nibName:onFailure:"></a>
 	<h3 class="subsubtitle method-title">viewWithSid:tag:nibName:onFailure:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>【ネイティブ（App）】広告ビューを取得する</p>
+		<p>【ネイティブ（App）】広告ビューを取得する => renderAdWithSid</p>
 	</div>		
 	
     
@@ -1149,7 +1458,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015 AMoAd, Inc.. All rights reserved. (Last updated: 2015-02-02)</span><br />
+						<p><span class="copyright">&copy; 2015 AMoAd, Inc.. All rights reserved. (Last updated: 2015-03-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						
