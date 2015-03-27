@@ -19,6 +19,7 @@
 		E91D4F3C1A8209C800D36190 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D4F3B1A8209C800D36190 /* ImageIO.framework */; };
 		E91D4F3F1A820B0700D36190 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91D4F3D1A820B0700D36190 /* UserTableViewCell.xib */; };
 		E91D4F401A820B0700D36190 /* AdImageTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91D4F3E1A820B0700D36190 /* AdImageTextTableViewCell.xib */; };
+		E9AEE82E1AC55A5500D74AD0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AEE82D1AC55A5500D74AD0 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		E91D4F3B1A8209C800D36190 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		E91D4F3D1A820B0700D36190 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		E91D4F3E1A820B0700D36190 /* AdImageTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdImageTextTableViewCell.xib; sourceTree = "<group>"; };
+		E9AEE82D1AC55A5500D74AD0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9AEE82E1AC55A5500D74AD0 /* StoreKit.framework in Frameworks */,
 				E91D4F3C1A8209C800D36190 /* ImageIO.framework in Frameworks */,
 				E91D4F3A1A8209C100D36190 /* AdSupport.framework in Frameworks */,
 				E91D4F381A8209B100D36190 /* libAMoAd.a in Frameworks */,
@@ -78,6 +81,7 @@
 		E91D4F021A8208EE00D36190 = {
 			isa = PBXGroup;
 			children = (
+				E9AEE82D1AC55A5500D74AD0 /* StoreKit.framework */,
 				E91D4F3B1A8209C800D36190 /* ImageIO.framework */,
 				E91D4F391A8209C100D36190 /* AdSupport.framework */,
 				E91D4F0D1A8208EE00D36190 /* AMoAdNativeListViewImageText */,
@@ -454,6 +458,7 @@
 				E91D4F301A8208EE00D36190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E91D4F311A8208EE00D36190 /* Build configuration list for PBXNativeTarget "AMoAdNativeListViewImageTextTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +467,7 @@
 				E91D4F331A8208EE00D36190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
