@@ -9,7 +9,7 @@
 #import "AMoAdNativeView.h"
 #import "AMoAdLogger.h"
 
-static NSString *const kSid = @"62056d310111552c3ade64f2247bcd184674680cb0b05e6a91561781e348baa7";
+static NSString *const kSid = @"管理画面から取得したネイティブ（App）メイン画像＋テキストのsidを指定してください";
 static NSString *const kTag1 = @"Ad01";
 static NSString *const kTag2 = @"Ad02";
 static NSString *const kNibName = @"AdImageTextView";

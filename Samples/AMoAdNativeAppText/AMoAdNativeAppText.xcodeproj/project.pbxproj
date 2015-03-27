@@ -18,6 +18,7 @@
 		AC6A45821A95E3690091F182 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6A45811A95E3690091F182 /* AdSupport.framework */; };
 		AC6A45841A95E3710091F182 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6A45831A95E3710091F182 /* ImageIO.framework */; };
 		AC6A45861A95E47E0091F182 /* AdTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6A45851A95E47E0091F182 /* AdTextView.xib */; };
+		E9AEE82A1AC5599300D74AD0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AEE8291AC5599300D74AD0 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		AC6A45811A95E3690091F182 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AC6A45831A95E3710091F182 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		AC6A45851A95E47E0091F182 /* AdTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdTextView.xib; sourceTree = "<group>"; };
+		E9AEE8291AC5599300D74AD0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9AEE82A1AC5599300D74AD0 /* StoreKit.framework in Frameworks */,
 				AC6A45841A95E3710091F182 /* ImageIO.framework in Frameworks */,
 				AC6A45821A95E3690091F182 /* AdSupport.framework in Frameworks */,
 				AC6A45801A95E35C0091F182 /* libAMoAd.a in Frameworks */,
@@ -76,6 +79,7 @@
 		AC6A45451A95E2E30091F182 = {
 			isa = PBXGroup;
 			children = (
+				E9AEE8291AC5599300D74AD0 /* StoreKit.framework */,
 				AC6A45831A95E3710091F182 /* ImageIO.framework */,
 				AC6A45811A95E3690091F182 /* AdSupport.framework */,
 				AC6A45501A95E2E40091F182 /* AMoAdNativeAppText */,
@@ -450,6 +454,7 @@
 				AC6A45731A95E2E40091F182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC6A45741A95E2E40091F182 /* Build configuration list for PBXNativeTarget "AMoAdNativeAppTextTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +463,7 @@
 				AC6A45761A95E2E40091F182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
