@@ -1,5 +1,4 @@
-:Version: 3.1.0 beta 2
-:VersionUnderScore: 3_1_0_beta_02
+:Version: 3.2.2
 
 == AMoAdネイティブ広告 SDK {version} Guide for iOS - listView
 
@@ -25,7 +24,7 @@ Xcode 5.X以降が必要です。
 
 ==== プロジェクトへのSDK追加
 Xcode 上で対象プロジェクトに
-__libAMoAd_{versionUnderScore}.a__と
+__libAMoAd.a__と
 __AMoAdNativeView.h__をドラッグ&ドロップします。
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/b88f82bd-dc11-e439-dbee-9d3ae7272981.png[
 "ファイル追加", width="100%"]
@@ -57,7 +56,7 @@ _Build Phases_の_Link Binary With Libraries_にて
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/f3800a0e-1ba5-21b6-2e66-9f01b6922edb.png[
 "追加先2", width="100%"]
 
-上記のようにImageIO.framework、AdSupport.framework、libAMoAd_{versionUnderScore}.a（SDKの追加時に説明済み）が追加されていれば完了です。
+上記のようにImageIO.framework、AdSupport.framework、libAMoAd.a（SDKの追加時に説明済み）が追加されていれば完了です。
 
 ==== リンクオプションの追加
 
