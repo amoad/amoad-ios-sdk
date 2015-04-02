@@ -356,6 +356,58 @@ originalArrayとして渡す場合
 }
 ----
 
+==== 広告のタップ回数を設定する
+
+広告のタップ回数（ダブルクリックの場合は「2」）を指定できます。
+
+[source,objective-c]
+----
+// [SDK] 描画情報を生成する
+AMoAdNativeViewCoder *coder = [[AMoAdNativeViewCoder alloc] init];
+coder.numberOfTapsRequired = 2; // タップ回数を指定する
+
+// [SDK] 広告登録（registerTableView）
+[[AMoAdNativeViewManager sharedManager] registerTableView:self.tableView sid:kSid tag:kTag
+  nibName:kNibName
+  coder:coder // ここに広告描画情報を指定する
+];
+----
+
+==== 文字列に属性を設定する
+
+AMoAdNativeViewCoderを生成し、サービス名、テキストショート、テキストロングの
+各プロパティにNSDictionaryオブジェクトでNSAttributedStringに設定する
+attributes引数の値を指定してください。
+registerTableViewにcoderを渡すことで文字列に属性を設定できます。
+
+[source,objective-c]
+----
+// [SDK] 描画情報を生成する
+AMoAdNativeViewCoder *coder = [[AMoAdNativeViewCoder alloc] init];
+NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+[paragraphStyle setMinimumLineHeight:24.0];
+[paragraphStyle setMaximumLineHeight:24.0];
+coder.serviceNameAttributes = @{ NSForegroundColorAttributeName : [UIColor yellowColor],
+                                 NSFontAttributeName : [UIFont systemFontOfSize:14.0f],
+                                 NSParagraphStyleAttributeName : paragraphStyle };
+[paragraphStyle setMinimumLineHeight:16.0];
+[paragraphStyle setMaximumLineHeight:16.0];
+coder.titleShortAttributes = @{ NSForegroundColorAttributeName : [UIColor blueColor],
+                                NSFontAttributeName : [UIFont systemFontOfSize:13.0f],
+                                NSParagraphStyleAttributeName : paragraphStyle };
+[paragraphStyle setMinimumLineHeight:14.0];
+[paragraphStyle setMaximumLineHeight:14.0];
+coder.titleLongAttributes = @{ NSForegroundColorAttributeName : [UIColor redColor],
+                               NSFontAttributeName : [UIFont systemFontOfSize:12.0f],
+                               NSParagraphStyleAttributeName : paragraphStyle };
+
+// [SDK] 広告登録（registerTableView）
+[[AMoAdNativeViewManager sharedManager] registerTableView:self.tableView sid:kSid tag:kTag
+  nibName:kNibName
+  coder:coder // ここに広告描画情報を指定する
+];
+----
+
 === 導入に必要な実装手順（UICollectionView）
 現在、作成中です。
 

@@ -185,6 +185,22 @@ IBOutletで取り出したViewに対して描画する
   }
 ----
 
+==== 広告のタップ回数を設定する
+
+広告のタップ回数（ダブルクリックの場合は「2」）を指定できます。
+
+[source,objective-c]
+----
+// [SDK] 描画情報を生成する
+AMoAdNativeViewCoder *coder = [[AMoAdNativeViewCoder alloc] init];
+coder.numberOfTapsRequired = 2; // タップ回数を指定する
+
+// [SDK] 広告取得描画（既にあるViewに描画する）
+[[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag1 view:self.adView01
+  coder:coder   // ここに広告描画情報を指定する
+  onFailure:nil];
+----
+
 ==== 文字列に属性を設定する
 
 AMoAdNativeViewCoderを生成し、サービス名、テキストショート、テキストロングの
