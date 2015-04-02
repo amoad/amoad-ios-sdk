@@ -1,5 +1,35 @@
 = AMoAd SDK for iOS
 
+3.2.3::
+* 広告のタップ回数（ダブルクリックの場合は「2」）を指定できるようになりました。
+
+.ネイティブ（App）
+[source,objective-c]
+----
+// [SDK] 描画情報を生成する
+AMoAdNativeViewCoder *coder = [[AMoAdNativeViewCoder alloc] init];
+coder.numberOfTapsRequired = 2; // タップ回数を指定する
+
+// [SDK] 広告取得描画（既にあるViewに描画する）
+[[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag1 view:self.adView01
+  coder:coder   // ここに広告描画情報を指定する
+  onFailure:nil];
+----
+
+.リストビュー
+[source,objective-c]
+----
+// [SDK] 描画情報を生成する
+AMoAdNativeViewCoder *coder = [[AMoAdNativeViewCoder alloc] init];
+coder.numberOfTapsRequired = 2; // タップ回数を指定する
+
+// [SDK] 広告登録（registerTableView）
+[[AMoAdNativeViewManager sharedManager] registerTableView:self.tableView sid:kSid tag:kTag
+  nibName:kNibName
+  coder:coder // ここに広告描画情報を指定する
+];
+----
+
 3.2.2::
 * App Storeのモーダルウィンドウ遷移機能において、
 UIViewControllerが入れ子になっている場合に対応しました。

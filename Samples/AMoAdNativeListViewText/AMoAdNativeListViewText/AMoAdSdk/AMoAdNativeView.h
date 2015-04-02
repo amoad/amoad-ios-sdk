@@ -94,6 +94,9 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// サービス名の文字属性
 @property (nonatomic,strong,readwrite) NSDictionary *serviceNameAttributes;
 
+/// タップ回数（デフォルト「1」、ダブルクリックの場合は「2」）
+@property (nonatomic,assign,readwrite) NSUInteger numberOfTapsRequired;
+
 /// <p>広告描画情報を生成する</p>
 - (instancetype)init;
 @end
