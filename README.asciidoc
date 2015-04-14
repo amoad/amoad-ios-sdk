@@ -1,7 +1,10 @@
 = AMoAd SDK for iOS
 
+3.2.6::
+* App Storeモーダル遷移機能のクリック処理を安定化しました。
+
 3.2.5+::
-* サンプルアプリの「Other Linker Flags」に「-ObjC」を設定しました。 + 
+* サンプルアプリの「Other Linker Flags」に「-ObjC」を設定しました。 +
 （SDKを使用する場合、この設定は必須です）
 
 3.2.5::
