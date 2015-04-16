@@ -1,4 +1,4 @@
-:Version: 3.2.7
+:Version: 3.2.8
 
 == AMoAdネイティブ広告 SDK {version} Guide for iOS - nativeApp
 
