@@ -1,4 +1,5 @@
-:Version: 3.2.6
+:Version: 3.2.7
+
 == AMoAdネイティブ広告 SDK {version} Guide for iOS - nativeApp
 
 === 対応環境
