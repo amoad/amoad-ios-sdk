@@ -35,7 +35,6 @@
 		E9E5870D1AE78E3F00885993 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdLogger.h; path = AMoAdSdk/AMoAdLogger.h; sourceTree = "<group>"; };
 		E9E5870E1AE78E3F00885993 /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdNativeView.h; path = AMoAdSdk/AMoAdNativeView.h; sourceTree = "<group>"; };
 		E9E5870F1AE78E3F00885993 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAMoAd.a; path = AMoAdSdk/libAMoAd.a; sourceTree = "<group>"; };
-		E9E587111AE78E4E00885993 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		E9E587131AE78E5700885993 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E9E587151AE78E5E00885993 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		E9E587171AE7942B00885993 /* AdImageTextCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdImageTextCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -64,7 +63,6 @@
 				E9E5871B1AE7979D00885993 /* StoreKit.framework */,
 				E9E587151AE78E5E00885993 /* ImageIO.framework */,
 				E9E587131AE78E5700885993 /* AdSupport.framework */,
-				E9E587111AE78E4E00885993 /* iAd.framework */,
 				E9E586E51AE78DF200885993 /* AMoAdNativeCollectionViewImageText */,
 				E9E586E41AE78DF200885993 /* Products */,
 			);
