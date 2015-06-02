@@ -1,5 +1,13 @@
 = AMoAd SDK for iOS
 
+3.6.0::
+* アプリから追跡型広告の配信を制限するI/Fを追加しました。
+[source,objective-c]
+----
+// [SDK] 追跡型広告を配信しない（デフォルトは配信する）
+[AMoAdNativeViewManager sharedManager].advertisingTrackingEnabled = NO;
+----
+
 3.5.0::
 * リストビューの表示間隔が不正になることがあったのを修正しました。
 

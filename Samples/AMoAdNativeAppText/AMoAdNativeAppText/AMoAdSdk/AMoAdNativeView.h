@@ -111,6 +111,11 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// ネイティブ広告マネージャの取得する
 + (AMoAdNativeViewManager *)sharedManager;
 
+#pragma mark - 追跡型広告設定
+
+/// 追跡型広告の配信（YES...配信する：デフォルト / NO...配信しない）
+@property (nonatomic,readwrite,getter=isAdvertisingTrackingEnabled) BOOL advertisingTrackingEnabled;
+
 #pragma mark - 【ネイティブ（App）】広告の準備を行なう
 
 /// 【ネイティブ（App）】1行テキスト広告の準備を行なう
