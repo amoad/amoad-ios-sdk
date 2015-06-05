@@ -1,205 +1,23 @@
+:Version: 3.2.8
+:toc: macro
+:toc-title: 目次
+:toclevels: 4
+
 = AMoAd SDK for iOS
 
-3.6.1::
-* ログ出力に広告リクエストのURLを追加しました。
+toc::[]
 
-3.6.0::
-* アプリから追跡型広告の配信を制限するI/Fを追加しました。
-[source,objective-c]
-----
-// [SDK] 追跡型広告を配信しない（デフォルトは配信する）
-[AMoAdNativeViewManager sharedManager].advertisingTrackingEnabled = NO;
-----
+:numbered!:
+:sectnums!:
 
-3.5.0::
-* リストビューの表示間隔が不正になることがあったのを修正しました。
+== 　
 
-3.3.0::
-* 広告読込キャッシュのパフォーマンス改善を行いました。
+:numbered:
+:sectnums:
 
-3.2.10::
-* 広告情報（テキスト）のキャッシュ性能が向上しました。
+== 概要
 
-3.2.8::
-* 広告表示性能の改善を行いました。
-
-3.2.7::
-* 広告レスポンスのパース処理を改善しました。
-
-3.2.6::
-* App Storeモーダル遷移機能のクリック処理を安定化しました。
-
-3.2.5+::
-* サンプルアプリの「Other Linker Flags」に「-ObjC」を設定しました。 +
-（SDKを使用する場合、この設定は必須です）
-
-3.2.5::
-* 画像キャッシュ機能の高速化を行いました。
-
-3.2.4++::
-* リストビュー型で表示更新前に前回の情報をクリアするよう改善しました。
-
-3.2.4+::
-* ClearAdで画像が残ってしまう障害を修正しました。
-
-3.2.4::
-* 画像キャッシュ機能の性能改善。
-
-3.2.3::
-* 広告のタップ回数（ダブルクリックの場合は「2」）を指定できるようになりました。
-
-.ネイティブ（App）
-[source,objective-c]
-----
-// [SDK] 描画情報を生成する
-AMoAdNativeViewCoder *coder = [[AMoAdNativeViewCoder alloc] init];
-coder.numberOfTapsRequired = 2; // タップ回数を指定する
-
-// [SDK] 広告取得描画（既にあるViewに描画する）
-[[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag1 view:self.adView01
-  coder:coder   // ここに広告描画情報を指定する
-  onFailure:nil];
-----
-
-.リストビュー
-[source,objective-c]
-----
-// [SDK] 描画情報を生成する
-AMoAdNativeViewCoder *coder = [[AMoAdNativeViewCoder alloc] init];
-coder.numberOfTapsRequired = 2; // タップ回数を指定する
-
-// [SDK] 広告登録（registerTableView）
-[[AMoAdNativeViewManager sharedManager] registerTableView:self.tableView sid:kSid tag:kTag
-  nibName:kNibName
-  coder:coder // ここに広告描画情報を指定する
-];
-----
-
-3.2.2::
-* App Storeのモーダルウィンドウ遷移機能において、
-UIViewControllerが入れ子になっている場合に対応しました。
-
-3.2.1::
-* 画像キャッシュの速度を改善しました。
-
-3.2.0::
-. App Storeのモーダルウィンドウ遷移に対応しました。
-.. 近日中に対応する広告が配信される予定です
-.. 管理画面での設定が必要です。
-.. StoreKitをリンクしてください。
-. 画像キャッシュのメモリ使用量を改善しました。
-
-3.1.0 beta 7::
-文字列に属性を設定できるようになりました。
-
-AMoAdNativeViewCoderを生成し、サービス名、テキストショート、テキストロングの
-各プロパティにNSDictionaryオブジェクトでNSAttributedStringに設定する
-attributes引数の値を指定してください。
-renderAdにcoderを渡すことで文字列に属性を設定できます。
-
-[source,objective-c]
-----
-// [SDK] 描画情報を生成する
-AMoAdNativeViewCoder *coder = [[AMoAdNativeViewCoder alloc] init];
-NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-[paragraphStyle setMinimumLineHeight:24.0];
-[paragraphStyle setMaximumLineHeight:24.0];
-coder.serviceNameAttributes = @{ NSForegroundColorAttributeName : [UIColor yellowColor],
-                                 NSFontAttributeName : [UIFont systemFontOfSize:14.0f],
-                                 NSParagraphStyleAttributeName : paragraphStyle };
-[paragraphStyle setMinimumLineHeight:16.0];
-[paragraphStyle setMaximumLineHeight:16.0];
-coder.titleShortAttributes = @{ NSForegroundColorAttributeName : [UIColor blueColor],
-                                NSFontAttributeName : [UIFont systemFontOfSize:13.0f],
-                                NSParagraphStyleAttributeName : paragraphStyle };
-[paragraphStyle setMinimumLineHeight:14.0];
-[paragraphStyle setMaximumLineHeight:14.0];
-coder.titleLongAttributes = @{ NSForegroundColorAttributeName : [UIColor redColor],
-                               NSFontAttributeName : [UIFont systemFontOfSize:12.0f],
-                               NSParagraphStyleAttributeName : paragraphStyle };
-
-// [SDK] 広告取得描画（既にあるViewに描画する）
-[[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag1 view:self.adView01 coder:coder onFailure:^(NSString *sid, NSString *tag, UIView *view) {
-  NSLog(@"【%@】広告描画失敗！", [[NSBundle mainBundle] bundleIdentifier]);
-}];
-----
-
-3.1.0 beta 6::
-任意のリンクViewを設定できるようになりました。
-
-UIButton、UIImageView、UILabelなど、
-UIViewのサブクラスのタグ番号に「6」を設定してください。
-
-.Interface Builder
-image:Documents/Native/images/n-link.png[
-"Interface Builder", width=320]
-
-3.1.0 beta 5::
-画像をメモリキャッシュからファイルキャッシュへ変更しました。
-
-* メモリ使用量が減ります
-* アプリを再起動しても画像のキャッシュが効くようになります
-
-3.1.0 beta 4::
-. リストビュー型のupdateAd、arrayWithSidの挙動が修正されました
-（使い方の詳細はサンプルコードを参照）。
-. トレース表示ができるようになりました
-（使い方の詳細はGuide、もしくはサンプルコードを参照）。
-
-. prepareAdは、1 sidに対して1回、呼び出すという仕様に変りました
-（prepareAdでtagを指定しない）。
-
-[source,objective-c]
-----
-[[AMoAdNativeViewManager sharedManager] prepareAdWithSid:self.sid defaultBeginIndex:2 defaultInterval:5 iconPreloading:YES];
-----
-
-3.1.0 beta 3-3::
-既存のViewを指定して広告をレンダリングすることができるように
-なりました。 +
-広告がメインビューに埋め込まれている場合、
-IBOutletで取り出したViewに対して描画する。
-
-[source,objective-c]
-----
-- (void)viewDidLoad {
-  [[AMoAdNativeViewManager sharedManager]
-  renderAdWithSid:kSid tag:kTag view:self.adView onFailure:
-  ^(NSString *sid, NSString *tag, UIView *view) {
-    NSLog(@"onFailure: sid=%@ tag=%@ view=%@", sid, tag, view);
-    }];
-  }
-----
-
-3.1.0 beta 3-2::
-不要になった広告表示をクリアできるようになりました。
-
-[source,objective-c]
-----
-- (IBAction)performClear:(id)sender
-{
-  [[AMoAdNativeViewManager sharedManager]
-    clearAdWithSid:kSid tag:kTag];
-}
-----
-
-
-3.1.0 beta 3-1::
-広告の取得に失敗した時のコールバック関数を指定できるようになりました。
-
-[source,objective-c]
-----
-- (void)viewDidLoad {
-  UIView *adView =
-    [[AMoAdNativeViewManager sharedManager]
-      viewWithSid:kSid tag:kTag nibName:kNibName onFailure:
-      ^(NSString *sid, NSString *tag, UIView *view) {
-        NSLog(@"onFailure: sid=%@ tag=%@ view=%@", sid, tag, view);
-      }];
-  [adView setFrame:CGRectMake(0, 100, 320, 100)];
-  [self.view addSubview:adView];
-}
-----
+. link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
 
 == ネイティブ広告
 * link:https://rawgit.com/amoad/amoad-ios-sdk/master/Documents/Native/appledoc/index.html[AppleDoc]

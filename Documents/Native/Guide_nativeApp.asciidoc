@@ -1,10 +1,23 @@
-:Version: 3.2.8
+:Version: 3.6.1
+:toc: macro
+:toc-title: 目次
+:toclevels: 4
 
-== AMoAdネイティブ広告 SDK {version} Guide for iOS - nativeApp
+= AMoAdネイティブ広告 SDK {version} Guide for iOS - nativeApp
 
-=== 対応環境
+toc::[]
 
-==== デバイス
+:numbered!:
+:sectnums!:
+
+== 　
+
+:numbered:
+:sectnums:
+
+== 対応環境
+
+=== デバイス
 以下の環境がサポート対象です。
 
 |===
@@ -13,16 +26,16 @@
 |iPad |iPad、iPad2、iPad(第3世代以降)、iPad mini、iPad Air、iPad mini Retina
 |===
 
-==== OSバージョン
+=== OSバージョン
 iOS 6.0以上がサポート対象です。
 
-==== 開発環境
+=== 開発環境
 
 Xcode 5.X以降が必要です。
 
-=== 組み込み手順
+== 組み込み手順
 
-==== プロジェクトへのSDK追加
+=== プロジェクトへのSDK追加
 Xcode 上で対象プロジェクトに
 __libAMoAd.a__と
 __AMoAdNativeView.h__をドラッグ&ドロップします。
@@ -38,7 +51,7 @@ SDKの追加は完了です。
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/ff7eaaf3-c3e2-5453-47d4-1e39a36c0361.png[
 "完了", width="100%"]
 
-==== 必須フレームワークの追加￼
+=== 必須フレームワークの追加￼
 本SDKでは下記のフレームワークの追加が必要です。
 
 |===
@@ -58,19 +71,19 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/f3800a0e-1ba5-21b6-2e
 
 上記のようにImageIO.framework、AdSupport.framework、libAMoAd.a（SDKの追加時に説明済み）が追加されていれば完了です。
 
-==== リンクオプションの追加
+=== リンクオプションの追加
 
 ターゲットの Build Settings タブを開き、
 Linking カテゴリの Other Linker Flags に「-ObjC」 を設定してください。
 
-=== 導入に必要な実装手順（UIView）
+== 導入に必要な実装手順（UIView）
 
-==== importが必要なヘッダーファイル
+=== importが必要なヘッダーファイル
 必要なヘッダーファイルは下記のみです。
 
 * `AMoAdNativeView.h`
 
-==== 広告準備および事前取得（prepareAdWithSid）
+=== 広告準備および事前取得（prepareAdWithSid）
 この処理を実行する事により、SID毎に必要な広告の事前取得を行う。
 表示広告種類毎に使用するメソッドを実装してください。
 
@@ -105,7 +118,7 @@ _prepareAdWithSid:iconPreloading:imagePreloading:_
 |imagePreloading |メイン画像＋テキスト |メイン画像の読み込み処理タイミングについて。YES：広告取得時に読み込み処理を実施する。NO（デフォルト値）：広告表示時に読み込み処理を実施
 |===
 
-==== 広告用のレイアウトファイル作成
+=== 広告用のレイアウトファイル作成
 
 Interface Builderを使用して、表示広告種類に応じたxibファイルを作成する。
 
@@ -113,7 +126,7 @@ Interface Builderを使用して、表示広告種類に応じたxibファイル
 * アイコン画像＋テキスト
 * メイン画像＋テキスト
 
-===== 各パターン毎に必要なレイアウトを作成する
+==== 各パターン毎に必要なレイアウトを作成する
 下記表を参考にレイアウトを作成する
 
 |===
@@ -127,7 +140,7 @@ Interface Builderを使用して、表示広告種類に応じたxibファイル
 UIViewのサブクラス |6
 |===
 
-===== レイアウト作成サンプル（アイコン画像＋テキスト）
+==== レイアウト作成サンプル（アイコン画像＋テキスト）
 
 .空のXibファイルを新規作成し、UIViewを配置する
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/81dcb936-6569-7925-c63b-e4b091e83cd8.png[
@@ -149,7 +162,7 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/55e0d980-ff12-2134-4f
 image:images/n-link.png[
 "Interface Builder", width=320]
 
-==== 広告を表示する
+=== 広告を表示する
 下記は広告を表示するサンプルです。
 
 * リソース名を指定してViewを生成する
@@ -186,7 +199,7 @@ IBOutletで取り出したViewに対して描画する
   }
 ----
 
-==== 広告のタップ回数を設定する
+=== 広告のタップ回数を設定する
 
 広告のタップ回数（ダブルクリックの場合は「2」）を指定できます。
 
@@ -202,7 +215,7 @@ coder.numberOfTapsRequired = 2; // タップ回数を指定する
   onFailure:nil];
 ----
 
-==== 文字列に属性を設定する
+=== 文字列に属性を設定する
 
 AMoAdNativeViewCoderを生成し、サービス名、テキストショート、テキストロングの
 各プロパティにNSDictionaryオブジェクトでNSAttributedStringに設定する
@@ -236,7 +249,7 @@ coder.titleLongAttributes = @{ NSForegroundColorAttributeName : [UIColor redColo
 }];
 ----
 
-==== 広告表示を更新する
+=== 広告表示を更新する
 下記は広告を更新するサンプルです。
 
 .ViewController.m
@@ -249,7 +262,7 @@ coder.titleLongAttributes = @{ NSForegroundColorAttributeName : [UIColor redColo
 }
 ----
 
-==== 広告表示をクリアする
+=== 広告表示をクリアする
 下記は広告をクリアするサンプルです。
 
 .ViewController.m
@@ -262,9 +275,9 @@ coder.titleLongAttributes = @{ NSForegroundColorAttributeName : [UIColor redColo
 }
 ----
 
-=== その他の実装について
+== その他の実装について
 
-==== ログ出力方法
+=== ログ出力方法
 
 開発時にSDKのログを出力をしたい場合は、
 `AMoAdLogger.h` をimportした上で下記実装を実施する。
@@ -284,7 +297,7 @@ coder.titleLongAttributes = @{ NSForegroundColorAttributeName : [UIColor redColo
 }
 ----
 
-==== トレース出力方法
+=== トレース出力方法
 
 開発時にSDKのトレースを出力をしたい場合は、
 `AMoAdLogger.h` をimportした上で下記実装を実施する。
