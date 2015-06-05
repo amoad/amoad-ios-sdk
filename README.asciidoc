@@ -1,23 +1,13 @@
-:Version: 3.2.8
-:toc: macro
-:toc-title: 目次
-:toclevels: 4
+:Version: 3.6.1
 
-= AMoAd SDK for iOS
-
-toc::[]
-
-:numbered!:
-:sectnums!:
-
-== 　
+= AMoAd SDK {version} Guide for iOS
 
 :numbered:
 :sectnums:
 
 == 概要
 
-. link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
+* link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
 
 == ネイティブ広告
 * link:https://rawgit.com/amoad/amoad-ios-sdk/master/Documents/Native/appledoc/index.html[AppleDoc]
