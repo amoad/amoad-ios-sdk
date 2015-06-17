@@ -32,6 +32,42 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
   AMoAdNativeViewLink = 6
 };
 
+#pragma mark - デリゲート
+
+/// 広告受信結果
+typedef NS_ENUM(NSInteger, AMoAdNativeResult) {
+  /// 成功
+  AMoAdNativeResultSuccess,
+  /// 失敗
+  AMoAdNativeResultFailure
+};
+
+/// 【ネイティブ（App）】デリゲート
+@protocol AMoAdNativeAppDelegate
+@optional
+/// 広告受信時に呼び出される
+- (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state;
+/// アイコン受信時に呼び出される
+- (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state;
+/// メイン画像受信時に呼び出される
+- (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state;
+/// 広告クリック時に呼び出される
+- (void)amoadNativeDidClick:(NSString *)sid tag:(NSString *)tag view:(UIView *)view;
+@end
+
+/// 【リストビュー】デリゲート
+@protocol AMoAdNativeListViewDelegate
+@optional
+/// 広告受信時に呼び出される
+- (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state;
+/// アイコン受信時に呼び出される
+- (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state;
+/// メイン画像受信時に呼び出される
+- (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state;
+/// 広告クリック時に呼び出される
+- (void)amoadNativeDidClick:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath;
+@end
+
 #pragma mark - 【リストビュー】広告表示アイテム
 
 /// <p>【リストビュー】広告表示アイテム</p>
@@ -61,6 +97,29 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 /// <p>【リストビュー】広告セルを取得する</p>
+/// UITableViewDataSource#tableView:cellForRowAtIndexPath:メソッド内で、
+/// データソース配列のindexPath番目がAMoAdNativeViewItem型だったら、このメソッドで広告セルを取得する。
+/// <p>サンプルコード</p>
+///    - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+///    {
+///      if ([self.ads[indexPath.row] isKindOfClass:AMoAdNativeViewItem.class]) {
+///        // 広告セル
+///        AMoAdNativeViewItem *item = self.ads[indexPath.row];
+///        return [item tableView:tableView cellForRowAtIndexPath:indexPath];
+///      } else {
+///        // コンテンツセル
+///        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ABCD" forIndexPath:indexPath];
+///        // （コンテンツを設定...）
+///        return cell;
+///      }
+///    }
+/// @param tableView 対象テーブル
+/// @param indexPath 表示位置
+/// @param delegate 広告デリゲート
+/// @return UITableViewCell * 広告セル
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath delegate:(id<AMoAdNativeListViewDelegate>)delegate;
+
+/// <p>【リストビュー】広告セルを取得する</p>
 /// UICollectionViewDataSource#collectionView:cellForRowAtIndexPath:メソッド内で、
 /// データソース配列のindexPath番目がAMoAdNativeViewItem型だったら、このメソッドで広告セルを取得する。
 /// <p>サンプルコード</p>
@@ -81,9 +140,32 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param indexPath 表示位置
 /// @return UICollectionViewCell * 広告セル
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath;
+
+/// <p>【リストビュー】広告セルを取得する</p>
+/// UICollectionViewDataSource#collectionView:cellForRowAtIndexPath:メソッド内で、
+/// データソース配列のindexPath番目がAMoAdNativeViewItem型だったら、このメソッドで広告セルを取得する。
+/// <p>サンプルコード</p>
+///    - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+///    {
+///      if ([self.ads[indexPath.row] isKindOfClass:AMoAdNativeViewItem.class]) {
+///        // 広告セル
+///        AMoAdNativeViewItem *item = self.ads[indexPath.row];
+///        return [item collectionView:collectionView cellForRowAtIndexPath:indexPath];
+///      } else {
+///        // コンテンツセル
+///        UICollectionViewCell *cell = [collectionView dequeueReusableCellWithIdentifier:@"ABCD" forIndexPath:indexPath];
+///        // （コンテンツを設定...）
+///        return cell;
+///      }
+///    }
+/// @param collectionView 対象コレクション
+/// @param indexPath 表示位置
+/// @param delegate 広告デリゲート
+/// @return UICollectionViewCell * 広告セル
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath delegate:(id<AMoAdNativeListViewDelegate>)delegate;
 @end
 
-#pragma mark - 【リストビュー】広告表示アイテム
+#pragma mark - 広告描画情報
 
 /// 広告描画情報
 @interface AMoAdNativeViewCoder : NSObject
@@ -205,16 +287,16 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 /// @param view 広告ビュー
-/// @param onFailure 広告に失敗した時のコールバック関数
-- (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
+/// @param delegate 広告デリゲート
+- (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view delegate:(id<AMoAdNativeAppDelegate>)delegate;
 
 /// 【ネイティブ（App）】既存の広告ビューに広告をレンダリングする（描画情報を設定する）
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 /// @param view 広告ビュー
 /// @param coder 広告描画情報
-/// @param onFailure 広告に失敗した時のコールバック関数
-- (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view coder:(AMoAdNativeViewCoder *)coder onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
+/// @param delegate 広告デリゲート
+- (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view coder:(AMoAdNativeViewCoder *)coder delegate:(id<AMoAdNativeAppDelegate>)delegate;
 
 /// 【ネイティブ（App）】広告ビューの内容をクリアする
 /// @param sid 管理画面から取得した64文字の英数字
@@ -231,25 +313,5 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 - (void)updateAdWithSid:(NSString *)sid tag:(NSString *)tag;
-
-
-#pragma mark - 今後、削除予定のメソッド
-
-/// 【ネイティブ（App）】広告ビューを取得する => renderAdWithSid
-/// @param sid 管理画面から取得した64文字の英数字
-/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
-/// @param nibName 広告ビュー用のリソース名
-/// @param onFailure 広告に失敗した時のコールバック関数
-/// @return UIView * 広告ビュー
-- (UIView *)viewWithSid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure DEPRECATED_ATTRIBUTE;
-
-/// 【ネイティブ（App）】広告ビューを取得する（描画情報を設定する） => renderAdWithSid
-/// @param sid 管理画面から取得した64文字の英数字
-/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
-/// @param nibName 広告ビュー用のリソース名
-/// @param coder 広告描画情報
-/// @param onFailure 広告に失敗した時のコールバック関数
-/// @return UIView * 広告ビュー
-- (UIView *)viewWithSid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName coder:(AMoAdNativeViewCoder *)coder onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure DEPRECATED_ATTRIBUTE;
 
 @end

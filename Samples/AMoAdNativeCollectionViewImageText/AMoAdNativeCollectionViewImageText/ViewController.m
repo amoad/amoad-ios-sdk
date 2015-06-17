@@ -15,7 +15,7 @@ static NSString *const kNibName = @"AdImageTextCollectionViewCell";
 static const NSInteger kBeginIndex = 2; // アプリリリース時は管理画面と同じ値を指定することを推奨します（0以上）
 static const NSInteger kInterval = 4; // アプリリリース時は管理画面と同じ値を指定することを推奨します（2以上、もしくは、0:繰り返さない）
 
-@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, AMoAdNativeListViewDelegate>
 @property (nonatomic,readwrite,weak) IBOutlet UICollectionView *collectionView;
 @property (nonatomic,readwrite,strong) NSArray *collectionArray;
 @property (nonatomic,readwrite,assign) NSInteger contentNo;
@@ -51,7 +51,7 @@ static const NSInteger kInterval = 4; // アプリリリース時は管理画面
   if ([self.collectionArray[indexPath.row] isKindOfClass:[AMoAdNativeViewItem class]]) {
     // [SDK] 広告取得（collectionViewCell）
     AMoAdNativeViewItem *item = self.collectionArray[indexPath.row];
-    return [item collectionView:collectionView cellForItemAtIndexPath:indexPath];
+    return [item collectionView:collectionView cellForItemAtIndexPath:indexPath delegate:self];
   } else {
     // コンテンツセル
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UserCell" forIndexPath:indexPath];
@@ -72,6 +72,23 @@ static const NSInteger kInterval = 4; // アプリリリース時は管理画面
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+
+- (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state {
+  NSLog(@"amoadNativeDidReceive:%@ tag:%@ view:%@ indexPath:%@ state:%ld", sid, tag, view, indexPath, (long)state);
+}
+
+- (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state {
+  NSLog(@"amoadNativeIconDidReceive:%@ tag:%@ view:%@ indexPath:%@ state:%ld", sid, tag, view, indexPath, (long)state);
+}
+
+- (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state {
+  NSLog(@"amoadNativeImageDidReceive:%@ tag:%@ view:%@ indexPath:%@ state:%ld", sid, tag, view, indexPath, (long)state);
+}
+
+- (void)amoadNativeDidClick:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath {
+  NSLog(@"amoadNativeDidClick:%@ tag:%@ view:%@ indexPath:%@", sid, tag, view, indexPath);
 }
 
 @end
