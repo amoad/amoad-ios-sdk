@@ -14,7 +14,7 @@ static NSString *const kTag1 = @"Ad01";
 static NSString *const kTag2 = @"Ad02";
 static NSString *const kNibName = @"AdImageTextView";
 
-@interface ViewController ()
+@interface ViewController () <AMoAdNativeAppDelegate>
 @property IBOutlet UIView *renderAdView;
 @end
 
@@ -37,20 +37,13 @@ static NSString *const kNibName = @"AdImageTextView";
                                             iconPreloading:YES
                                            imagePreloading:YES];
   // [SDK] 広告取得（view）
-  UIView *adView = [[AMoAdNativeViewManager sharedManager]
-                    viewWithSid:kSid
-                    tag:kTag1
-                    nibName:kNibName
-                    onFailure:^(NSString *sid, NSString *tag, UIView *view) {
-                      NSLog(@"【%@】広告取得失敗！", [[NSBundle mainBundle] bundleIdentifier]);
-                    }];
+  UIView *adView = [[UINib nibWithNibName:kNibName bundle:nil] instantiateWithOwner:self options:nil][0];
+  [[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag1 view:adView delegate:self];
   [adView setFrame:CGRectMake(0, 100, 320, 100)];
   [self.view addSubview:adView];
 
   // [SDK] 広告取得描画（既にあるViewに描画する）
-  [[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag2 view:self.renderAdView onFailure:^(NSString *sid, NSString *tag, UIView *view) {
-    NSLog(@"【%@】広告描画失敗！", [[NSBundle mainBundle] bundleIdentifier]);
-  }];
+  [[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag2 view:self.renderAdView delegate:self];
 }
 
 - (IBAction)performUpdate:(id)sender
@@ -69,6 +62,23 @@ static NSString *const kNibName = @"AdImageTextView";
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+
+- (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state {
+  NSLog(@"amoadNativeDidReceive:%@ tag:%@ view:%@ state:%ld", sid, tag, view, (long)state);
+}
+
+- (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state {
+  NSLog(@"amoadNativeIconDidReceive:%@ tag:%@ view:%@ state:%ld", sid, tag, view, (long)state);
+}
+
+- (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state {
+  NSLog(@"amoadNativeImageDidReceive:%@ tag:%@ view:%@ state:%ld", sid, tag, view, (long)state);
+}
+
+- (void)amoadNativeDidClick:(NSString *)sid tag:(NSString *)tag view:(UIView *)view {
+  NSLog(@"amoadNativeDidClick:%@ tag:%@ view:%@", sid, tag, view);
 }
 
 @end
