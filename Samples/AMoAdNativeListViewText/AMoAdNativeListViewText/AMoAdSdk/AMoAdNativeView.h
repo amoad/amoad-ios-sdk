@@ -46,12 +46,27 @@ typedef NS_ENUM(NSInteger, AMoAdNativeResult) {
 @protocol AMoAdNativeAppDelegate
 @optional
 /// 広告受信時に呼び出される
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
+/// @param state 広告受信結果
 - (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state;
 /// アイコン受信時に呼び出される
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
+/// @param state 広告受信結果
 - (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state;
 /// メイン画像受信時に呼び出される
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
+/// @param state 広告受信結果
 - (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state;
 /// 広告クリック時に呼び出される
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
 - (void)amoadNativeDidClick:(NSString *)sid tag:(NSString *)tag view:(UIView *)view;
 @end
 
@@ -59,12 +74,31 @@ typedef NS_ENUM(NSInteger, AMoAdNativeResult) {
 @protocol AMoAdNativeListViewDelegate
 @optional
 /// 広告受信時に呼び出される
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
+/// @param indexPath インデックス
+/// @param state 広告受信結果
 - (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state;
 /// アイコン受信時に呼び出される
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
+/// @param indexPath インデックス
+/// @param state 広告受信結果
 - (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state;
 /// メイン画像受信時に呼び出される
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
+/// @param indexPath インデックス
+/// @param state 広告受信結果
 - (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state;
 /// 広告クリック時に呼び出される
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
+/// @param indexPath インデックス
 - (void)amoadNativeDidClick:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath;
 @end
 
@@ -287,8 +321,21 @@ typedef NS_ENUM(NSInteger, AMoAdNativeResult) {
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 /// @param view 広告ビュー
+- (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view;
+
+/// 【ネイティブ（App）】既存の広告ビューに広告をレンダリングする
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
 /// @param delegate 広告デリゲート
 - (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view delegate:(id<AMoAdNativeAppDelegate>)delegate;
+
+/// 【ネイティブ（App）】既存の広告ビューに広告をレンダリングする（描画情報を設定する）
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
+/// @param coder 広告描画情報
+- (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view coder:(AMoAdNativeViewCoder *)coder;
 
 /// 【ネイティブ（App）】既存の広告ビューに広告をレンダリングする（描画情報を設定する）
 /// @param sid 管理画面から取得した64文字の英数字

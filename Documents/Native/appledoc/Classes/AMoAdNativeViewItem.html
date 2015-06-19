@@ -45,7 +45,11 @@
 	
 	<option value="//api/name/collectionView:cellForItemAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- collectionView:cellForItemAtIndexPath:</option>
 	
+	<option value="//api/name/collectionView:cellForItemAtIndexPath:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- collectionView:cellForItemAtIndexPath:delegate:</option>
+	
 	<option value="//api/name/tableView:cellForRowAtIndexPath:">&nbsp;&nbsp;&nbsp;&nbsp;- tableView:cellForRowAtIndexPath:</option>
+	
+	<option value="//api/name/tableView:cellForRowAtIndexPath:delegate:">&nbsp;&nbsp;&nbsp;&nbsp;- tableView:cellForRowAtIndexPath:delegate:</option>
 	
 	
 	
@@ -77,7 +81,11 @@
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collectionView:cellForItemAtIndexPath:">collectionView:cellForItemAtIndexPath:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collectionView:cellForItemAtIndexPath:delegate:">collectionView:cellForItemAtIndexPath:delegate:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableView:cellForRowAtIndexPath:">tableView:cellForRowAtIndexPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tableView:cellForRowAtIndexPath:delegate:">tableView:cellForRowAtIndexPath:delegate:</a></span></li>
 	
 </ul></li>
 
@@ -143,7 +151,19 @@
 	
 </li><li>
 	<span class="tooltip">
+		<code><a href="#//api/name/tableView:cellForRowAtIndexPath:delegate:">&ndash;&nbsp;tableView:cellForRowAtIndexPath:delegate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/collectionView:cellForItemAtIndexPath:">&ndash;&nbsp;collectionView:cellForItemAtIndexPath:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collectionView:cellForItemAtIndexPath:delegate:">&ndash;&nbsp;collectionView:cellForItemAtIndexPath:delegate:</a></code>
 	</span>
 	
 	
@@ -213,6 +233,89 @@
 		<dl class="argument-def parameter-def">
 			<dt><em>indexPath</em></dt>
 			<dd><p>表示位置</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>UICollectionViewCell * 広告セル</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/collectionView:cellForItemAtIndexPath:delegate:" title="collectionView:cellForItemAtIndexPath:delegate:"></a>
+	<h3 class="subsubtitle method-title">collectionView:cellForItemAtIndexPath:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【リストビュー】広告セルを取得する</p>
+
+
+<p>UICollectionViewDataSource#collectionView:cellForRowAtIndexPath:メソッド内で、
+データソース配列のindexPath番目がAMoAdNativeViewItem型だったら、このメソッドで広告セルを取得する。</p>
+
+<p>サンプルコード</p>
+
+
+<pre><code>- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  if ([self.ads[indexPath.row] isKindOfClass:AMoAdNativeViewItem.class]) {
+    // 広告セル
+    AMoAdNativeViewItem *item = self.ads[indexPath.row];
+    return [item collectionView:collectionView cellForRowAtIndexPath:indexPath];
+  } else {
+    // コンテンツセル
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithIdentifier:@"ABCD" forIndexPath:indexPath];
+    // （コンテンツを設定...）
+    return cell;
+  }
+}
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UICollectionViewCell *)collectionView:(UICollectionView *)<em>collectionView</em> cellForItemAtIndexPath:(NSIndexPath *)<em>indexPath</em> delegate:(id&lt;AMoAdNativeListViewDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>collectionView</em></dt>
+			<dd><p>対象コレクション</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>indexPath</em></dt>
+			<dd><p>表示位置</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>広告デリゲート</p></dd>
 		</dl>
 		
 	</div>
@@ -320,6 +423,89 @@
 	
 </div>
 						
+						<div class="section-method">
+	<a name="//api/name/tableView:cellForRowAtIndexPath:delegate:" title="tableView:cellForRowAtIndexPath:delegate:"></a>
+	<h3 class="subsubtitle method-title">tableView:cellForRowAtIndexPath:delegate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>【リストビュー】広告セルを取得する</p>
+
+
+<p>UITableViewDataSource#tableView:cellForRowAtIndexPath:メソッド内で、
+データソース配列のindexPath番目がAMoAdNativeViewItem型だったら、このメソッドで広告セルを取得する。</p>
+
+<p>サンプルコード</p>
+
+
+<pre><code>- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  if ([self.ads[indexPath.row] isKindOfClass:AMoAdNativeViewItem.class]) {
+    // 広告セル
+    AMoAdNativeViewItem *item = self.ads[indexPath.row];
+    return [item tableView:tableView cellForRowAtIndexPath:indexPath];
+  } else {
+    // コンテンツセル
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ABCD" forIndexPath:indexPath];
+    // （コンテンツを設定...）
+    return cell;
+  }
+}
+</code></pre>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UITableViewCell *)tableView:(UITableView *)<em>tableView</em> cellForRowAtIndexPath:(NSIndexPath *)<em>indexPath</em> delegate:(id&lt;AMoAdNativeListViewDelegate&gt;)<em>delegate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tableView</em></dt>
+			<dd><p>対象テーブル</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>indexPath</em></dt>
+			<dd><p>表示位置</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>delegate</em></dt>
+			<dd><p>広告デリゲート</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>UITableViewCell * 広告セル</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AMoAdNativeView.h</code><br />
+	</div>				
+	
+	
+</div>
+						
 					</div>
 					
 					
@@ -335,7 +521,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2015 AMoAd, Inc.. All rights reserved. (Last updated: 2015-04-03)</span><br />
+						<p><span class="copyright">&copy; 2015 AMoAd, Inc.. All rights reserved. (Last updated: 2015-06-19)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
 						
