@@ -14,6 +14,9 @@
 
 * link:Documents/Banner/Guide.asciidoc[導入ガイド]
 
+:numbered!:
+:sectnums!:
+
 === モジュール ダウンロード
 [horizontal]
 link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdView.h[AMoAdView.h]::
@@ -21,6 +24,9 @@ link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdView.h[AMoAd
 link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd.a[libAMoAd.a]::
 ライブラリ
 link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Banner[サンプルコード]:: 管理画面から取得したsidを入力して動かしてください
+
+:numbered:
+:sectnums:
 
 == ネイティブ広告
 * link:https://rawgit.com/amoad/amoad-ios-sdk/master/Documents/Native/appledoc/index.html[AppleDoc]
