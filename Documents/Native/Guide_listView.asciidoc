@@ -20,6 +20,7 @@ toc::[]
 === デバイス
 以下の環境がサポート対象です。
 
+[options="header"]
 |===
 |デバイス |モデル
 |iPhone |iPhone3GS、iPhone4、iPhone4S、iPhone5、iPhone5S、iPhone5C、iPhone6、iPhone6 Plus
@@ -54,6 +55,7 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/ff7eaaf3-c3e2-5453-47
 === 必須フレームワークの追加￼
 本SDKでは下記のフレームワークの追加が必要です。
 
+[options="header"]
 |===
 |Name |Status
 |AdSupport.framework |Required
@@ -121,6 +123,7 @@ _prepareAdWithSid:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloadi
 
 引数については、下記一覧を参照してください。
 
+[options="header"]
 |===
 |引数名 |表示種類 |説明
 |sid |共通 |管理画面から発行される SID を設定してください
@@ -147,6 +150,7 @@ sid(およびtag)毎にUITableViewとnibNameを管理、広告用セルの登録
 
 引数については、下記一覧を参照のこと。
 
+[options="header"]
 |===
 |引数名 |説明
 |tableView |ViewController内で表示するUITableViewオブジェクト
@@ -185,6 +189,7 @@ __注意）初回時にarrayWithSidで広告を含んだ配列を生成する前
 
 引数については、下記一覧を参照のこと。
 
+[options="header"]
 |===
 |引数名 |説明
 |sid |管理画面から発行される SID を設定してください
@@ -205,6 +210,7 @@ Interface Builderを使用して、広告レイアウトパターン毎にxibフ
 ==== 各パターン毎に必要なレイアウトを作成する
 下記表を参考にレイアウトを作成する
 
+[options="header"]
 |===
 |パターン |オブジェクト |クラス |タグ番号
 |アイコン画像＋テキスト |アイコン画像 |UIImageView |1
