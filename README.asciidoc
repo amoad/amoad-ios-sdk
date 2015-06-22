@@ -7,10 +7,26 @@
 
 == 概要
 
+* link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[一括ダウンロード]
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
+
+== バナー広告
+
+* link:Documents/Banner/Guide.asciidoc[導入ガイド]
+
+=== モジュール ダウンロード
+[horizontal]
+link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdView.h[AMoAdView.h]::
+メインヘッダ
+link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd.a[libAMoAd.a]::
+ライブラリ
+link:https://github.com/caamoad/ultima-ios-sdk/tree/master/Sample/Banner[サンプルコード]:: 管理画面から取得したsidを入力して動かしてください
 
 == ネイティブ広告
 * link:https://rawgit.com/amoad/amoad-ios-sdk/master/Documents/Native/appledoc/index.html[AppleDoc]
+
+:numbered!:
+:sectnums!:
 
 === ネイティブApp
 
@@ -29,3 +45,4 @@ link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdNativeView.h
 メインヘッダ
 link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd.a[libAMoAd.a]::
 ライブラリ
+link:https://github.com/caamoad/ultima-ios-sdk/tree/master/Sample/Native[サンプルコード]:: ネイティブ広告の種類に応じたサンプルコードに、管理画面から取得したsidを入力して動かしてください

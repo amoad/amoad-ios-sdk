@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9AEE8221AC556FF00D74AD0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AEE8211AC556FF00D74AD0 /* StoreKit.framework */; };
+		E9C0C5AB1A724403005E06B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C0C5AA1A724403005E06B0 /* main.m */; };
+		E9C0C5AE1A724403005E06B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C0C5AD1A724403005E06B0 /* AppDelegate.m */; };
+		E9C0C5B11A724403005E06B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C0C5B01A724403005E06B0 /* ViewController.m */; };
+		E9C0C5B41A724403005E06B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9C0C5B21A724403005E06B0 /* Main.storyboard */; };
+		E9C0C5B61A724403005E06B0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9C0C5B51A724403005E06B0 /* Images.xcassets */; };
+		E9C0C5B91A724403005E06B0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C0C5B71A724403005E06B0 /* LaunchScreen.xib */; };
+		E9C0C5C51A724403005E06B0 /* AMoAdNativeAppIconTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C0C5C41A724403005E06B0 /* AMoAdNativeAppIconTextTests.m */; };
+		E9C0C5D01A724487005E06B0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C0C5CF1A724487005E06B0 /* AdSupport.framework */; };
+		E9C0C5D21A72448F005E06B0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C0C5D11A72448F005E06B0 /* ImageIO.framework */; };
+		E9C0C5D61A7244A9005E06B0 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C0C5D51A7244A9005E06B0 /* libAMoAd.a */; };
+		E9C0C5D81A72456E005E06B0 /* AdIconTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9C0C5D71A72456E005E06B0 /* AdIconTextView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9C0C5BF1A724403005E06B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9C0C59D1A724403005E06B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9C0C5A41A724403005E06B0;
+			remoteInfo = AMoAdNativeAppIconText;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9AEE8211AC556FF00D74AD0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E9C0C5A51A724403005E06B0 /* AMoAdNativeAppIconText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdNativeAppIconText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C0C5A91A724403005E06B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C0C5AA1A724403005E06B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9C0C5AC1A724403005E06B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9C0C5AD1A724403005E06B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9C0C5AF1A724403005E06B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9C0C5B01A724403005E06B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9C0C5B31A724403005E06B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9C0C5B51A724403005E06B0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E9C0C5B81A724403005E06B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E9C0C5BE1A724403005E06B0 /* AMoAdNativeAppIconTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMoAdNativeAppIconTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C0C5C31A724403005E06B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C0C5C41A724403005E06B0 /* AMoAdNativeAppIconTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMoAdNativeAppIconTextTests.m; sourceTree = "<group>"; };
+		E9C0C5CF1A724487005E06B0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E9C0C5D11A72448F005E06B0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E9C0C5D31A7244A9005E06B0 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdLogger.h; path = AMoAdSdk/AMoAdLogger.h; sourceTree = "<group>"; };
+		E9C0C5D41A7244A9005E06B0 /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdNativeView.h; path = AMoAdSdk/AMoAdNativeView.h; sourceTree = "<group>"; };
+		E9C0C5D51A7244A9005E06B0 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAMoAd.a; path = AMoAdSdk/libAMoAd.a; sourceTree = "<group>"; };
+		E9C0C5D71A72456E005E06B0 /* AdIconTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdIconTextView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9C0C5A21A724403005E06B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9AEE8221AC556FF00D74AD0 /* StoreKit.framework in Frameworks */,
+				E9C0C5D61A7244A9005E06B0 /* libAMoAd.a in Frameworks */,
+				E9C0C5D21A72448F005E06B0 /* ImageIO.framework in Frameworks */,
+				E9C0C5D01A724487005E06B0 /* AdSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C0C5BB1A724403005E06B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9C0C59C1A724403005E06B0 = {
+			isa = PBXGroup;
+			children = (
+				E9AEE8211AC556FF00D74AD0 /* StoreKit.framework */,
+				E9C0C5D11A72448F005E06B0 /* ImageIO.framework */,
+				E9C0C5CF1A724487005E06B0 /* AdSupport.framework */,
+				E9C0C5A71A724403005E06B0 /* AMoAdNativeAppIconText */,
+				E9C0C5C11A724403005E06B0 /* AMoAdNativeAppIconTextTests */,
+				E9C0C5A61A724403005E06B0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9C0C5A61A724403005E06B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0C5A51A724403005E06B0 /* AMoAdNativeAppIconText.app */,
+				E9C0C5BE1A724403005E06B0 /* AMoAdNativeAppIconTextTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9C0C5A71A724403005E06B0 /* AMoAdNativeAppIconText */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0C5D71A72456E005E06B0 /* AdIconTextView.xib */,
+				E9C0C5CE1A724422005E06B0 /* AMoAdSdk */,
+				E9C0C5AC1A724403005E06B0 /* AppDelegate.h */,
+				E9C0C5AD1A724403005E06B0 /* AppDelegate.m */,
+				E9C0C5AF1A724403005E06B0 /* ViewController.h */,
+				E9C0C5B01A724403005E06B0 /* ViewController.m */,
+				E9C0C5B21A724403005E06B0 /* Main.storyboard */,
+				E9C0C5B51A724403005E06B0 /* Images.xcassets */,
+				E9C0C5B71A724403005E06B0 /* LaunchScreen.xib */,
+				E9C0C5A81A724403005E06B0 /* Supporting Files */,
+			);
+			path = AMoAdNativeAppIconText;
+			sourceTree = "<group>";
+		};
+		E9C0C5A81A724403005E06B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0C5A91A724403005E06B0 /* Info.plist */,
+				E9C0C5AA1A724403005E06B0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9C0C5C11A724403005E06B0 /* AMoAdNativeAppIconTextTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0C5C41A724403005E06B0 /* AMoAdNativeAppIconTextTests.m */,
+				E9C0C5C21A724403005E06B0 /* Supporting Files */,
+			);
+			path = AMoAdNativeAppIconTextTests;
+			sourceTree = "<group>";
+		};
+		E9C0C5C21A724403005E06B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0C5C31A724403005E06B0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9C0C5CE1A724422005E06B0 /* AMoAdSdk */ = {
+			isa = PBXGroup;
+			children = (
+				E9C0C5D31A7244A9005E06B0 /* AMoAdLogger.h */,
+				E9C0C5D41A7244A9005E06B0 /* AMoAdNativeView.h */,
+				E9C0C5D51A7244A9005E06B0 /* libAMoAd.a */,
+			);
+			name = AMoAdSdk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9C0C5A41A724403005E06B0 /* AMoAdNativeAppIconText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C0C5C81A724403005E06B0 /* Build configuration list for PBXNativeTarget "AMoAdNativeAppIconText" */;
+			buildPhases = (
+				E9C0C5A11A724403005E06B0 /* Sources */,
+				E9C0C5A21A724403005E06B0 /* Frameworks */,
+				E9C0C5A31A724403005E06B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMoAdNativeAppIconText;
+			productName = AMoAdNativeAppIconText;
+			productReference = E9C0C5A51A724403005E06B0 /* AMoAdNativeAppIconText.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9C0C5BD1A724403005E06B0 /* AMoAdNativeAppIconTextTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C0C5CB1A724403005E06B0 /* Build configuration list for PBXNativeTarget "AMoAdNativeAppIconTextTests" */;
+			buildPhases = (
+				E9C0C5BA1A724403005E06B0 /* Sources */,
+				E9C0C5BB1A724403005E06B0 /* Frameworks */,
+				E9C0C5BC1A724403005E06B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9C0C5C01A724403005E06B0 /* PBXTargetDependency */,
+			);
+			name = AMoAdNativeAppIconTextTests;
+			productName = AMoAdNativeAppIconTextTests;
+			productReference = E9C0C5BE1A724403005E06B0 /* AMoAdNativeAppIconTextTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9C0C59D1A724403005E06B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "AMoAd, Inc.";
+				TargetAttributes = {
+					E9C0C5A41A724403005E06B0 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E9C0C5BD1A724403005E06B0 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E9C0C5A41A724403005E06B0;
+					};
+				};
+			};
+			buildConfigurationList = E9C0C5A01A724403005E06B0 /* Build configuration list for PBXProject "AMoAdNativeAppIconText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9C0C59C1A724403005E06B0;
+			productRefGroup = E9C0C5A61A724403005E06B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9C0C5A41A724403005E06B0 /* AMoAdNativeAppIconText */,
+				E9C0C5BD1A724403005E06B0 /* AMoAdNativeAppIconTextTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9C0C5A31A724403005E06B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C0C5B41A724403005E06B0 /* Main.storyboard in Resources */,
+				E9C0C5D81A72456E005E06B0 /* AdIconTextView.xib in Resources */,
+				E9C0C5B91A724403005E06B0 /* LaunchScreen.xib in Resources */,
+				E9C0C5B61A724403005E06B0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C0C5BC1A724403005E06B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9C0C5A11A724403005E06B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C0C5B11A724403005E06B0 /* ViewController.m in Sources */,
+				E9C0C5AE1A724403005E06B0 /* AppDelegate.m in Sources */,
+				E9C0C5AB1A724403005E06B0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C0C5BA1A724403005E06B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C0C5C51A724403005E06B0 /* AMoAdNativeAppIconTextTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9C0C5C01A724403005E06B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9C0C5A41A724403005E06B0 /* AMoAdNativeAppIconText */;
+			targetProxy = E9C0C5BF1A724403005E06B0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9C0C5B21A724403005E06B0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9C0C5B31A724403005E06B0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9C0C5B71A724403005E06B0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9C0C5B81A724403005E06B0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9C0C5C61A724403005E06B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9C0C5C71A724403005E06B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9C0C5C91A724403005E06B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AMoAdNativeAppIconText/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdNativeAppIconText/AMoAdSdk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9C0C5CA1A724403005E06B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AMoAdNativeAppIconText/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdNativeAppIconText/AMoAdSdk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E9C0C5CC1A724403005E06B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AMoAdNativeAppIconTextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdNativeAppIconText.app/AMoAdNativeAppIconText";
+			};
+			name = Debug;
+		};
+		E9C0C5CD1A724403005E06B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AMoAdNativeAppIconTextTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdNativeAppIconText.app/AMoAdNativeAppIconText";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9C0C5A01A724403005E06B0 /* Build configuration list for PBXProject "AMoAdNativeAppIconText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C0C5C61A724403005E06B0 /* Debug */,
+				E9C0C5C71A724403005E06B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C0C5C81A724403005E06B0 /* Build configuration list for PBXNativeTarget "AMoAdNativeAppIconText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C0C5C91A724403005E06B0 /* Debug */,
+				E9C0C5CA1A724403005E06B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9C0C5CB1A724403005E06B0 /* Build configuration list for PBXNativeTarget "AMoAdNativeAppIconTextTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C0C5CC1A724403005E06B0 /* Debug */,
+				E9C0C5CD1A724403005E06B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9C0C59D1A724403005E06B0 /* Project object */;
+}
