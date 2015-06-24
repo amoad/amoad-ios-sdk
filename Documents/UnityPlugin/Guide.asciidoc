@@ -36,7 +36,7 @@ TIP: 広告の表示には別途、AMoAd SDKが必要です。
 == パッケージのダウンロード
 こちらのURLより取得できます。
 
-link:https://github.com/amoad/amoad-ios-sdk/blob/master/UnityPlugin/AMoAdUnityPlugin.unitypackage[AMoAdUnityPlugin.unitypackage]
+link:https://github.com/amoad/amoad-ios-sdk/raw/master/UnityPlugin/AMoAdUnityPlugin.unitypackage[AMoAdUnityPlugin.unitypackage]
 
 == サンプルアプリケーションの使用方法
 === AMoAdUnityPluginSample
