@@ -1,4 +1,4 @@
-:Version: 3.6.3
+:Version: 3.7.0
 
 = AMoAd SDK {version} Guide for iOS
 
@@ -9,6 +9,7 @@
 
 * link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[一括ダウンロード]
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
+** [NEW] バナー広告がUnityに対応しました（詳しくは<<UnityPlugin, こちら>>）。
 
 == バナー広告
 
@@ -52,3 +53,9 @@ link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdNativeView.h
 link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd.a[libAMoAd.a]::
 ライブラリ
 link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Native[サンプルコード]:: ネイティブ広告の種類に応じたサンプルコードに、管理画面から取得したsidを入力して動かしてください
+
+== プラグインなど
+=== Unityプラグイン [[UnityPlugin]]
+* link:Documents/UnityPlugin/Guide.asciidoc[導入ガイド]
+* link:https://github.com/amoad/amoad-ios-sdk/blob/master/UnityPlugin/AMoAdUnityPlugin.unitypackage[パッケージのダウンロード]
+* link:https://github.com/amoad/amoad-ios-sdk/blob/master/Samples/UnityPlugin[サンプルコード]
