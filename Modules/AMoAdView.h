@@ -5,8 +5,39 @@
 #import <UIKit/UIKit.h>
 @class AMoAdView;
 
+/// 広告サイズ
+typedef NS_ENUM(NSInteger, AMoAdBannerSize) {
+  AMoAdBannerSizeB320x50 = 0,
+  AMoAdBannerSizeB320x100 = 1,
+  AMoAdBannerSizeB300x250 = 2,
+  AMoAdBannerSizeB728x90 = 3,
+  AMoAdBannerSizeB300x100 = 4,
+};
+
+/// 水平方向の広告表示位置
+typedef NS_ENUM(NSInteger, AMoAdHorizontalAlign) {
+  AMoAdHorizontalAlignNone = 0,
+  AMoAdHorizontalAlignLeft = 1,
+  AMoAdHorizontalAlignCenter = 2,
+  AMoAdHorizontalAlignRight = 3,
+};
+
+/// 垂直方向の広告表示位置
+typedef NS_ENUM(NSInteger, AMoAdVerticalAlign) {
+  AMoAdVerticalAlignNone = 0,
+  AMoAdVerticalAlignTop = 1,
+  AMoAdVerticalAlignMiddle = 2,
+  AMoAdVerticalAlignBottom = 3,
+};
+
+/// 広告サイズの調整
+typedef NS_ENUM(NSInteger, AMoAdAdjustMode) {
+  AMoAdAdjustModeFixed = 0,
+  AMoAdAdjustModeResponsive = 1,
+};
+
 /// ローテーション時トランジション
-typedef enum {
+typedef NS_ENUM(NSInteger, AMoAdRotateTransition) {
   /// トランジション「なし」
   AMoAdRotateTransitionNone = UIViewAnimationTransitionNone,
   /// トランジション「左フリップ」
@@ -17,15 +48,15 @@ typedef enum {
   AMoAdRotateTransitionCurlUp = UIViewAnimationTransitionCurlUp,
   /// トランジション「巻き下げ」
   AMoAdRotateTransitionCurlDown = UIViewAnimationTransitionCurlDown,
-} AMoAdRotateTransition;
+};
 
 /// クリック時トランジション
-typedef enum {
+typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
   /// トランジション「なし」
-  AMoAdClickTransitionNone,
+  AMoAdClickTransitionNone = 0,
   /// トランジション「ジャンプ」
-  AMoAdClickTransitionJump,
-} AMoAdClickTransition;
+  AMoAdClickTransitionJump = 1,
+};
 
 
 /// AMoAdViewデリゲートプロトコル
@@ -53,55 +84,55 @@ typedef enum {
 @interface AMoAdView : UIImageView
 
 /// AMoAd Webサイトで発行されるID（必須）
-@property (nonatomic, strong) NSString *sid;
+@property (nonatomic,readwrite,strong) NSString *sid;
 
 /// デリゲート
-@property (nonatomic, weak) id delegate;
+@property (nonatomic,readwrite,weak) id delegate;
 
-/// ローテーション時のアニメーション
-@property (nonatomic, assign) AMoAdRotateTransition rotateTransition;
+/// ローテーション時トランジション
+@property (nonatomic,readwrite,assign) AMoAdRotateTransition rotateTransition;
 
-/// クリック時のアニメーション
-@property (nonatomic, assign) AMoAdClickTransition clickTransition;
+/// クリック時トランジション
+@property (nonatomic,readwrite,assign) AMoAdClickTransition clickTransition;
 
-/// 位置とサイズで初期化
-- (id)initWithFrame:(CGRect)frame;
+/// 水平方向の広告表示位置
+@property (nonatomic,readwrite,assign) AMoAdHorizontalAlign horizontalAlign;
 
-/// 初期表示画像で初期化
-- (id)initWithImage:(UIImage *)image;
+/// 垂直方向の広告表示位置
+@property (nonatomic,readwrite,assign) AMoAdVerticalAlign verticalAlign;
 
-/// 初期表示画像で初期化（ハイライト指定）
-- (id)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage;
+/// 広告サイズの調整
+@property (nonatomic,readwrite,assign) AMoAdAdjustMode adjustMode;
 
-// 使用されていないメソッド（互換性のために残している）
-typedef enum {
-  AMoAdViewAnimationTransitionNone DEPRECATED_ATTRIBUTE = UIViewAnimationTransitionNone,
-  AMoAdViewAnimationTransitionFlipFromLeft DEPRECATED_ATTRIBUTE = UIViewAnimationTransitionFlipFromLeft,
-  AMoAdViewAnimationTransitionFlipFromRight DEPRECATED_ATTRIBUTE = UIViewAnimationTransitionFlipFromRight,
-  AMoAdViewAnimationTransitionCurlUp DEPRECATED_ATTRIBUTE = UIViewAnimationTransitionCurlUp,
-  AMoAdViewAnimationTransitionCurlDown DEPRECATED_ATTRIBUTE = UIViewAnimationTransitionCurlDown,
-} AMoAdViewAnimationTransition DEPRECATED_ATTRIBUTE;
-@property (nonatomic, assign) AMoAdViewAnimationTransition rotationAnimationTransition DEPRECATED_ATTRIBUTE;
-typedef enum {
-  AMoAdViewClickAnimationTransitionNone DEPRECATED_ATTRIBUTE,
-  AMoAdViewClickAnimationTransitionJump DEPRECATED_ATTRIBUTE,
-} AMoAdViewClickAnimationTransition DEPRECATED_ATTRIBUTE;
-@property (nonatomic, assign) AMoAdViewClickAnimationTransition clickAnimationTransition DEPRECATED_ATTRIBUTE;
-@property (nonatomic, assign) BOOL enableModal DEPRECATED_ATTRIBUTE;
-@property (nonatomic, weak) id rootController DEPRECATED_ATTRIBUTE;
-typedef enum {
-  AMoAdContentSizeIdentifierPortrait DEPRECATED_ATTRIBUTE = 1,
-  AMoAdContentSizeIdentifierLandscape DEPRECATED_ATTRIBUTE = 2,
-} AMoAdContentSizeIdentifier DEPRECATED_ATTRIBUTE;
-@property (nonatomic, assign) AMoAdContentSizeIdentifier currentContentSizeIdentifier DEPRECATED_ATTRIBUTE;
-@property (nonatomic, assign) BOOL enableRotation DEPRECATED_ATTRIBUTE;
-- (void)displayAd DEPRECATED_ATTRIBUTE;
-- (void)startRotation DEPRECATED_ATTRIBUTE;
-- (void)stopRotation DEPRECATED_ATTRIBUTE;
+/// バナーサイズ
+@property (nonatomic,readwrite,assign) CGSize bannerSize;
+
+
+/// サイズと位置で初期化
+- (id)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode;
+
+/// サイズと座標で初期化
+- (id)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y;
+
+/// 広告を表示する
+- (void)show;
+
+/// 広告を非表示にする
+- (void)hide;
+
+
++ (CGSize)sizeWithBannerSize:(AMoAdBannerSize)bannerSize;
+
+
+// 非推奨のメソッド
+- (id)initWithFrame:(CGRect)frame DEPRECATED_ATTRIBUTE;
 
 /// サポート外のメソッド
 - (id)init __attribute__((unavailable("This method is not available.")));
 /// サポート外のメソッド
 - (id)initWithCoder:(NSCoder *)aDecoder __attribute__((availability(ios,unavailable,message="This method is not available.")));
+- (id)initWithImage:(UIImage *)image __attribute__((unavailable("This method is not available.")));
+- (id)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage __attribute__((unavailable("This method is not available.")));
+
 
 @end
