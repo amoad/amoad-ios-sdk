@@ -1,11 +1,9 @@
-:Version: 0.9.0
+:Version: 1.0.0
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
 
 = AMoAd Unity Plugin {version} Guide
-
-NOTE: Android版は近日公開予定です。Androidと記載のある箇所は未実装です。
 
 toc::[]
 
@@ -107,8 +105,6 @@ image:images/U4_1_1_5.png[
 [horizontal]
 AMoAdUnityPlugin.cs::
 プラグインのメインクラス
-iOS/AMoAdUnityPlugin.h::
-iOS版プラグインブリッジのヘッダ
 iOS/AMoAdUnityPlugin.mm::
 iOS版プラグインブリッジの実装
 Android/AMoAdUnityPlugin.jar::
