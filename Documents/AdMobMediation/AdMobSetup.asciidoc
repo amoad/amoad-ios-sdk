@@ -76,7 +76,7 @@ image:images/admin4.png[width="800px"]
 * AMoAd SDK の導入方法については、link:https://github.com/amoad/amoad-ios-sdk/blob/master/Documents/Banner/Guide.asciidoc[AMoAd SDK導入]を参考にしてください。
 
 === AMoAd AdMob Mediation アダプタを導入する
-. プロジェクトナビゲーターを開き、libAMoAdGmAdapter_{Version}.a をドラッグ＆ドロップします。 +
+. プロジェクトナビゲーターを開き、libAMoAdGmAdapter.a をドラッグ＆ドロップします。 +
 ターゲットのLink Binary With Libraries には自動的に追加されます。 +
 ※ 自動的に追加されなかった場合は＋ボタンから手動で追加してください。
 . GADBannerView のadUnitID プロパティにはAdMob 管理画面の広告ユニット一覧に表示
