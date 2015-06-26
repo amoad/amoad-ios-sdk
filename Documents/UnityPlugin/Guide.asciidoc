@@ -192,6 +192,15 @@ public class AMoAdUnityPluginSample : MonoBehaviour {
 |imageName |string 2+|初期表示画像ファイル名（Androidアプリを作成する場合は、アルファベットの小文字で始まる名前）
 |x |int 2+|x座標（hAlignがNoneのときのみ有効）
 |y |int 2+|y座標（vAlignがNoneのときのみ有効）
+.6+|androidRotateTrans .6+|AMoAdUnityPlugin .AndroidRotateTransition 2+|広告ローテーション時のトランジションを設定する
+|None |トランジション「なし」（デフォルト）
+|Alpha |トランジション「透過」
+|Rotate |トランジション「回転」
+|Scale |トランジション「拡大」
+|Translate |トランジション「スライド・アップ」
+.3+|androidClickTrans .3+|AMoAdUnityPlugin .AndroidClickTransition 2+|広告クリック時のトランジションを設定する
+|None |トランジション「なし」（デフォルト）
+|Jump |トランジション「ジャンプ」
 |===
 
 TIP: 広告サイズの調整にレスポンシブを選択すると、端末のサイズに合わせて広告が拡大縮小します。iPhone 5以前の横幅（320）を基準とします。
