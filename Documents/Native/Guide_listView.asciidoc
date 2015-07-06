@@ -1,4 +1,4 @@
-:Version: 3.7.0
+:Version: 3.7.1
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
@@ -60,6 +60,7 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/ff7eaaf3-c3e2-5453-47
 |Name |Status
 |AdSupport.framework |Required
 |ImageIO.framework |Required
+|StoreKit.framework |Required
 |===
 
 追加先は、_General_の_Linked Frameworks and Libraries_もしくは
@@ -71,7 +72,7 @@ _Build Phases_の_Link Binary With Libraries_にて
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/f3800a0e-1ba5-21b6-2e66-9f01b6922edb.png[
 "追加先2", width="100%"]
 
-上記のようにImageIO.framework、AdSupport.framework、libAMoAd.a（SDKの追加時に説明済み）が追加されていれば完了です。
+上記のようにImageIO.framework、AdSupport.framework、StoreKit.framework、libAMoAd.a（SDKの追加時に説明済み）が追加されていれば完了です。
 
 === リンクオプションの追加
 
@@ -374,6 +375,61 @@ originalArrayとして渡す場合
   }
 }
 ----
+
+=== 広告デリゲートを設定する
+AMoAdNativeListViewDelegate プロトコルを実装したオブジェクトを cellForRowAtIndexPath メソッドのdelegate引数に指定します。
+
+==== 実装例
+[source,objective-c]
+----
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate, AMoAdNativeListViewDelegate> // プロトコルを実装する
+@end
+
+@implementation ViewController
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+  UITableViewCell *cell = nil;
+  if ([self.tableArray[indexPath.row] isKindOfClass:[AMoAdNativeViewItem class]]) {
+    // [SDK] 広告
+    AMoAdNativeViewItem *item = self.tableArray[indexPath.row];
+    cell = [item tableView:tableView cellForRowAtIndexPath:indexPath delegate:self];
+  } else {
+    // コンテンツセル...
+  }
+  if (indexPath.row >= self.tableArray.count - 1) {
+    [self onAdd];
+  }
+  return cell;
+}
+
+// 広告情報受信
+- (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state {
+}
+
+// アイコン画像受信
+- (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state {
+}
+
+// メイン画像受信
+- (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state {
+}
+
+// クリック
+- (void)amoadNativeDidClick:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath {
+}
+
+@end
+----
+
+==== タイミング
+
+image:images/callback_timing.png[
+"Delegate Timing", width=90%]
+
+==== ステータス
+
+image:images/callback_status.png[
+"Delegate Status", width=90%]
 
 === 広告のタップ回数を設定する
 
