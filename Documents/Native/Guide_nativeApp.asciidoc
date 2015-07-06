@@ -1,4 +1,4 @@
-:Version: 3.7.0
+:Version: 3.7.1
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
@@ -60,6 +60,7 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/ff7eaaf3-c3e2-5453-47
 |Name |Status
 |AdSupport.framework |Required
 |ImageIO.framework |Required
+|StoreKit.framework |Required
 |===
 
 追加先は、_General_の_Linked Frameworks and Libraries_もしくは
@@ -71,7 +72,7 @@ _Build Phases_の_Link Binary With Libraries_にて
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/f3800a0e-1ba5-21b6-2e66-9f01b6922edb.png[
 "追加先2", width="100%"]
 
-上記のようにImageIO.framework、AdSupport.framework、libAMoAd.a（SDKの追加時に説明済み）が追加されていれば完了です。
+上記のようにImageIO.framework、AdSupport.framework、StoreKit.framework、libAMoAd.a（SDKの追加時に説明済み）が追加されていれば完了です。
 
 === リンクオプションの追加
 
@@ -169,25 +170,6 @@ image:images/n-link.png[
 === 広告を表示する
 下記は広告を表示するサンプルです。
 
-* リソース名を指定してViewを生成する
-
-.ViewController.m
-[source,objective-c]
-----
-- (void)viewDidLoad {
-  UIView *adView =
-    [[AMoAdNativeViewManager sharedManager]
-      viewWithSid:kSid tag:kTag nibName:kNibName onFailure:
-      ^(NSString *sid, NSString *tag, UIView *view) {
-        NSLog(@"onFailure: sid=%@ tag=%@ view=%@", sid, tag, view);
-      }];
-  [adView setFrame:CGRectMake(0, 100, 320, 100)];
-  [self.view addSubview:adView];
-}
-----
-
-* 既存のViewを指定して広告をレンダリングする
-
 広告がメインビューに埋め込まれている場合、
 IBOutletで取り出したViewに対して描画する
 
@@ -195,13 +177,55 @@ IBOutletで取り出したViewに対して描画する
 [source,objective-c]
 ----
 - (void)viewDidLoad {
-  [[AMoAdNativeViewManager sharedManager]
-  renderAdWithSid:kSid tag:kTag view:self.adView onFailure:
-  ^(NSString *sid, NSString *tag, UIView *view) {
-    NSLog(@"onFailure: sid=%@ tag=%@ view=%@", sid, tag, view);
-    }];
-  }
+  // [SDK] 広告取得描画（既にあるViewに描画する）
+  [[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag view:self.adView delegate:self];
 ----
+
+=== 広告デリゲートを設定する
+AMoAdNativeAppDelegate プロトコルを実装したオブジェクトを renderAd メソッドのdelegate引数に指定します。
+
+==== 実装例
+[source,objective-c]
+----
+@interface ViewController () <AMoAdNativeAppDelegate> // プロトコルを実装する
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+  // ...
+  // [SDK] 広告取得描画（既にあるViewに描画する）
+  [[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag view:self.adView delegate:self];
+}
+
+// 広告情報受信
+- (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state {
+}
+
+// アイコン画像受信
+- (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state {
+}
+
+// メイン画像受信
+- (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state {
+}
+
+// クリック
+- (void)amoadNativeDidClick:(NSString *)sid tag:(NSString *)tag view:(UIView *)view {
+}
+
+@end
+----
+
+==== タイミング
+
+image:images/callback_timing.png[
+"Delegate Timing", width=90%]
+
+==== ステータス
+
+image:images/callback_status.png[
+"Delegate Status", width=90%]
 
 === 広告のタップ回数を設定する
 
@@ -214,9 +238,10 @@ AMoAdNativeViewCoder *coder = [[AMoAdNativeViewCoder alloc] init];
 coder.numberOfTapsRequired = 2; // タップ回数を指定する
 
 // [SDK] 広告取得描画（既にあるViewに描画する）
-[[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag1 view:self.adView01
-  coder:coder   // ここに広告描画情報を指定する
-  onFailure:nil];
+[[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag
+  view:self.adView
+  coder:coder   // 描画情報を指定する
+  delegate:self];
 ----
 
 === 文字列に属性を設定する
@@ -248,9 +273,10 @@ coder.titleLongAttributes = @{ NSForegroundColorAttributeName : [UIColor redColo
                                NSParagraphStyleAttributeName : paragraphStyle };
 
 // [SDK] 広告取得描画（既にあるViewに描画する）
-[[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag1 view:self.adView01 coder:coder onFailure:^(NSString *sid, NSString *tag, UIView *view) {
-  NSLog(@"【%@】広告描画失敗！", [[NSBundle mainBundle] bundleIdentifier]);
-}];
+[[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag
+  view:self.adView
+  coder:coder   // 描画情報を指定する
+  delegate:self];
 ----
 
 === 広告表示を更新する
