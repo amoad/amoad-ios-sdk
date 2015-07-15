@@ -1,4 +1,4 @@
-:Version: 3.7.1
+:Version: 3.7.2
 
 = AMoAd SDK {version} Guide for iOS
 
@@ -9,7 +9,8 @@
 
 * link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[一括ダウンロード]
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
-** [NEW] ネイティブ広告デリゲートを追加しました（詳しくは、link:Documents/Native/Guide_nativeApp.asciidoc#-12[ネイティブ（App）] / link:Documents/Native/Guide_listView.asciidoc#-13[リストビュー]）。
+** [NEW] renderAdの失敗Block（onFailure）を指定するメソッドを誤って削除したので、復活させました（詳しくはlink:Documents/Native/Guide_nativeApp.asciidoc#renderAd[こちら]を参照ください）。大変ご迷惑をおかけいたしました。
+** ネイティブ広告デリゲートを追加しました（詳しくは、link:Documents/Native/Guide_nativeApp.asciidoc#-12[ネイティブ（App）] / link:Documents/Native/Guide_listView.asciidoc#-13[リストビュー]）。
 ** バナー広告がUnityに対応しました（詳しくは<<UnityPlugin, こちら>>）。
 
 NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] 。

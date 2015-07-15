@@ -1,4 +1,4 @@
-:Version: 3.7.1
+:Version: 3.7.2
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
@@ -167,13 +167,23 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/55e0d980-ff12-2134-4f
 image:images/n-link.png[
 "Interface Builder", width=320]
 
-=== 広告を表示する
+=== 広告を表示する[[renderAd]]
 下記は広告を表示するサンプルです。
 
 広告がメインビューに埋め込まれている場合、
 IBOutletで取り出したViewに対して描画する
 
-.ViewController.m
+.ViewController.m （失敗Block）
+[source,objective-c]
+----
+- (void)viewDidLoad {
+  // [SDK] 広告取得描画（既にあるViewに描画する）
+  [[AMoAdNativeViewManager sharedManager] renderAdWithSid:kSid tag:kTag view:self.adView onFailure:^(NSString *sid, NSString *tag, UIView *view) {
+    NSLog(@"onFailure: sid=%@ tag=%@ view=%@", sid, tag, view);
+  }];
+----
+
+.ViewController.m (デリゲート)
 [source,objective-c]
 ----
 - (void)viewDidLoad {
