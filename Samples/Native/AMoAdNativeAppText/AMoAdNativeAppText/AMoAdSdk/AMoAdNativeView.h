@@ -327,6 +327,21 @@ typedef NS_ENUM(NSInteger, AMoAdNativeResult) {
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 /// @param view 広告ビュー
+/// @param onFailure 広告に失敗した時のコールバック関数
+- (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
+
+/// 【ネイティブ（App）】既存の広告ビューに広告をレンダリングする（描画情報を設定する）
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
+/// @param coder 広告描画情報
+/// @param onFailure 広告に失敗した時のコールバック関数
+- (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view coder:(AMoAdNativeViewCoder *)coder onFailure:(void (^)(NSString *sid, NSString *tag, UIView *view))onFailure;
+
+/// 【ネイティブ（App）】既存の広告ビューに広告をレンダリングする
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
+/// @param view 広告ビュー
 /// @param delegate 広告デリゲート
 - (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view delegate:(id<AMoAdNativeAppDelegate>)delegate;
 
