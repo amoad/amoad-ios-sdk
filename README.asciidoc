@@ -8,7 +8,7 @@
 == 概要
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases/tag/v3.7.2%2B[安定版ダウンロードページ]
-* link:https://github.com/amoad/amoad-ios-sdk/releases/tag/v3.7.3[最新版ダウンロードページ]
+* link:https://github.com/amoad/amoad-ios-sdk/releases/tag/v3.7.4[最新版ダウンロードページ]
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
 ** [NEW] renderAdの失敗Block（onFailure）を指定するメソッドを誤って削除したので、復活させました（詳しくはlink:Documents/Native/Guide_nativeApp.asciidoc#renderAd[こちら]を参照ください）。大変ご迷惑をおかけいたしました。
 ** ネイティブ広告デリゲートを追加しました（詳しくは、link:Documents/Native/Guide_nativeApp.asciidoc#-12[ネイティブ（App）] / link:Documents/Native/Guide_listView.asciidoc#-13[リストビュー]）。
@@ -62,8 +62,11 @@ link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Native[サンプ
 == プラグインなど
 === Unityプラグイン [[UnityPlugin]]
 * link:Documents/UnityPlugin/Guide.asciidoc[導入ガイド]
-* https://github.com/amoad/amoad-ios-sdk/raw/master/UnityPlugin/AMoAdUnityPlugin.unitypackage[パッケージのダウンロード]
+* link:https://github.com/amoad/amoad-ios-sdk/raw/master/UnityPlugin/AMoAdUnityPlugin.unitypackage[パッケージのダウンロード]
 * link:https://github.com/amoad/amoad-ios-sdk/blob/master/Samples/UnityPlugin[サンプルコード]
+
+=== Cocos2d-xモジュールα版 [[UnityPlugin]]
+* link:https://github.com/amoad/amoad-ios-sdk/raw/master/Cocos2dxModule/AMoAdCocos2dxModule.zip[パッケージのダウンロード] 導入につきましては営業担当にお問い合わせください
 
 === AdMobメディエーション アダプタ
 * link:Documents/AdMobMediation/AdMobSetup.asciidoc[導入ガイド]
