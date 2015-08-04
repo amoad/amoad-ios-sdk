@@ -40,11 +40,11 @@ iOS 6、7、8、8.3
 本SDKは以下のファイルから構成されています。
 
 [horizontal]
-Documents/Banner/Guide.asciidoc::
+Documents/Display/Guide.asciidoc::
 本ドキュメント
-link:Samples/Banner/AMoAdSample/[Samples/Banner/AMoAdSample]::
+link:Samples/Display/AMoAdSample/[Samples/Display/AMoAdSample]::
 サンプルプログラム
-link:Samples/Banner/AMoAdSampleSwift/[Samples/Banner/AMoAdSampleSwift]::
+link:Samples/Display/AMoAdSampleSwift/[Samples/Display/AMoAdSampleSwift]::
 サンプルプログラム（Swift）
 link:Modules/AMoAdView.h[Modules/AMoAdView.h]::
 ヘッダ
