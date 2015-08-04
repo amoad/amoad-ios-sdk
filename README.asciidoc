@@ -18,7 +18,7 @@ NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:ht
 
 == バナー広告
 
-* link:Documents/Banner/Guide.asciidoc[導入ガイド]
+* link:Documents/Display/Guide.asciidoc[導入ガイド]
 
 :numbered!:
 :sectnums!:
@@ -29,7 +29,7 @@ link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdView.h[AMoAd
 メインヘッダ
 link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd.a[libAMoAd.a]::
 ライブラリ
-link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Banner[サンプルコード]:: 管理画面から取得したsidを入力して動かしてください
+link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Display[サンプルコード]:: 管理画面から取得したsidを入力して動かしてください
 
 :numbered:
 :sectnums:
