@@ -1,0 +1,71 @@
+:Version: 3.9.1
+:toc: macro
+:toc-title: 目次
+:toclevels: 4
+
+= インストールガイド AMoAd SDK {version} for iOS
+
+toc::[]
+
+:numbered!:
+:sectnums!:
+
+== 　
+
+:numbered:
+:sectnums:
+
+== 概要
+SDKの導入方法につきましてXcode6.4を前提に説明いたします。
+
+== 対応環境
+
+=== デバイス
+
+[options="header"]
+|===
+|デバイス |モデル
+|iPhone |iPhone 4/4S/4s、iPhone 5/5s/5c、iPhone 6/6 Plus
+|iPad |iPad 2、iPad 3rd/4th、iPad mini、iPad Air、iPad mini Retina
+|iPod touch |第4世代以降
+|===
+
+=== OSバージョン
+
+iOS 6.x、7.x、8 〜 8.4
+
+== プロジェクト設定
+=== AMoAd SDKの追加
+
+. Project Navigatorを開き、Modulesフォルダ以下のファイルをすべてドラッグ＆ドロップします。libAMoAd.aは、TargetのLinked Frameworks and Librariesに自動的に追加されます。
+
+image:images/SDK01.png[
+"AMoAd SDKの追加", width=90%]
+
+TIP: 自動的に追加されなかった場合は＋ボタンから手動で追加してください。
+
+NOTE: Framework化する予定です
+
+=== 関連フレームワークの追加
+
+. TargetのLinked Frameworks and Librariesに、＋ボタンで以下のライブラリを追加する。
+
+[options="header"]
+|===
+|Name |Status
+|AdSupport.framework |Required
+|ImageIO.framework |Required
+|StoreKit.framework |Required
+|===
+
+image:images/FW01.png[
+"関連フレームワークの追加", width=90%]
+
+TIP: Xcode 4の場合は、Quartzcore.frameworkも追加する必要があります。
+
+=== リンクオプションの追加
+
+. TargetのBuild Settingsタブを開き、LinkingカテゴリのOther Linker Flagsに「-ObjC」を設定する
+
+image:images/LN01.png[
+"リンクオプションの追加", width=90%]

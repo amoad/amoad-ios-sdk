@@ -7,157 +7,124 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D05CF791A368668005115E1 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D05CF781A368668005115E1 /* libAMoAd.a */; };
-		0DDAA7B619C2F39A002D5715 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA7B519C2F39A002D5715 /* main.m */; };
-		0DDAA7B919C2F39A002D5715 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA7B819C2F39A002D5715 /* AppDelegate.m */; };
-		0DDAA7BC19C2F39A002D5715 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA7BB19C2F39A002D5715 /* ViewController.m */; };
-		0DDAA7BF19C2F39A002D5715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAA7BD19C2F39A002D5715 /* Main.storyboard */; };
-		0DDAA7C119C2F39A002D5715 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAA7C019C2F39A002D5715 /* Images.xcassets */; };
-		0DDAA7C419C2F39A002D5715 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAA7C219C2F39A002D5715 /* LaunchScreen.xib */; };
-		0DDAA7D019C2F39A002D5715 /* AMoAdSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DDAA7CF19C2F39A002D5715 /* AMoAdSampleTests.m */; };
-		0DDAA7DD19C2F8E2002D5715 /* initialImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0DDAA7DB19C2F8E2002D5715 /* initialImage.gif */; };
-		0DDAA7E019C2F8F2002D5715 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDAA7DF19C2F8F2002D5715 /* AdSupport.framework */; };
-		0DDAA7E219C2F8FB002D5715 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDAA7E119C2F8FB002D5715 /* ImageIO.framework */; };
-		E909F6B21B3807E9009BE3E4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E909F6B11B3807E9009BE3E4 /* StoreKit.framework */; };
+		E91D18561B7216DB00241DBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E91D18551B7216DB00241DBE /* main.m */; };
+		E91D18591B7216DB00241DBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E91D18581B7216DB00241DBE /* AppDelegate.m */; };
+		E91D185C1B7216DB00241DBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E91D185B1B7216DB00241DBE /* ViewController.m */; };
+		E91D185F1B7216DB00241DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91D185D1B7216DB00241DBE /* Main.storyboard */; };
+		E91D18611B7216DB00241DBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91D18601B7216DB00241DBE /* Images.xcassets */; };
+		E91D18641B7216DB00241DBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91D18621B7216DB00241DBE /* LaunchScreen.xib */; };
+		E91D18821B72187D00241DBE /* images in Resources */ = {isa = PBXBuildFile; fileRef = E91D18801B72187D00241DBE /* images */; };
+		E91D18831B72187D00241DBE /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D18811B72187D00241DBE /* libAMoAd.a */; };
+		E91D18851B721B0D00241DBE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D18841B721B0D00241DBE /* AdSupport.framework */; };
+		E91D18871B721B1400241DBE /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D18861B721B1400241DBE /* ImageIO.framework */; };
+		E91D18891B721B1B00241DBE /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D18881B721B1B00241DBE /* StoreKit.framework */; };
+		E91D188B1B721B9300241DBE /* initialImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = E91D188A1B721B9300241DBE /* initialImage.gif */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		0DDAA7CA19C2F39A002D5715 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0DDAA7A819C2F39A002D5715 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0DDAA7AF19C2F39A002D5715;
-			remoteInfo = AMoAdSample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0D05CF781A368668005115E1 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
-		0DDAA7B019C2F39A002D5715 /* AMoAdSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DDAA7B419C2F39A002D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DDAA7B519C2F39A002D5715 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0DDAA7B719C2F39A002D5715 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0DDAA7B819C2F39A002D5715 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0DDAA7BA19C2F39A002D5715 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0DDAA7BB19C2F39A002D5715 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0DDAA7BE19C2F39A002D5715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0DDAA7C019C2F39A002D5715 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0DDAA7C319C2F39A002D5715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		0DDAA7C919C2F39A002D5715 /* AMoAdSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMoAdSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DDAA7CE19C2F39A002D5715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DDAA7CF19C2F39A002D5715 /* AMoAdSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMoAdSampleTests.m; sourceTree = "<group>"; };
-		0DDAA7DA19C2F8E2002D5715 /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
-		0DDAA7DB19C2F8E2002D5715 /* initialImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = initialImage.gif; sourceTree = "<group>"; };
-		0DDAA7DF19C2F8F2002D5715 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		0DDAA7E119C2F8FB002D5715 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		E909F6B11B3807E9009BE3E4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E91D18501B7216DB00241DBE /* AMoAdSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91D18541B7216DB00241DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E91D18551B7216DB00241DBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E91D18571B7216DB00241DBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E91D18581B7216DB00241DBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E91D185A1B7216DB00241DBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E91D185B1B7216DB00241DBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E91D185E1B7216DB00241DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E91D18601B7216DB00241DBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E91D18631B7216DB00241DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E91D18791B72187D00241DBE /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
+		E91D187A1B72187D00241DBE /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
+		E91D187B1B72187D00241DBE /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
+		E91D187C1B72187D00241DBE /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
+		E91D187D1B72187D00241DBE /* AMoAdNativePreRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativePreRoll.h; sourceTree = "<group>"; };
+		E91D187E1B72187D00241DBE /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeView.h; sourceTree = "<group>"; };
+		E91D187F1B72187D00241DBE /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
+		E91D18801B72187D00241DBE /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		E91D18811B72187D00241DBE /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
+		E91D18841B721B0D00241DBE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E91D18861B721B1400241DBE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E91D18881B721B1B00241DBE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E91D188A1B721B9300241DBE /* initialImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = initialImage.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0DDAA7AD19C2F39A002D5715 /* Frameworks */ = {
+		E91D184D1B7216DB00241DBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D05CF791A368668005115E1 /* libAMoAd.a in Frameworks */,
-				0DDAA7E219C2F8FB002D5715 /* ImageIO.framework in Frameworks */,
-				0DDAA7E019C2F8F2002D5715 /* AdSupport.framework in Frameworks */,
-				E909F6B21B3807E9009BE3E4 /* StoreKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0DDAA7C619C2F39A002D5715 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E91D18891B721B1B00241DBE /* StoreKit.framework in Frameworks */,
+				E91D18871B721B1400241DBE /* ImageIO.framework in Frameworks */,
+				E91D18851B721B0D00241DBE /* AdSupport.framework in Frameworks */,
+				E91D18831B72187D00241DBE /* libAMoAd.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DDAA7A719C2F39A002D5715 = {
+		E91D18471B7216DB00241DBE = {
 			isa = PBXGroup;
 			children = (
-				0DDAA7E119C2F8FB002D5715 /* ImageIO.framework */,
-				0DDAA7DF19C2F8F2002D5715 /* AdSupport.framework */,
-				E909F6B11B3807E9009BE3E4 /* StoreKit.framework */,
-				0DDAA7D919C2F8CD002D5715 /* AMoAd */,
-				0DDAA7B219C2F39A002D5715 /* AMoAdSample */,
-				0DDAA7CC19C2F39A002D5715 /* AMoAdSampleTests */,
-				0DDAA7B119C2F39A002D5715 /* Products */,
+				E91D18881B721B1B00241DBE /* StoreKit.framework */,
+				E91D18861B721B1400241DBE /* ImageIO.framework */,
+				E91D18841B721B0D00241DBE /* AdSupport.framework */,
+				E91D18521B7216DB00241DBE /* AMoAdSample */,
+				E91D18511B7216DB00241DBE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0DDAA7B119C2F39A002D5715 /* Products */ = {
+		E91D18511B7216DB00241DBE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0DDAA7B019C2F39A002D5715 /* AMoAdSample.app */,
-				0DDAA7C919C2F39A002D5715 /* AMoAdSampleTests.xctest */,
+				E91D18501B7216DB00241DBE /* AMoAdSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0DDAA7B219C2F39A002D5715 /* AMoAdSample */ = {
+		E91D18521B7216DB00241DBE /* AMoAdSample */ = {
 			isa = PBXGroup;
 			children = (
-				0DDAA7B719C2F39A002D5715 /* AppDelegate.h */,
-				0DDAA7B819C2F39A002D5715 /* AppDelegate.m */,
-				0DDAA7BA19C2F39A002D5715 /* ViewController.h */,
-				0DDAA7BB19C2F39A002D5715 /* ViewController.m */,
-				0DDAA7BD19C2F39A002D5715 /* Main.storyboard */,
-				0DDAA7C019C2F39A002D5715 /* Images.xcassets */,
-				0DDAA7C219C2F39A002D5715 /* LaunchScreen.xib */,
-				0DDAA7B319C2F39A002D5715 /* Supporting Files */,
+				E91D188A1B721B9300241DBE /* initialImage.gif */,
+				E91D18791B72187D00241DBE /* AMoAd.h */,
+				E91D187A1B72187D00241DBE /* AMoAdAnalytics.h */,
+				E91D187B1B72187D00241DBE /* AMoAdInterstitial.h */,
+				E91D187C1B72187D00241DBE /* AMoAdLogger.h */,
+				E91D187D1B72187D00241DBE /* AMoAdNativePreRoll.h */,
+				E91D187E1B72187D00241DBE /* AMoAdNativeView.h */,
+				E91D187F1B72187D00241DBE /* AMoAdView.h */,
+				E91D18801B72187D00241DBE /* images */,
+				E91D18811B72187D00241DBE /* libAMoAd.a */,
+				E91D18571B7216DB00241DBE /* AppDelegate.h */,
+				E91D18581B7216DB00241DBE /* AppDelegate.m */,
+				E91D185A1B7216DB00241DBE /* ViewController.h */,
+				E91D185B1B7216DB00241DBE /* ViewController.m */,
+				E91D185D1B7216DB00241DBE /* Main.storyboard */,
+				E91D18601B7216DB00241DBE /* Images.xcassets */,
+				E91D18621B7216DB00241DBE /* LaunchScreen.xib */,
+				E91D18531B7216DB00241DBE /* Supporting Files */,
 			);
 			path = AMoAdSample;
 			sourceTree = "<group>";
 		};
-		0DDAA7B319C2F39A002D5715 /* Supporting Files */ = {
+		E91D18531B7216DB00241DBE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0DDAA7B419C2F39A002D5715 /* Info.plist */,
-				0DDAA7B519C2F39A002D5715 /* main.m */,
+				E91D18541B7216DB00241DBE /* Info.plist */,
+				E91D18551B7216DB00241DBE /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0DDAA7CC19C2F39A002D5715 /* AMoAdSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				0DDAA7CF19C2F39A002D5715 /* AMoAdSampleTests.m */,
-				0DDAA7CD19C2F39A002D5715 /* Supporting Files */,
-			);
-			path = AMoAdSampleTests;
-			sourceTree = "<group>";
-		};
-		0DDAA7CD19C2F39A002D5715 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0DDAA7CE19C2F39A002D5715 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0DDAA7D919C2F8CD002D5715 /* AMoAd */ = {
-			isa = PBXGroup;
-			children = (
-				0D05CF781A368668005115E1 /* libAMoAd.a */,
-				0DDAA7DA19C2F8E2002D5715 /* AMoAdView.h */,
-				0DDAA7DB19C2F8E2002D5715 /* initialImage.gif */,
-			);
-			name = AMoAd;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0DDAA7AF19C2F39A002D5715 /* AMoAdSample */ = {
+		E91D184F1B7216DB00241DBE /* AMoAdSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0DDAA7D319C2F39A002D5715 /* Build configuration list for PBXNativeTarget "AMoAdSample" */;
+			buildConfigurationList = E91D18731B7216DB00241DBE /* Build configuration list for PBXNativeTarget "AMoAdSample" */;
 			buildPhases = (
-				0DDAA7AC19C2F39A002D5715 /* Sources */,
-				0DDAA7AD19C2F39A002D5715 /* Frameworks */,
-				0DDAA7AE19C2F39A002D5715 /* Resources */,
+				E91D184C1B7216DB00241DBE /* Sources */,
+				E91D184D1B7216DB00241DBE /* Frameworks */,
+				E91D184E1B7216DB00241DBE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -165,46 +132,24 @@
 			);
 			name = AMoAdSample;
 			productName = AMoAdSample;
-			productReference = 0DDAA7B019C2F39A002D5715 /* AMoAdSample.app */;
+			productReference = E91D18501B7216DB00241DBE /* AMoAdSample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		0DDAA7C819C2F39A002D5715 /* AMoAdSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0DDAA7D619C2F39A002D5715 /* Build configuration list for PBXNativeTarget "AMoAdSampleTests" */;
-			buildPhases = (
-				0DDAA7C519C2F39A002D5715 /* Sources */,
-				0DDAA7C619C2F39A002D5715 /* Frameworks */,
-				0DDAA7C719C2F39A002D5715 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0DDAA7CB19C2F39A002D5715 /* PBXTargetDependency */,
-			);
-			name = AMoAdSampleTests;
-			productName = AMoAdSampleTests;
-			productReference = 0DDAA7C919C2F39A002D5715 /* AMoAdSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0DDAA7A819C2F39A002D5715 /* Project object */ = {
+		E91D18481B7216DB00241DBE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = "AMoAd, Inc.";
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = AMoAd;
 				TargetAttributes = {
-					0DDAA7AF19C2F39A002D5715 = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					0DDAA7C819C2F39A002D5715 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 0DDAA7AF19C2F39A002D5715;
+					E91D184F1B7216DB00241DBE = {
+						CreatedOnToolsVersion = 6.4;
 					};
 				};
 			};
-			buildConfigurationList = 0DDAA7AB19C2F39A002D5715 /* Build configuration list for PBXProject "AMoAdSample" */;
+			buildConfigurationList = E91D184B1B7216DB00241DBE /* Build configuration list for PBXProject "AMoAdSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -212,80 +157,57 @@
 				en,
 				Base,
 			);
-			mainGroup = 0DDAA7A719C2F39A002D5715;
-			productRefGroup = 0DDAA7B119C2F39A002D5715 /* Products */;
+			mainGroup = E91D18471B7216DB00241DBE;
+			productRefGroup = E91D18511B7216DB00241DBE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0DDAA7AF19C2F39A002D5715 /* AMoAdSample */,
-				0DDAA7C819C2F39A002D5715 /* AMoAdSampleTests */,
+				E91D184F1B7216DB00241DBE /* AMoAdSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0DDAA7AE19C2F39A002D5715 /* Resources */ = {
+		E91D184E1B7216DB00241DBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DDAA7BF19C2F39A002D5715 /* Main.storyboard in Resources */,
-				0DDAA7DD19C2F8E2002D5715 /* initialImage.gif in Resources */,
-				0DDAA7C419C2F39A002D5715 /* LaunchScreen.xib in Resources */,
-				0DDAA7C119C2F39A002D5715 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0DDAA7C719C2F39A002D5715 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				E91D18821B72187D00241DBE /* images in Resources */,
+				E91D188B1B721B9300241DBE /* initialImage.gif in Resources */,
+				E91D185F1B7216DB00241DBE /* Main.storyboard in Resources */,
+				E91D18641B7216DB00241DBE /* LaunchScreen.xib in Resources */,
+				E91D18611B7216DB00241DBE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0DDAA7AC19C2F39A002D5715 /* Sources */ = {
+		E91D184C1B7216DB00241DBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DDAA7BC19C2F39A002D5715 /* ViewController.m in Sources */,
-				0DDAA7B919C2F39A002D5715 /* AppDelegate.m in Sources */,
-				0DDAA7B619C2F39A002D5715 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0DDAA7C519C2F39A002D5715 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0DDAA7D019C2F39A002D5715 /* AMoAdSampleTests.m in Sources */,
+				E91D185C1B7216DB00241DBE /* ViewController.m in Sources */,
+				E91D18591B7216DB00241DBE /* AppDelegate.m in Sources */,
+				E91D18561B7216DB00241DBE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		0DDAA7CB19C2F39A002D5715 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0DDAA7AF19C2F39A002D5715 /* AMoAdSample */;
-			targetProxy = 0DDAA7CA19C2F39A002D5715 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		0DDAA7BD19C2F39A002D5715 /* Main.storyboard */ = {
+		E91D185D1B7216DB00241DBE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0DDAA7BE19C2F39A002D5715 /* Base */,
+				E91D185E1B7216DB00241DBE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0DDAA7C219C2F39A002D5715 /* LaunchScreen.xib */ = {
+		E91D18621B7216DB00241DBE /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0DDAA7C319C2F39A002D5715 /* Base */,
+				E91D18631B7216DB00241DBE /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -293,7 +215,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0DDAA7D119C2F39A002D5715 /* Debug */ = {
+		E91D18711B7216DB00241DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -312,9 +234,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -327,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -335,7 +259,7 @@
 			};
 			name = Debug;
 		};
-		0DDAA7D219C2F39A002D5715 /* Release */ = {
+		E91D18721B7216DB00241DBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -353,17 +277,19 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -371,101 +297,61 @@
 			};
 			name = Release;
 		};
-		0DDAA7D419C2F39A002D5715 /* Debug */ = {
+		E91D18741B7216DB00241DBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = AMoAdSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AMoAdSample",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		0DDAA7D519C2F39A002D5715 /* Release */ = {
+		E91D18751B7216DB00241DBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = AMoAdSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/AMoAdSample",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		0DDAA7D719C2F39A002D5715 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AMoAdSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdSample.app/AMoAdSample";
-			};
-			name = Debug;
-		};
-		0DDAA7D819C2F39A002D5715 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AMoAdSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdSample.app/AMoAdSample";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0DDAA7AB19C2F39A002D5715 /* Build configuration list for PBXProject "AMoAdSample" */ = {
+		E91D184B1B7216DB00241DBE /* Build configuration list for PBXProject "AMoAdSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0DDAA7D119C2F39A002D5715 /* Debug */,
-				0DDAA7D219C2F39A002D5715 /* Release */,
+				E91D18711B7216DB00241DBE /* Debug */,
+				E91D18721B7216DB00241DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0DDAA7D319C2F39A002D5715 /* Build configuration list for PBXNativeTarget "AMoAdSample" */ = {
+		E91D18731B7216DB00241DBE /* Build configuration list for PBXNativeTarget "AMoAdSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0DDAA7D419C2F39A002D5715 /* Debug */,
-				0DDAA7D519C2F39A002D5715 /* Release */,
+				E91D18741B7216DB00241DBE /* Debug */,
+				E91D18751B7216DB00241DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0DDAA7D619C2F39A002D5715 /* Build configuration list for PBXNativeTarget "AMoAdSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0DDAA7D719C2F39A002D5715 /* Debug */,
-				0DDAA7D819C2F39A002D5715 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0DDAA7A819C2F39A002D5715 /* Project object */;
+	rootObject = E91D18481B7216DB00241DBE /* Project object */;
 }

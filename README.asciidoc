@@ -5,42 +5,35 @@
 :numbered:
 :sectnums:
 
-== 概要
-
 link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版ダウンロードページ] ::
 リリース時は、こちらの使用をお勧めします。
 link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロードページ] ::
 [NEW] AMoAd.hのimportが必須になっていますご注意ください
+
+== 概要
+
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
-** [NEW] renderAdの失敗Block（onFailure）を指定するメソッドを誤って削除したので、復活させました（詳しくはlink:Documents/Native/Guide_nativeApp.asciidoc#renderAd[こちら]を参照ください）。大変ご迷惑をおかけいたしました。
+** SDKインストールのマニュアルを更新しました。
+** サンプルプログラムを更新しました（Samples/Display/AMoAdSample）。
+** renderAdの失敗Block（onFailure）を指定するメソッドを誤って削除したので、復活させました（詳しくはlink:Documents/Native/Guide_nativeApp.asciidoc#renderAd[こちら]を参照ください）。大変ご迷惑をおかけいたしました。
 ** ネイティブ広告デリゲートを追加しました（詳しくは、link:Documents/Native/Guide_nativeApp.asciidoc#-12[ネイティブ（App）] / link:Documents/Native/Guide_listView.asciidoc#-13[リストビュー]）。
 ** バナー広告がUnityに対応しました（詳しくは<<UnityPlugin, こちら>>）。
 
 NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] 。
 
-== バナー広告
+== SDKのインストール
+* link:Documents/Install/Install.asciidoc[SDKインストールガイド]
 
-* link:Documents/Display/Guide.asciidoc[導入ガイド]
+== ディスプレイ広告
 
-:numbered!:
-:sectnums!:
+link:Documents/Display/Guide.asciidoc[実装ガイド]::
 
-=== モジュール ダウンロード
-[horizontal]
-link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdView.h[AMoAdView.h]::
-メインヘッダ
-link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd.a[libAMoAd.a]::
-ライブラリ
-link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Display[サンプルコード]:: 管理画面から取得したsidを入力して動かしてください
 
-:numbered:
-:sectnums:
+link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Display[サンプルコード]::
+管理画面から取得したsidを入力して動かしてください
 
 == ネイティブ広告
 * link:https://rawgit.com/amoad/amoad-ios-sdk/master/Documents/Native/appledoc/index.html[AppleDoc]
-
-:numbered!:
-:sectnums!:
 
 === ネイティブApp
 
