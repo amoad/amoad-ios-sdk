@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,34 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="initialImage.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ZZQ-FK-11w" customClass="AMoAdView">
-                                <rect key="frame" x="140" y="20" width="320" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="initialImage.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Jpu-le-WjM" customClass="AMoAdView">
+                                <rect key="frame" x="140" y="550" width="320" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="4gH-Tm-3Av"/>
-                                    <constraint firstAttribute="height" constant="50" id="Ieb-i8-Bf4"/>
-                                    <constraint firstAttribute="height" constant="50" id="WKt-bZ-aEw"/>
+                                    <constraint firstAttribute="height" constant="50" id="nTZ-4u-jzm"/>
+                                    <constraint firstAttribute="width" constant="320" id="zyd-96-Pmn"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="sid" value="管理画面から発行されるsidをセットしてください"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sid" value="管理画面から取得したsidを指定してください"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="rotate_transition" value="flip_from_left"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="click_transition" value="jump"/>
                                 </userDefinedRuntimeAttributes>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Ieb-i8-Bf4"/>
-                                    </mask>
-                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="ZZQ-FK-11w" secondAttribute="centerX" id="F3Z-nW-3DO"/>
-                            <constraint firstItem="ZZQ-FK-11w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="dJt-dl-VwR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jpu-le-WjM" secondAttribute="bottom" id="YsP-vo-rXT"/>
+                            <constraint firstAttribute="centerX" secondItem="Jpu-le-WjM" secondAttribute="centerX" id="iXS-HH-a2h"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="amoadView" destination="ZZQ-FK-11w" id="Em6-zY-jEN"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
