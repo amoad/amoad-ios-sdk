@@ -37,14 +37,17 @@ static NSString *const kTag = @"UserPreRollAd";
   self.view.hidden = YES; // 広告取得成功まで非表示にする（推奨）
 
   // [SDK] プリロール広告を描画する
-  [AMoAdNativePreRoll renderAdWithSid:kSid tag:kTag view:self.view analytics:analytics completion:^(NSString *sid, NSString *tag, UIView *view, AMoAdNativeResult state) {
+  [AMoAdNativePreRoll renderAdWithSid:kSid tag:kTag view:self.view analytics:analytics completion:^(NSString *sid, NSString *tag, UIView *view, AMoAdResult state) {
     switch (state) {
-      case AMoAdNativeResultSuccess:
+      case AMoAdResultSuccess:
         self.view.hidden = NO;  // 広告取得成功後、表示する（推奨）
         NSLog(@"広告受信成功:sid=%@,tag=%@", sid, tag);
         break;
-      case AMoAdNativeResultFailure:
+      case AMoAdResultFailure:
         NSLog(@"広告受信失敗:sid=%@,tag=%@", sid, tag);
+        break;
+      case AMoAdResultEmpty:
+        NSLog(@"配信する広告が無い:sid=%@,tag=%@", sid, tag);
         break;
     };
   }];
