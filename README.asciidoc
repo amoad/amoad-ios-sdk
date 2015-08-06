@@ -7,6 +7,7 @@
 
 link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版ダウンロードページ] ::
 リリース時は、こちらの使用をお勧めします。
+
 link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロードページ] ::
 [NEW] AMoAd.hのimportが必須になっていますご注意ください
 
@@ -15,54 +16,68 @@ link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロー�
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
 ** SDKインストールのマニュアルを更新しました。
 ** サンプルプログラムを更新しました（Samples/Display/AMoAdSample）。
-** renderAdの失敗Block（onFailure）を指定するメソッドを誤って削除したので、復活させました（詳しくはlink:Documents/Native/Guide_nativeApp.asciidoc#renderAd[こちら]を参照ください）。大変ご迷惑をおかけいたしました。
-** ネイティブ広告デリゲートを追加しました（詳しくは、link:Documents/Native/Guide_nativeApp.asciidoc#-12[ネイティブ（App）] / link:Documents/Native/Guide_listView.asciidoc#-13[リストビュー]）。
-** バナー広告がUnityに対応しました（詳しくは<<UnityPlugin, こちら>>）。
+** renderAdの失敗Block（onFailure）を指定するメソッドを誤って削除したので、復活させました（詳しくはlink:Documents/Native/Guide_nativeApp.asciidoc#広告を表示する[こちら]を参照ください）。大変ご迷惑をおかけいたしました。
+** バナー広告がUnityに対応しました（詳しくは<<51-unityプラグイン,こちら>>）。
 
 NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] 。
 
 == SDKのインストール
-* link:Documents/Install/Install.asciidoc[SDKインストールガイド]
+
+link:Documents/Install/Install.asciidoc[SDKインストールガイド]::
+SDK共通のインストール方法
 
 == ディスプレイ広告
 
 link:Documents/Display/Guide.asciidoc[実装ガイド]::
-
+ディスプレイ広告の実装方法
 
 link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Display[サンプルコード]::
 管理画面から取得したsidを入力して動かしてください
 
 == ネイティブ広告
-* link:https://rawgit.com/amoad/amoad-ios-sdk/master/Documents/Native/appledoc/index.html[AppleDoc]
 
 === ネイティブApp
 
-* link:Documents/Native/Overview_nativeApp.asciidoc[概要]
-* link:Documents/Native/Guide_nativeApp.asciidoc[導入ガイド]
+link:Documents/Native/Overview_nativeApp.asciidoc[概要]::
+ネイティブApp広告は、広告クリエイティブを任意のレイアウトで表示することができる商品です
+
+link:Documents/Native/Guide_nativeApp.asciidoc[実装ガイド]::
+AMoAd SDKでは、ネイティブApp広告を簡単に表示するAPIを提供しています
 
 === リストビュー
-* link:Documents/Native/Overview_listView.asciidoc[概要]
-* link:Documents/Native/Guide_listView.asciidoc[導入ガイド]
 
-=== モジュール ダウンロード
-[horizontal]
-link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdLogger.h[AMoAdLogger.h]::
-ログ出力制御ヘッダ
-link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/AMoAdNativeView.h[AMoAdNativeView.h]::
-メインヘッダ
-link:https://github.com/amoad/amoad-ios-sdk/raw/master/Modules/libAMoAd.a[libAMoAd.a]::
-ライブラリ
+link:Documents/Native/Overview_listView.asciidoc[概要]::
+ネイティブApp広告は、広告クリエイティブをリストビュー（UITableView）に、任意のレイアウトで表示することができる商品です
+
+link:Documents/Native/Guide_listView.asciidoc[実装ガイド]::
+AMoAd SDKでは、リストビュー広告を簡単に表示するAPIを提供しています
+
+=== ネイティブ広告（共通）
+
+link:https://rawgit.com/amoad/amoad-ios-sdk/master/Documents/Native/appledoc/index.html[APIリファレンス]::
+AppleDocドキュメント
+
 link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Native[サンプルコード]:: ネイティブ広告の種類に応じたサンプルコードに、管理画面から取得したsidを入力して動かしてください
 
 == プラグインなど
-=== Unityプラグイン [[UnityPlugin]]
-* link:Documents/UnityPlugin/Guide.asciidoc[導入ガイド]
-* link:https://github.com/amoad/amoad-ios-sdk/raw/master/UnityPlugin/AMoAdUnityPlugin.unitypackage[パッケージのダウンロード]
-* link:https://github.com/amoad/amoad-ios-sdk/blob/master/Samples/UnityPlugin[サンプルコード]
+=== Unityプラグイン
 
-=== Cocos2d-xモジュールα版 [[UnityPlugin]]
-* link:https://github.com/amoad/amoad-ios-sdk/raw/master/Cocos2dxModule/AMoAdCocos2dxModule.zip[パッケージのダウンロード] 導入につきましては営業担当にお問い合わせください
+link:Documents/UnityPlugin/Guide.asciidoc[導入ガイド]::
+Unityへの導入方法とソースコードへの組み込み方法について説明します
+
+link:https://github.com/amoad/amoad-ios-sdk/raw/master/UnityPlugin/AMoAdUnityPlugin.unitypackage[パッケージのダウンロード]::
+最新版のパッケージはこちらからダウンロードできます
+
+link:https://github.com/amoad/amoad-ios-sdk/blob/master/Samples/UnityPlugin[サンプルコード]::
+Unityへの導入と動作を確認できるサンプルコードです
+
+=== Cocos2d-xモジュールα版
+link:https://github.com/amoad/amoad-ios-sdk/raw/master/Cocos2dxModule/AMoAdCocos2dxModule.zip[パッケージのダウンロード]:: 導入につきましては営業担当にお問い合わせください
 
 === AdMobメディエーション アダプタ
-* link:Documents/AdMobMediation/AdMobSetup.asciidoc[導入ガイド]
-* https://github.com/amoad/amoad-ios-sdk/raw/master/AdMobMediation/libAMoAdGmAdapter.a[アダプタのダウンロード]
+
+link:Documents/AdMobMediation/AdMobSetup.asciidoc[導入ガイド]::
+アダプタの導入方法とAdMobメディエーションの設定についてのガイドです
+
+https://github.com/amoad/amoad-ios-sdk/raw/master/AdMobMediation/libAMoAdGmAdapter.a[アダプタのダウンロード]::
+最新版のアダプタはこちらからダウンロードできます
