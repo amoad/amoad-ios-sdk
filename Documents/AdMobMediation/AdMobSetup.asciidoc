@@ -7,9 +7,6 @@
 
 toc::[]
 
-:numbered!:
-:sectnums!:
-=== 　
 :numbered:
 :sectnums:
 
@@ -73,7 +70,7 @@ image:images/admin4.png[width="800px"]
 
 == アプリケーションの設定
 === AMoAd SDK を導入する
-* AMoAd SDK の導入方法については、link:https://github.com/amoad/amoad-ios-sdk/blob/master/Documents/Banner/Guide.asciidoc[AMoAd SDK導入]を参考にしてください。
+* AMoAd SDK の導入方法については、link:https://github.com/amoad/amoad-ios-sdk/blob/master/Documents/Install/Install.asciidoc[インストールガイド]を参考にしてください。
 
 === AMoAd AdMob Mediation アダプタを導入する
 . プロジェクトナビゲーターを開き、libAMoAdGmAdapter.a をドラッグ＆ドロップします。 +
