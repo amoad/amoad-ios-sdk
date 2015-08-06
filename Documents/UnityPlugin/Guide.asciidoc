@@ -7,11 +7,6 @@
 
 toc::[]
 
-:numbered!:
-:sectnums!:
-
-== 　
-
 :numbered:
 :sectnums:
 
@@ -250,7 +245,9 @@ AMoAd SDKの導入につきまして、簡単に説明すると以下のとお�
 . Build Settings -> Linking -> Other Linker Flagsに「-ObjC」を設定する
 . 初期表示画像ファイルをプロジェクトに追加する
 
-TIP: AMoAd SDK for iOSの導入について詳しくは、 link:https://github.com/amoad/amoad-ios-sdk/blob/master/Documents/Banner/Guide.asciidoc[こちら]をご参照ください。
+TIP: AMoAd SDK for iOSの導入について詳しくは、
+link:https://github.com/amoad/amoad-ios-sdk/blob/master/Documents/Install/Install.asciidoc[インストールガイド]を
+ご参照ください。
 
 === Android
 ==== Unity
@@ -271,4 +268,6 @@ AMoAd SDK for Androidの導入手順は以下のとおりです。
 `android:value="@integer/google_play_services_version" />`
 . res/drawableの適切な場所に、初期表示画像ファイルを追加する
 
-TIP: AMoAd SDK for Androidの導入について詳しくは、link:https://github.com/amoad/amoad-android-sdk/blob/master/Documents/Setup.asciidoc[こちら]をご参照ください。
+TIP: AMoAd SDK for Androidの導入について詳しくは、
+link:https://github.com/amoad/amoad-android-sdk/blob/master/Documents/Setup.asciidoc[インストールガイド]を
+ご参照ください。
