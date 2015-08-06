@@ -7,11 +7,6 @@
 
 toc::[]
 
-:numbered!:
-:sectnums!:
-
-== 　
-
 :numbered:
 :sectnums:
 
@@ -37,17 +32,17 @@ Xcode 5.X以降が必要です。
 == 組み込み手順
 
 === プロジェクトへのSDK追加
-Xcode 上で対象プロジェクトに
+Xcode 上で対象プロジェクトに
 __libAMoAd.a__と
-__AMoAdNativeView.h__をドラッグ&ドロップします。
+__AMoAdNativeView.h__をドラッグ&ドロップします。
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/b88f82bd-dc11-e439-dbee-9d3ae7272981.png[
 "ファイル追加", width="100%"]
 
-下記、ダイアログの表示で「Finish」をクリックします。
+下記、ダイアログの表示で「Finish」をクリックします。
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/76d04603-c841-2649-399b-6ec4c6416467.png[
 "ダイアログ", width="100%"]
 
-ドラッグ&ドロップしたファイルが追加されていれば、
+ドラッグ&ドロップしたファイルが追加されていれば、
 SDKの追加は完了です。
 image:https://qiita-image-store.s3.amazonaws.com/1726/4107/ff7eaaf3-c3e2-5453-47d4-1e39a36c0361.png[
 "完了", width="100%"]
@@ -167,7 +162,7 @@ image:https://qiita-image-store.s3.amazonaws.com/1726/4107/55e0d980-ff12-2134-4f
 image:images/n-link.png[
 "Interface Builder", width=320]
 
-=== 広告を表示する[[renderAd]]
+=== 広告を表示する
 下記は広告を表示するサンプルです。
 
 広告がメインビューに埋め込まれている場合、
