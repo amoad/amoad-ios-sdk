@@ -10,69 +10,7 @@ toc::[]
 :numbered:
 :sectnums:
 
-== 対応環境
-
-=== デバイス
-以下の環境がサポート対象です。
-
-[options="header"]
-|===
-|デバイス |モデル
-|iPhone |iPhone3GS、iPhone4、iPhone4S、iPhone5、iPhone5S、iPhone5C、iPhone6、iPhone6 Plus
-|iPad |iPad、iPad2、iPad(第3世代以降)、iPad mini、iPad Air、iPad mini Retina
-|===
-
-=== OSバージョン
-iOS 6.0以上がサポート対象です。
-
-=== 開発環境
-
-Xcode 5.X以降が必要です。
-
-== 組み込み手順
-
-=== プロジェクトへのSDK追加
-Xcode 上で対象プロジェクトに
-__libAMoAd.a__と
-__AMoAdNativeView.h__をドラッグ&ドロップします。
-image:https://qiita-image-store.s3.amazonaws.com/1726/4107/b88f82bd-dc11-e439-dbee-9d3ae7272981.png[
-"ファイル追加", width="100%"]
-
-下記、ダイアログの表示で「Finish」をクリックします。
-image:https://qiita-image-store.s3.amazonaws.com/1726/4107/76d04603-c841-2649-399b-6ec4c6416467.png[
-"ダイアログ", width="100%"]
-
-ドラッグ&ドロップしたファイルが追加されていれば、
-SDKの追加は完了です。
-image:https://qiita-image-store.s3.amazonaws.com/1726/4107/ff7eaaf3-c3e2-5453-47d4-1e39a36c0361.png[
-"完了", width="100%"]
-
-=== 必須フレームワークの追加￼
-本SDKでは下記のフレームワークの追加が必要です。
-
-[options="header"]
-|===
-|Name |Status
-|AdSupport.framework |Required
-|ImageIO.framework |Required
-|StoreKit.framework |Required
-|===
-
-追加先は、_General_の_Linked Frameworks and Libraries_もしくは
-image:https://qiita-image-store.s3.amazonaws.com/1726/4107/dc7c7ed4-470c-1922-e441-bcca7b644cf6.png[
-"追加先1", width="100%"]
-
-_Build Phases_の_Link Binary With Libraries_にて
-フレームワーク追加します。
-image:https://qiita-image-store.s3.amazonaws.com/1726/4107/f3800a0e-1ba5-21b6-2e66-9f01b6922edb.png[
-"追加先2", width="100%"]
-
-上記のようにImageIO.framework、AdSupport.framework、StoreKit.framework、libAMoAd.a（SDKの追加時に説明済み）が追加されていれば完了です。
-
-=== リンクオプションの追加
-
-ターゲットの Build Settings タブを開き、
-Linking カテゴリの Other Linker Flags に「-ObjC」 を設定してください。
+NOTE: SDKのインストール方法につきましては、link:https://github.com/amoad/amoad-ios-sdk/blob/master/Documents/Install/Install.asciidoc[インストールガイド]をご参照ください。
 
 == 導入に必要な実装手順（UIView）
 
