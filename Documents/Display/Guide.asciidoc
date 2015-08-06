@@ -7,80 +7,15 @@
 
 toc::[]
 
-:numbered!:
-:sectnums!:
-
-== 　
-
 :numbered:
 :sectnums:
 
 == 概要
 AMoAd SDK for iOS（以下、本SDKと表記します）は、iOSデベロッパーが自らのアプリケーションにAMoAdが配信する広告を表示させるためのツールキットです。AMoAd Webサイトで発行する固有IDを指定してアプリケーションに個別の広告を配信します。
 
+SDKのインストール方法につきましては、link:https://github.com/amoad/amoad-ios-sdk/blob/master/Documents/Install/Install.asciidoc[こちら]をご参照ください。
+
 TIP: 広告はiOSデベロッパーがInterface Builderで指定する任意の位置に表示することが可能です。
-
-== 対応環境
-
-=== デバイス
-
-[options="header"]
-|===
-|デバイス |モデル
-|iPhone |iPhone 4/4S/4s、iPhone 5/5s/5c、iPhone 6/6 Plus
-|iPad |iPad 2、iPad 3rd/4th、iPad mini、iPad Air、iPad mini Retina
-|iPod touch |第4世代以降
-|===
-
-=== OSバージョン
-
-iOS 6、7、8、8.3
-
-== ファイル構成
-本SDKは以下のファイルから構成されています。
-
-[horizontal]
-Documents/Display/Guide.asciidoc::
-本ドキュメント
-link:Samples/Display/AMoAdSample/[Samples/Display/AMoAdSample]::
-サンプルプログラム
-link:Samples/Display/AMoAdSampleSwift/[Samples/Display/AMoAdSampleSwift]::
-サンプルプログラム（Swift）
-link:Modules/AMoAdView.h[Modules/AMoAdView.h]::
-ヘッダ
-link:Modules/libAMoAd.a[Modules/libAMoAd.a]::
-ライブラリ
-
-== プロジェクト設定
-=== AMoAd SDKの追加
-
-. Project Navigatorを開き、libAMoAd.aとModules/AMoAdView.hをドラッグ＆ドロップします。TargetのLink Binary With Librariesには自動的に追加されます。
-
-TIP: 自動的に追加されなかった場合は＋ボタンから手動で追加してください。
-
-=== 関連フレームワークの追加
-
-. TargetのLink Binary With Librariesに、＋ボタンで以下のライブラリを追加する。
-
-[options="header"]
-|===
-|Name |Status
-|AdSupport.framework |Required
-|ImageIO.framework |Required
-|StoreKit.framework |Required
-|===
-
-image:images/B4_1.png[
-"SDKと関連フレームワークの追加", width=90%]
-
-TIP: Xcode 4の場合は、Quartzcore.frameworkも追加する必要があります。
-
-=== リンクオプションの追加
-
-. TargetのBuild Settingsタブを開き、LinkingカテゴリのOther Linker Flagsに「-ObjC」を設定する
-
-image:images/B4_2.png[
-"リンクオプションの追加", width=90%]
 
 == 実装方法
 本SDKはInterface Builder（Xib/Storyboard）にAMoAdViewを配置することで画面に広告を表示することができます。
