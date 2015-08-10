@@ -1,0 +1,99 @@
+:Version: 1.0.1
+:toc: macro
+:toc-title: 目次
+:toclevels: 4
+
+= インタースティシャル（全画面）広告ガイド AMoAd Unity Plugin {version} Guide
+
+toc::[]
+
+:numbered:
+:sectnums:
+
+== 広告を表示するスクリプト
+
+=== スクリプトの流れ
+
+. 管理画面から発行されるsidを指定してRegisterInterstitialAd()メソッドでプラグインを登録します。 +
+`AMoAdUnityPlugin.RegisterInterstitialAd (sid);`
+. パネル画像をファイル名で設定します。 +
+`AMoAdUnityPlugin.SetInterstitialPanel (sid, imageName);`
+. ボタン押下時など広告の表示を開始したいタイミングで、ShowInterstitialAd()メソッドを呼び出します。 +
+`AMoAdUnityPlugin.ShowInterstitialAd (sid);`
+
+TIP: パネル以外の画像を標準画像から変える場合は、担当営業までお問合せください
+
+=== スクリプト例
+
+.AMoAdUnityPluginInterstitialSample.cs
+[source,csharp]
+----
+public class AMoAdUnityPluginInterstitialSample : MonoBehaviour {
+
+  private static string SID = "管理画面から発行されるsidを設定してください";
+  private static string PANEL_IMAGE_NAME = "パネルに使用する画像ファイル名";
+
+  static AMoAdUnityPluginInterstitialSample () {
+    AMoAdUnityPlugin.RegisterInterstitialAd (sid:SID);
+    AMoAdUnityPlugin.SetInterstitialPanel (sid:SID, imageName:PANEL_IMAGE_NAME);
+  }
+
+  void Awake () {
+    AMoAdUnityPlugin.ShowInterstitialAd (SID);
+  }
+}
+----
+
+=== パラメタの説明
+==== AMoAdUnityPlugin.RegisterInterstitialAd()
+管理画面から発行されるsidに紐づく広告情報を登録します。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|===
+
+==== AMoAdUnityPlugin.SetInterstitialPanel()
+sidを指定してパネル画像を設定します。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|imageName |string 2+|パネルに使用する画像ファイル名
+|===
+
+==== AMoAdUnityPlugin.ShowInterstitialAd()
+sidを指定して広告の表示を行います。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|===
+
+== サンプルアプリケーションの使用方法
+=== AMoAdUnityPluginInterstitialSample
+
+link:../../Samples/UnityPlugin/AMoAdUnityPluginInterstitialSample[サンプルコード]
+
+.AMoAdUnityPluginInterstitialSample.cs
+[source,csharp]
+----
+public class AMoAdUnityPluginInterstitialSample : MonoBehaviour {
+
+  private static string SID = "管理画面から発行されるsidを設定してください";
+  private static string PANEL_IMAGE_NAME = "パネルに使用する画像ファイル名";
+
+  static AMoAdUnityPluginInterstitialSample () {
+    AMoAdUnityPlugin.RegisterInterstitialAd (sid:SID);
+    AMoAdUnityPlugin.SetInterstitialPanel (sid:SID, imageName:PANEL_IMAGE_NAME);
+  }
+
+  void Awake () {
+    AMoAdUnityPlugin.ShowInterstitialAd (SID);
+  }
+}
+----
+
+. AMoAdUnityPluginInterstitialSample.csのSIDに管理画面から発行されるsidを入力してください
+. パネル画像を変えたいときはSetInterstitialPanel()メソッドのimageNameを変更してください
+. link:Guide.asciidoc[導入ガイド]の手順に従いプラグイン、SDKの導入、ビルドを行ってください

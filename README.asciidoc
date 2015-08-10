@@ -1,4 +1,4 @@
-:Version: 3.7.2
+:Version: 3.9.1
 
 = AMoAd SDK {version} Guide for iOS
 
@@ -6,10 +6,11 @@
 :sectnums:
 
 link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版ダウンロードページ] ::
-リリース時は、こちらの使用をお勧めします。
+リリース時は、こちらの使用をお勧めします。 +
+[NEW] AMoAd.hのimportが必須になっていますご注意ください
 
 link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロードページ] ::
-[NEW] AMoAd.hのimportが必須になっていますご注意ください
+開発中のベータ版、アルファ版などが含まれます。
 
 == 概要
 
@@ -59,19 +60,25 @@ AppleDocドキュメント
 
 link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Native[サンプルコード]:: ネイティブ広告の種類に応じたサンプルコードに、管理画面から取得したsidを入力して動かしてください
 
+== インタースティシャル（全画面）広告
+link:Documents/Interstitial/Guide.asciidoc[概要]::
+インタースティシャル（全画面）広告とは、AMoAdネットワークのレクタングル広告（300x250）をカスタマイズ可能なパネルに乗せて全画面表示させる機能です
+
+NOTE: Unityプラグイン、Cocos2d-xモジュールに対応しています
+
 == プラグインなど
 === Unityプラグイン
 
 link:Documents/UnityPlugin/Guide.asciidoc[導入ガイド]::
-Unityへの導入方法とソースコードへの組み込み方法について説明します
+プラグインの適用手順とビルド方法について説明します
 
-link:https://github.com/amoad/amoad-ios-sdk/raw/master/UnityPlugin/AMoAdUnityPlugin.unitypackage[パッケージのダウンロード]::
-最新版のパッケージはこちらからダウンロードできます
+link:Documents/UnityPlugin/Display.asciidoc[インライン広告 実装ガイド]::
+インライン広告の実装方法とサンプルコードの使い方について説明します
 
-link:https://github.com/amoad/amoad-ios-sdk/blob/master/Samples/UnityPlugin[サンプルコード]::
-Unityへの導入と動作を確認できるサンプルコードです
+link:Documents/UnityPlugin/Interstitial.asciidoc[インタースティシャル（全画面）広告 実装ガイド]::
+インタースティシャル（全画面）広告の実装方法とサンプルコードの使い方について説明します
 
-=== Cocos2d-xモジュールα版
+=== Cocos2d-xモジュール
 link:https://github.com/amoad/amoad-ios-sdk/raw/master/Cocos2dxModule/AMoAdCocos2dxModule.zip[パッケージのダウンロード]:: 導入につきましては営業担当にお問い合わせください
 
 === AdMobメディエーション アダプタ

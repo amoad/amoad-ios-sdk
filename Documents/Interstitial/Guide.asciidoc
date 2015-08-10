@@ -1,0 +1,56 @@
+:toc: macro
+:toc-title: 目次
+:toclevels: 4
+
+= インタースティシャル（全画面）広告
+
+toc::[]
+
+:numbered:
+:sectnums:
+
+== インタースティシャル（全画面）広告とは
+AMoAdネットワークのレクタングル広告（300x250）をカスタマイズ可能なパネルに乗せて全画面表示させる機能です。
+
+.インタースティシャル（全画面）広告 実装例
+[horizontal]
+image:Images/Interstitial_00.jpg[
+"インタースティシャル（全画面）広告 実装例1", width=250px
+]&nbsp;&nbsp;&nbsp;&nbsp;
+
+== 仕様
+パネル::
+広告領域とリンクボタン、閉じるボタンを含む背景領域です。自由にカスタマイズしていただくことが可能です。
+広告領域::
+レクタングル（300x250）を端末サイズに合わせて表示します。タップはできません。
+リンクボタン::
+タップすることで広告のランディングページに遷移します。広告がアプリかウェブ（ショッピングサイトなど）かを判別することはできません。
+閉じるボタン::
+広告のランディングページへ遷移せず、全画面モードを解除します。
+
+NOTE: デベロッパは広告がクリックされたか、閉じるボタンを押されたかをコールバックにより知ることができます。
+
+NOTE: 広告取得エラーの場合、インタースティシャル（全画面）広告は表示されません。
+
+== 対象プラグイン
+
+[options="header"]
+|===
+|プラグイン |対応状況 |マニュアル |サンプルコード
+|なし（link:../Display/Guide.asciidoc[AMoAd SDK]のみ） |未対応（開発中） |- |-
+|link:../UnityPlugin/Guide.asciidoc[Unityプラグイン] |対応済み |link:../UnityPlugin/Interstitial.asciidoc[あり] |link:../..Samples/UnityPlugin/[あり]
+|Cocos2d-xモジュール |対応済み |なし（担当営業までお問合せください） |なし（担当営業までお問合せください）
+|AdMobメディエーション アダプタ |未対応（開発中） |- |-
+|===
+
+NOTE: 広告の表示には、AMoAd SDKが必要です。 +
+SDKの導入については、こちら（link:../Install/Install.asciidoc[iOS版]
+/link:https://github.com/amoad/amoad-android-sdk/blob/master/Documents/Setup.asciidoc[Android版]）をご参照ください。
+
+== パネル仕様詳細
+
+image:Images/Interstitial_00.png[
+"インタースティシャル（全画面）広告 実装例1", width=540px
+]
+
+NOTE: サイズは画面横幅を320pxとしたときの数値です。インタースティシャル（全画面）広告は端末の画面サイズにより拡大されます。
