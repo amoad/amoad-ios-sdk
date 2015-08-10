@@ -1,0 +1,76 @@
+:Version: 1.0.0
+:toc: macro
+:toc-title: 目次
+:toclevels: 4
+
+= インタースティシャル（全画面）広告ガイド AMoAd Cocos2dx Module {version} Guide
+
+toc::[]
+
+:numbered:
+:sectnums:
+
+== 広告を表示するスクリプト
+
+=== スクリプトの流れ
+
+. 管理画面から発行されるsidを指定してregisterInterstitialAd()メソッドでモジュールを登録します。 +
+`AMoAdCocos2dxModule::registerInterstitialAd (sid);`
+. パネル画像をファイル名で設定します。 +
+`AMoAdCocos2dxModule::setInterstitialPanel (sid, imageName);`
+. ボタン押下時など広告の表示を開始したいタイミングで、showInterstitialAd()メソッドを呼び出します。 +
+`AMoAdCocos2dxModule::showInterstitialAd (sid);`
+
+TIP: パネル以外の画像を標準画像から変える場合は、担当営業までお問合せください
+
+=== スクリプト例
+
+.管理画面から発行されるsidを設定してください
+[source,cpp]
+----
+static const char* SID = "管理画面から発行されるsidを設定してください";
+----
+
+.インタースティシャル（全画面）広告を登録する
+[source,cpp]
+----
+AMoAdCocos2dxModule::registerInterstitialAd(SID);
+----
+
+.パネル画像をファイル名で指定する
+[source,cpp]
+----
+AMoAdCocos2dxModule::setInterstitialPanel(SID, "パネルに使用する画像ファイル名");
+----
+
+.インタースティシャル（全画面）広告を表示する
+[source,cpp]
+----
+AMoAdCocos2dxModule::showInterstitialAd(SID);
+----
+
+=== パラメタの説明
+==== AMoAdCocos2dxModule::registerInterstitialAd()
+管理画面から発行されるsidに紐づく広告情報を登録します。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|===
+
+==== AMoAdCocos2dxModule::setInterstitialPanel()
+sidを指定してパネル画像を設定します。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|imageName |string 2+|パネルに使用する画像ファイル名
+|===
+
+==== AMoAdCocos2dxModule::showInterstitialAd()
+sidを指定して広告の表示を行います。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|===
