@@ -15,10 +15,9 @@ link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロー�
 == 概要
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
-** SDKインストールのマニュアルを更新しました。
-** サンプルプログラムを更新しました（Samples/Display/AMoAdSample）。
-** renderAdの失敗Block（onFailure）を指定するメソッドを誤って削除したので、復活させました（詳しくはlink:Documents/Native/Guide_nativeApp.asciidoc#広告を表示する[こちら]を参照ください）。大変ご迷惑をおかけいたしました。
-** バナー広告がUnityに対応しました（詳しくは<<51-unityプラグイン,こちら>>）。
+** インタースティシャル（全画面）広告に対応しました（Unityプラグイン、Cocos2d-xモジュール）。
+** ディスプレイ広告がCocos2d-xに対応しました。
+** ディスプレイ広告がUnityに対応しました。
 
 NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] 。
 
@@ -79,7 +78,14 @@ link:Documents/UnityPlugin/Interstitial.asciidoc[インタースティシャル�
 インタースティシャル（全画面）広告の実装方法とサンプルコードの使い方について説明します
 
 === Cocos2d-xモジュール
-link:https://github.com/amoad/amoad-ios-sdk/raw/master/Cocos2dxModule/AMoAdCocos2dxModule.zip[パッケージのダウンロード]:: 導入につきましては営業担当にお問い合わせください
+link:Documents/Cocos2dxModule/Guide.asciidoc[導入ガイド]::
+モジュールの適用手順とビルド方法について説明します
+
+link:Documents/Cocos2dxModule/Display.asciidoc[インライン広告 実装ガイド]::
+インライン広告の実装方法について説明します
+
+link:Documents/Cocos2dxModule/Interstitial.asciidoc[インタースティシャル（全画面）広告 実装ガイド]::
+インタースティシャル（全画面）広告の実装方法について説明します
 
 === AdMobメディエーション アダプタ
 

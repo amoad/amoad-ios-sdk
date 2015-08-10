@@ -1,0 +1,175 @@
+:Version: 1.0.0
+:toc: macro
+:toc-title: 目次
+:toclevels: 4
+
+= AMoAd Cocos2d-x Module {version} Guide
+
+toc::[]
+
+:numbered:
+:sectnums:
+
+== 広告を表示するスクリプト
+
+=== スクリプトの流れ
+
+. 管理画面から発行されるsid、広告サイズ、表示位置などを指定してregisterInlineAd()メソッドでモジュールを登録します。 +
+`AMoAdCocos2dxModule::registerInlineAd (sid, ...);`
+. 広告の表示を開始したいタイミングで、show()メソッドを呼び出します。 +
+`AMoAdCocos2dxModule::show (sid);`
+. 広告を消したいタイミングで、hide()メソッドを呼び出します。 +
+`AMoAdCocos2dxModule::hide (sid);`
+. メモリ使用量が気になるときはhide()の代わりに、dispose()メソッドを呼び出してください（再表示するにはregisterから行う必要があります）。 +
+`AMoAdCocos2dxModule::dispose (sid);`
+
+TIP: 広告の切り替え（ローテーション）は、管理画面で指定された秒数で行なわれます。モジュールで指定することはできません。
+
+=== スクリプト例
+
+.管理画面から発行されるsidを設定してください
+[source,cpp]
+----
+static const char* SID = "管理画面から発行されるsidを設定してください";
+----
+
+.320x50, 水平中央, 下揃え, レスポンシブ
+[source,cpp]
+----
+AMoAdCocos2dxModule::registerInlineAd(
+  SID,
+  AMoAdCocos2dxModule::AdSize::B320x50,
+  AMoAdCocos2dxModule::HorizontalAlign::Center,
+  AMoAdCocos2dxModule::VerticalAlign::Bottom,
+  AMoAdCocos2dxModule::AdjustMode::Responsive);
+----
+
+.省略可能な設定
+[source,cpp]
+----
+AMoAdCocos2dxModule::setRotateTransition(
+  SID,
+  AMoAdCocos2dxModule::RotateTransition::FlipFromLeft);
+AMoAdCocos2dxModule::setClickTransition(
+  SID,
+  AMoAdCocos2dxModule::ClickTransition::Jump);
+----
+
+.広告を表示する
+[source,cpp]
+----
+AMoAdCocos2dxModule::show(SID);
+----
+
+=== パラメタの説明
+==== AMoAdCocos2dxModule::registerInlineAd()
+管理画面から発行されるsidに紐づく広告情報を登録します。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+.5+|adSize .5+|AMoAdCocos2dxModule ::AdSize 2+|広告サイズ
+|B320x50 |320×50
+|B320x100 |320×100
+|B300x250 |300×250
+|B728x90 |728×90 (iPad用)
+.5+|hAlign .5+|AMoAdCocos2dxModule ::HorizontalAlign 2+|水平方向の表示位置
+|None |なし（x座標指定）
+|Left |左寄せ
+|Center |中央寄せ
+|Right |右寄せ
+.5+|vAlign .5+|AMoAdCocos2dxModule ::VerticalAlign 2+|垂直方向の表示位置
+|None |なし（y座標指定）
+|Left |上寄せ
+|Middle |中央寄せ
+|Right |下寄せ
+.3+|adjustMode .3+|AMoAdCocos2dxModule ::AdjustMode 2+|広告サイズの調整
+|Fixed |固定
+|Responsive |レスポンシブ（デフォルト）
+|x |int 2+|x座標（hAlignがNoneのときのみ有効）
+|y |int 2+|y座標（vAlignがNoneのときのみ有効）
+|===
+
+TIP: 広告サイズの調整にレスポンシブを選択すると、端末のサイズに合わせて広告が拡大縮小します。
+
+==== AMoAdCocos2dxModule::setDefaultImageName()
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|imageName |string 2+|初期表示画像ファイル名（Androidアプリを作成する場合は、アルファベットの小文字で始まる名前）
+|===
+
+==== AMoAdCocos2dxModule::setRotateTransition()
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+.6+|rotateTrans .6+|AMoAdCocos2dxModule ::RotateTransition 2+|広告ローテーション時のトランジションを設定する（iOS用）
+|None |トランジション「なし」（デフォルト）
+|CurlUp |トランジション「巻き上げ」
+|CurlDown |トランジション「巻き下げ」
+|FlipFromLeft |トランジション「左フリップ」
+|FlipFromRight |トランジション「右フリップ」
+|===
+
+==== AMoAdCocos2dxModule::setClickTransition()
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+.3+|clickTrans .3+|AMoAdCocos2dxModule ::ClickTransition 2+|広告クリック時のトランジションを設定する（iOS用）
+|None |トランジション「なし」（デフォルト）
+|Jump |トランジション「ジャンプ」
+|===
+
+TIP: Androidアプリをビルドする場合は、対応しているアニメーションが異なります。
+
+==== [Android] AMoAdCocos2dxModule::setRotateTransition()
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+.6+|androidRotateTrans .6+|AMoAdCocos2dxModule ::RotateTransition 2+|広告ローテーション時のトランジションを設定する（Android用）
+|None |トランジション「なし」（デフォルト）
+|Alpha |トランジション「透過」
+|Rotate |トランジション「回転」
+|Scale |トランジション「拡大」
+|Translate |トランジション「スライド・アップ」
+|===
+
+==== [Android] AMoAdCocos2dxModule::setClickTransition()
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+.3+|androidClickTrans .3+|AMoAdCocos2dxModule ::ClickTransition 2+|広告クリック時のトランジションを設定する（Android用）
+|None |トランジション「なし」（デフォルト）
+|Jump |トランジション「ジャンプ」
+|===
+
+==== AMoAdCocos2dxModule::show()
+sidを指定して広告の表示を行います。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|===
+
+==== AMoAdCocos2dxModule::hide()
+sidを指定して広告を消します。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|===
+
+==== AMoAdCocos2dxModule::dispose()
+メモリ容量が気になる場合、広告を消してViewのリソースを解放します。再表示するにはregisterから行う必要があります。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|===
+
+TIP: AMoAdCocos2dxModule::show()メソッド呼び出し時、Viewがなければ作成します。同じsidの広告を同じ画面に複数、置くことはできません。

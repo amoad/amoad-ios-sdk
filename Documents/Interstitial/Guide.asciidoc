@@ -39,7 +39,7 @@ NOTE: 広告取得エラーの場合、インタースティシャル（全画�
 |プラグイン |対応状況 |マニュアル |サンプルコード
 |なし（link:../Display/Guide.asciidoc[AMoAd SDK]のみ） |未対応（開発中） |- |-
 |link:../UnityPlugin/Guide.asciidoc[Unityプラグイン] |対応済み |link:../UnityPlugin/Interstitial.asciidoc[あり] |link:../..Samples/UnityPlugin/[あり]
-|Cocos2d-xモジュール |対応済み |なし（担当営業までお問合せください） |なし（担当営業までお問合せください）
+|link:../Cocos2dxModule/Guide.asciidoc[Cocos2d-xモジュール] |対応済み |link:../Cocos2dxModule/Interstitial.asciidoc[あり] |なし（担当営業までお問合せください）
 |AdMobメディエーション アダプタ |未対応（開発中） |- |-
 |===
 

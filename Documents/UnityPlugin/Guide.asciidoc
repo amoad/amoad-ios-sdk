@@ -88,7 +88,7 @@ image:images/U3_1_1_T.png[
 ==== Xcode
 AMoAd SDKの導入につきまして、簡単に説明すると以下のとおりです。
 
-. libAMoAd.aとAMoAdView.hをプロジェクトに追加する
+. Modulesフォルダ以下のファイルをすべてドラッグ＆ドロップする
 . Link Binary With LibrariesにAdSupport.framework、ImageIO.framework、StoreKit.frameworkを追加する。
 . Build Settings -> Linking -> Other Linker Flagsに「-ObjC」を設定する
 . 初期表示画像ファイルをプロジェクトに追加する
