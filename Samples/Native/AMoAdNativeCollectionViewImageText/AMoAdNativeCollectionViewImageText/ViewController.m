@@ -27,9 +27,9 @@ static const NSInteger kInterval = 4; // アプリリリース時は管理画面
   [super viewDidLoad];
 
   // [SDK] 広告準備（prepareAd）
-  [[AMoAdNativeViewManager sharedManager] prepareAdWithSid:kSid defaultBeginIndex:kBeginIndex defaultInterval:kInterval iconPreloading:YES];
+  [[AMoAdNativeViewManager sharedManager] prepareAdWithSid:kSid defaultBeginIndex:kBeginIndex defaultInterval:kInterval iconPreloading:YES imagePreloading:YES];
 
-  // [SDK] 広告View登録（registerTableView）
+  // [SDK] 広告View登録（registerCollectionView）
   [[AMoAdNativeViewManager sharedManager] registerCollectionView:self.collectionView sid:kSid tag:kTag nibName:kNibName];
 
   // ユーザView登録、コンテンツ生成、
