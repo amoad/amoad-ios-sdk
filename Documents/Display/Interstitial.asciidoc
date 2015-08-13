@@ -5,14 +5,14 @@
 
 = インタースティシャル（全画面）広告ガイド AMoAd SDK {version} Guide for iOS
 
+NOTE: インタースティシャル（全画面）広告の概要については、link:../Interstitial/Guide.asciidoc[こちら]をご参照ください。
+
+NOTE: SDKのインストールについてはlink:../Install/Install.asciidoc[こちら]をご参照ください。
+
 toc::[]
 
 :numbered:
 :sectnums:
-
-NOTE: インタースティシャル（全画面）広告の概要については、link:../Interstitial/Guide.asciidoc[こちら]をご参照ください。
-
-NOTE: SDKのインストールについてはlink:../Install/Install.asciidoc[こちら]をご参照ください。
 
 == 広告を表示するスクリプト
 
