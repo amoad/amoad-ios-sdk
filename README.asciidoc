@@ -1,4 +1,4 @@
-:Version: 3.9.1
+:Version: 3.9.2
 
 = AMoAd SDK {version} Guide for iOS
 
@@ -7,6 +7,7 @@
 
 link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版ダウンロードページ] ::
 リリース時は、こちらの使用をお勧めします。 +
+[NEW] インタースティシャル広告を重複表示しなくなりました。アプリから閉じるI/Fを追加しました。
 [NEW] AMoAd.hのimportが必須になっていますご注意ください
 
 link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロードページ] ::

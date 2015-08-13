@@ -1,4 +1,4 @@
-:Version: 1.0.1
+:Version: 1.0.2
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
@@ -69,6 +69,16 @@ sidを指定して広告の表示を行います。
 |パラメタ名 |Type 2+|Value
 |sid |string 2+|管理画面から発行されるsidを設定してください
 |===
+
+==== AMoAdUnityPlugin.CloseInterstitialAd()
+sidを指定して広告を閉じます。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|===
+
+TIP: リンクボタン、閉じるボタンが押された時は自動的に閉じるので、このメソッドを呼び出す必要はありません。
 
 == サンプルアプリケーションの使用方法
 === AMoAdUnityPluginInterstitialSample
