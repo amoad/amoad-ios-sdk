@@ -5,6 +5,14 @@
 
 = インタースティシャル（全画面）広告ガイド AMoAd Cocos2dx Module {version} Guide
 
+NOTE: インタースティシャル広告の概要については、link:../Interstitial/Guide.asciidoc[こちら]をご参照ください。
+
+NOTE: SDKのインストールについてはこちら（link:../Install/Install.asciidoc[iOS版]/link:https://github.com/amoad/amoad-android-sdk/blob/master/Documents/Setup.asciidoc[Android版]）をご参照ください。
+
+NOTE: Cocos2d-xモジュールのインストールについてはlink:Guide.asciidoc[こちら]をご参照ください。
+
+NOTE: ダウンロードはこちら（link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版]/link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版]）からお願いします。
+
 toc::[]
 
 :numbered:
