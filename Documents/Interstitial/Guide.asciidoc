@@ -37,8 +37,8 @@ NOTE: 広告取得エラーの場合、インタースティシャル（全画�
 [options="header"]
 |===
 |プラグイン |対応状況 |マニュアル |サンプルコード
-|なし（link:../Display/Guide.asciidoc[AMoAd SDK]のみ） |対応済み |link:../Display/Interstitial.asciidoc[あり] |link:../..Samples/DisplayInterstitial/[あり]
-|link:../UnityPlugin/Guide.asciidoc[Unityプラグイン] |対応済み |link:../UnityPlugin/Interstitial.asciidoc[あり] |link:../..Samples/UnityPlugin/[あり]
+|なし（link:../Display/Guide.asciidoc[AMoAd SDK]のみ） |対応済み |link:../Display/Interstitial.asciidoc[あり] |link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/DisplayInterstitial/[あり]
+|link:../UnityPlugin/Guide.asciidoc[Unityプラグイン] |対応済み |link:../UnityPlugin/Interstitial.asciidoc[あり] |link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/UnityPlugin/[あり]
 |link:../Cocos2dxModule/Guide.asciidoc[Cocos2d-xモジュール] |対応済み |link:../Cocos2dxModule/Interstitial.asciidoc[あり] |なし（担当営業までお問合せください）
 |AdMobメディエーション アダプタ |未対応（開発中） |- |-
 |===
