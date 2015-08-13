@@ -5,6 +5,16 @@
 
 = インタースティシャル（全画面）広告ガイド AMoAd Unity Plugin {version} Guide
 
+NOTE: インタースティシャル広告の概要については、link:../Interstitial/Guide.asciidoc[こちら]をご参照ください。
+
+NOTE: SDKのインストールについてはこちら（link:../Install/Install.asciidoc[iOS版]/link:https://github.com/amoad/amoad-android-sdk/blob/master/Documents/Setup.asciidoc[Android版]）をご参照ください。
+
+NOTE: Unityプラグインのインストールについてはlink:Guide.asciidoc[こちら]をご参照ください。
+
+NOTE: ダウンロードはこちら（link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版]/link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版]）からお願いします。
+
+NOTE: サンプルコードが/Samples/UnityPlugin/にありますので、管理画面から取得したsidを入力して動かしてください。
+
 toc::[]
 
 :numbered:
