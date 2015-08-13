@@ -13,6 +13,10 @@ typedef NS_ENUM(NSInteger, AMoAdInterstitialResult) {
   AMoAdInterstitialResultClick,
   /// 閉じるボタンが押された
   AMoAdInterstitialResultClose,
+  /// インタースティシャル広告が表示中（重複して開かない）
+  AMoAdInterstitialResultDuplicated,
+  /// アプリから閉じられた
+  AMoAdInterstitialResultCloseFromApp,
   /// 受信に失敗した
   AMoAdInterstitialResultFailure
 };
@@ -46,5 +50,9 @@ typedef NS_ENUM(NSInteger, AMoAdInterstitialResult) {
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param completion 広告受信完了Block
 + (void)showAdWithSid:(NSString *)sid completion:(void (^)(NSString *sid, AMoAdInterstitialResult result))completion;
+
+/// インタースティシャル広告を閉じる
+/// @param sid 管理画面から取得した64文字の英数字
++ (void)closeAdWithSid:(NSString *)sid;
 
 @end
