@@ -29,10 +29,20 @@ SDK共通のインストール方法
 
 == ディスプレイ広告
 
+=== インライン広告
+
 link:Documents/Display/Guide.asciidoc[実装ガイド]::
-ディスプレイ広告の実装方法
+実装方法
 
 link:https://github.com/amoad/amoad-ios-sdk/tree/master/Samples/Display[サンプルコード]::
+管理画面から取得したsidを入力して動かしてください
+
+=== インタースティシャル（全画面）広告
+
+link:Documents/Display/Interstitial.asciidoc[実装ガイド]::
+実装方法
+
+link:../Samples/DisplayInterstitial[サンプルコード]::
 管理画面から取得したsidを入力して動かしてください
 
 == ネイティブ広告
