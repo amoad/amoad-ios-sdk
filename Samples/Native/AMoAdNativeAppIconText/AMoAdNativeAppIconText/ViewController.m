@@ -64,16 +64,15 @@ static NSString *const kNibName = @"AdIconTextView";
   // Dispose of any resources that can be recreated.
 }
 
-
-- (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state {
+- (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdResult)state {
   NSLog(@"amoadNativeDidReceive:%@ tag:%@ view:%@ state:%ld", sid, tag, view, (long)state);
 }
 
-- (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state {
+- (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdResult)state {
   NSLog(@"amoadNativeIconDidReceive:%@ tag:%@ view:%@ state:%ld", sid, tag, view, (long)state);
 }
 
-- (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdNativeResult)state {
+- (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view state:(AMoAdResult)state {
   NSLog(@"amoadNativeImageDidReceive:%@ tag:%@ view:%@ state:%ld", sid, tag, view, (long)state);
 }
 
