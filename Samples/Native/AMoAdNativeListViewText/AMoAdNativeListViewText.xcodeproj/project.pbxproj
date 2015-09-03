@@ -20,6 +20,11 @@
 		ACB2F9F01A95C07B00A2D823 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB2F9EF1A95C07B00A2D823 /* ImageIO.framework */; };
 		ACB2F9F21A95C08100A2D823 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB2F9F11A95C08100A2D823 /* AdSupport.framework */; };
 		E9AEE8301AC55AE000D74AD0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AEE82F1AC55AE000D74AD0 /* StoreKit.framework */; };
+		F67006671B983A9A00DAD6BE /* amoad_close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = F670065D1B983A9A00DAD6BE /* amoad_close_btn_h.png */; };
+		F67006681B983A9A00DAD6BE /* amoad_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F670065E1B983A9A00DAD6BE /* amoad_close_btn.png */; };
+		F67006691B983A9A00DAD6BE /* amoad_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = F670065F1B983A9A00DAD6BE /* amoad_link_btn_h.png */; };
+		F670066A1B983A9A00DAD6BE /* amoad_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = F67006601B983A9A00DAD6BE /* amoad_link_btn.png */; };
+		F670066B1B983A9A00DAD6BE /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = F67006611B983A9A00DAD6BE /* amoad_panel.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		ACB2F9EF1A95C07B00A2D823 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		ACB2F9F11A95C08100A2D823 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E9AEE82F1AC55AE000D74AD0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F670065D1B983A9A00DAD6BE /* amoad_close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn_h.png; sourceTree = "<group>"; };
+		F670065E1B983A9A00DAD6BE /* amoad_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn.png; sourceTree = "<group>"; };
+		F670065F1B983A9A00DAD6BE /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
+		F67006601B983A9A00DAD6BE /* amoad_link_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn.png; sourceTree = "<group>"; };
+		F67006611B983A9A00DAD6BE /* amoad_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel.png; sourceTree = "<group>"; };
+		F67006621B983A9A00DAD6BE /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
+		F67006631B983A9A00DAD6BE /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
+		F67006641B983A9A00DAD6BE /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
+		F67006651B983A9A00DAD6BE /* AMoAdNativePreRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativePreRoll.h; sourceTree = "<group>"; };
+		F67006661B983A9A00DAD6BE /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +161,16 @@
 		ACB2F9E61A95BB4500A2D823 /* AMoAdSdk */ = {
 			isa = PBXGroup;
 			children = (
+				F670065D1B983A9A00DAD6BE /* amoad_close_btn_h.png */,
+				F670065E1B983A9A00DAD6BE /* amoad_close_btn.png */,
+				F670065F1B983A9A00DAD6BE /* amoad_link_btn_h.png */,
+				F67006601B983A9A00DAD6BE /* amoad_link_btn.png */,
+				F67006611B983A9A00DAD6BE /* amoad_panel.png */,
+				F67006621B983A9A00DAD6BE /* AMoAd.h */,
+				F67006631B983A9A00DAD6BE /* AMoAdAnalytics.h */,
+				F67006641B983A9A00DAD6BE /* AMoAdInterstitial.h */,
+				F67006651B983A9A00DAD6BE /* AMoAdNativePreRoll.h */,
+				F67006661B983A9A00DAD6BE /* AMoAdView.h */,
 				ACB2F9E71A95BB4500A2D823 /* AMoAdLogger.h */,
 				ACB2F9E81A95BB4500A2D823 /* AMoAdNativeView.h */,
 				ACB2F9E91A95BB4500A2D823 /* libAMoAd.a */,
@@ -233,9 +258,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F67006691B983A9A00DAD6BE /* amoad_link_btn_h.png in Resources */,
+				F67006681B983A9A00DAD6BE /* amoad_close_btn.png in Resources */,
 				ACB2F9CC1A95A97500A2D823 /* Main.storyboard in Resources */,
+				F670066B1B983A9A00DAD6BE /* amoad_panel.png in Resources */,
+				F670066A1B983A9A00DAD6BE /* amoad_link_btn.png in Resources */,
 				ACB2F9ED1A95BD0C00A2D823 /* AdTextTableViewCell.xib in Resources */,
 				ACB2F9D11A95A97500A2D823 /* LaunchScreen.xib in Resources */,
+				F67006671B983A9A00DAD6BE /* amoad_close_btn_h.png in Resources */,
 				ACB2F9CE1A95A97500A2D823 /* Images.xcassets in Resources */,
 				ACB2F9EE1A95BD0C00A2D823 /* UserTableViewCell.xib in Resources */,
 			);
