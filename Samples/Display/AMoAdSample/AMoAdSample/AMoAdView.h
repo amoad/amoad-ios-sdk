@@ -109,10 +109,11 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 
 
 /// サイズと位置で初期化
-- (id)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode;
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode delegate:(id)delegate;
 
 /// サイズと座標で初期化
-- (id)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y;
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y delegate:(id)delegate;
+
 
 /// 広告を表示する
 - (void)show;
@@ -120,19 +121,18 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 /// 広告を非表示にする
 - (void)hide;
 
-
 + (CGSize)sizeWithBannerSize:(AMoAdBannerSize)bannerSize;
 
-
 // 非推奨のメソッド
-- (id)initWithFrame:(CGRect)frame DEPRECATED_ATTRIBUTE;
+- (instancetype)initWithFrame:(CGRect)frame DEPRECATED_ATTRIBUTE;
 
 /// サポート外のメソッド
-- (id)init __attribute__((unavailable("This method is not available.")));
+- (instancetype)init __attribute__((unavailable("This method is not available.")));
 /// サポート外のメソッド
 - (id)initWithCoder:(NSCoder *)aDecoder __attribute__((availability(ios,unavailable,message="This method is not available.")));
-- (id)initWithImage:(UIImage *)image __attribute__((unavailable("This method is not available.")));
-- (id)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage __attribute__((unavailable("This method is not available.")));
-
+- (instancetype)initWithImage:(UIImage *)image __attribute__((unavailable("This method is not available.")));
+- (instancetype)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage __attribute__((unavailable("This method is not available.")));
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode  __attribute__((unavailable("This method is not available.")));
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y  __attribute__((unavailable("This method is not available.")));
 
 @end

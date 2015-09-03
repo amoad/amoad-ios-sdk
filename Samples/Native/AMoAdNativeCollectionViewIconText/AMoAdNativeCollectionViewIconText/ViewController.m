@@ -9,7 +9,7 @@
 #import "AMoAdNativeView.h"
 #import "AMoAdLogger.h"
 
-static NSString *const kSid = @"管理画面から取得したリストビュー、メイン画像＋テキストのsidを指定してください";
+static NSString *const kSid = @"管理画面から取得したリストビュー、アイコン画像＋テキストのsidを指定してください";
 static NSString *const kTag = @"Ad01";
 static NSString *const kNibName = @"AdIconTextCollectionViewCell";
 static const NSInteger kBeginIndex = 2; // アプリリリース時は管理画面と同じ値を指定することを推奨します（0以上）
@@ -79,15 +79,15 @@ static const NSInteger kInterval = 4; // アプリリリース時は管理画面
 
 
 #pragma mark - AMoAdNativeListViewDelegate
-- (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state {
+- (void)amoadNativeDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdResult)state {
   NSLog(@"amoadNativeDidReceive:%@ tag:%@ view:%@ indexPath:%@ state:%ld", sid, tag, view, indexPath, (long)state);
 }
 
-- (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state {
+- (void)amoadNativeIconDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdResult)state {
   NSLog(@"amoadNativeIconDidReceive:%@ tag:%@ view:%@ indexPath:%@ state:%ld", sid, tag, view, indexPath, (long)state);
 }
 
-- (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdNativeResult)state {
+- (void)amoadNativeImageDidReceive:(NSString *)sid tag:(NSString *)tag view:(UIView *)view indexPath:(NSIndexPath *)indexPath state:(AMoAdResult)state {
   NSLog(@"amoadNativeImageDidReceive:%@ tag:%@ view:%@ indexPath:%@ state:%ld", sid, tag, view, indexPath, (long)state);
 }
 
