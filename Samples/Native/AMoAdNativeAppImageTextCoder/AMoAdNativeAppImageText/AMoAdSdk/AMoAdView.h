@@ -125,14 +125,11 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 
 // 非推奨のメソッド
 - (instancetype)initWithFrame:(CGRect)frame DEPRECATED_ATTRIBUTE;
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode DEPRECATED_ATTRIBUTE;
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y DEPRECATED_ATTRIBUTE;
 
 /// サポート外のメソッド
 - (instancetype)init __attribute__((unavailable("This method is not available.")));
-/// サポート外のメソッド
 - (id)initWithCoder:(NSCoder *)aDecoder __attribute__((availability(ios,unavailable,message="This method is not available.")));
-- (instancetype)initWithImage:(UIImage *)image __attribute__((unavailable("This method is not available.")));
-- (instancetype)initWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage __attribute__((unavailable("This method is not available.")));
-- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode  __attribute__((unavailable("This method is not available.")));
-- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y  __attribute__((unavailable("This method is not available.")));
 
 @end
