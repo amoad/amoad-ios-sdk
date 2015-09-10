@@ -64,3 +64,63 @@ TIP: Xcode 4の場合は、Quartzcore.frameworkも追加する必要がありま
 
 image:Images/LN01.png[
 "リンクオプションの追加", width=90%]
+
+=== ATS (App Transport Security) を抑制する
+iOS 9以降では、HTTPリクエストが強制的にHTTPSへ変換されます。
+以下にそれを防ぐ方法を記します。アプリの実装に合わせて、以下のいずれかの方法を選択してください。
+
+==== ドメイン名を指定してATSを無効にする
+アプリでATSの機能を利用している、想定外のHTTPリクエストを防ぐなどの理由で、基本はATSを有効にしておきたいとき、AMoAdへのリクエストのみをATS対象外とすることができます。
+
+.info.plist
+image:Images/iOS9_ATS_SDK_Settings.png[
+"ドメイン名を指定してATSを無効にする", width=90%]
+
+.info.plist (ソースコード表示)
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- 省略 -->
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSExceptionDomains</key>
+    <dict>
+      <key>amoad.com</key>
+      <dict>
+        <key>NSIncludesSubdomains</key>
+        <true/>
+        <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+        <true/>
+      </dict>
+    </dict>
+  </dict>
+</dict>
+</plist>
+----
+
+#### 全てのATSを無効にする
+アプリでATSを利用しておらず、iOS 9より前と同じく動作させたい場合、全てのATSを無効にすることができます。
+
+.info.plist
+image:Images/iOS9_ATS_Arbitrary.png[
+"全てのATSを無効にする", width=90%]
+
+.info.plist (ソースコード表示)
+[source,xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- 省略 -->
+  <key>NSAppTransportSecurity</key>
+  <dict>
+    <key>NSAllowsArbitraryLoads</key>
+    <true/>
+  </dict>
+</dict>
+</plist>
+----
