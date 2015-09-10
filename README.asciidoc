@@ -7,7 +7,7 @@
 
 link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版ダウンロードページ] ::
 リリース時は、こちらの使用をお勧めします。 +
-[NEW] AMoAd.hのimportが必須になっていますご注意ください
+**[NEW] iOS 9のATS (App Transport Security) を抑制する方法について追記しました。必ずご確認ください！（link:Documents/Install/Install.asciidoc[SDKインストールガイド]）**
 
 link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロードページ] ::
 開発中のベータ版、アルファ版などが含まれます。
@@ -15,9 +15,9 @@ link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロー�
 == 概要
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
+** AMoAd.hのimportが必須になっています。
 ** インタースティシャル（全画面）広告に対応しました（Unityプラグイン、Cocos2d-xモジュール）。
-** ディスプレイ広告がCocos2d-xに対応しました。
-** ディスプレイ広告がUnityに対応しました。
+** ディスプレイ広告がCocos2d-x、Unityに対応しました。
 
 NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] 。
 
