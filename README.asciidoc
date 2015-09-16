@@ -12,6 +12,8 @@ link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版ダウン�
 link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロードページ] ::
 開発中のベータ版、アルファ版などが含まれます。
 
+NOTE: WebViewへアドタグを貼る時の実装方法はlink:WebView/guide.md[こちら]をご参照ください。
+
 == 概要
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
