@@ -62,6 +62,16 @@ link:Documents/Native/Overview_listView.asciidoc[概要]::
 link:Documents/Native/Guide_listView.asciidoc[実装ガイド]::
 AMoAd SDKでは、リストビュー広告を簡単に表示するAPIを提供しています
 
+=== プリロール
+link:Documents/Native/Overview_preroll.asciidoc[概要]::
+マンガアプリなどで、コンテンツの前後に入れる広告です。
+
+link:Documents/Native/Guide_preroll.asciidoc[実装ガイド]::
+AMoAd SDKでは、プリロール広告を簡単に表示するAPIを提供しています
+
+link:Samples/NativePreRoll/AMoAdNativePreRoll[サンプルコード]::
+管理画面から取得したsidを入力して動かしてください
+
 === ネイティブ広告（共通）
 
 link:https://rawgit.com/amoad/amoad-ios-sdk/master/Documents/Native/appledoc/index.html[APIリファレンス]::
