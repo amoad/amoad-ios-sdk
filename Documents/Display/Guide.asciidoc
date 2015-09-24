@@ -160,28 +160,60 @@ TIP: 広告枠の審査が完了すると、広告主から提供されている
 
 == APPENDIX A. API仕様
 
-.AMoAdView
+=== AMoAdView
 AMoAd SDK for iOS で公開されているAPIを以下にまとめます。
+
+==== initWithSid:bannerSize:hAlign:vAlign:adjustMode:delegate:
+サイズ と位置で初期化します。
+
+==== initWithSid:bannerSize:hAlign:vAlign:adjustMode:x :y:delegate:
+サイズ と座標で初期化します。
 
 [options="header"]
 |===
-|プロパティ |型 2+|説明
-|sid |文字列 (NSString *) 2+|AMoAd Webサイトで発行されるID（必須）
-.6+|rotateTransition .6+|列挙型 (AMoAdRotateTransition) 2+|ローテーション時のトランジション
-|AMoAdRotateTransitionNone |トランジション「なし」
-|AMoAdRotateTransitionFlipFromLeft |トランジション「左フリップ」
-|AMoAdRotateTransitionFlipFromRight |トランジション「右フリップ」
-|AMoAdRotateTransitionCurlUp |トランジション「巻き上げ」
-|AMoAdRotateTransitionCurlDown |トランジション「巻き下げ」
-.3+|clickTransition .3+|列挙型 (AMoAdClickTransition) 2+|クリック時のトランジション
-|AMoAdClickTransitionNone |トランジション「なし」
-|AMoAdClickTransitionJump |トランジション「ジャンプ」
-|delegate .3+|AMoAdDelegateプロトコル 2+|通知を受け取るデリゲート
+|パラメタ名 |Type 2+|Value
+|sid |NSString 2+|管理画面から発行されるsidを設定してください
+.5+|bannerSize .5+|AMoAdBannerSize 2+|広告サイズ
+|B320x50 |320×50
+|B320x100 |320×100
+|B300x250 |300×250
+|B728x90 |728×90 (iPad用)
+.5+|hAlign .5+|AMoAdHorizontalAlign 2+|水平方向の表示位置
+|None |なし（x座標指定）
+|Left |左寄せ
+|Center |中央寄せ
+|Right |右寄せ
+.5+|vAlign .5+|AMoAdVerticalAlign 2+|垂直方向の表示位置
+|None |なし（y座標指定）
+|Left |上寄せ
+|Middle |中央寄せ
+|Right |下寄せ
+.3+|adjustMode .3+|AMoAdAdjustMode 2+|広告サイズの調整
+|Fixed |固定
+|Responsive |レスポンシブ
+|x |CGFloat 2+|x座標（hAlignがNoneのときのみ有効）
+|y |CGFloat 2+|y座標（vAlignがNoneのときのみ有効）
 |===
 
-.非推奨
-以下のプロパティは対応する新しいプロパティに変更されました。以前のプロパティも使用することは可能ですが、非推奨となり、今後のバージョンでは使用できなくなる可能性があります。
+TIP: 広告サイズの調整にレスポンシブを選択すると、端末のサイズに合わせて広告が拡大縮小します。
 
+
+==== show
+非表示になっている広告を表示します（生成された広告はデフォルトで表示されています）
+
+==== hide
+広告を非表示にします。
+
+==== 非推奨
+以下のメソッドは非推奨となり、今後のバージョンでは使用できなくなる可能性があります。
+
+[options="header"]
+|===
+|メソッド名
+|initWithFrame:
+|===
+
+以下のプロパティは対応する新しいプロパティに変更されました。以前のプロパティも使用することは可能ですが、非推奨となり、今後のバージョンでは使用できなくなる可能性があります。
 [options="header"]
 |===
 |変更前 |型 |変更後 |型
@@ -189,7 +221,7 @@ AMoAd SDK for iOS で公開されているAPIを以下にまとめます。
 |clickAnimationTransition |AMoAdViewClickAnimationTransition |clickTransition |AMoAdClickTransition
 |===
 
-.非対応
+==== 非対応
 以下のプロパティ、メソッドは非対応となり呼び出しても何も起こりません。
 
 |===
@@ -209,8 +241,8 @@ enableModal、rootController、currentContentSizeIdentifier、enableRotation、d
 |amoadView (AMoAdView *) |受信したAMoAdViewオブジェクト
 |===
 
-=== 非推奨
-以下のメソッドは対応する新しいプロパティに変更されました。以前のメソッドも使用することは可能ですが、非推奨となり、今後のバージョンでは使用できなくなる可能性があります。
+==== 非推奨
+以下のメソッドは対応する新しいメソッドに変更されました。以前のメソッドも使用することは可能ですが、非推奨となり、今後のバージョンでは使用できなくなる可能性があります。
 
 [options="header"]
 |===
@@ -222,6 +254,7 @@ enableModal、rootController、currentContentSizeIdentifier、enableRotation、d
 本SDKでは広告の生成をソースコードで行うこともできます。その場合でもシングルトン・パターンなどで生成を管理する必要はなく、各画面に同じ固有IDを設定することで広告を内部的に共有します。APIの詳細については「APPENDIX A API仕様」を参照ください。
 
 === サンプルコード（Objective-C）
+・位置(中央寄せ等、上寄せ等)で指定する場合
 
 .ViewController.m
 [source,objective-c]
@@ -231,12 +264,52 @@ enableModal、rootController、currentContentSizeIdentifier、enableRotation、d
     [super viewDidLoad];
 
     // 広告の設置
-    AMoAdView *amoadView = [[AMoAdView alloc] initWithFrame:CGRectMake(0, 64, 320, 50)];
-    amoadView.sid = @"管理画面から発行されるSIDを設定してください";
+    NSString *sid = @"管理画面から発行されるSIDを設定してください";
+
+    // 横方向を中央寄せ(AMoAdHorizontalAlignCenter) , 縦方向を下寄せ(AMoAdVerticalAlignBottom) に指定
+    AMoAdView *amoadView = [[AMoAdView alloc] initWithSid:sid bannerSize:AMoAdBannerSizeB320x50
+        hAlign:AMoAdHorizontalAlignCenter vAlign:AMoAdVerticalAlignBottom adjustMode:AMoAdAdjustModeFixed
+        delegate:self];
+    amoadView.image = [UIImage imageNamed:@"640_100.gif"];
     amoadView.rotateTransition = AMoAdRotateTransitionFlipFromLeft;
     amoadView.clickTransition = AMoAdClickTransitionJump;
 
     [self.view addSubview:amoadView];
+
+}
+----
+
+・座標で指定する場合
+
+.ViewController.m
+[source,objective-c]
+----
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+
+    // 広告の設置
+    NSString *sid = @"管理画面から発行されるSIDを設定してください";
+
+    // 座標で指定する場合
+    // 位置の指定(hAlign:,vAlign:)はNoneにする。
+    AMoAdView *amoadView = [[AMoAdView alloc] initWithSid:sid bannerSize:AMoAdBannerSizeB320x50
+      hAlign:AMoAdHorizontalAlignNone vAlign:AMoAdVerticalAlignNone adjustMode:AMoAdAdjustModeFixed
+      x:0 y:60 delegate:self];
+
+    // 横方向は中央寄せ、縦方向のみ座標で指定する場合
+    // hAlign:AMoAdHorizontalAlignCenter , vAlign:AMoAdVerticalAlignNone を指定する。
+    // x:に指定した数値は無視される。
+    // AMoAdView *amoadView = [[AMoAdView alloc] initWithSid:sid bannerSize:AMoAdBannerSizeB320x50
+    //   hAlign:AMoAdHorizontalAlignCenter vAlign:AMoAdVerticalAlignNone adjustMode:AMoAdAdjustModeFixed
+    //   x:0 y:60 delegate:self];
+
+    amoadView.image = [UIImage imageNamed:@"640_100.gif"];
+    amoadView.rotateTransition = AMoAdRotateTransitionFlipFromLeft;
+    amoadView.clickTransition = AMoAdClickTransitionJump;
+
+    [self.view addSubview:amoadView];
+
 }
 ----
 
@@ -249,10 +322,11 @@ override func viewDidLoad() {
     super.viewDidLoad()
 
     // 広告の設置
-    var amoadView = AMoAdView(frame: CGRectMake(0, 0, 320, 50))
-    amoadView.sid = "管理画面から発行されるSIDを設定してください"
-    amoadView.rotateTransition = AMoAdRotateTransitionFlipFromLeft
-    amoadView.clickTransition = AMoAdClickTransitionJump
+    let sid = "管理画面から発行されるSIDを設定してください"
+    let amoadView = AMoAdView(sid: sid, bannerSize: .B300x100, hAlign: .Center, vAlign: .Bottom,
+        adjustMode: .Responsive, delegate: self)
+    amoadView.rotateTransition = .FlipFromLeft
+    amoadView.clickTransition = .Jump
 
     self.view.addSubview(amoadView)
 }
