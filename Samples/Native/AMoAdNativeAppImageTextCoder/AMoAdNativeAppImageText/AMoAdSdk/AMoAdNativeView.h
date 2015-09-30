@@ -283,7 +283,7 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param nibName 広告セル用のリソース名
 - (void)registerTableView:(UITableView *)tableView sid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName;
 
-/// 【リストビュー】テーブル（UITableView）に広告テンプレート（nibName）を登録する
+/// 【リストビュー】テーブル（UITableView）に広告テンプレート（nib）を登録する
 /// @param tableView 広告セルを含んだテーブル型のリストを表示する
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
@@ -298,7 +298,7 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param coder 広告描画情報
 - (void)registerTableView:(UITableView *)tableView sid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName coder:(AMoAdNativeViewCoder *)coder;
 
-/// 【リストビュー】テーブル（UITableView）に広告テンプレート（nibName）を登録する（描画情報を設定する）
+/// 【リストビュー】テーブル（UITableView）に広告テンプレート（nib）を登録する（描画情報を設定する）
 /// @param tableView 広告セルを含んだテーブル型のリストを表示する
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
@@ -315,7 +315,7 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param nibName 広告セル用のリソース名
 - (void)registerCollectionView:(UICollectionView *)collectionView sid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName;
 
-/// 【リストビュー】コレクション（UICollectionView）に広告テンプレート（nibName）を登録する
+/// 【リストビュー】コレクション（UICollectionView）に広告テンプレート（nib）を登録する
 /// @param collectionView 広告セルを含んだコレクション型のリストを表示する
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
@@ -330,7 +330,7 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param coder 広告描画情報
 - (void)registerCollectionView:(UICollectionView *)collectionView sid:(NSString *)sid tag:(NSString *)tag nibName:(NSString *)nibName coder:(AMoAdNativeViewCoder *)coder;
 
-/// 【リストビュー】コレクション（UICollectionView）に広告テンプレート（nibName）を登録する（描画情報を設定する）
+/// 【リストビュー】コレクション（UICollectionView）に広告テンプレート（nib）を登録する（描画情報を設定する）
 /// @param collectionView 広告セルを含んだコレクション型のリストを表示する
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param tag 同じsidを複数のテーブル（コレクション）で使用するときの識別子<br />任意の文字列を指定できます
