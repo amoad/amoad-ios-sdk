@@ -1,4 +1,4 @@
-:Version: 3.9.4
+:Version: 3.9.5
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
@@ -11,7 +11,7 @@ toc::[]
 :sectnums:
 
 == 概要
-SDKの導入方法につきましてXcode6.4を前提に説明いたします。
+SDKの導入方法につきましてXcode7.0を前提に説明いたします。
 
 == 対応環境
 
@@ -20,14 +20,14 @@ SDKの導入方法につきましてXcode6.4を前提に説明いたします。
 [options="header"]
 |===
 |デバイス |モデル
-|iPhone |iPhone 4/4S/4s、iPhone 5/5s/5c、iPhone 6/6 Plus
-|iPad |iPad 2、iPad 3rd/4th、iPad mini、iPad Air、iPad mini Retina
+|iPhone |iPhone 4/4S/4s、iPhone 5/5s/5c、iPhone 6/6 Plus、iPhone 6s/6s Plus
+|iPad |iPad 2、iPad 3rd/4th、iPad Air、iPad Air 2、iPad mini、iPad mini 2/3/4
 |iPod touch |第4世代以降
 |===
 
 === OSバージョン
 
-iOS 6.x、7.x、8 〜 8.4
+iOS 6.x、7.x、8.x、9.0 〜 9.0.1
 
 == プロジェクト設定
 === AMoAd SDKの追加
