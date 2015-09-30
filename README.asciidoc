@@ -1,4 +1,4 @@
-:Version: 3.9.4
+:Version: 3.9.5
 
 = AMoAd SDK {version} Guide for iOS
 

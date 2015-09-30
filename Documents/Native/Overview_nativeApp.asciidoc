@@ -52,14 +52,12 @@ prepareAdメソッドを呼び出して広告表示の準備をする。
 TIP: 管理画面の広告枠フォーマット、
 表示広告種類に合ったprepareAdを呼び出す必要があります。
 
-Step 2 広告Viewオブジェクトを取得して画面に貼る::
-viewWithSid:tag:nibName:メソッドで、広告View（UIView）を取得し、
-addSubViewなどのメソッドで画面に追加します。
-UIViewのリソース（Xib）は、あらかじめ用意しておきます。
+Step 2 広告テンプレートに広告を描画する::
+renderAdWithSid:tag:view:...メソッドで広告テンプレートに広告を描画します。
+広告テンプレート（Xib）は、あらかじめ用意しておきます。
 
-TIP: 空のXibを作成し、
-UIViewの上にUIImageViewとUILabelを配置します。
+TIP: UIViewの上にUIImageViewとUILabelを配置します。
 広告要素にはそれぞれ番号が振られており、
-Tagにその番号を指定することで自動的にセルが構築されます。
+Tagにその番号を指定することで自動的に広告が描画されます。
 
 IMPORTANT: 詳細は Native SDK Guide for iOS を参照ください。

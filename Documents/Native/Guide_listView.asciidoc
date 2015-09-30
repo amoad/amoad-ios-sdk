@@ -1,4 +1,4 @@
-:Version: 3.9.4
+:Version: 3.9.5
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
@@ -68,7 +68,7 @@ _prepareAdWithSid:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloadi
 |===
 
 === 広告用セルの登録（registerTableView）
-sid(およびtag)毎にUITableViewとnibNameを管理、広告用セルの登録を実施
+テーブル（UITableView）に広告テンプレート（nibName / nib）を登録する
 
 .SampleTableViewController.m
 [source,objective-c]
@@ -90,7 +90,7 @@ sid(およびtag)毎にUITableViewとnibNameを管理、広告用セルの登録
 |tableView |ViewController内で表示するUITableViewオブジェクト
 |sid |管理画面から発行される SID を設定してください
 |tag |同一リストに対し同一 SID を設定したい場合は Tag (名称任意) を設定する必要がある<br>（同一リスト内において sid + tagがユニークであること）
-|nibName |広告用のレイアウトを記述したxibファイルの名称
+|nibName / nib |広告用のレイアウトを記述したxibファイルの名称 / もしくはnibオブジェクト
 |===
 
 === 広告を含んだデータソース元となる配列を作成（arrayWithSid）
@@ -473,7 +473,7 @@ _prepareAdWithSid:defaultBeginIndex:defaultInterval:iconPreloading:imagePreloadi
 |===
 
 === 広告用セルの登録（registerCollectionView）
-sid(およびtag)毎にUICollectionViewとnibNameを管理、広告用セルの登録を実施
+コレクション（UICollectionView）に広告テンプレート（nibName / nib）を登録する
 
 .SampleCollectionViewController.m
 [source,objective-c]
@@ -495,7 +495,7 @@ sid(およびtag)毎にUICollectionViewとnibNameを管理、広告用セルの�
 |collectionView |ViewController内で表示するUICollectionViewオブジェクト
 |sid |管理画面から発行される SID を設定してください
 |tag |同一リストに対し同一 SID を設定したい場合は Tag (名称任意) を設定する必要がある<br>（同一リスト内において sid + tagがユニークであること）
-|nibName |広告用のレイアウトを記述したxibファイルの名称
+|nibName / nib |広告用のレイアウトを記述したxibファイルの名称 / もしくはnibオブジェクト
 |===
 
 === 広告を含んだcollectionView用の配列を作成（arrayWithSid）
