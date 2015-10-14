@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,27 +19,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="initialImage.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Jpu-le-WjM" customClass="AMoAdView">
-                                <rect key="frame" x="140" y="550" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="507" width="600" height="93"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="nTZ-4u-jzm"/>
-                                    <constraint firstAttribute="width" constant="320" id="zyd-96-Pmn"/>
+                                    <constraint firstAttribute="width" secondItem="Jpu-le-WjM" secondAttribute="height" multiplier="560:87" id="RTB-bd-3Iu"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="sid" value="管理画面から取得したsidを指定してください"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="rotate_transition" value="flip_from_left"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="click_transition" value="jump"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="adjust_mode" value="responsive"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jpu-le-WjM" secondAttribute="bottom" id="YsP-vo-rXT"/>
-                            <constraint firstAttribute="centerX" secondItem="Jpu-le-WjM" secondAttribute="centerX" id="iXS-HH-a2h"/>
+                            <constraint firstItem="Jpu-le-WjM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5bm-Ty-8E2"/>
+                            <constraint firstAttribute="trailing" secondItem="Jpu-le-WjM" secondAttribute="trailing" id="U2S-Nk-c7B"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jpu-le-WjM" secondAttribute="bottom" id="kLp-DC-QkY"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="242" y="284"/>
         </scene>
     </scenes>
     <resources>

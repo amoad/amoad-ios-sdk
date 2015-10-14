@@ -40,7 +40,7 @@ image:images/B5_2.png[
 [start=2]
 . Identity InspectorのCustom Classに「AMoAdView」を指定します。
 . User Defined Runtime Attributesに管理画面から発行されるsidをセットする。
-. rotate_transition、click_transitionを設定する。
+. rotate_transition、click_transition、adjust_mode を設定する。
 
 [options="header"]
 |===
@@ -55,9 +55,18 @@ image:images/B5_2.png[
 .3+|click_transition .3+|String 2+|広告クリック時のトランジションを設定する
 |"none" |トランジション「なし」（デフォルト）
 |"jump" |トランジション「ジャンプ」
+.3+|adjust_mode .3+|String 2+|レスポンシブ(画面の大きい端末向けに広告を拡大表示して横幅をフィットさせる)に設定する
+|"fixed" |レスポンシブ「なし」（デフォルト）
+|"responsive" |レスポンシブ「あり」
 |===
 
 TIP: AMoAdViewをソースコードで生成する場合は、「APPENDIX B 広告をソースコードで生成する」を参照ください。
+
+TIP: レスポンシブにする場合はAutoLayoutの制約は左、下、右の余白と縦横比の４つの制約を適用するとうまく表示されます。+
+例：バナー広告でサイズ320x50の場合のAutoLayoutの制約は下記の通りに設定。 +
+・左、下、右の余白0 +
+・縦横比　32:5
+
 
 :numbered:
 :sectnums:
