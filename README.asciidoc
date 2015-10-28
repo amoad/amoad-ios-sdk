@@ -1,16 +1,12 @@
-:Version: 3.9.5
+:Version: 3.9.6
 
 = AMoAd SDK {version} Guide for iOS
 
 :numbered:
 :sectnums:
 
-link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版ダウンロードページ] ::
-リリース時は、こちらの使用をお勧めします。 +
+link:https://github.com/amoad/amoad-ios-sdk/releases/latest[ダウンロードページ] ::
 **[NEW] iOS 9のATS (App Transport Security) を抑制する方法について追記しました。必ずご確認ください！（link:Documents/Install/Install.asciidoc[SDKインストールガイド]）**
-
-link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロードページ] ::
-開発中のベータ版、アルファ版などが含まれます。
 
 NOTE: WebViewへアドタグを貼る時の実装方法はlink:WebView/guide.md[こちら]をご参照ください。
 
