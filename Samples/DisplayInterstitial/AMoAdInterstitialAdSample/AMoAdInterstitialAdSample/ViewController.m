@@ -5,8 +5,8 @@
 //  Created by AMoAd on 2015/08/13.
 //  Copyright (c) 2015年 AMoAd. All rights reserved.
 //
-
 #import "ViewController.h"
+#import "AMoAdLogger.h"
 #import "AMoAdInterstitial.h" // [SDK] インタースティシャル用ヘッダ
 
 @interface ViewController ()
@@ -19,6 +19,20 @@ static NSString *const kSid = @"管理画面から取得したsidを入力して
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+
+  // [SDL] ロガーの設定（エラーログ）
+  [AMoAdLogger sharedLogger].logging = YES; // YES...ログを出力する
+  [AMoAdLogger sharedLogger].onLogging = ^(NSString *message, NSError *error) { // 出力方法をカスタマイズ（オプショナル）
+    NSLog(@"【LOG: %@】%@: %@", [[NSBundle mainBundle] bundleIdentifier], message, error);
+  };
+
+  // [SDL] ロガーの設定（トレース）
+  [AMoAdLogger sharedLogger].trace = YES; // YES...トレース出力ON
+  [AMoAdLogger sharedLogger].onTrace =    // 出力方法をカスタマイズしたいときに設定する
+  ^(NSString *message, NSObject *target) {
+    NSLog(@"【TRACE: %@】%@: %@", [[NSBundle mainBundle] bundleIdentifier], message, target);
+  };
+
 
   // [SDK] パネル画像を準備する（標準の画像で良い場合はnilを指定する）
   UIImage *panelImage = [UIImage imageNamed:@"user_panel.png"]; // パネル画像（310x380）

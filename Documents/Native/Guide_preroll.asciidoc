@@ -161,3 +161,9 @@ static NSString *const kTag = @"UserPreRollAd";
 |変数名 |Type 2+|Value
 |reportParam |NSMutableDictionary 2+|キー＆バーリュ
 |===
+
+== その他の実装について
+
+=== ログ・トレースの出力方法
+
+link:../Common/Logger.md[ロギング・トレース機能]
