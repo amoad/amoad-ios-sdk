@@ -95,12 +95,51 @@ image:images/U3_1_1_T.png[
 "Importing package", width=200px]
 
 ==== Xcode
+
 AMoAd SDKの導入につきまして、簡単に説明すると以下のとおりです。
 
-. Modulesフォルダ以下のファイルをすべてドラッグ＆ドロップする
-. Link Binary With LibrariesにAdSupport.framework、ImageIO.framework、StoreKit.frameworkを追加する。
-. Build Settings -> Linking -> Other Linker Flagsに「-ObjC」を設定する
-. 初期表示画像ファイルをプロジェクトに追加する
+. Static Library で導入する場合
+
+.. Modulesフォルダ以下のファイルをすべてドラッグ＆ドロップする
+.. Link Binary With LibrariesにAdSupport.framework、ImageIO.framework、StoreKit.frameworkを追加する。
+.. Build Settings -> Linking -> Other Linker Flagsに「-ObjC」を設定する
+.. 初期表示画像ファイルをプロジェクトに追加する
+
+. Dynamic Framework で導入する場合
+.. carthageがインストールされていなければcarthageをインストールする。
+.. プロジェクト(.xcodeproj)があるディレクトリで carthage update を実行する。
+.. ./Carthage/Build/iOS/AMoAdSDK.framework をプロジェクトにコピーする。
+.. Build Phases の設定をする +
++
+|=================================
+|RunScript    |/usr/local/bin/carthage copy-frameworks (追記する)
+|Input Files  |$(SRCROOT)/Carthage/Build/iOS/AMoAdSDK.framework
+|=================================
++
+image:images/U5_1_2.png[
+"Run Script", width=600]
+
+.. Build settingsの修正 +
++
+|=================================
+|iOS Deployment Target  |8.0
+|Runpath Search paths   |@executable_path/Frameworks
+|=================================
+
+.. Pluginの修正
++
+.AMoAdUnityPlugin.mm
+[source,bash]
+----
+//#import "AMoAdView.h"
+//#import "AMoAdInterstitial.h"
+// を
+#import <AMoAdSDK/AMoAdSDK.h>
+// に書き換える
+----
+
+.. Link Binary With LibrariesにAdSupport.framework、ImageIO.framework、StoreKit.frameworkを追加する。
+.. 初期表示画像ファイルをプロジェクトに追加する
 
 TIP: AMoAd SDK for iOSの導入について詳しくは、
 link:https://github.com/amoad/amoad-ios-sdk/blob/master/Documents/Install/Install.asciidoc[インストールガイド]を
