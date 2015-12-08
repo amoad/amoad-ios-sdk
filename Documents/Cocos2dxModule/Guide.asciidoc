@@ -27,7 +27,12 @@ TIP: 広告の表示には別途、AMoAd SDKが必要です。
 |ネイティブ広告 |未対応 |未対応
 |===
 
-== パッケージのダウンロード
+
+== Static Library等で導入する場合
+ここではStatic Library(.aファイル)やプラグインファイルをダウンロードして導入する手順を示します。 +
+Dynamic Frameworkで導入する場合は次項の「Dynamic Frameworkで導入する場合」を参照してください。
+
+=== パッケージのダウンロード
 こちらのURLより取得できます。
 
 link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版ダウンロードページ] ::
@@ -38,7 +43,8 @@ link:https://github.com/amoad/amoad-ios-sdk/releases#[最新版ダウンロー�
 
 TIP: /Cocos2dxModule/AMoAdCocos2dxModule.zip
 
-== モジュールの適用手順
+
+=== モジュールの適用手順
 以下の手順でモジュールをCocos2d-xアプリに適用します。
 
 . AMoAdCocos2dxModule.zipをダブルクリックします。
@@ -56,8 +62,42 @@ Android版モジュールブリッジの実装
 
 上記のファイルが揃っていれば、モジュールの適用は完了です。
 
-== ビルド、環境設定
+=== ビルド、環境設定
 AMoAd SDK for iOS/Androidを導入して、通常の手順にてCocos2d-xプロジェクトのビルドを行ってください。
 
 NOTE: SDKの導入については、こちら（link:../Install/Install.asciidoc[iOS版]
 /link:https://github.com/amoad/amoad-android-sdk/blob/master/Documents/Setup.asciidoc[Android版]）をご参照ください。
+
+== Dynamic Framework で導入する場合
+
+ライブラリ管理ツール Carthage を使用してFrameworkを追加する手順を示します。 +
+
+TIP: Carthageを導入するにはgithubのreleasesからCarthage.pkgをダウンロードしてインストールしてください。 +
+https://github.com/Carthage/Carthage/releases
+
+. XCodeプロジェクト(.xcodeproj)があるディレクトリ上で
+Cartfileを作成したのちcarthage update をしてください。 +
+実行すると ./Carthage/Build/iOS内にFrameworkが作成されます。
+
++
+[source,bash]
+$ cat Cartfile
+github “amoad/amoad-ios-sdk”
+$ carthage update
++
+
+. AMoAdSDK.frameworkとAMoAdCocosPlugin.framework をプロジェクトに追加します。 +
+
+. Build PhasesのRunScriptに以下を記述します。 +
+ .. RunScriptの記述欄に以下を記述 +
++
+----
+/usr/local/bin/carthage copy-frameworks
+----
+
+ .. Input Files に以下を記述
++
+----
+$(SRCROOT)/Carthage/Build/iOS/AMoAdSDK.framework
+$(SRCROOT)/Carthage/Build/iOS/AMoAdCocosPlugin.framework
+----

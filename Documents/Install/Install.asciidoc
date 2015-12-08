@@ -44,27 +44,23 @@ image:Images/SDK01.png[
 TIP: 自動的に追加されなかった場合は＋ボタンから手動で追加してください。
 
 
-==== Dynamic Frameworkで追加する方法。
+==== Dynamic Frameworkで追加する方法
 
 ライブラリ管理ツール Carthage を使用してFrameworkを追加します。 +
-Carthageを導入するにはgithubのreleasesからCarthage.pkgをダウンロードしてインストールしてください。 +
+
+TIP: Carthageを導入するにはgithubのreleasesからCarthage.pkgをダウンロードしてインストールしてください。 +
 https://github.com/Carthage/Carthage/releases
 
-
-
 . XCodeプロジェクト(.xcodeproj)があるディレクトリ上で
-Cartfileを作成して次のように内容を記述してください。
-+
-.Cartfile
-[source,bash]
-github “amoad/amoad-ios-sdk”
+Cartfileを作成したのちcarthage update をしてください。 +
+実行すると　./Carthage/Build/iOS/AMoAdSDK.framework が作成されます。
 
-. carthge updateを実行してframeworkを取得します。
 +
 [source,bash]
+$ cat Cartfile
+github “amoad/amoad-ios-sdk”
 $ carthage update
 +
-実行すると　./Carthage/Build/iOS/AMoAdSDK.framework が作成されます。
 
 . ./Carthage/Build/iOS/AMoAdSDK.framework をプロジェクトに追加します。 +
 image:Images/Framework01.png[
