@@ -34,7 +34,7 @@ TIP: 広告の表示には別途、AMoAd SDKが必要です。
 最新バージョンの対応状況は下記の通りです。
 
 - Unity 4系 :  Version 4.6.9
-- Unity 5系 :  Version 5.2.2
+- Unity 5系 :  Version 5.3.0
 
 == パッケージのダウンロード
 こちらのURLより取得できます。
