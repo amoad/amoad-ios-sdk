@@ -820,39 +820,6 @@ coder.titleLongAttributes = @{ NSForegroundColorAttributeName : [UIColor redColo
 
 == その他の実装について
 
-=== ログ出力方法
+=== ログ・トレースの出力方法
 
-開発時にSDKのログを出力をしたい場合は、
-`AMoAdLogger.h` をimportした上で下記実装を実施する。
-
-.SampleTableViewController.m
-[source,objective-c]
-----
-#import "AMoAdLogger.h"
-
-- (void)viewDidLoad {
-  // 略
-  [AMoAdLogger sharedLogger].logging = YES;
-  // 略
-}
-----
-
-=== トレース出力方法
-
-開発時にSDKのトレースを出力をしたい場合は、
-`AMoAdLogger.h` をimportした上で下記実装を実施する。
-`onTrace` ブロックを登録することでトレース出力をフックしてカスタマイズできます。
-
-.ViewController.m
-[source,objective-c]
-----
-#import "AMoAdLogger.h"
-
-- (void)viewDidLoad {
-  [AMoAdLogger sharedLogger].trace = YES;
-  [AMoAdLogger sharedLogger].onTrace =
-  ^(NSString *message, NSObject *target) {
-    NSLog(@"【ユーザ定義】%@:%@", message, target);
-  };
-}
-----
+link:../Common/Logger.md[ロギング・トレース機能]
