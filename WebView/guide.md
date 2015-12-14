@@ -21,31 +21,16 @@ class ViewController: UIViewController, UIWebViewDelegate {
 }
 ```
 
-#### Android（iframeなし）
+### Android
+#### AMoAdSDK採用
 ```java
-webView.setWebViewClient(new WebViewClient() {
-  @Override
-  public boolean shouldOverrideUrlLoading(WebView view, String url) {
-    // ブラウザへ遷移する（iframeのときは、ここへ来ない）
-    if (url != null && url.startsWith("http://d.amoad.com/")) {
-      // TODO: ブラウザへ遷移する
-      return true;
-    }
-    ...
-    return false;
-  }
-});
-```
+com.amoad.AMoAdWeb.prepareAd(context);
 
-#### Android（iframeあり）
-```java
 webView.setWebViewClient(new WebViewClient() {
   @Override
   public boolean shouldOverrideUrlLoading(WebView view, String url) {
-    // ブラウザへ遷移する（iframeのときは、ここへ来ない）
-    if (url != null && url.startsWith("http://d.amoad.com/")) {
-      // TODO: ブラウザへ遷移する
-      return true;  // onLoadResource()を呼ばない
+    if (com.amoad.AMoAdWeb.shouldOverrideUrlLoading(view, url)) {
+      return true;
     }
     ...
     return false;
@@ -53,14 +38,34 @@ webView.setWebViewClient(new WebViewClient() {
 
   @Override
   public void onLoadResource(WebView view, String url) {
-    // iframeのときは、ここで判定する
-    if (url != null && url.startsWith("http://d.amoad.com/")) {
+    com.amoad.AMoAdWeb.stopLoadingIfNeeded(view, url);
+  }
+});
+```
+
+#### AMoAdSDK未採用
+```java
+webView.setWebViewClient(new WebViewClient() {
+  @Override
+  public boolean shouldOverrideUrlLoading(WebView view, String url) {
+    if (Uri.parse(url).getHost().equals("d.amoad.com")) {
+      // TODO: ブラウザへ遷移する
+      return true;
+    }
+    ...
+    return false;
+  }
+
+  @Override
+  public void onLoadResource(WebView view, String url) {
+    if (Uri.parse(url).getHost().equals("d.amoad.com")) {
       view.stopLoading();
       // TODO: ブラウザへ遷移する
     }
   }
 });
 ```
+
 
 #### gree/unity-webview
 ```objc
