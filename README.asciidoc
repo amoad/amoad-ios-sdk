@@ -1,14 +1,11 @@
-:Version: 3.9.7
+:Version: 4.0.0
 
 = AMoAd SDK {version} Guide for iOS
 
 :numbered:
 :sectnums:
 
-link:https://github.com/amoad/amoad-ios-sdk/releases/latest[ダウンロードページ] ::
-**[NEW] iOS 9のATS (App Transport Security) を抑制する方法について追記しました。必ずご確認ください！（link:Documents/Install/Install.asciidoc[SDKインストールガイド]）**
-
-NOTE: WebViewへアドタグを貼る時の実装方法はlink:WebView/guide.md[こちら]をご参照ください。
+**iOS 9のATS (App Transport Security) を抑制する方法について追記しました。必ずご確認ください！（link:Documents/Install/Install.asciidoc[SDKインストールガイド]）**
 
 == 概要
 
@@ -16,6 +13,7 @@ NOTE: WebViewへアドタグを貼る時の実装方法はlink:WebView/guide.md[
 ** AMoAd.hのimportが必須になっています。
 ** インタースティシャル（全画面）広告に対応しました（Unityプラグイン、Cocos2d-xモジュール）。
 ** ディスプレイ広告がCocos2d-x、Unityに対応しました。
+** **[NEW] link:Documents/WebView/guide.md[WebViewサポート機能 実装ガイド]を追加しました。**
 
 NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] 。
 
@@ -23,6 +21,13 @@ NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:ht
 
 link:Documents/Install/Install.asciidoc[SDKインストールガイド]::
 SDK共通のインストール方法
+
+== WebView広告
+UIWebViewへアドタグを貼る。
+
+link:Documents/WebView/guide.md[実装ガイド]::
+実装方法
+
 
 == ディスプレイ広告
 
