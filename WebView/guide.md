@@ -21,43 +21,17 @@ class ViewController: UIViewController, UIWebViewDelegate {
 }
 ```
 
-#### Android（iframeなし）
+### Android
 ```java
 webView.setWebViewClient(new WebViewClient() {
   @Override
   public boolean shouldOverrideUrlLoading(WebView view, String url) {
-    // ブラウザへ遷移する（iframeのときは、ここへ来ない）
-    if (url != null && url.startsWith("http://d.amoad.com/")) {
+    if ("d.amoad.com".equals(Uri.parse(url).getHost())) {
       // TODO: ブラウザへ遷移する
       return true;
     }
     ...
     return false;
-  }
-});
-```
-
-#### Android（iframeあり）
-```java
-webView.setWebViewClient(new WebViewClient() {
-  @Override
-  public boolean shouldOverrideUrlLoading(WebView view, String url) {
-    // ブラウザへ遷移する（iframeのときは、ここへ来ない）
-    if (url != null && url.startsWith("http://d.amoad.com/")) {
-      // TODO: ブラウザへ遷移する
-      return true;  // onLoadResource()を呼ばない
-    }
-    ...
-    return false;
-  }
-
-  @Override
-  public void onLoadResource(WebView view, String url) {
-    // iframeのときは、ここで判定する
-    if (url != null && url.startsWith("http://d.amoad.com/")) {
-      view.stopLoading();
-      // TODO: ブラウザへ遷移する
-    }
   }
 });
 ```
