@@ -32,6 +32,10 @@ iOS 6.x、7.x、8.x、9.0 〜 9.0.1
 == プロジェクト設定
 === AMoAd SDKの追加
 
+AMoAd SDKを追加する方法としてStatic Library(.aファイル)で追加する方法とDynamic Frameworkで追加する方法があります。
+
+==== Static Library(.aファイル)で追加する方法。
+
 . Project Navigatorを開き、Modulesフォルダ以下のファイルをすべてドラッグ＆ドロップします。libAMoAd.aは、TargetのLinked Frameworks and Librariesに自動的に追加されます。
 
 image:Images/SDK01.png[
@@ -39,11 +43,51 @@ image:Images/SDK01.png[
 
 TIP: 自動的に追加されなかった場合は＋ボタンから手動で追加してください。
 
-NOTE: Framework化する予定です
+
+==== Dynamic Frameworkで追加する方法
+
+ライブラリ管理ツール Carthage を使用してFrameworkを追加します。 +
+
+TIP: Carthageを導入するにはgithubのreleasesからCarthage.pkgをダウンロードしてインストールしてください。 +
+https://github.com/Carthage/Carthage/releases
+
+. XCodeプロジェクト(.xcodeproj)があるディレクトリ上で
+Cartfileを作成したのちcarthage update をしてください。 +
+実行すると　./Carthage/Build/iOS/AMoAdSDK.framework が作成されます。
+
++
+[source,bash]
+$ cat Cartfile
+github “amoad/amoad-ios-sdk”
+$ carthage update
++
+
+. ./Carthage/Build/iOS/AMoAdSDK.framework をプロジェクトに追加します。 +
+image:Images/Framework01.png[
+"AMoAdフレームワークの追加", width=50%]
+
+. Build PhasesのRunScriptに以下を記述します。 +
+ .. RunScriptの記述欄に以下を記述 +
++
+----
+/usr/local/bin/carthage copy-frameworks
+----
+
+ .. Input Files に以下を記述
++
+----
+$(SRCROOT)/Carthage/Build/iOS/AMoAdSDK.framework
+----
+image:Images/Framework02.png[
+"AMoAdフレームワークの追加", width=80%]
+
+
+
+
 
 === 関連フレームワークの追加
 
-. TargetのLinked Frameworks and Librariesに、＋ボタンで以下のライブラリを追加する。
+. TargetのLinked Frameworks and Librariesに、＋ボタンで以下のライブラリを追加します。
 
 [options="header"]
 |===
@@ -60,7 +104,7 @@ TIP: Xcode 4の場合は、Quartzcore.frameworkも追加する必要がありま
 
 === リンクオプションの追加
 
-. TargetのBuild Settingsタブを開き、LinkingカテゴリのOther Linker Flagsに「-ObjC」を設定する
+. TargetのBuild Settingsタブを開き、LinkingカテゴリのOther Linker Flagsに「-ObjC」を設定します。
 
 image:Images/LN01.png[
 "リンクオプションの追加", width=90%]

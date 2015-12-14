@@ -254,6 +254,18 @@ enableModal、rootController、currentContentSizeIdentifier、enableRotation、d
 本SDKでは広告の生成をソースコードで行うこともできます。その場合でもシングルトン・パターンなどで生成を管理する必要はなく、各画面に同じ固有IDを設定することで広告を内部的に共有します。APIの詳細については「APPENDIX A API仕様」を参照ください。
 
 === サンプルコード（Objective-C）
+・ヘッダのimport
+
+.ViewController.h or ViewController.m
+[source,objective-c]
+----
+// Static Library(.aファイル)の場合
+#import AMoAdView.h
+
+// Dynamic Frameworkの場合
+#import <AMoAdSDK/AMoAdSDK.h>
+----
+
 ・位置(中央寄せ等、上寄せ等)で指定する場合
 
 .ViewController.m
