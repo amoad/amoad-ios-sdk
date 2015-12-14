@@ -25,11 +25,9 @@
 @property (nonatomic,readwrite,assign) BOOL trace;
 
 /// トレースをNSLog以外に出力する場合、このブロックを設定する
-@property (nonatomic,readwrite,strong) void (^onTrace)(NSString *message, NSObject *target);
+@property (nonatomic,readwrite,strong) void (^onTrace)(NSString *message, id target);
 
 /// ロガー・オブジェクトを取得する
 + (AMoAdLogger *)sharedLogger;
 
-- (void)log:(NSString * const)format param:(NSObject *)param error:(NSError *)error;
-- (void)trace:(NSString * const)format param:(NSObject *)param target:(NSObject *)target;
 @end
