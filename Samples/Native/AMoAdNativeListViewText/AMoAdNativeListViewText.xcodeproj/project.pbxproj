@@ -59,6 +59,7 @@
 		ACB2F9EF1A95C07B00A2D823 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		ACB2F9F11A95C08100A2D823 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E9AEE82F1AC55AE000D74AD0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F639345E1C1EB4BC00DF86D1 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
 		F670065D1B983A9A00DAD6BE /* amoad_close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn_h.png; sourceTree = "<group>"; };
 		F670065E1B983A9A00DAD6BE /* amoad_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn.png; sourceTree = "<group>"; };
 		F670065F1B983A9A00DAD6BE /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
@@ -173,6 +174,7 @@
 				F67006661B983A9A00DAD6BE /* AMoAdView.h */,
 				ACB2F9E71A95BB4500A2D823 /* AMoAdLogger.h */,
 				ACB2F9E81A95BB4500A2D823 /* AMoAdNativeView.h */,
+				F639345E1C1EB4BC00DF86D1 /* AMoAdWeb.h */,
 				ACB2F9E91A95BB4500A2D823 /* libAMoAd.a */,
 			);
 			path = AMoAdSdk;
