@@ -46,6 +46,7 @@
 		F60DE7A81B7B2F5E0027F95F /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserCollectionViewCell.xib; path = AMoAdNativeCollectionViewIconText/UserCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		F60DE7A91B7B2F5E0027F95F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = AMoAdNativeCollectionViewIconText/ViewController.h; sourceTree = SOURCE_ROOT; };
 		F60DE7AA1B7B2F5E0027F95F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = AMoAdNativeCollectionViewIconText/ViewController.m; sourceTree = SOURCE_ROOT; };
+		F63934591C1EB44F00DF86D1 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
 		F67006121B98366D00DAD6BE /* amoad_close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn_h.png; sourceTree = "<group>"; };
 		F67006131B98366D00DAD6BE /* amoad_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn.png; sourceTree = "<group>"; };
 		F67006141B98366D00DAD6BE /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 				F670061B1B98366D00DAD6BE /* AMoAdView.h */,
 				F60DE79B1B7B2F5E0027F95F /* AMoAdLogger.h */,
 				F60DE79C1B7B2F5E0027F95F /* AMoAdNativeView.h */,
+				F63934591C1EB44F00DF86D1 /* AMoAdWeb.h */,
 				F60DE79D1B7B2F5E0027F95F /* libAMoAd.a */,
 			);
 			name = AMoAdSdk;

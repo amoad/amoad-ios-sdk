@@ -67,6 +67,7 @@
 		F636D4DA1B9833610045B5F6 /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdNativeView.h; path = AMoAdSdk/AMoAdNativeView.h; sourceTree = "<group>"; };
 		F636D4DB1B9833610045B5F6 /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdView.h; path = AMoAdSdk/AMoAdView.h; sourceTree = "<group>"; };
 		F636D4DC1B9833610045B5F6 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAMoAd.a; path = AMoAdSdk/libAMoAd.a; sourceTree = "<group>"; };
+		F63934551C1EB3E800DF86D1 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdWeb.h; path = AMoAdSdk/AMoAdWeb.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +171,7 @@
 				F636D4D91B9833610045B5F6 /* AMoAdNativePreRoll.h */,
 				F636D4DA1B9833610045B5F6 /* AMoAdNativeView.h */,
 				F636D4DB1B9833610045B5F6 /* AMoAdView.h */,
+				F63934551C1EB3E800DF86D1 /* AMoAdWeb.h */,
 				F636D4DC1B9833610045B5F6 /* libAMoAd.a */,
 			);
 			name = AMoAdSdk;

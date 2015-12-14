@@ -45,6 +45,7 @@
 		E91D18861B721B1400241DBE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		E91D18881B721B1B00241DBE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E91D188A1B721B9300241DBE /* initialImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = initialImage.gif; sourceTree = "<group>"; };
+		F63934521C1EB33400DF86D1 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,7 @@
 				E91D187D1B72187D00241DBE /* AMoAdNativePreRoll.h */,
 				E91D187E1B72187D00241DBE /* AMoAdNativeView.h */,
 				E91D187F1B72187D00241DBE /* AMoAdView.h */,
+				F63934521C1EB33400DF86D1 /* AMoAdWeb.h */,
 				E91D18801B72187D00241DBE /* images */,
 				E91D18811B72187D00241DBE /* libAMoAd.a */,
 				E91D18571B7216DB00241DBE /* AppDelegate.h */,
@@ -350,6 +352,7 @@
 				E91D18751B7216DB00241DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
