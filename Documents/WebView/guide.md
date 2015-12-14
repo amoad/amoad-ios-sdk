@@ -1,6 +1,7 @@
 # WebViewサポート機能 実装ガイド
 ## 概要
 UIWebViewにアドタグを貼るとき以下の機能を提供する。
+
 1. IDFA連携
 2. 広告クリックで外部ブラウザを起動する
 3. ダイレクトストア（ブラウザを介さずにストアへ遷移する：対応キャンペーンのみ）
@@ -14,6 +15,7 @@ UIWebViewにアドタグを貼るとき以下の機能を提供する。
 をご参照ください。
 
 WebViewのみ利用する場合の必須インストールファイルは以下のものです。
+
 * libAMoAd.a
 * AMoAd.h
 * AMoAdWeb.h
@@ -88,11 +90,13 @@ func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLReques
 ### 概要
 アドタグが貼られているHTMLを、以下の方法で読込み
 クリック処理を行う例を示します。
+
 * ウェブからロードする
 * ファイルからロードする
 * 文字列からロードする
 
 ### 一覧
+
 * [AMoAdWebViewSample](../../Samples/WebView/AMoAdWebViewSample/) ... Objective-C言語で書かれたサンプルアプリ
 * [AMoAdWebViewSwiftSample](../../Samples/WebView/AMoAdWebViewSwiftSample/) ... Swift言語で書かれたサンプルアプリ
 
