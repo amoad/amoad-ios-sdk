@@ -1,9 +1,11 @@
-:Version: 4.0.0
+:Version: 4.1.0
 
 = AMoAd SDK {version} Guide for iOS
 
 :numbered:
 :sectnums:
+
+link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウンロード]
 
 **iOS 9のATS (App Transport Security) を抑制する方法について追記しました。必ずご確認ください！（link:Documents/Install/Install.asciidoc[SDKインストールガイド]）**
 
