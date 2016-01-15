@@ -109,10 +109,10 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 
 
 /// サイズと位置で初期化
-- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode delegate:(id)delegate;
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode delegate:(id)delegate NS_DESIGNATED_INITIALIZER;
 
 /// サイズと座標で初期化
-- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y delegate:(id)delegate;
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y delegate:(id)delegate NS_DESIGNATED_INITIALIZER;
 
 
 /// 広告を表示する
@@ -124,12 +124,12 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 + (CGSize)sizeWithBannerSize:(AMoAdBannerSize)bannerSize;
 
 // 非推奨のメソッド
-- (instancetype)initWithFrame:(CGRect)frame DEPRECATED_ATTRIBUTE;
+- (instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER DEPRECATED_ATTRIBUTE;
 - (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode DEPRECATED_ATTRIBUTE;
 - (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y DEPRECATED_ATTRIBUTE;
 
 /// サポート外のメソッド
 - (instancetype)init __attribute__((unavailable("This method is not available.")));
-- (id)initWithCoder:(NSCoder *)aDecoder __attribute__((availability(ios,unavailable,message="This method is not available.")));
+- (instancetype)initWithCoder:(NSCoder *)aDecoder __attribute__((availability(ios,unavailable,message="This method is not available."))) NS_DESIGNATED_INITIALIZER;
 
 @end
