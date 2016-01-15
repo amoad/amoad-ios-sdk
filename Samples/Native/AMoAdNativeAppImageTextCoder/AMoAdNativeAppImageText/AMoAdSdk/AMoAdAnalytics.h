@@ -7,7 +7,9 @@
 
 @interface AMoAdAnalytics : NSObject
 @property (nonatomic,readwrite,strong) NSDictionary *publisherParam;
-- (instancetype)initWithReportId:(NSString *)reportId;
+- (instancetype)initWithReportId:(NSString *)reportId NS_DESIGNATED_INITIALIZER;
+
+- (instancetype)init __attribute__((unavailable("init is not available")));
 @end
 
 @interface NSString(AMoAdAnalytics)
