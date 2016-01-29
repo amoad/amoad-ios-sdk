@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E924CC311C5B708A005C1947 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E924CC301C5B708A005C1947 /* main.m */; };
+		E924CC341C5B708A005C1947 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E924CC331C5B708A005C1947 /* AppDelegate.m */; };
+		E924CC371C5B708A005C1947 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E924CC361C5B708A005C1947 /* ViewController.m */; };
+		E924CC3A1C5B708A005C1947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E924CC381C5B708A005C1947 /* Main.storyboard */; };
+		E924CC3C1C5B708A005C1947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E924CC3B1C5B708A005C1947 /* Assets.xcassets */; };
+		E924CC3F1C5B708A005C1947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E924CC3D1C5B708A005C1947 /* LaunchScreen.storyboard */; };
+		E924CC4B1C5B7136005C1947 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E924CC4A1C5B7136005C1947 /* libAMoAd.a */; };
+		E924CC4D1C5B7159005C1947 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924CC4C1C5B7159005C1947 /* AdSupport.framework */; };
+		E924CC4F1C5B7162005C1947 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924CC4E1C5B7162005C1947 /* ImageIO.framework */; };
+		E924CC511C5B716E005C1947 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E924CC501C5B716E005C1947 /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E924CC2C1C5B708A005C1947 /* AMoAdNativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdNativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E924CC301C5B708A005C1947 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E924CC321C5B708A005C1947 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E924CC331C5B708A005C1947 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E924CC351C5B708A005C1947 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E924CC361C5B708A005C1947 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E924CC391C5B708A005C1947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E924CC3B1C5B708A005C1947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E924CC3E1C5B708A005C1947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E924CC401C5B708A005C1947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E924CC471C5B7136005C1947 /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAd.h; path = AMoAdSdk/AMoAd.h; sourceTree = "<group>"; };
+		E924CC481C5B7136005C1947 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdLogger.h; path = AMoAdSdk/AMoAdLogger.h; sourceTree = "<group>"; };
+		E924CC491C5B7136005C1947 /* AMoAdNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdNative.h; path = AMoAdSdk/AMoAdNative.h; sourceTree = "<group>"; };
+		E924CC4A1C5B7136005C1947 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAMoAd.a; path = AMoAdSdk/libAMoAd.a; sourceTree = "<group>"; };
+		E924CC4C1C5B7159005C1947 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E924CC4E1C5B7162005C1947 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E924CC501C5B716E005C1947 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E924CC291C5B708A005C1947 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E924CC511C5B716E005C1947 /* StoreKit.framework in Frameworks */,
+				E924CC4F1C5B7162005C1947 /* ImageIO.framework in Frameworks */,
+				E924CC4D1C5B7159005C1947 /* AdSupport.framework in Frameworks */,
+				E924CC4B1C5B7136005C1947 /* libAMoAd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E924CC231C5B708A005C1947 = {
+			isa = PBXGroup;
+			children = (
+				E924CC501C5B716E005C1947 /* StoreKit.framework */,
+				E924CC4E1C5B7162005C1947 /* ImageIO.framework */,
+				E924CC4C1C5B7159005C1947 /* AdSupport.framework */,
+				E924CC2E1C5B708A005C1947 /* AMoAdNativeApp */,
+				E924CC2D1C5B708A005C1947 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E924CC2D1C5B708A005C1947 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E924CC2C1C5B708A005C1947 /* AMoAdNativeApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E924CC2E1C5B708A005C1947 /* AMoAdNativeApp */ = {
+			isa = PBXGroup;
+			children = (
+				E924CC461C5B7122005C1947 /* AMoAdSdk */,
+				E924CC321C5B708A005C1947 /* AppDelegate.h */,
+				E924CC331C5B708A005C1947 /* AppDelegate.m */,
+				E924CC351C5B708A005C1947 /* ViewController.h */,
+				E924CC361C5B708A005C1947 /* ViewController.m */,
+				E924CC381C5B708A005C1947 /* Main.storyboard */,
+				E924CC3B1C5B708A005C1947 /* Assets.xcassets */,
+				E924CC3D1C5B708A005C1947 /* LaunchScreen.storyboard */,
+				E924CC401C5B708A005C1947 /* Info.plist */,
+				E924CC2F1C5B708A005C1947 /* Supporting Files */,
+			);
+			path = AMoAdNativeApp;
+			sourceTree = "<group>";
+		};
+		E924CC2F1C5B708A005C1947 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E924CC301C5B708A005C1947 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E924CC461C5B7122005C1947 /* AMoAdSdk */ = {
+			isa = PBXGroup;
+			children = (
+				E924CC471C5B7136005C1947 /* AMoAd.h */,
+				E924CC481C5B7136005C1947 /* AMoAdLogger.h */,
+				E924CC491C5B7136005C1947 /* AMoAdNative.h */,
+				E924CC4A1C5B7136005C1947 /* libAMoAd.a */,
+			);
+			name = AMoAdSdk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E924CC2B1C5B708A005C1947 /* AMoAdNativeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E924CC431C5B708A005C1947 /* Build configuration list for PBXNativeTarget "AMoAdNativeApp" */;
+			buildPhases = (
+				E924CC281C5B708A005C1947 /* Sources */,
+				E924CC291C5B708A005C1947 /* Frameworks */,
+				E924CC2A1C5B708A005C1947 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMoAdNativeApp;
+			productName = AMoAdNativeApp;
+			productReference = E924CC2C1C5B708A005C1947 /* AMoAdNativeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E924CC241C5B708A005C1947 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = AMoAd;
+				TargetAttributes = {
+					E924CC2B1C5B708A005C1947 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = E924CC271C5B708A005C1947 /* Build configuration list for PBXProject "AMoAdNativeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E924CC231C5B708A005C1947;
+			productRefGroup = E924CC2D1C5B708A005C1947 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E924CC2B1C5B708A005C1947 /* AMoAdNativeApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E924CC2A1C5B708A005C1947 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E924CC3F1C5B708A005C1947 /* LaunchScreen.storyboard in Resources */,
+				E924CC3C1C5B708A005C1947 /* Assets.xcassets in Resources */,
+				E924CC3A1C5B708A005C1947 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E924CC281C5B708A005C1947 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E924CC371C5B708A005C1947 /* ViewController.m in Sources */,
+				E924CC341C5B708A005C1947 /* AppDelegate.m in Sources */,
+				E924CC311C5B708A005C1947 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E924CC381C5B708A005C1947 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E924CC391C5B708A005C1947 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E924CC3D1C5B708A005C1947 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E924CC3E1C5B708A005C1947 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E924CC411C5B708A005C1947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E924CC421C5B708A005C1947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E924CC441C5B708A005C1947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = AMoAdNativeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdNativeApp/AMoAdSdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.sample.AMoAdNativeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E924CC451C5B708A005C1947 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = AMoAdNativeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdNativeApp/AMoAdSdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.sample.AMoAdNativeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E924CC271C5B708A005C1947 /* Build configuration list for PBXProject "AMoAdNativeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E924CC411C5B708A005C1947 /* Debug */,
+				E924CC421C5B708A005C1947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E924CC431C5B708A005C1947 /* Build configuration list for PBXNativeTarget "AMoAdNativeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E924CC441C5B708A005C1947 /* Debug */,
+				E924CC451C5B708A005C1947 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E924CC241C5B708A005C1947 /* Project object */;
+}
