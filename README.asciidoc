@@ -7,24 +7,50 @@
 
 link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウンロード]
 
-**iOS 9のATS (App Transport Security) を抑制する方法について追記しました。必ずご確認ください！（link:Documents/Install/Install.asciidoc[SDKインストールガイド]）**
-
 == 概要
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
 ** AMoAd.hのimportが必須になっています。
 ** インタースティシャル（全画面）広告に対応しました（Unityプラグイン、Cocos2d-xモジュール）。
 ** ディスプレイ広告がCocos2d-x、Unityに対応しました。
-** **[NEW] link:Documents/WebView/guide.md[WebViewサポート機能 実装ガイド]を追加しました。**
+** link:Documents/WebView/guide.md[WebViewサポート機能 実装ガイド]を追加しました。
+** **[NEW] スタイルを管理画面よりHTML+CSSでデザインできる「ネイティブHTML広告」機能を追加しました。**
 
 NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] 。
 
+== ネイティブHTML広告
+
+スタイルを管理画面よりHTML+CSSでデザインできるネイティブ広告です。
+
+.管理画面
+[source,objective-c]
+----
+枠の種類: WEB
+表示形式: ネイティブ（Web）
+----
+
+.デモアプリ
+. link:https://github.com/amoad/amoad-native-ios-sdk[iOSで開発される方]
+
+. link:https://github.com/amoad/amoad-native-android-sdk[Androidで開発される方]
+
+. link:https://github.com/amoad/amoad-native-unity-sdk[Unityで開発される方]
+
+. link:https://github.com/amoad/amoad-native-cocos2dx-sdk[Cocos2d-xで開発される方]
+
+※ 各デモアプリをダウンロードして、アプリに組み込んでください。
+
+※ SSL対応なので、ATS (App Transport Security) 抑制設定は不要です。
+
+
 == SDKのインストール
+
+**iOS 9のATS (App Transport Security) を抑制する方法について追記しました。必ずご確認ください！（link:Documents/Install/Install.asciidoc[SDKインストールガイド]）**
 
 link:Documents/Install/Install.asciidoc[SDKインストールガイド]::
 SDK共通のインストール方法
 
-== WebView広告
+== WebViewサポート機能
 UIWebViewへアドタグを貼る。
 
 link:Documents/WebView/guide.md[実装ガイド]::
