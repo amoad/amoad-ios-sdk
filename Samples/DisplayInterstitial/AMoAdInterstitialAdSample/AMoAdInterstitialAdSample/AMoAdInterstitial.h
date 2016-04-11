@@ -5,7 +5,6 @@
 //
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "AMoAdView.h"
 
 /// インタースティシャル広告完了状態
 typedef NS_ENUM(NSInteger, AMoAdInterstitialResult) {
@@ -28,6 +27,9 @@ typedef NS_ENUM(NSInteger, AMoAdInterstitialResult) {
 /// インタースティシャル広告の準備を行なう
 /// @param sid 管理画面から取得した64文字の英数字
 + (void)prepareAdWithSid:(NSString *)sid;
+
+// タイムアウト時間（ミリ秒）を設定する：デフォルトは30,000ミリ秒
++ (void)setNetworkTimeoutWithSid:(NSString *)sid millis:(NSInteger)millis;
 
 /// パネル画像（310x380で表示される）を設定する
 /// @param sid 管理画面から取得した64文字の英数字
