@@ -107,6 +107,9 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 /// バナーサイズ
 @property (nonatomic,readwrite,assign) CGSize bannerSize;
 
+// タイムアウト時間（ミリ秒）を設定する：デフォルトは30,000ミリ秒
+@property (nonatomic,readwrite,assign) NSInteger networkTimeoutMillis;
+
 
 /// サイズと位置で初期化
 - (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode delegate:(id)delegate NS_DESIGNATED_INITIALIZER;
@@ -121,7 +124,24 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 /// 広告を非表示にする
 - (void)hide;
 
+
+/// クリック時にカスタムURLスキームをハンドリングする
+- (void)setClickCustomScheme:(NSString *)scheme
+                     handler:(void (^)(NSString *url))handler;
+
+/// クリック時に複数のカスタムURLスキームをハンドリングする
+- (void)setClickCustomSchemes:(NSArray<NSString *> *)schemes
+                      handler:(void (^)(NSString *url))handler;
+
+/// クリック時に全てのLPへの遷移をハンドリングする
+/// Safari view controller を使う場合以外は、openURLでSafariを起動すること
+- (void)setClickCustomHandler:(void (^)(NSString *url))handler;
+
+
 + (CGSize)sizeWithBannerSize:(AMoAdBannerSize)bannerSize;
+
+/// 開発用
++ (void)setAdRequestUrl:(NSString *)url;
 
 // 非推奨のメソッド
 - (instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER DEPRECATED_ATTRIBUTE;

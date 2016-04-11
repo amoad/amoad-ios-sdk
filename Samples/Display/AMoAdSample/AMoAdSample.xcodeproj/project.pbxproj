@@ -13,7 +13,6 @@
 		E91D185F1B7216DB00241DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91D185D1B7216DB00241DBE /* Main.storyboard */; };
 		E91D18611B7216DB00241DBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91D18601B7216DB00241DBE /* Images.xcassets */; };
 		E91D18641B7216DB00241DBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91D18621B7216DB00241DBE /* LaunchScreen.xib */; };
-		E91D18821B72187D00241DBE /* images in Resources */ = {isa = PBXBuildFile; fileRef = E91D18801B72187D00241DBE /* images */; };
 		E91D18831B72187D00241DBE /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D18811B72187D00241DBE /* libAMoAd.a */; };
 		E91D18851B721B0D00241DBE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D18841B721B0D00241DBE /* AdSupport.framework */; };
 		E91D18871B721B1400241DBE /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D18861B721B1400241DBE /* ImageIO.framework */; };
@@ -33,19 +32,13 @@
 		E91D18601B7216DB00241DBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E91D18631B7216DB00241DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E91D18791B72187D00241DBE /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
-		E91D187A1B72187D00241DBE /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
-		E91D187B1B72187D00241DBE /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
 		E91D187C1B72187D00241DBE /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
-		E91D187D1B72187D00241DBE /* AMoAdNativePreRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativePreRoll.h; sourceTree = "<group>"; };
-		E91D187E1B72187D00241DBE /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeView.h; sourceTree = "<group>"; };
 		E91D187F1B72187D00241DBE /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
-		E91D18801B72187D00241DBE /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		E91D18811B72187D00241DBE /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
 		E91D18841B721B0D00241DBE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E91D18861B721B1400241DBE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		E91D18881B721B1B00241DBE /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		E91D188A1B721B9300241DBE /* initialImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = initialImage.gif; sourceTree = "<group>"; };
-		F63934521C1EB33400DF86D1 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,14 +80,8 @@
 			children = (
 				E91D188A1B721B9300241DBE /* initialImage.gif */,
 				E91D18791B72187D00241DBE /* AMoAd.h */,
-				E91D187A1B72187D00241DBE /* AMoAdAnalytics.h */,
-				E91D187B1B72187D00241DBE /* AMoAdInterstitial.h */,
 				E91D187C1B72187D00241DBE /* AMoAdLogger.h */,
-				E91D187D1B72187D00241DBE /* AMoAdNativePreRoll.h */,
-				E91D187E1B72187D00241DBE /* AMoAdNativeView.h */,
 				E91D187F1B72187D00241DBE /* AMoAdView.h */,
-				F63934521C1EB33400DF86D1 /* AMoAdWeb.h */,
-				E91D18801B72187D00241DBE /* images */,
 				E91D18811B72187D00241DBE /* libAMoAd.a */,
 				E91D18571B7216DB00241DBE /* AppDelegate.h */,
 				E91D18581B7216DB00241DBE /* AppDelegate.m */,
@@ -174,7 +161,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91D18821B72187D00241DBE /* images in Resources */,
 				E91D188B1B721B9300241DBE /* initialImage.gif in Resources */,
 				E91D185F1B7216DB00241DBE /* Main.storyboard in Resources */,
 				E91D18641B7216DB00241DBE /* LaunchScreen.xib in Resources */,
