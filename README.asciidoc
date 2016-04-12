@@ -1,4 +1,4 @@
-:Version: 4.2.2
+:Version: 4.3.1
 
 = AMoAd SDK {version} Guide for iOS
 
@@ -14,33 +14,10 @@ link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウン�
 ** インタースティシャル（全画面）広告に対応しました（Unityプラグイン、Cocos2d-xモジュール）。
 ** ディスプレイ広告がCocos2d-x、Unityに対応しました。
 ** link:Documents/WebView/guide.md[WebViewサポート機能 実装ガイド]を追加しました。
-** **[NEW] スタイルを管理画面よりHTML+CSSでデザインできる「ネイティブHTML広告」機能を追加しました。**
+** スタイルを管理画面よりHTML+CSSでデザインできる「ネイティブHTML広告」機能を追加しました。
+** **[NEW] アプリのコンテンツに広告画像とテキストを表示することができる「インフィード広告」機能を追加しました。**
 
 NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] 。
-
-== ネイティブHTML広告
-
-スタイルを管理画面よりHTML+CSSでデザインできるネイティブ広告です。
-
-.管理画面
-[source,objective-c]
-----
-枠の種類: WEB
-表示形式: ネイティブ（Web）
-----
-
-.デモアプリ
-. link:https://github.com/amoad/amoad-native-ios-sdk[iOSで開発される方]
-
-. link:https://github.com/amoad/amoad-native-android-sdk[Androidで開発される方]
-
-. link:https://github.com/amoad/amoad-native-unity-sdk[Unityで開発される方]
-
-. link:https://github.com/amoad/amoad-native-cocos2dx-sdk[Cocos2d-xで開発される方]
-
-※ 各デモアプリをダウンロードして、アプリに組み込んでください。
-
-※ SSL対応なので、ATS (App Transport Security) 抑制設定は不要です。
 
 
 == SDKのインストール
@@ -50,11 +27,28 @@ NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:ht
 link:Documents/Install/Install.asciidoc[SDKインストールガイド]::
 SDK共通のインストール方法
 
-== WebViewサポート機能
-UIWebViewへアドタグを貼る。
 
-link:Documents/WebView/guide.md[実装ガイド]::
-実装方法
+== ネイティブHTML広告
+
+スタイルを管理画面よりHTML+CSSでデザインできるネイティブ広告です。
+
+.デモアプリ
+. link:https://github.com/amoad/amoad-native-ios-sdk[iOSで開発される方]
+
+. link:https://github.com/amoad/amoad-native-unity-sdk[Unityで開発される方]
+
+. link:https://github.com/amoad/amoad-native-cocos2dx-sdk[Cocos2d-xで開発される方]
+
+※ 各デモアプリをダウンロードして、アプリに組み込んでください。
+
+
+== インフィード広告
+
+アプリのコンテンツに広告画像とテキストを表示することができるネイティブ広告です。
+
+link:https://github.com/amoad/amoad-nativelist-ios-sdk[デモアプリ]
+
+※ デモアプリをダウンロードして、アプリに組み込んでください。
 
 
 == ディスプレイ広告
@@ -145,3 +139,10 @@ link:Documents/AdMobMediation/AdMobSetup.asciidoc[導入ガイド]::
 
 https://github.com/amoad/amoad-ios-sdk/raw/master/AdMobMediation/libAMoAdGmAdapter.a[アダプタのダウンロード]::
 最新版のアダプタはこちらからダウンロードできます
+
+
+== WebViewサポート機能
+UIWebViewへアドタグを貼る。
+
+link:Documents/WebView/guide.md[実装ガイド]::
+実装方法
