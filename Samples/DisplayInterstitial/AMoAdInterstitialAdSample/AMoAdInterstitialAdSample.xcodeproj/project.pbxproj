@@ -37,12 +37,8 @@
 		E9F118851B7CA0D600C3C462 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E9F118881B7CA0D600C3C462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E9F1189F1B7CA15500C3C462 /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
-		E9F118A01B7CA15500C3C462 /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
 		E9F118A11B7CA15500C3C462 /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
 		E9F118A21B7CA15500C3C462 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
-		E9F118A31B7CA15500C3C462 /* AMoAdNativePreRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativePreRoll.h; sourceTree = "<group>"; };
-		E9F118A41B7CA15500C3C462 /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeView.h; sourceTree = "<group>"; };
-		E9F118A51B7CA15500C3C462 /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
 		E9F118A71B7CA15500C3C462 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
 		E9F118AA1B7CA3E800C3C462 /* user_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_panel.png; sourceTree = "<group>"; };
 		E9F118AC1B7CA40700C3C462 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -53,7 +49,6 @@
 		E9F118B41B7CA9CC00C3C462 /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
 		E9F118B51B7CA9CC00C3C462 /* amoad_link_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn.png; sourceTree = "<group>"; };
 		E9F118B61B7CA9CC00C3C462 /* amoad_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel.png; sourceTree = "<group>"; };
-		F63934531C1EB3B400DF86D1 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,13 +120,8 @@
 				E9F118B51B7CA9CC00C3C462 /* amoad_link_btn.png */,
 				E9F118B61B7CA9CC00C3C462 /* amoad_panel.png */,
 				E9F1189F1B7CA15500C3C462 /* AMoAd.h */,
-				E9F118A01B7CA15500C3C462 /* AMoAdAnalytics.h */,
 				E9F118A11B7CA15500C3C462 /* AMoAdInterstitial.h */,
 				E9F118A21B7CA15500C3C462 /* AMoAdLogger.h */,
-				E9F118A31B7CA15500C3C462 /* AMoAdNativePreRoll.h */,
-				E9F118A41B7CA15500C3C462 /* AMoAdNativeView.h */,
-				E9F118A51B7CA15500C3C462 /* AMoAdView.h */,
-				F63934531C1EB3B400DF86D1 /* AMoAdWeb.h */,
 				E9F118A71B7CA15500C3C462 /* libAMoAd.a */,
 			);
 			name = AMoAdSdk;

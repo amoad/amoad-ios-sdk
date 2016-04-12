@@ -31,6 +31,7 @@ static NSString *const kSid = @"管理画面から取得したsidを入力して
 
   // [SDK] インタースティシャル広告の準備
   [AMoAdInterstitial prepareAdWithSid:kSid];
+  [AMoAdInterstitial setNetworkTimeoutWithSid:kSid millis:3000]; // 広告取得に3秒以上かかったらエラー（AMoAdInterstitialResultFailure）とする
 
   // [SDK] 画像を設定する
   [AMoAdInterstitial setPanelWithSid:kSid image:panelImage];
