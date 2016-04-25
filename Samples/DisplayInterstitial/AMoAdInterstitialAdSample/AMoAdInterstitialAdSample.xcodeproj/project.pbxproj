@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E937B86F1CBF8E4100FD86F1 /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = E937B86E1CBF8E4100FD86F1 /* amoad_panel_l.png */; };
 		E9F1187B1B7CA0D600C3C462 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F1187A1B7CA0D600C3C462 /* main.m */; };
 		E9F1187E1B7CA0D600C3C462 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F1187D1B7CA0D600C3C462 /* AppDelegate.m */; };
 		E9F118811B7CA0D600C3C462 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F118801B7CA0D600C3C462 /* ViewController.m */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E937B86E1CBF8E4100FD86F1 /* amoad_panel_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel_l.png; sourceTree = "<group>"; };
 		E9F118751B7CA0D600C3C462 /* AMoAdInterstitialAdSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdInterstitialAdSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F118791B7CA0D600C3C462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9F1187A1B7CA0D600C3C462 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				E9F118B41B7CA9CC00C3C462 /* amoad_link_btn_h.png */,
 				E9F118B51B7CA9CC00C3C462 /* amoad_link_btn.png */,
 				E9F118B61B7CA9CC00C3C462 /* amoad_panel.png */,
+				E937B86E1CBF8E4100FD86F1 /* amoad_panel_l.png */,
 				E9F1189F1B7CA15500C3C462 /* AMoAd.h */,
 				E9F118A11B7CA15500C3C462 /* AMoAdInterstitial.h */,
 				E9F118A21B7CA15500C3C462 /* AMoAdLogger.h */,
@@ -190,6 +193,7 @@
 				E9F118BB1B7CA9CC00C3C462 /* amoad_panel.png in Resources */,
 				E9F118BA1B7CA9CC00C3C462 /* amoad_link_btn.png in Resources */,
 				E9F118841B7CA0D600C3C462 /* Main.storyboard in Resources */,
+				E937B86F1CBF8E4100FD86F1 /* amoad_panel_l.png in Resources */,
 				E9F118B71B7CA9CC00C3C462 /* amoad_close_btn_h.png in Resources */,
 				E9F118891B7CA0D600C3C462 /* LaunchScreen.xib in Resources */,
 				E9F118861B7CA0D600C3C462 /* Images.xcassets in Resources */,

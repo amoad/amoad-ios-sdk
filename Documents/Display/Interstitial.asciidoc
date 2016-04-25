@@ -1,4 +1,4 @@
-:Version: 4.3.1
+:Version: 4.4.0
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
@@ -20,18 +20,24 @@ toc::[]
 
 == 広告を表示するスクリプト
 
-=== スクリプトの流れ
+=== コーディングの流れ
 
 . 管理画面から発行されるsidを指定してモジュールを登録します。 +
-`[AMoAdInterstitial prepareAdWithSid:kSid];`
+`[AMoAdInterstitial registerAdWithSid:kSid];`
 . パネル画像をUIImageオブジェクトで設定します。 +
-`[AMoAdInterstitial setPanelWithSid:kSid image:panelImage];`
-. ボタン押下時など広告の表示を開始したいタイミングで、以下のメソッドを呼び出します。 +
+`[AMoAdInterstitial setPortraitPanelWithSid:kSid image:panelImage];`
+. 広告面をクリックできるかどうかを設定する：デフォルトはYES +
+`[AMoAdInterstitial setDisplayWithSid:kSid clickable:NO];`
+. 確認ダイアログを表示するかどうかを設定する：デフォルトはYES +
+`[AMoAdInterstitial setDialogWithSid:kSid shown:NO];`
+. 広告を表示したいタイミングで、以下のメソッドを呼び出します。 +
 `[AMoAdInterstitial showAdWithSid:kSid completion:completion];`
 
-TIP: パネル以外の画像を標準画像から変える場合は、担当営業までお問合せください
+TIP: パネル以外の画像も設定できます。以下を参照してください。
+画像のサイズについては、
+link:../Interstitial/Guide.asciidoc[こちら]をご参照ください。
 
-=== スクリプト例
+=== コーディング例
 
 .ViewController
 [source,objc]
@@ -40,36 +46,48 @@ TIP: パネル以外の画像を標準画像から変える場合は、担当営
 //  ViewController.m
 //  AMoAdInterstitialAdSample
 //
-//  Created by AMoAd on 2015/08/13.
-//  Copyright (c) 2015年 AMoAd. All rights reserved.
+//  Created by AMoAd on 2016/04/25.
+//  Copyright (c) 2016年 AMoAd. All rights reserved.
 //
 
 #import "ViewController.h"
 #import "AMoAdInterstitial.h" // [SDK] インタースティシャル用ヘッダ
+#import "AMoAdLogger.h"   // [SDK] ロガー
 
-static NSString *const kSid = @"管理画面から取得したsidを入力してください";
+// [SDK] 管理画面から取得したsidを入力してください
+static NSString *const kSid = @"62056d310111552c000000000000000000000000000000000000000000000000";
 
 @implementation ViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  // [SDK] パネル画像を準備する（標準の画像で良い場合はnilを指定する）
-  UIImage *panelImage = [UIImage imageNamed:@"user_panel.png"]; // パネル画像（310x380）
+  // [SDK] ログ出力の設定
+  [AMoAdLogger sharedLogger].logging = YES;
 
-  // [SDK] その他、画像を設定する場合は担当営業までご連絡ください
+  // [SDK] トレース出力の設定
+  [AMoAdLogger sharedLogger].trace = YES;
+
+  // [SDK] カスタマイズする画像を準備する（標準の画像で良い場合はnilを指定する）
+  UIImage *portraitPanelImage = [UIImage imageNamed:@"user_panel.png"]; // Portraitパネル画像（310x380）
+  UIImage *landscapePanelImage = nil;     // Landscapeパネル画像（380x310）
   UIImage *linkButtonImage = nil;         // リンクボタン画像（280x50）
   UIImage *linkButtonHighlighted = nil;   // リンクボタン画像Highlight（280x50）
   UIImage *closeButtonImage = nil;        // 閉じるボタン画像（40x40）
   UIImage *closeButtonHighlighted = nil;  // 閉じるボタン画像Highlight（40x40）
 
   // [SDK] インタースティシャル広告の準備
-  [AMoAdInterstitial prepareAdWithSid:kSid];
+  [AMoAdInterstitial registerAdWithSid:kSid];
 
   // [SDK] 画像を設定する
-  [AMoAdInterstitial setPanelWithSid:kSid image:panelImage];
+  [AMoAdInterstitial setPortraitPanelWithSid:kSid image:portraitPanelImage];
+  [AMoAdInterstitial setLandscapePanelWithSid:kSid image:landscapePanelImage];
   [AMoAdInterstitial setLinkButtonWithSid:kSid image:linkButtonImage highlighted:linkButtonHighlighted];
   [AMoAdInterstitial setCloseButtonWithSid:kSid image:closeButtonImage highlighted:closeButtonHighlighted];
+
+  // [SDK] 動作を設定する（iOS 7以下では必ず clickable:NO / shown:NO となります）
+//  [AMoAdInterstitial setDisplayWithSid:kSid clickable:NO];  // 広告面をクリックできるかどうかを設定する：デフォルトはYES
+//  [AMoAdInterstitial setDialogWithSid:kSid shown:NO]; // 確認ダイアログを表示するかどうかを設定する：デフォルトはYES
 }
 
 - (IBAction)showAd:(id)sender {
@@ -94,70 +112,12 @@ static NSString *const kSid = @"管理画面から取得したsidを入力して
     }
   }];
 }
+
 @end
 ----
 
-=== パラメタの説明
+=== API
 
-AMoAdInterstitial
+link:../../Samples/DisplayInterstitial/AMoAdInterstitialAdSample/AMoAdInterstitialAdSample/AMoAdInterstitial.h[AMoAd Interstitial API]
 
-==== prepareAdWithSid:
-管理画面から発行されるsidに紐づく広告情報を登録します。
-[options="header"]
-|===
-|パラメタ名 |Type 2+|Value
-|sid |NSString * 2+|管理画面から発行されるsidを設定してください
-|===
-
-==== setPanelWithSid:image:
-パネル画像を設定します。
-[options="header"]
-|===
-|パラメタ名 |Type 2+|Value
-|sid |NSString * 2+|管理画面から発行されるsidを設定してください
-|image |UIImage * 2+|パネルに使用する画像
-|===
-
-==== setLinkButtonWithSid:image:highlighted:
-リンクボタン画像を設定します。
-[options="header"]
-|===
-|パラメタ名 |Type 2+|Value
-|sid |NSString * 2+|管理画面から発行されるsidを設定してください
-|image |UIImage * 2+|リンクボタンに使用する画像
-|highlighted |UIImage * 2+|リンクボタンに使用する画像（Highlight時）
-|===
-
-==== setCloseButtonWithSid:image:highlighted:
-閉じるボタン画像を設定します。
-[options="header"]
-|===
-|パラメタ名 |Type 2+|Value
-|sid |NSString * 2+|管理画面から発行されるsidを設定してください
-|image |UIImage * 2+|閉じるボタンに使用する画像
-|highlighted |UIImage * 2+|閉じるボタンに使用する画像（Highlight時）
-|===
-
-==== showAdWithSid:
-広告の表示を行います。
-[options="header"]
-|===
-|パラメタ名 |Type 2+|Value
-|sid |NSString * 2+|管理画面から発行されるsidを設定してください
-|===
-
-==== closeInterstitialAd
-広告を閉じます。
-[options="header"]
-|===
-|パラメタ名 |Type 2+|Value
-|sid |NSString * 2+|管理画面から発行されるsidを設定してください
-|===
-
-TIP: リンクボタン、閉じるボタンが押された時は自動的に閉じるので、このメソッドを呼び出す必要はありません。
-
-== その他の実装について
-
-=== ログ・トレースの出力方法
-
-link:../Common/Logger.md[ロギング・トレース機能]
+link:../../Samples/DisplayInterstitial/AMoAdInterstitialAdSample/AMoAdInterstitialAdSample/AMoAdLogger.h[AMoAd Logger API] (link:../Common/Logger.md[ロギング・トレース機能について])

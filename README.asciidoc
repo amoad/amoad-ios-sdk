@@ -1,4 +1,4 @@
-:Version: 4.3.1
+:Version: 4.4.0
 
 = AMoAd SDK {version} Guide for iOS
 
@@ -11,11 +11,9 @@ link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウン�
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[更新履歴]
 ** AMoAd.hのimportが必須になっています。
-** インタースティシャル（全画面）広告に対応しました（Unityプラグイン、Cocos2d-xモジュール）。
-** ディスプレイ広告がCocos2d-x、Unityに対応しました。
-** link:Documents/WebView/guide.md[WebViewサポート機能 実装ガイド]を追加しました。
 ** スタイルを管理画面よりHTML+CSSでデザインできる「ネイティブHTML広告」機能を追加しました。
 ** **[NEW] アプリのコンテンツに広告画像とテキストを表示することができる「インフィード広告」機能を追加しました。**
+** **[NEW] インタースティシャル（全画面）広告が横画面に対応しました（Unityプラグイン、Cocos2d-xモジュールは近日公開予定）。**
 
 NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] 。
 
