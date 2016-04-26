@@ -51,7 +51,12 @@ NOTE: 広告の表示には、AMoAd SDKが必要です。 +
 SDKの導入については、こちら（link:../Install/Install.asciidoc[iOS版]
 /link:https://github.com/amoad/amoad-android-sdk/blob/master/Documents/Setup.asciidoc[Android版]）をご参照ください。
 
-== パネル仕様詳細
+== カスタマイズ
+パネル、リンクボタン、閉じるボタンの画像を自由にカスタマイズすることができます。
+
+**画像ファイルはアプリ内に保持するか、任意のサーバ上に保持してロードしていただく必要があります。**
+
+=== パネル仕様詳細
 
 .縦画面
 image:Images/InterstitialSpecPortrait.png[
@@ -65,3 +70,20 @@ image:Images/InterstitialSpecLandscape.png[
 
 NOTE: サイズは画面横幅を320pxとしたときの数値です。レスポンシブオプションを指定した場合、
 インタースティシャル（全画面）広告は端末の画面サイズにより拡大されます。
+
+=== 導入事例
+
+.インタースティシャル（全画面）広告 カスタマイズ事例
+[horizontal]
+image:Images/cases/InterstitialCase01.jpg[
+"インタースティシャル（全画面）広告 カスタマイズ事例1", width=200px
+]&nbsp;&nbsp;&nbsp;&nbsp;
+image:Images/cases/InterstitialCase02.jpg[
+"インタースティシャル（全画面）広告 カスタマイズ事例2", width=200px
+]&nbsp;&nbsp;&nbsp;&nbsp;
+image:Images/cases/InterstitialCase03.jpg[
+"インタースティシャル（全画面）広告 カスタマイズ事例3", width=200px
+]&nbsp;&nbsp;&nbsp;&nbsp;
+image:Images/cases/InterstitialCase04.jpg[
+"インタースティシャル（全画面）広告 カスタマイズ事例4", width=200px
+]
