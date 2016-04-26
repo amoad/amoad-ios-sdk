@@ -14,9 +14,12 @@ AMoAdネットワークのレクタングル広告（300x250）をカスタマ�
 
 .インタースティシャル（全画面）広告 実装例
 [horizontal]
-image:Images/Interstitial_00.jpg[
-"インタースティシャル（全画面）広告 実装例1", width=250px
+image:Images/InterstitialPortrait.jpg[
+"インタースティシャル（全画面）広告 実装例1", width=200px
 ]&nbsp;&nbsp;&nbsp;&nbsp;
+image:Images/InterstitialPortraitDialog.jpg[
+"インタースティシャル（全画面）広告 実装例2", width=200px
+]
 
 == 仕様
 パネル::
@@ -50,11 +53,15 @@ SDKの導入については、こちら（link:../Install/Install.asciidoc[iOS�
 
 == パネル仕様詳細
 
-image:Images/Interstitial_00.png[
-"インタースティシャル（全画面）広告 実装例1", width=540px
+.縦画面
+image:Images/InterstitialSpecPortrait.png[
+"インタースティシャル（全画面）広告 仕様1", width=360px
+]
+
+.横画面
+image:Images/InterstitialSpecLandscape.png[
+"インタースティシャル（全画面）広告 仕様2", width=540px
 ]
 
 NOTE: サイズは画面横幅を320pxとしたときの数値です。レスポンシブオプションを指定した場合、
 インタースティシャル（全画面）広告は端末の画面サイズにより拡大されます。
-
-NOTE: 横画面には未対応です。
