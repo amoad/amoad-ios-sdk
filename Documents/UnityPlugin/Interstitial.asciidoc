@@ -26,8 +26,13 @@ toc::[]
 
 . 管理画面から発行されるsidを指定してRegisterInterstitialAd()メソッドでプラグインを登録します。 +
 `AMoAdUnityPlugin.RegisterInterstitialAd (sid);`
-. パネル画像をファイル名で設定します。 +
-`AMoAdUnityPlugin.SetInterstitialPanel (sid, imageName);`
+. 縦・横画面のパネル画像を設定します。 +
+`AMoAdUnityPlugin.SetInterstitialPortraitPanel (sid, imageName);`
+`AMoAdUnityPlugin.SetInterstitialLandscapePanel (sid, imageName);`
+. 広告面をクリックできるかどうかを設定する：デフォルトはtrue +
+`AMoAdUnityPlugin.SetInterstitialDisplayClickable (sid, clickable);`
+. 確認ダイアログを表示するかどうかを設定する：デフォルトはtrue +
+`AMoAdUnityPlugin.SetInterstitialDialogShown (sid, shown);`
 . ボタン押下時など広告の表示を開始したいタイミングで、ShowInterstitialAd()メソッドを呼び出します。 +
 `AMoAdUnityPlugin.ShowInterstitialAd (sid);`
 
@@ -41,12 +46,16 @@ TIP: パネル以外の画像を標準画像から変える場合は、担当営
 public class AMoAdUnityPluginInterstitialSample : MonoBehaviour {
 
   private static string SID = "管理画面から発行されるsidを設定してください";
-  private static string PANEL_IMAGE_NAME = "パネルに使用する画像ファイル名";
+  private static string PORTRAIT_IMAGE_NAME = "パネルに使用する画像ファイル名";
+  private static string LANDSCAPE_IMAGE_NAME = "パネルに使用する画像ファイル名";
 
   void Awake () {
     //広告準備
     AMoAdUnityPlugin.RegisterInterstitialAd (sid:SID);
-    AMoAdUnityPlugin.SetInterstitialPanel (sid:SID, imageName:PANEL_IMAGE_NAME);
+    AMoAdUnityPlugin.SetInterstitialPortraitPanel (sid:SID, imageName:PORTRAIT_IMAGE_NAME);
+    AMoAdUnityPlugin.SetInterstitialLandscapePanel (sid:SID, imageName:LANDSCAPE_IMAGE_NAME);
+    //AMoAdUnityPlugin.SetInterstitialDisplayClickable (sid:SID, clickable:false);
+    //AMoAdUnityPlugin.SetInterstitialDialogShown (sid:SID, shown:false);
 
     //広告表示
     AMoAdUnityPlugin.ShowInterstitialAd (SID);
@@ -63,13 +72,40 @@ public class AMoAdUnityPluginInterstitialSample : MonoBehaviour {
 |sid |string 2+|管理画面から発行されるsidを設定してください
 |===
 
-==== AMoAdUnityPlugin.SetInterstitialPanel()
+==== AMoAdUnityPlugin.SetInterstitialPortraitPanel()
 sidを指定してパネル画像を設定します。
 [options="header"]
 |===
 |パラメタ名 |Type 2+|Value
 |sid |string 2+|管理画面から発行されるsidを設定してください
-|imageName |string 2+|パネルに使用する画像ファイル名
+|imageName |string 2+|縦画面のパネルに使用する画像ファイル名
+|===
+
+==== AMoAdUnityPlugin.SetInterstitialLandscapePanel()
+sidを指定してパネル画像を設定します。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|imageName |string 2+|横画面のパネルに使用する画像ファイル名
+|===
+
+==== AMoAdUnityPlugin.SetInterstitialDisplayClickable()
+広告面をクリックできるかどうかを設定する。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|clickable |boolean 2+|広告面をクリックできるかどうか(default:true)
+|===
+
+==== AMoAdUnityPlugin.SetInterstitialDialogShown()
+確認ダイアログを表示するかどうかを設定する。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|clickable |boolean 2+|確認ダイアログを表示するかどうか(default:true)
 |===
 
 ==== AMoAdUnityPlugin.ShowInterstitialAd()
@@ -101,12 +137,16 @@ link:../../Samples/UnityPlugin/AMoAdUnityPluginInterstitialSample[サンプル�
 public class AMoAdUnityPluginInterstitialSample : MonoBehaviour {
 
   private static string SID = "管理画面から発行されるsidを設定してください";
-  private static string PANEL_IMAGE_NAME = "パネルに使用する画像ファイル名";
+  private static string PORTRAIT_IMAGE_NAME = "パネルに使用する画像ファイル名";
+  private static string LANDSCAPE_IMAGE_NAME = "パネルに使用する画像ファイル名";
 
   void Awake () {
     //広告準備
     AMoAdUnityPlugin.RegisterInterstitialAd (sid:SID);
-    AMoAdUnityPlugin.SetInterstitialPanel (sid:SID, imageName:PANEL_IMAGE_NAME);
+    AMoAdUnityPlugin.SetInterstitialPortraitPanel (sid:SID, imageName:PORTRAIT_IMAGE_NAME);
+    AMoAdUnityPlugin.SetInterstitialLandscapePanel (sid:SID, imageName:LANDSCAPE_IMAGE_NAME);
+    //AMoAdUnityPlugin.SetInterstitialDisplayClickable (sid:SID, clickable:false);
+    //AMoAdUnityPlugin.SetInterstitialDialogShown (sid:SID, shown:false);
 
     //広告表示
     AMoAdUnityPlugin.ShowInterstitialAd (SID);
@@ -115,5 +155,5 @@ public class AMoAdUnityPluginInterstitialSample : MonoBehaviour {
 ----
 
 . AMoAdUnityPluginInterstitialSample.csのSIDに管理画面から発行されるsidを入力してください
-. パネル画像を変えたいときはSetInterstitialPanel()メソッドのimageNameを変更してください
+. パネル画像を変えたいときはSetInterstitialPortraitPanel()または、SetInterstitialLandscapePanel()メソッドのimageNameを変更してください
 . link:Guide.asciidoc[導入ガイド]の手順に従いプラグイン、SDKの導入、ビルドを行ってください
