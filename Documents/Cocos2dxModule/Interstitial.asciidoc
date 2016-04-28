@@ -1,4 +1,4 @@
-:Version: 1.0.1
+:Version: 1.2.0
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
@@ -24,8 +24,13 @@ toc::[]
 
 . 管理画面から発行されるsidを指定してregisterInterstitialAd()メソッドでモジュールを登録します。 +
 `AMoAdCocos2dxModule::registerInterstitialAd (sid);`
-. パネル画像をファイル名で設定します。 +
-`AMoAdCocos2dxModule::setInterstitialPanel (sid, imageName);`
+. 横・縦画面のパネル画像をファイル名で設定します。 +
+`AMoAdCocos2dxModule::setInterstitialPortraitPanel (sid, imageName);`
+`AMoAdCocos2dxModule::setInterstitialLandscapePanel (sid, imageName);`
+. 広告面をクリックできるかどうかを設定する(default:true) +
+`AMoAdCocos2dxModule::setInterstitialDisplayClickable (sid, clickable);`
+. 確認ダイアログを表示するかどうかを設定する(default:true) +
+`AMoAdCocos2dxModule::setInterstitialDialogShown (sid, shown);`
 . ボタン押下時など広告の表示を開始したいタイミングで、showInterstitialAd()メソッドを呼び出します。 +
 `AMoAdCocos2dxModule::showInterstitialAd (sid);`
 
@@ -45,10 +50,23 @@ static const char* SID = "管理画面から発行されるsidを設定してく
 AMoAdCocos2dxModule::registerInterstitialAd(SID);
 ----
 
-.パネル画像をファイル名で指定する
+.横・縦画面のパネル画像をファイル名で指定する
 [source,cpp]
 ----
-AMoAdCocos2dxModule::setInterstitialPanel(SID, "パネルに使用する画像ファイル名");
+AMoAdCocos2dxModule::setInterstitialPortraitPanel(SID, "縦画面のパネルに使用する画像ファイル名");
+AMoAdCocos2dxModule::setInterstitialLandscapePanel(SID, "横画面のパネルに使用する画像ファイル名");
+----
+
+.広告面をクリックできるかどうかを設定する
+[source,cpp]
+----
+AMoAdCocos2dxModule::setInterstitialDisplayClickable(SID, clickable);
+----
+
+.確認ダイアログを表示するかどうかを設定する
+[source,cpp]
+----
+AMoAdCocos2dxModule::setInterstitialDialogShown(SID, shown);
 ----
 
 .インタースティシャル（全画面）広告を表示する
@@ -66,13 +84,40 @@ AMoAdCocos2dxModule::showInterstitialAd(SID);
 |sid |string 2+|管理画面から発行されるsidを設定してください
 |===
 
-==== AMoAdCocos2dxModule::setInterstitialPanel()
-sidを指定してパネル画像を設定します。
+==== AMoAdCocos2dxModule::setInterstitialPortraitPanel()
+sidを指定して縦画面のパネル画像を設定します。
 [options="header"]
 |===
 |パラメタ名 |Type 2+|Value
 |sid |string 2+|管理画面から発行されるsidを設定してください
 |imageName |string 2+|パネルに使用する画像ファイル名
+|===
+
+==== AMoAdCocos2dxModule::setInterstitialLandscapePanel()
+sidを指定して横画面のパネル画像を設定します。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|imageName |string 2+|パネルに使用する画像ファイル名
+|===
+
+==== AMoAdCocos2dxModule::setInterstitialDisplayClickable()
+広告面をクリックできるかどうかを設定する。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|clickable |boolean 2+|広告面をクリックできるかどうか(default:true)
+|===
+
+==== AMoAdCocos2dxModule::setInterstitialDialogShown()
+確認ダイアログを表示するかどうかを設定する。
+[options="header"]
+|===
+|パラメタ名 |Type 2+|Value
+|sid |string 2+|管理画面から発行されるsidを設定してください
+|shown |boolean 2+|確認ダイアログを表示するかどうか(default:true)
 |===
 
 ==== AMoAdCocos2dxModule::showInterstitialAd()
