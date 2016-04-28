@@ -1,4 +1,4 @@
-:Version: 1.0.2
+:Version: 1.2.0
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
