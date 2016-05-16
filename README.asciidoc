@@ -13,7 +13,7 @@ link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウン�
 ** AMoAd.hのimportが必須になっています。
 ** スタイルを管理画面よりHTML+CSSでデザインできる「ネイティブHTML広告」機能を追加しました。
 ** **[NEW] アプリのコンテンツに広告画像とテキストを表示することができる「インフィード広告」機能を追加しました。**
-** **[NEW] インタースティシャル（全画面）広告が横画面に対応しました（Unityプラグイン、Cocos2d-xモジュールは近日公開予定）。**
+** **[NEW] インタースティシャル広告が横画面に対応しました（Unityプラグイン、Cocos2d-xモジュールは近日公開予定）。**
 
 * **link:Documents/Install/Install.asciidoc#34-ats-app-transport-security-を抑制する[
 iOS 9のATS (App Transport Security) を抑制する方法について追記しました。
@@ -75,7 +75,7 @@ AMoAd SDKでは、プリロール広告を簡単に表示するAPIを提供し�
 - link:Documents/Cocos2dxModule/Display.asciidoc[Cocos2d-xモジュール実装ガイド]
 
 
-=== インタースティシャル（全画面）広告
+=== インタースティシャル広告
 
 - link:https://github.com/amoad/amoad-ios-sdk/wiki/Interstitial[概要] +
 レクタングル広告（300x250）をカスタマイズ可能なパネルに乗せて全画面表示させる機能です
