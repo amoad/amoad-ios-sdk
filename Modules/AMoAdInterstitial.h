@@ -3,8 +3,8 @@
 //
 //  Created by AMoAd on 2015/07/23.
 //
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "AMoAd.h"
 
 /// インタースティシャル広告完了状態
 typedef NS_ENUM(NSInteger, AMoAdInterstitialResult) {
@@ -24,9 +24,10 @@ typedef NS_ENUM(NSInteger, AMoAdInterstitialResult) {
 /// インタースティシャル広告I/F
 @interface AMoAdInterstitial : NSObject
 
-/// インタースティシャル広告の準備を行なう
+/// インタースティシャル広告の登録を行なう
 /// @param sid 管理画面から取得した64文字の英数字
 + (void)registerAdWithSid:(NSString *)sid;
+
 
 /// タイムアウト時間（ミリ秒）を設定する：デフォルトは30,000ミリ秒
 /// @param sid 管理画面から取得した64文字の英数字
@@ -65,10 +66,26 @@ typedef NS_ENUM(NSInteger, AMoAdInterstitialResult) {
 /// @param highlighted 閉じるボタン画像（押下時）
 + (void)setCloseButtonWithSid:(NSString *)sid image:(UIImage *)image highlighted:(UIImage *)highlighted;
 
-/// インタースティシャル広告を表示する
+/// showAdを呼んだ後、自動で次の広告をロード（loadAd）するかどうか：デフォルトはYES
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param autoReload showAdを呼んだ後、自動で次の広告をロード（loadAd）するかどうか
++ (void)setAutoReloadWithSid:(NSString *)sid autoReload:(BOOL)autoReload;
+
+
+/// インタースティシャル広告のロードを行なう
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param completion 広告受信完了Block
-+ (void)showAdWithSid:(NSString *)sid completion:(void (^)(NSString *sid, AMoAdInterstitialResult result))completion;
++ (void)loadAdWithSid:(NSString *)sid completion:(void (^)(NSString *sid, AMoAdResult result, NSError *err))completion;
+
+/// インタースティシャル広告がプリロードされているかどうかを返す
+/// @param sid 管理画面から取得した64文字の英数字
+/// @return インタースティシャル広告がプリロードされているかどうか
++ (BOOL)isLoadedAdWithSid:(NSString *)sid;
+
+/// インタースティシャル広告を表示する
+/// @param sid 管理画面から取得した64文字の英数字
+/// @param completion インタースティシャル終了Block
++ (void)showAdWithSid:(NSString *)sid completion:(void (^)(NSString *sid, AMoAdInterstitialResult result, NSError *err))completion;
 
 /// インタースティシャル広告を閉じる
 /// @param sid 管理画面から取得した64文字の英数字

@@ -84,31 +84,31 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 @interface AMoAdView : UIImageView
 
 /// AMoAd Webサイトで発行されるID（必須）
-@property (nonatomic,readwrite,strong) NSString *sid;
+@property (nonatomic,copy) NSString *sid;
 
 /// デリゲート
-@property (nonatomic,readwrite,weak) id delegate;
+@property (nonatomic,weak) id delegate;
 
 /// ローテーション時トランジション
-@property (nonatomic,readwrite,assign) AMoAdRotateTransition rotateTransition;
+@property (nonatomic) AMoAdRotateTransition rotateTransition;
 
 /// クリック時トランジション
-@property (nonatomic,readwrite,assign) AMoAdClickTransition clickTransition;
+@property (nonatomic) AMoAdClickTransition clickTransition;
 
 /// 水平方向の広告表示位置
-@property (nonatomic,readwrite,assign) AMoAdHorizontalAlign horizontalAlign;
+@property (nonatomic) AMoAdHorizontalAlign horizontalAlign;
 
 /// 垂直方向の広告表示位置
-@property (nonatomic,readwrite,assign) AMoAdVerticalAlign verticalAlign;
+@property (nonatomic) AMoAdVerticalAlign verticalAlign;
 
 /// 広告サイズの調整
-@property (nonatomic,readwrite,assign) AMoAdAdjustMode adjustMode;
+@property (nonatomic) AMoAdAdjustMode adjustMode;
 
 /// バナーサイズ
-@property (nonatomic,readwrite,assign) CGSize bannerSize;
+@property (nonatomic) CGSize bannerSize;
 
 // タイムアウト時間（ミリ秒）を設定する：デフォルトは30,000ミリ秒
-@property (nonatomic,readwrite,assign) NSInteger networkTimeoutMillis;
+@property (nonatomic) NSInteger networkTimeoutMillis;
 
 
 /// サイズと位置で初期化
