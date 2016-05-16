@@ -77,20 +77,20 @@ AMoAd SDKでは、プリロール広告を簡単に表示するAPIを提供し�
 
 === インタースティシャル（全画面）広告
 
-- link:Documents/Interstitial/Guide.asciidoc[概要] +
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/Interstitial[概要] +
 レクタングル広告（300x250）をカスタマイズ可能なパネルに乗せて全画面表示させる機能です
 
 .iOSで開発される方
-- link:Documents/Install/Install.asciidoc[SDK導入ガイド]
-- link:Documents/Display/Interstitial.asciidoc[SDKインタースティシャル実装ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/Install[SDK導入ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/InterstitialCodingGuide[SDKインタースティシャル実装ガイド]
 
 .Unityで開発される方
-- link:Documents/UnityPlugin/Guide.asciidoc[Unityプラグイン インタースティシャル導入ガイド]
-- link:Documents/UnityPlugin/Interstitial.asciidoc[Unityプラグイン インタースティシャル実装ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInstall[Unityプラグイン インタースティシャル導入ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInterstitialCodingGuide[Unityプラグイン インタースティシャル実装ガイド]
 
 .Cocos2d-xで開発される方
-- link:Documents/Cocos2dxModule/Guide.asciidoc[Cocos2d-xモジュール インタースティシャル導入ガイド]
-- link:Documents/Cocos2dxModule/Interstitial.asciidoc[Cocos2d-xモジュール インタースティシャル実装ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInstall[Cocos2d-xモジュール インタースティシャル導入ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInterstitialCodingGuide[Cocos2d-xモジュール インタースティシャル実装ガイド]
 
 == 旧ネイティブ広告
 ネイティブHTML広告、インフィード広告の利用をご検討ください。
