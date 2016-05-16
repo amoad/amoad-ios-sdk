@@ -16,16 +16,16 @@
 ///    }
 @interface AMoAdLogger : NSObject
 /// SDKエラーをログ出力する（YES / NO:デフォルト）
-@property (nonatomic,readwrite,assign) BOOL logging;
+@property (nonatomic) BOOL logging;
 
 /// ログをNSLog以外に出力する場合、このブロックを設定する
-@property (nonatomic,readwrite,strong) void (^onLogging)(NSString *message, NSError *error);
+@property (nonatomic,copy) void (^onLogging)(NSString *message, NSError *error);
 
 /// トレース出力する（YES / NO:デフォルト）
-@property (nonatomic,readwrite,assign) BOOL trace;
+@property (nonatomic) BOOL trace;
 
 /// トレースをNSLog以外に出力する場合、このブロックを設定する
-@property (nonatomic,readwrite,strong) void (^onTrace)(NSString *message, id target);
+@property (nonatomic,copy) void (^onTrace)(NSString *message, id target);
 
 /// ロガー・オブジェクトを取得する
 + (AMoAdLogger *)sharedLogger;
