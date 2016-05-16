@@ -197,14 +197,14 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// 広告描画情報
 @interface AMoAdNativeViewCoder : NSObject
 /// タイトルショートの文字属性
-@property (nonatomic,strong,readwrite) NSDictionary *titleShortAttributes;
+@property (nonatomic,copy) NSDictionary *titleShortAttributes;
 /// タイトルロングの文字属性
-@property (nonatomic,strong,readwrite) NSDictionary *titleLongAttributes;
+@property (nonatomic,copy) NSDictionary *titleLongAttributes;
 /// サービス名の文字属性
-@property (nonatomic,strong,readwrite) NSDictionary *serviceNameAttributes;
+@property (nonatomic,copy) NSDictionary *serviceNameAttributes;
 
 /// タップ回数（デフォルト「1」、ダブルクリックの場合は「2」）
-@property (nonatomic,assign,readwrite) NSUInteger numberOfTapsRequired;
+@property (nonatomic) NSUInteger numberOfTapsRequired;
 
 /// <p>広告描画情報を生成する</p>
 - (instancetype)init;
@@ -223,7 +223,7 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 #pragma mark - 追跡型広告設定
 
 /// 追跡型広告の配信（YES...配信する：デフォルト / NO...配信しない）
-@property (nonatomic,readwrite,getter=isAdvertisingTrackingEnabled) BOOL advertisingTrackingEnabled;
+@property (nonatomic,getter=isAdvertisingTrackingEnabled) BOOL advertisingTrackingEnabled;
 
 #pragma mark - 【ネイティブ（App）】広告の準備を行なう
 
