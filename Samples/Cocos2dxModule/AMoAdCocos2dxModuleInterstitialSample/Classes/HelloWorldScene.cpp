@@ -3,7 +3,7 @@
 
 USING_NS_CC;
 
-#define SID "管理画面から発行されるsidを設定してください"
+#define SID "62056d310111552c636519f354fd215e518e17eebfed351d75c084137870e972"
 #define PANEL_IMAGE_NAME "パネルに使用する画像ファイル名"
 
 Scene* HelloWorld::createScene()

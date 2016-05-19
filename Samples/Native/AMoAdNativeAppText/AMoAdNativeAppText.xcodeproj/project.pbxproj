@@ -13,23 +13,14 @@
 		AC6A455D1A95E2E40091F182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6A455B1A95E2E40091F182 /* Main.storyboard */; };
 		AC6A455F1A95E2E40091F182 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6A455E1A95E2E40091F182 /* Images.xcassets */; };
 		AC6A45621A95E2E40091F182 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6A45601A95E2E40091F182 /* LaunchScreen.xib */; };
-		AC6A456E1A95E2E40091F182 /* AMoAdNativeAppTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC6A456D1A95E2E40091F182 /* AMoAdNativeAppTextTests.m */; };
 		AC6A45801A95E35C0091F182 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6A457F1A95E35C0091F182 /* libAMoAd.a */; };
 		AC6A45821A95E3690091F182 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6A45811A95E3690091F182 /* AdSupport.framework */; };
 		AC6A45841A95E3710091F182 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6A45831A95E3710091F182 /* ImageIO.framework */; };
 		AC6A45861A95E47E0091F182 /* AdTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6A45851A95E47E0091F182 /* AdTextView.xib */; };
 		E9AEE82A1AC5599300D74AD0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AEE8291AC5599300D74AD0 /* StoreKit.framework */; };
+		E9C7A8631CEDBDB90013B308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8621CEDBDB90013B308 /* AVFoundation.framework */; };
+		E9C7A8651CEDBDC00013B308 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8641CEDBDC00013B308 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AC6A45681A95E2E40091F182 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AC6A45461A95E2E30091F182 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AC6A454D1A95E2E30091F182;
-			remoteInfo = AMoAdNativeAppText;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AC6A454E1A95E2E40091F182 /* AMoAdNativeAppText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdNativeAppText.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,15 +33,14 @@
 		AC6A455C1A95E2E40091F182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC6A455E1A95E2E40091F182 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AC6A45611A95E2E40091F182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		AC6A45671A95E2E40091F182 /* AMoAdNativeAppTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMoAdNativeAppTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC6A456C1A95E2E40091F182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC6A456D1A95E2E40091F182 /* AMoAdNativeAppTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMoAdNativeAppTextTests.m; sourceTree = "<group>"; };
 		AC6A457E1A95E35C0091F182 /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeView.h; sourceTree = "<group>"; };
 		AC6A457F1A95E35C0091F182 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
 		AC6A45811A95E3690091F182 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		AC6A45831A95E3710091F182 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		AC6A45851A95E47E0091F182 /* AdTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdTextView.xib; sourceTree = "<group>"; };
 		E9AEE8291AC5599300D74AD0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E9C7A8621CEDBDB90013B308 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E9C7A8641CEDBDC00013B308 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		F67006071B98354900DAD6BE /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
 		F67006081B98354900DAD6BE /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
 		F670060A1B98354900DAD6BE /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
@@ -61,17 +51,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C7A8651CEDBDC00013B308 /* CoreMedia.framework in Frameworks */,
+				E9C7A8631CEDBDB90013B308 /* AVFoundation.framework in Frameworks */,
 				E9AEE82A1AC5599300D74AD0 /* StoreKit.framework in Frameworks */,
 				AC6A45841A95E3710091F182 /* ImageIO.framework in Frameworks */,
 				AC6A45821A95E3690091F182 /* AdSupport.framework in Frameworks */,
 				AC6A45801A95E35C0091F182 /* libAMoAd.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AC6A45641A95E2E40091F182 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,11 +66,12 @@
 		AC6A45451A95E2E30091F182 = {
 			isa = PBXGroup;
 			children = (
+				E9C7A8641CEDBDC00013B308 /* CoreMedia.framework */,
+				E9C7A8621CEDBDB90013B308 /* AVFoundation.framework */,
 				E9AEE8291AC5599300D74AD0 /* StoreKit.framework */,
 				AC6A45831A95E3710091F182 /* ImageIO.framework */,
 				AC6A45811A95E3690091F182 /* AdSupport.framework */,
 				AC6A45501A95E2E40091F182 /* AMoAdNativeAppText */,
-				AC6A456A1A95E2E40091F182 /* AMoAdNativeAppTextTests */,
 				AC6A454F1A95E2E40091F182 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				AC6A454E1A95E2E40091F182 /* AMoAdNativeAppText.app */,
-				AC6A45671A95E2E40091F182 /* AMoAdNativeAppTextTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,23 +106,6 @@
 			children = (
 				AC6A45521A95E2E40091F182 /* Info.plist */,
 				AC6A45531A95E2E40091F182 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AC6A456A1A95E2E40091F182 /* AMoAdNativeAppTextTests */ = {
-			isa = PBXGroup;
-			children = (
-				AC6A456D1A95E2E40091F182 /* AMoAdNativeAppTextTests.m */,
-				AC6A456B1A95E2E40091F182 /* Supporting Files */,
-			);
-			path = AMoAdNativeAppTextTests;
-			sourceTree = "<group>";
-		};
-		AC6A456B1A95E2E40091F182 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AC6A456C1A95E2E40091F182 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,24 +142,6 @@
 			productReference = AC6A454E1A95E2E40091F182 /* AMoAdNativeAppText.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AC6A45661A95E2E40091F182 /* AMoAdNativeAppTextTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AC6A45741A95E2E40091F182 /* Build configuration list for PBXNativeTarget "AMoAdNativeAppTextTests" */;
-			buildPhases = (
-				AC6A45631A95E2E40091F182 /* Sources */,
-				AC6A45641A95E2E40091F182 /* Frameworks */,
-				AC6A45651A95E2E40091F182 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AC6A45691A95E2E40091F182 /* PBXTargetDependency */,
-			);
-			name = AMoAdNativeAppTextTests;
-			productName = AMoAdNativeAppTextTests;
-			productReference = AC6A45671A95E2E40091F182 /* AMoAdNativeAppTextTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -203,10 +153,6 @@
 				TargetAttributes = {
 					AC6A454D1A95E2E30091F182 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					AC6A45661A95E2E40091F182 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = AC6A454D1A95E2E30091F182;
 					};
 				};
 			};
@@ -224,7 +170,6 @@
 			projectRoot = "";
 			targets = (
 				AC6A454D1A95E2E30091F182 /* AMoAdNativeAppText */,
-				AC6A45661A95E2E40091F182 /* AMoAdNativeAppTextTests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,13 +186,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC6A45651A95E2E40091F182 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,23 +199,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC6A45631A95E2E40091F182 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC6A456E1A95E2E40091F182 /* AMoAdNativeAppTextTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AC6A45691A95E2E40091F182 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AC6A454D1A95E2E30091F182 /* AMoAdNativeAppText */;
-			targetProxy = AC6A45681A95E2E40091F182 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AC6A455B1A95E2E40091F182 /* Main.storyboard */ = {
@@ -407,40 +329,6 @@
 			};
 			name = Release;
 		};
-		AC6A45751A95E2E40091F182 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AMoAdNativeAppTextTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdNativeAppText.app/AMoAdNativeAppText";
-			};
-			name = Debug;
-		};
-		AC6A45761A95E2E40091F182 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AMoAdNativeAppTextTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdNativeAppText.app/AMoAdNativeAppText";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -458,15 +346,6 @@
 			buildConfigurations = (
 				AC6A45721A95E2E40091F182 /* Debug */,
 				AC6A45731A95E2E40091F182 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AC6A45741A95E2E40091F182 /* Build configuration list for PBXNativeTarget "AMoAdNativeAppTextTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC6A45751A95E2E40091F182 /* Debug */,
-				AC6A45761A95E2E40091F182 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

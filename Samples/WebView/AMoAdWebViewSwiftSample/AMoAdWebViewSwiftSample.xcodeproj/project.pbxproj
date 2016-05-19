@@ -12,6 +12,9 @@
 		E993CE641C1953DD002968B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E993CE621C1953DD002968B6 /* Main.storyboard */; };
 		E993CE661C1953DD002968B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E993CE651C1953DD002968B6 /* Assets.xcassets */; };
 		E993CE691C1953DD002968B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E993CE671C1953DD002968B6 /* LaunchScreen.storyboard */; };
+		E9C7A8891CEDC0D60013B308 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8881CEDC0D60013B308 /* StoreKit.framework */; };
+		E9C7A88B1CEDC0DE0013B308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A88A1CEDC0DE0013B308 /* AVFoundation.framework */; };
+		E9C7A88D1CEDC0E70013B308 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A88C1CEDC0E70013B308 /* CoreMedia.framework */; };
 		E9CC51151C195BBF00190278 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CC51141C195BBF00190278 /* libAMoAd.a */; };
 		E9CC51181C1966A200190278 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CC51171C1966A200190278 /* AdSupport.framework */; };
 		E9CC511A1C1966AD00190278 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9CC51191C1966AD00190278 /* ImageIO.framework */; };
@@ -26,6 +29,9 @@
 		E993CE651C1953DD002968B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E993CE681C1953DD002968B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E993CE6A1C1953DD002968B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9C7A8881CEDC0D60013B308 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E9C7A88A1CEDC0DE0013B308 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E9C7A88C1CEDC0E70013B308 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		E9CC51111C195BBF00190278 /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAd.h; path = AMoAdSdk/AMoAd.h; sourceTree = "<group>"; };
 		E9CC51121C195BBF00190278 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdLogger.h; path = AMoAdSdk/AMoAdLogger.h; sourceTree = "<group>"; };
 		E9CC51131C195BBF00190278 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdWeb.h; path = AMoAdSdk/AMoAdWeb.h; sourceTree = "<group>"; };
@@ -41,6 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C7A88D1CEDC0E70013B308 /* CoreMedia.framework in Frameworks */,
+				E9C7A88B1CEDC0DE0013B308 /* AVFoundation.framework in Frameworks */,
+				E9C7A8891CEDC0D60013B308 /* StoreKit.framework in Frameworks */,
 				E9CC511A1C1966AD00190278 /* ImageIO.framework in Frameworks */,
 				E9CC51181C1966A200190278 /* AdSupport.framework in Frameworks */,
 				E9CC51151C195BBF00190278 /* libAMoAd.a in Frameworks */,
@@ -53,6 +62,9 @@
 		E993CE521C1953DD002968B6 = {
 			isa = PBXGroup;
 			children = (
+				E9C7A88C1CEDC0E70013B308 /* CoreMedia.framework */,
+				E9C7A88A1CEDC0DE0013B308 /* AVFoundation.framework */,
+				E9C7A8881CEDC0D60013B308 /* StoreKit.framework */,
 				E9CC51191C1966AD00190278 /* ImageIO.framework */,
 				E9CC51171C1966A200190278 /* AdSupport.framework */,
 				E993CE5D1C1953DD002968B6 /* AMoAdWebViewSwiftSample */,

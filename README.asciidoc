@@ -1,4 +1,4 @@
-:Version: 4.5.1
+:Version: 4.6.0
 
 = AMoAd SDK {version} Guide for iOS
 
@@ -20,8 +20,12 @@ link:https://github.com/amoad/amoad-ios-sdk/wiki/InterstitialCodingGuide[iOS]/
 link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInterstitialCodingGuide[Unity]/
 link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInterstitialCodingGuide[Cocos2d-x]
 ）をご確認ください。**
+** **[NEW] インタースティシャル動画広告配信に対応しました（
+配信開始時期については担当営業までお問合せください）。**
 
-* **link:Documents/Install/Install.asciidoc#34-ats-app-transport-security-を抑制する[
+* **AVFoundation.framework、CoreMedia.frameworkの追加が必須になりました。**
+
+* **link:https://github.com/amoad/amoad-ios-sdk/wiki/Install#34-ats-app-transport-security-を抑制する[
 iOS 9のATS (App Transport Security) を抑制する方法について追記しました。
 必ずご確認ください！]**
 
@@ -63,40 +67,23 @@ AMoAd SDKでは、プリロール広告を簡単に表示するAPIを提供し�
 - link:Samples/NativePreRoll/AMoAdNativePreRoll[サンプルコード] +
 管理画面から取得したsidを入力して動かしてください
 
-
 == ディスプレイ広告
-
-=== インライン広告
-
-.iOSで開発される方
-- link:Documents/Install/Install.asciidoc[SDK導入ガイド]
-- link:Documents/Display/Guide.asciidoc[SDK実装ガイド]
-
-.Unityで開発される方
-- link:Documents/UnityPlugin/Guide.asciidoc[Unityプラグイン導入ガイド]
-- link:Documents/UnityPlugin/Display.asciidoc[Unityプラグイン実装ガイド]
-
-.Cocos2d-xで開発される方
-- link:Documents/Cocos2dxModule/Guide.asciidoc[Cocos2d-xモジュール導入ガイド]
-- link:Documents/Cocos2dxModule/Display.asciidoc[Cocos2d-xモジュール実装ガイド]
-
-
-=== インタースティシャル広告
-
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/Interstitial[概要] +
-レクタングル広告（300x250）をカスタマイズ可能なパネルに乗せて全画面表示させる機能です
-
-.iOSで開発される方
+=== インストール
 - link:https://github.com/amoad/amoad-ios-sdk/wiki/Install[SDK導入ガイド]
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/InterstitialCodingGuide[SDKインタースティシャル実装ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInstall[Unityプラグイン]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInstall[Cocos2d-xモジュール]
 
-.Unityで開発される方
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInstall[Unityプラグイン インタースティシャル導入ガイド]
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInterstitialCodingGuide[Unityプラグイン インタースティシャル実装ガイド]
+=== インライン
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/CodingGuide[SDK実装ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityCodingGuide[Unity実装ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxCodingGuide[Cocos2d-x実装ガイド]
 
-.Cocos2d-xで開発される方
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInstall[Cocos2d-xモジュール インタースティシャル導入ガイド]
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInterstitialCodingGuide[Cocos2d-xモジュール インタースティシャル実装ガイド]
+=== インタースティシャル
+link:https://github.com/amoad/amoad-ios-sdk/wiki/Interstitial[概要]
+
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/InterstitialCodingGuide[SDK実装ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInterstitialCodingGuide[Unity実装ガイド]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInterstitialCodingGuide[Cocos2d-x実装ガイド]
 
 == 旧ネイティブ広告
 ネイティブHTML広告、インフィード広告の利用をご検討ください。

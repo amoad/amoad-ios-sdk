@@ -11,6 +11,9 @@
 		E948658B1C182D6500885996 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E948658A1C182D6500885996 /* AdSupport.framework */; };
 		E948658D1C182D6E00885996 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E948658C1C182D6E00885996 /* ImageIO.framework */; };
 		E948658F1C18415400885996 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = E948658E1C18415400885996 /* index.html */; };
+		E9C7A8831CEDC05A0013B308 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8821CEDC05A0013B308 /* StoreKit.framework */; };
+		E9C7A8851CEDC0680013B308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8841CEDC0680013B308 /* AVFoundation.framework */; };
+		E9C7A8871CEDC06F0013B308 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8861CEDC06F0013B308 /* CoreMedia.framework */; };
 		E9E8A8311C181EF800F60B12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E8A8301C181EF800F60B12 /* main.m */; };
 		E9E8A8341C181EF800F60B12 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E8A8331C181EF800F60B12 /* AppDelegate.m */; };
 		E9E8A8371C181EF800F60B12 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E8A8361C181EF800F60B12 /* ViewController.m */; };
@@ -27,6 +30,9 @@
 		E948658A1C182D6500885996 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E948658C1C182D6E00885996 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		E948658E1C18415400885996 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		E9C7A8821CEDC05A0013B308 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E9C7A8841CEDC0680013B308 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E9C7A8861CEDC06F0013B308 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		E9E8A82C1C181EF800F60B12 /* AMoAdWebViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdWebViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E8A8301C181EF800F60B12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E9E8A8321C181EF800F60B12 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C7A8871CEDC06F0013B308 /* CoreMedia.framework in Frameworks */,
+				E9C7A8851CEDC0680013B308 /* AVFoundation.framework in Frameworks */,
+				E9C7A8831CEDC05A0013B308 /* StoreKit.framework in Frameworks */,
 				E948658D1C182D6E00885996 /* ImageIO.framework in Frameworks */,
 				E948658B1C182D6500885996 /* AdSupport.framework in Frameworks */,
 				E94865891C182D1E00885996 /* libAMoAd.a in Frameworks */,
@@ -67,6 +76,9 @@
 		E9E8A8231C181EF800F60B12 = {
 			isa = PBXGroup;
 			children = (
+				E9C7A8861CEDC06F0013B308 /* CoreMedia.framework */,
+				E9C7A8841CEDC0680013B308 /* AVFoundation.framework */,
+				E9C7A8821CEDC05A0013B308 /* StoreKit.framework */,
 				E948658C1C182D6E00885996 /* ImageIO.framework */,
 				E948658A1C182D6500885996 /* AdSupport.framework */,
 				E9E8A82E1C181EF800F60B12 /* AMoAdWebViewSample */,

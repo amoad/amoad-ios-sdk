@@ -29,6 +29,8 @@
 		E98A1C8E1CE9B32900BBF7E3 /* user_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = E98A1C891CE9B32900BBF7E3 /* user_link_btn_h.png */; };
 		E98A1C8F1CE9B32900BBF7E3 /* user_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E98A1C8A1CE9B32900BBF7E3 /* user_link_btn.png */; };
 		E98A1C901CE9B32900BBF7E3 /* user_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = E98A1C8B1CE9B32900BBF7E3 /* user_panel_l.png */; };
+		E9C7A8441CEDA0860013B308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8431CEDA0860013B308 /* AVFoundation.framework */; };
+		E9C7A8461CEDA0920013B308 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8451CEDA0920013B308 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		E98A1C891CE9B32900BBF7E3 /* user_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_link_btn_h.png; sourceTree = "<group>"; };
 		E98A1C8A1CE9B32900BBF7E3 /* user_link_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_link_btn.png; sourceTree = "<group>"; };
 		E98A1C8B1CE9B32900BBF7E3 /* user_panel_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_panel_l.png; sourceTree = "<group>"; };
+		E9C7A8431CEDA0860013B308 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E9C7A8451CEDA0920013B308 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C7A8461CEDA0920013B308 /* CoreMedia.framework in Frameworks */,
+				E9C7A8441CEDA0860013B308 /* AVFoundation.framework in Frameworks */,
 				E98A1C821CE41F2800BBF7E3 /* StoreKit.framework in Frameworks */,
 				E98A1C801CE41F1C00BBF7E3 /* ImageIO.framework in Frameworks */,
 				E98A1C7E1CE41F0F00BBF7E3 /* AdSupport.framework in Frameworks */,
@@ -82,6 +88,8 @@
 		E98A1C471CE4159700BBF7E3 = {
 			isa = PBXGroup;
 			children = (
+				E9C7A8451CEDA0920013B308 /* CoreMedia.framework */,
+				E9C7A8431CEDA0860013B308 /* AVFoundation.framework */,
 				E98A1C811CE41F2800BBF7E3 /* StoreKit.framework */,
 				E98A1C7F1CE41F1C00BBF7E3 /* ImageIO.framework */,
 				E98A1C7D1CE41F0F00BBF7E3 /* AdSupport.framework */,
@@ -396,6 +404,7 @@
 				E98A1C691CE4159700BBF7E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

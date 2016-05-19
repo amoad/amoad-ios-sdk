@@ -13,24 +13,15 @@
 		E98BF40E1A75F6650077E151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98BF40C1A75F6650077E151 /* Main.storyboard */; };
 		E98BF4101A75F6650077E151 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98BF40F1A75F6650077E151 /* Images.xcassets */; };
 		E98BF4131A75F6650077E151 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98BF4111A75F6650077E151 /* LaunchScreen.xib */; };
-		E98BF41F1A75F6650077E151 /* AMoAdNativeListViewIconTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E98BF41E1A75F6650077E151 /* AMoAdNativeListViewIconTextTests.m */; };
 		E98BF42C1A75F70A0077E151 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98BF42B1A75F70A0077E151 /* AdSupport.framework */; };
 		E98BF42E1A75F7140077E151 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98BF42D1A75F7140077E151 /* ImageIO.framework */; };
 		E98BF4361A76013F0077E151 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E98BF4351A76013F0077E151 /* libAMoAd.a */; };
 		E98BF4381A760ECE0077E151 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98BF4371A760ECE0077E151 /* UserTableViewCell.xib */; };
 		E98BF43A1A7616BF0077E151 /* AdIconTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98BF4391A7616BF0077E151 /* AdIconTextTableViewCell.xib */; };
 		E9AEE82C1AC559F400D74AD0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9AEE82B1AC559F400D74AD0 /* StoreKit.framework */; };
+		E9C7A8731CEDBEB10013B308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8721CEDBEB10013B308 /* AVFoundation.framework */; };
+		E9C7A8751CEDBEC30013B308 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8741CEDBEC30013B308 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E98BF4191A75F6650077E151 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E98BF3F71A75F6650077E151 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E98BF3FE1A75F6650077E151;
-			remoteInfo = AMoAdNativeListViewIconText;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E98BF3FF1A75F6650077E151 /* AMoAdNativeListViewIconText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdNativeListViewIconText.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +34,6 @@
 		E98BF40D1A75F6650077E151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E98BF40F1A75F6650077E151 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E98BF4121A75F6650077E151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E98BF4181A75F6650077E151 /* AMoAdNativeListViewIconTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AMoAdNativeListViewIconTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E98BF41D1A75F6650077E151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E98BF41E1A75F6650077E151 /* AMoAdNativeListViewIconTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AMoAdNativeListViewIconTextTests.m; sourceTree = "<group>"; };
 		E98BF42B1A75F70A0077E151 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E98BF42D1A75F7140077E151 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		E98BF4331A76013F0077E151 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdLogger.h; path = AMoAdSdk/AMoAdLogger.h; sourceTree = "<group>"; };
@@ -54,6 +42,8 @@
 		E98BF4371A760ECE0077E151 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		E98BF4391A7616BF0077E151 /* AdIconTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdIconTextTableViewCell.xib; sourceTree = "<group>"; };
 		E9AEE82B1AC559F400D74AD0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E9C7A8721CEDBEB10013B308 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E9C7A8741CEDBEC30013B308 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		F67006441B9838E800DAD6BE /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAd.h; path = AMoAdSdk/AMoAd.h; sourceTree = "<group>"; };
 		F67006451B9838E800DAD6BE /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAdAnalytics.h; path = AMoAdSdk/AMoAdAnalytics.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,17 +53,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C7A8751CEDBEC30013B308 /* CoreMedia.framework in Frameworks */,
+				E9C7A8731CEDBEB10013B308 /* AVFoundation.framework in Frameworks */,
 				E9AEE82C1AC559F400D74AD0 /* StoreKit.framework in Frameworks */,
 				E98BF4361A76013F0077E151 /* libAMoAd.a in Frameworks */,
 				E98BF42E1A75F7140077E151 /* ImageIO.framework in Frameworks */,
 				E98BF42C1A75F70A0077E151 /* AdSupport.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E98BF4151A75F6650077E151 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +68,12 @@
 		E98BF3F61A75F6650077E151 = {
 			isa = PBXGroup;
 			children = (
+				E9C7A8741CEDBEC30013B308 /* CoreMedia.framework */,
+				E9C7A8721CEDBEB10013B308 /* AVFoundation.framework */,
 				E9AEE82B1AC559F400D74AD0 /* StoreKit.framework */,
 				E98BF42D1A75F7140077E151 /* ImageIO.framework */,
 				E98BF42B1A75F70A0077E151 /* AdSupport.framework */,
 				E98BF4011A75F6650077E151 /* AMoAdNativeListViewIconText */,
-				E98BF41B1A75F6650077E151 /* AMoAdNativeListViewIconTextTests */,
 				E98BF4001A75F6650077E151 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				E98BF3FF1A75F6650077E151 /* AMoAdNativeListViewIconText.app */,
-				E98BF4181A75F6650077E151 /* AMoAdNativeListViewIconTextTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,23 +109,6 @@
 			children = (
 				E98BF4031A75F6650077E151 /* Info.plist */,
 				E98BF4041A75F6650077E151 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E98BF41B1A75F6650077E151 /* AMoAdNativeListViewIconTextTests */ = {
-			isa = PBXGroup;
-			children = (
-				E98BF41E1A75F6650077E151 /* AMoAdNativeListViewIconTextTests.m */,
-				E98BF41C1A75F6650077E151 /* Supporting Files */,
-			);
-			path = AMoAdNativeListViewIconTextTests;
-			sourceTree = "<group>";
-		};
-		E98BF41C1A75F6650077E151 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				E98BF41D1A75F6650077E151 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -177,24 +145,6 @@
 			productReference = E98BF3FF1A75F6650077E151 /* AMoAdNativeListViewIconText.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E98BF4171A75F6650077E151 /* AMoAdNativeListViewIconTextTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E98BF4251A75F6650077E151 /* Build configuration list for PBXNativeTarget "AMoAdNativeListViewIconTextTests" */;
-			buildPhases = (
-				E98BF4141A75F6650077E151 /* Sources */,
-				E98BF4151A75F6650077E151 /* Frameworks */,
-				E98BF4161A75F6650077E151 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E98BF41A1A75F6650077E151 /* PBXTargetDependency */,
-			);
-			name = AMoAdNativeListViewIconTextTests;
-			productName = AMoAdNativeListViewIconTextTests;
-			productReference = E98BF4181A75F6650077E151 /* AMoAdNativeListViewIconTextTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,10 +156,6 @@
 				TargetAttributes = {
 					E98BF3FE1A75F6650077E151 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					E98BF4171A75F6650077E151 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = E98BF3FE1A75F6650077E151;
 					};
 				};
 			};
@@ -227,7 +173,6 @@
 			projectRoot = "";
 			targets = (
 				E98BF3FE1A75F6650077E151 /* AMoAdNativeListViewIconText */,
-				E98BF4171A75F6650077E151 /* AMoAdNativeListViewIconTextTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,13 +190,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E98BF4161A75F6650077E151 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,23 +203,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E98BF4141A75F6650077E151 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E98BF41F1A75F6650077E151 /* AMoAdNativeListViewIconTextTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		E98BF41A1A75F6650077E151 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E98BF3FE1A75F6650077E151 /* AMoAdNativeListViewIconText */;
-			targetProxy = E98BF4191A75F6650077E151 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E98BF40C1A75F6650077E151 /* Main.storyboard */ = {
@@ -411,40 +333,6 @@
 			};
 			name = Release;
 		};
-		E98BF4261A75F6650077E151 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AMoAdNativeListViewIconTextTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdNativeListViewIconText.app/AMoAdNativeListViewIconText";
-			};
-			name = Debug;
-		};
-		E98BF4271A75F6650077E151 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AMoAdNativeListViewIconTextTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AMoAdNativeListViewIconText.app/AMoAdNativeListViewIconText";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -462,15 +350,6 @@
 			buildConfigurations = (
 				E98BF4231A75F6650077E151 /* Debug */,
 				E98BF4241A75F6650077E151 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E98BF4251A75F6650077E151 /* Build configuration list for PBXNativeTarget "AMoAdNativeListViewIconTextTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E98BF4261A75F6650077E151 /* Debug */,
-				E98BF4271A75F6650077E151 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
