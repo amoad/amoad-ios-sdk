@@ -74,6 +74,8 @@ AMoAd SDKでは、プリロール広告を簡単に表示するAPIを提供し�
 - link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInstall[Cocos2d-xモジュール]
 
 === インライン
+link:https://github.com/amoad/amoad-ios-sdk/wiki/Inline[概要]
+
 - link:https://github.com/amoad/amoad-ios-sdk/wiki/CodingGuide[SDK実装ガイド]
 - link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityCodingGuide[Unity実装ガイド]
 - link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxCodingGuide[Cocos2d-x実装ガイド]
