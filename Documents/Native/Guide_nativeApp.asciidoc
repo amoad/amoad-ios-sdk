@@ -1,9 +1,8 @@
-:Version: 4.4.0
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
 
-= AMoAdネイティブ広告 SDK {version} Guide for iOS - nativeApp
+= AMoAdネイティブ広告 SDK Guide for iOS - nativeApp
 
 toc::[]
 

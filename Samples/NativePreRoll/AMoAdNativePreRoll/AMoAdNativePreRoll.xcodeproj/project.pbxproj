@@ -17,6 +17,8 @@
 		E97A86321B6B79D300160987 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97A86311B6B79D300160987 /* AdSupport.framework */; };
 		E97A86341B6B79DA00160987 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97A86331B6B79DA00160987 /* ImageIO.framework */; };
 		E97A86361B6B79E600160987 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97A86351B6B79E600160987 /* StoreKit.framework */; };
+		E9C7A87F1CEDBF790013B308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A87E1CEDBF790013B308 /* AVFoundation.framework */; };
+		E9C7A8811CEDBF830013B308 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8801CEDBF830013B308 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		E97A86311B6B79D300160987 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E97A86331B6B79DA00160987 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		E97A86351B6B79E600160987 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E9C7A87E1CEDBF790013B308 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E9C7A8801CEDBF830013B308 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		F67006711B983B9100DAD6BE /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMoAd.h; path = AMoAdSdk/AMoAd.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C7A8811CEDBF830013B308 /* CoreMedia.framework in Frameworks */,
+				E9C7A87F1CEDBF790013B308 /* AVFoundation.framework in Frameworks */,
 				E97A86361B6B79E600160987 /* StoreKit.framework in Frameworks */,
 				E97A86341B6B79DA00160987 /* ImageIO.framework in Frameworks */,
 				E97A86321B6B79D300160987 /* AdSupport.framework in Frameworks */,
@@ -59,6 +65,8 @@
 		E97A85F81B6B768F00160987 = {
 			isa = PBXGroup;
 			children = (
+				E9C7A8801CEDBF830013B308 /* CoreMedia.framework */,
+				E9C7A87E1CEDBF790013B308 /* AVFoundation.framework */,
 				E97A86351B6B79E600160987 /* StoreKit.framework */,
 				E97A86331B6B79DA00160987 /* ImageIO.framework */,
 				E97A86311B6B79D300160987 /* AdSupport.framework */,

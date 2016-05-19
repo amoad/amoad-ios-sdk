@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9C7A86B1CEDBE320013B308 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A86A1CEDBE320013B308 /* AVFoundation.framework */; };
+		E9C7A86D1CEDBE390013B308 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A86C1CEDBE390013B308 /* CoreMedia.framework */; };
 		E9E586E91AE78DF200885993 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E586E81AE78DF200885993 /* main.m */; };
 		E9E586EC1AE78DF200885993 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E586EB1AE78DF200885993 /* AppDelegate.m */; };
 		E9E586EF1AE78DF200885993 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E586EE1AE78DF200885993 /* ViewController.m */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9C7A86A1CEDBE320013B308 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E9C7A86C1CEDBE390013B308 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		E9E586E31AE78DF200885993 /* AMoAdNativeCollectionViewImageText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdNativeCollectionViewImageText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E586E71AE78DF200885993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E586E81AE78DF200885993 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C7A86D1CEDBE390013B308 /* CoreMedia.framework in Frameworks */,
+				E9C7A86B1CEDBE320013B308 /* AVFoundation.framework in Frameworks */,
 				E9E5871C1AE7979D00885993 /* StoreKit.framework in Frameworks */,
 				E9E587161AE78E5E00885993 /* ImageIO.framework in Frameworks */,
 				E9E587141AE78E5700885993 /* AdSupport.framework in Frameworks */,
@@ -62,6 +68,8 @@
 		E9E586DA1AE78DF200885993 = {
 			isa = PBXGroup;
 			children = (
+				E9C7A86C1CEDBE390013B308 /* CoreMedia.framework */,
+				E9C7A86A1CEDBE320013B308 /* AVFoundation.framework */,
 				E9E5871B1AE7979D00885993 /* StoreKit.framework */,
 				E9E587151AE78E5E00885993 /* ImageIO.framework */,
 				E9E587131AE78E5700885993 /* AdSupport.framework */,

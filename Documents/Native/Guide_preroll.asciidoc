@@ -1,9 +1,8 @@
-:Version: 4.4.0
 :toc: macro
 :toc-title: 目次
 :toclevels: 4
 
-= プリロール広告ガイド AMoAd SDK {version} Guide for iOS
+= プリロール広告ガイド AMoAd SDK Guide for iOS
 
 NOTE: プリロール広告の概要については、link:Overview_preroll.asciidoc[こちら]をご参照ください。
 

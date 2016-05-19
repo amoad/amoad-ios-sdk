@@ -78,6 +78,7 @@
 		E9161A151C60B527000B8381 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9161A141C60B527000B8381 /* AdSupport.framework */; };
 		E9161A171C60B532000B8381 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9161A161C60B532000B8381 /* ImageIO.framework */; };
 		E9161A191C60B53C000B8381 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9161A181C60B53C000B8381 /* StoreKit.framework */; };
+		E9C7A84A1CEDAB820013B308 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C7A8491CEDAB820013B308 /* CoreMedia.framework */; };
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 /* End PBXBuildFile section */
@@ -192,6 +193,7 @@
 		E9161A141C60B527000B8381 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/AdSupport.framework; sourceTree = DEVELOPER_DIR; };
 		E9161A161C60B532000B8381 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		E9161A181C60B53C000B8381 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		E9C7A8491CEDAB820013B308 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -201,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C7A84A1CEDAB820013B308 /* CoreMedia.framework in Frameworks */,
 				E9161A191C60B53C000B8381 /* StoreKit.framework in Frameworks */,
 				E9161A171C60B532000B8381 /* ImageIO.framework in Frameworks */,
 				E9161A151C60B527000B8381 /* AdSupport.framework in Frameworks */,
@@ -295,6 +298,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9C7A8491CEDAB820013B308 /* CoreMedia.framework */,
 				E9161A181C60B53C000B8381 /* StoreKit.framework */,
 				E9161A161C60B532000B8381 /* ImageIO.framework */,
 				E9161A141C60B527000B8381 /* AdSupport.framework */,
