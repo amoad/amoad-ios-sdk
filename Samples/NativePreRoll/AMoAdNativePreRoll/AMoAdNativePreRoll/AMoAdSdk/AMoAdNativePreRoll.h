@@ -3,10 +3,9 @@
 //
 //  Created by AMoAd on 2015/07/13.
 //
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "AMoAdNativeView.h"
-#import "AMoAdAnalytics.h"
+#import "AMoAd.h"
+@class AMoAdAnalytics;
 
 @interface AMoAdNativePreRoll : NSObject
 

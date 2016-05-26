@@ -7,6 +7,7 @@
 //
 #import "ViewController.h"
 #import "AMoAdNativePreRoll.h"
+#import "AMoAdAnalytics.h"
 #import "AMoAdLogger.h"
 
 static NSString *const kSid = @"管理画面から取得したプリロール広告のsidを指定してください";
