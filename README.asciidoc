@@ -1,6 +1,4 @@
-:Version: 4.6.2
-
-= AMoAd SDK {version} Guide for iOS
+= AMoAd SDK Guide for iOS
 
 :numbered:
 :sectnums:
