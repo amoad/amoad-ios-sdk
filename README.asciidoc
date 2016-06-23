@@ -117,5 +117,5 @@ https://github.com/amoad/amoad-ios-sdk/raw/master/AdMobMediation/libAMoAdGmAdapt
 === WebViewサポート機能
 UIWebViewへアドタグを貼る。
 
-link:Documents/WebView/guide.md[WebViewサポート機能 実装ガイド]::
+link:https://github.com/amoad/amoad-ios-sdk/wiki/WebViewSupport[WebViewサポート機能 実装ガイド]::
 実装方法
