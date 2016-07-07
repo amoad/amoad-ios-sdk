@@ -34,15 +34,15 @@ typedef NS_ENUM(NSInteger, AMoAdInterstitialResult) {
 /// @param millis タイムアウト時間（ミリ秒）
 + (void)setNetworkTimeoutWithSid:(NSString *)sid millis:(NSInteger)millis;
 
-/// 広告面をクリックできるかどうかを設定する：デフォルトはYES
+/// 広告面をクリックできるかどうかを設定する：デフォルトはYES -> 変更できません
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param clickable 広告面をクリックできるかどうか
-+ (void)setDisplayWithSid:(NSString *)sid clickable:(BOOL)clickable;
++ (void)setDisplayWithSid:(NSString *)sid clickable:(BOOL)clickable DEPRECATED_ATTRIBUTE;
 
-/// 確認ダイアログを表示するかどうかを設定する：デフォルトはYES
+/// 確認ダイアログを表示するかどうかを設定する：デフォルトはYES -> 変更できません
 /// @param sid 管理画面から取得した64文字の英数字
 /// @param shown 確認ダイアログを表示するかどうか
-+ (void)setDialogWithSid:(NSString *)sid shown:(BOOL)shown;
++ (void)setDialogWithSid:(NSString *)sid shown:(BOOL)shown DEPRECATED_ATTRIBUTE;
 
 /// Portraitパネル画像（310x380で表示される）を設定する
 /// @param sid 管理画面から取得した64文字の英数字
