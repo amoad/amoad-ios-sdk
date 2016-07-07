@@ -12,13 +12,14 @@ link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウン�
 ** スタイルを管理画面よりHTML+CSSでデザインできる「ネイティブHTML広告」機能を追加しました。
 ** アプリのコンテンツに広告画像とテキストを表示することができる「インフィード広告」機能を追加しました。
 ** インタースティシャル広告が横画面に対応しました（Unityプラグイン、Cocos2d-xモジュールも公開中）。
-** **[NEW] インタースティシャル広告のプリロード（先読み）に対応しました。
+** インタースティシャル広告のプリロード（先読み）に対応しました。
 I/Fが変わっています。詳しくはこちら（
 link:https://github.com/amoad/amoad-ios-sdk/wiki/InterstitialCodingGuide[iOS]/
 link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInterstitialCodingGuide[Unity]/
 link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInterstitialCodingGuide[Cocos2d-x]
-）をご確認ください。**
-** **[NEW] インタースティシャル動画広告配信に対応しました。**
+）をご確認ください。
+** インタースティシャル動画広告配信に対応しました。
+** **[NEW] インライン動画広告配信に対応しました。**
 
 * **AVFoundation.framework、CoreMedia.frameworkの追加が必須になりました。**
 
@@ -37,7 +38,7 @@ NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:ht
 .デモアプリ
 - link:https://github.com/amoad/amoad-native-ios-sdk[iOSで開発される方]
 
-- link:https://github.com/amoad/amoad-native-unity-sdk[Unityで開発される方]
+- link:https://github.com/amoad/amoad-unity-plugin[Unityで開発される方]
 
 - link:https://github.com/amoad/amoad-native-cocos2dx-sdk[Cocos2d-xで開発される方]
 
