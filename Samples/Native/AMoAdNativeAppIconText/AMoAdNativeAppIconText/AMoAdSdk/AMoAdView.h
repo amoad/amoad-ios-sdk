@@ -104,18 +104,18 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 /// 広告サイズの調整
 @property (nonatomic) AMoAdAdjustMode adjustMode;
 
-/// バナーサイズ
-@property (nonatomic) CGSize bannerSize;
-
-// タイムアウト時間（ミリ秒）を設定する：デフォルトは30,000ミリ秒
+/// タイムアウト時間（ミリ秒）を設定する：デフォルトは30,000ミリ秒
 @property (nonatomic) NSInteger networkTimeoutMillis;
 
 
-/// サイズと位置で初期化
-- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode delegate:(id)delegate NS_DESIGNATED_INITIALIZER;
+/// フレームを指定して初期化する
+- (instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;
 
-/// サイズと座標で初期化
-- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y delegate:(id)delegate NS_DESIGNATED_INITIALIZER;
+/// Xib/storyboardから初期化時に呼ばれる
+- (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+
+/// CGRectZeroで初期化する
+- (instancetype)init;
 
 
 /// 広告を表示する
@@ -141,15 +141,14 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 + (CGSize)sizeWithBannerSize:(AMoAdBannerSize)bannerSize;
 
 /// 開発用
-+ (void)setAdRequestUrl:(NSString *)url;
+@property (nonatomic,copy) NSString *adRequestUrl;
 
 // 非推奨のメソッド
-- (instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER DEPRECATED_ATTRIBUTE;
-- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode DEPRECATED_ATTRIBUTE;
-- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y DEPRECATED_ATTRIBUTE;
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode delegate:(id)delegate DEPRECATED_ATTRIBUTE;
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y delegate:(id)delegate DEPRECATED_ATTRIBUTE;
 
 /// サポート外のメソッド
-- (instancetype)init __attribute__((unavailable("This method is not available.")));
-- (instancetype)initWithCoder:(NSCoder *)aDecoder __attribute__((availability(ios,unavailable,message="This method is not available."))) NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode __attribute__((unavailable("This method is not available.")));
+- (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode x:(CGFloat)x y:(CGFloat)y __attribute__((unavailable("This method is not available.")));
 
 @end
