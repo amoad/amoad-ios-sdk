@@ -16,9 +16,6 @@
 @property (weak, nonatomic) IBOutlet UITextView *consoleTextView;
 @end
 
-// ロード完了後、すぐに表示するとき「1」
-#define SHOW_AD_ON_LOAD 0
-
 // [SDK] 管理画面から取得したsidを入力してください
 static NSString *const kSid = @"62056d310111552c000000000000000000000000000000000000000000000000";
 
@@ -55,12 +52,6 @@ static NSString *const kSid = @"62056d310111552c00000000000000000000000000000000
 
   // [SDK] 画像をカスタマイズする
   [self customizeImage];
-
-  // [SDK] 広告面をクリックできるかどうかを設定する：デフォルトはYES（iOS 7以下ではNOとなります）
-  [AMoAdInterstitial setDisplayWithSid:kSid clickable:YES];
-
-  // [SDK] 確認ダイアログを表示するかどうかを設定する：デフォルトはYES（iOS 7以下ではNOとなります）
-  [AMoAdInterstitial setDialogWithSid:kSid shown:YES];
 }
 
 - (IBAction)onAutoReloadSwich:(id)sender {
@@ -71,12 +62,19 @@ static NSString *const kSid = @"62056d310111552c00000000000000000000000000000000
 - (IBAction)onLoadAdButton:(id)sender {
   // [SDK] インタースティシャル広告のロードを行なう
   [AMoAdInterstitial loadAdWithSid:kSid completion:^(NSString *sid, AMoAdResult result, NSError *err) {
-#if SHOW_AD_ON_LOAD
-    // ロード完了後、すぐに表示するときはここでshowAdを呼ぶ
-    if (result == AMoAdResultSuccess) {
-      [self showAd];
+    switch (result) {
+      case AMoAdResultSuccess:
+        NSLog(@"広告ロード成功");
+        break;
+
+      case AMoAdResultFailure:
+        NSLog(@"広告ロード失敗");
+        break;
+
+      case AMoAdResultEmpty:
+        NSLog(@"配信する広告がない");
+        break;
     }
-#endif
   }];
 }
 
