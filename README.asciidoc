@@ -3,7 +3,8 @@
 :numbered:
 :sectnums:
 
-link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウンロード]
+- link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウンロード]
+- link:https://github.com/amoad/amoad-ios-sdk/wiki[ドキュメント]
 
 == 更新情報
 
@@ -13,11 +14,9 @@ link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウン�
 ** アプリのコンテンツに広告画像とテキストを表示することができる「インフィード広告」機能を追加しました。
 ** インタースティシャル広告が横画面に対応しました（Unityプラグイン、Cocos2d-xモジュールも公開中）。
 ** インタースティシャル広告のプリロード（先読み）に対応しました。
-I/Fが変わっています。詳しくはこちら（
-link:https://github.com/amoad/amoad-ios-sdk/wiki/InterstitialCodingGuide[iOS]/
-link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInterstitialCodingGuide[Unity]/
-link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInterstitialCodingGuide[Cocos2d-x]
-）をご確認ください。
+I/Fが変わっています。詳しくは
+link:https://github.com/amoad/amoad-ios-sdk/wiki/InterstitialCodingGuide[こちら]
+をご確認ください。
 ** インタースティシャル動画広告配信に対応しました。
 ** **[NEW] インライン動画広告配信に対応しました。**
 
@@ -27,96 +26,8 @@ link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInterstitialCodingGuide
 iOS 9のATS (App Transport Security) を抑制する方法について追記しました。
 必ずご確認ください！]**
 
-NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] 。
+NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら]まで 。
 
-
-== ネイティブ広告
-=== ネイティブHTML広告
-
-スタイルを管理画面よりHTML+CSSでデザインできるネイティブ広告です。
-
-.デモアプリ
-- link:https://github.com/amoad/amoad-native-ios-sdk[iOSで開発される方]
-
-- link:https://github.com/amoad/amoad-unity-plugin[Unityで開発される方]
-
-- link:https://github.com/amoad/amoad-native-cocos2dx-sdk[Cocos2d-xで開発される方]
-
-※ 各デモアプリをダウンロードして、アプリに組み込んでください。
-
-
-=== インフィード広告
-
-アプリのコンテンツに広告画像とテキストを表示することができるネイティブ広告です。
-
-.デモアプリ
-- link:https://github.com/amoad/amoad-nativelist-ios-sdk[iOSで開発される方]
-
-※ デモアプリをダウンロードして、アプリに組み込んでください。
-
-
-=== プリロール
-- link:Documents/Native/Overview_preroll.asciidoc[概要] +
-マンガアプリなどで、コンテンツの前後に入れる広告です。
-
-- link:Documents/Native/Guide_preroll.asciidoc[実装ガイド] +
-AMoAd SDKでは、プリロール広告を簡単に表示するAPIを提供しています
-
-- link:Samples/NativePreRoll/AMoAdNativePreRoll[サンプルコード] +
-管理画面から取得したsidを入力して動かしてください
-
-== ディスプレイ広告
-=== インストール
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/Install[SDK導入ガイド]
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInstall[Unityプラグイン]
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInstall[Cocos2d-xモジュール]
-
-=== インライン
-link:https://github.com/amoad/amoad-ios-sdk/wiki/Inline[概要]
-
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/CodingGuide[SDK実装ガイド]
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityCodingGuide[Unity実装ガイド]
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxCodingGuide[Cocos2d-x実装ガイド]
-
-=== インタースティシャル
-link:https://github.com/amoad/amoad-ios-sdk/wiki/Interstitial[概要]
-
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/InterstitialCodingGuide[SDK実装ガイド]
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/UnityInterstitialCodingGuide[Unity実装ガイド]
-- link:https://github.com/amoad/amoad-ios-sdk/wiki/Cocos2dxInterstitialCodingGuide[Cocos2d-x実装ガイド]
-
-== 旧ネイティブ広告
-ネイティブHTML広告、インフィード広告の利用をご検討ください。
-
-=== ネイティブApp
-
-link:Documents/Native/Overview_nativeApp.asciidoc[概要]::
-ネイティブApp広告は、広告クリエイティブを任意のレイアウトで表示することができる商品です
-
-link:Documents/Native/Guide_nativeApp.asciidoc[実装ガイド]::
-AMoAd SDKでは、ネイティブApp広告を簡単に表示するAPIを提供しています
-
-=== リストビュー
-
-link:Documents/Native/Overview_listView.asciidoc[概要]::
-ネイティブApp広告は、広告クリエイティブをリストビュー（UITableView）に、任意のレイアウトで表示することができる商品です
-
-link:Documents/Native/Guide_listView.asciidoc[実装ガイド]::
-AMoAd SDKでは、リストビュー広告を簡単に表示するAPIを提供しています
-
-== その他
-
-=== AdMobメディエーション アダプタ
-
-link:Documents/AdMobMediation/AdMobSetup.asciidoc[AdMobメディエーションアダプタ導入ガイド]::
-アダプタの導入方法とAdMobメディエーションの設定についてのガイドです
-
-https://github.com/amoad/amoad-ios-sdk/raw/master/AdMobMediation/libAMoAdGmAdapter.a[アダプタのダウンロード]::
-最新版のアダプタはこちらからダウンロードできます
-
-
-=== WebViewサポート機能
-UIWebViewへアドタグを貼る。
-
-link:https://github.com/amoad/amoad-ios-sdk/wiki/WebViewSupport[WebViewサポート機能 実装ガイド]::
-実装方法
+- link:https://github.com/amoad/amoad-android-sdk[AMoAd Android SDK]
+- link:https://github.com/amoad/amoad-unity-plugin[AMoAd Unity Plugin]
+- link:https://github.com/amoad/amoad-cocos2dx-module[AMoAd Cocos2d-x Module]
