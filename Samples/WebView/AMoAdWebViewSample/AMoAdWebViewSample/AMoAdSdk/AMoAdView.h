@@ -111,11 +111,27 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 /// フレームを指定して初期化する
 - (instancetype)initWithFrame:(CGRect)frame NS_DESIGNATED_INITIALIZER;
 
+/// 初期表示画像・ハイライト画像を指定して初期化する
+- (instancetype)initWithImage:(UIImage *)image
+             highlightedImage:(UIImage *)highlightedImage
+                   adjustMode:(AMoAdAdjustMode)adjustMode NS_DESIGNATED_INITIALIZER;
+
 /// Xib/storyboardから初期化時に呼ばれる
 - (instancetype)initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
 
 /// CGRectZeroで初期化する
 - (instancetype)init;
+
+/// 初期表示画像を指定して初期化する
+- (instancetype)initWithImage:(UIImage *)image
+                   adjustMode:(AMoAdAdjustMode)adjustMode;
+
+/// 初期表示画像を指定して初期化する（広告サイズ調整：固定）
+- (instancetype)initWithImage:(UIImage *)image;
+
+/// 初期表示画像・ハイライト画像を指定して初期化する（広告サイズ調整：固定）
+- (instancetype)initWithImage:(UIImage *)image
+             highlightedImage:(UIImage *)highlightedImage;
 
 
 /// 広告を表示する
@@ -139,6 +155,7 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 
 
 + (CGSize)sizeWithBannerSize:(AMoAdBannerSize)bannerSize;
++ (CGSize)sizeWithBannerSize:(AMoAdBannerSize)bannerSize adjustMode:(AMoAdAdjustMode)adjustMode;
 
 /// 開発用
 @property (nonatomic,copy) NSString *adRequestUrl;
