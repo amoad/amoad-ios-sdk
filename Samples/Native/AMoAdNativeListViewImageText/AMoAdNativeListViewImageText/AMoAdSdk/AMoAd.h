@@ -6,6 +6,8 @@
 #ifndef AMoAd_AMoAd_h
 #define AMoAd_AMoAd_h
 
+#import <Foundation/Foundation.h>
+
 /// 広告受信結果
 typedef NS_ENUM(NSInteger, AMoAdResult) {
   /// 成功
