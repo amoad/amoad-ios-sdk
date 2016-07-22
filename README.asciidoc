@@ -3,7 +3,7 @@
 :numbered:
 :sectnums:
 
-- link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウンロード]
+- link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版をダウンロード]
 - link:https://github.com/amoad/amoad-ios-sdk/wiki[ドキュメント]
 
 == 更新情報
