@@ -1,10 +1,9 @@
-= AMoAd SDK Guide for iOS
+= AMoAd SDK Guide for iOS ver 4.7.4
 
 :numbered:
 :sectnums:
 
-- link:https://github.com/amoad/amoad-ios-sdk/releases[最新版をダウンロード]
-- link:https://github.com/amoad/amoad-ios-sdk/releases/latest[安定版をダウンロード]
+- link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウンロード]
 - link:https://github.com/amoad/amoad-ios-sdk/wiki[ドキュメント]
 
 == 更新情報
