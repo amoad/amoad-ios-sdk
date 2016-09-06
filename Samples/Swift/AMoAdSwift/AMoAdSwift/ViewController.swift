@@ -10,11 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-//  static let kSid = "管理画面から発行されるSIDを設定してください"
-  static let kSid = "62056d310111552c21b9855ee9cfb00e805c2e9e1578b909c8f3b57eea59aa71"
+  static let kSid = "管理画面から発行されるSIDを設定してください"
 
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    AMoAdLogger.sharedLogger().logging = true
+    AMoAdLogger.sharedLogger().trace = true
 
     // 初期表示画像の取得
     let initialImage = UIImage(named:"b320_50@2x.png")

@@ -6,6 +6,7 @@
 #import <Foundation/Foundation.h>
 #import "AMoAd.h"
 #import "AMoAdList.h"
+@class UIView;
 
 /// ネイティブリスト広告
 @interface AMoAdInfeed : NSObject
@@ -18,6 +19,11 @@
 /// @param completion 広告オブジェクト配列と結果を受け取るBlock
 + (void)loadWithSid:(NSString *)sid
          completion:(void (^)(AMoAdList *adList, AMoAdResult result))completion;
+
+/// 広告表示時に呼び出す: 表示されたCellを追跡しImpression（Viewable Impression）を送信する
+/// @param cell 広告を表示するTableViewCell, CollectionViewCell, View
+/// @param adItem 表示する広告のオブジェクト（広告でない場合はnil）
++ (void)setViewabilityTrackingCell:(UIView *)cell adItem:(AMoAdItem *)item;
 
 
 /// 開発用

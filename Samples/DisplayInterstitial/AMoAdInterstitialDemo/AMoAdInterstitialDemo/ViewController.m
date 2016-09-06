@@ -25,6 +25,10 @@ static NSString *const kSid = @"62056d310111552c00000000000000000000000000000000
   [super viewDidLoad];
 
   // [SDK] ロガーの設定
+  [AMoAdLogger sharedLogger].trace = self.traceSwitch.on;
+  [AMoAdLogger sharedLogger].logging = self.logSwitch.on;
+
+#if 0 // Optional
   [AMoAdLogger sharedLogger].onTrace = ^(NSString *message, id target) {
     if (target) {
       self.consoleTextView.text = [self.consoleTextView.text stringByAppendingFormat:@"%@(target=%@)\n", message, target];
@@ -41,8 +45,7 @@ static NSString *const kSid = @"62056d310111552c00000000000000000000000000000000
     }
     [self scrollToBottom];
   };
-  [AMoAdLogger sharedLogger].trace = self.traceSwitch.on;
-  [AMoAdLogger sharedLogger].logging = self.logSwitch.on;
+#endif
 
   // [SDK] インタースティシャル広告の登録を行なう
   [AMoAdInterstitial registerAdWithSid:kSid];

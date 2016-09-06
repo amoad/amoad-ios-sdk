@@ -26,6 +26,9 @@ static const NSInteger kInterval = 4; // アプリリリース時は管理画面
 - (void)viewDidLoad {
   [super viewDidLoad];
 
+  [AMoAdLogger sharedLogger].logging = YES;
+  [AMoAdLogger sharedLogger].trace = YES;
+
   // [SDK] 広告準備（prepareAd）
   [[AMoAdNativeViewManager sharedManager] prepareAdWithSid:kSid defaultBeginIndex:kBeginIndex defaultInterval:kInterval iconPreloading:YES imagePreloading:YES];
 
