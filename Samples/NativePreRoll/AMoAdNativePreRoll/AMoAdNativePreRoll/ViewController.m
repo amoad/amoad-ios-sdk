@@ -22,6 +22,9 @@ static NSString *const kTag = @"UserPreRollAd";
 - (void)viewDidLoad {
   [super viewDidLoad];
 
+  [AMoAdLogger sharedLogger].logging = YES;
+  [AMoAdLogger sharedLogger].trace = YES;
+
   // [SDK] 広告分析情報を生成する
   //   => ご利用の際は担当営業までお問い合わせください。利用しない場合は、nilを指定してください。
   NSString *report_id = @"ABCD";  // レポートを細分化するためのID

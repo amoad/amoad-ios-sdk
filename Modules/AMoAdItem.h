@@ -33,7 +33,8 @@
 @property (nonatomic) NSInteger unitNo;
 
 /// 広告表示時に呼び出す
-- (void)sendImpression;
+/// Deprecated: VIMPが送信できないため代わりにAMoAdInfeed.setViewabilityTrackingCell:adItem:を呼ぶ
+- (void)sendImpression DEPRECATED_ATTRIBUTE;
 
 /// クリック時に呼び出す
 - (void)onClick;
