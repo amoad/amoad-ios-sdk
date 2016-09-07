@@ -74,9 +74,6 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 - (void)AMoAdViewWillClickBack:(AMoAdView *)amoadView;
 /// 広告がクリックされた後、戻ってきた
 - (void)AMoAdViewDidClickBack:(AMoAdView *)amoadView;
-
-// 使用されていないメソッド（互換性のために残している）
-- (void)AMoAdView:(AMoAdView *)amoadView didFailToReceiveAdWithError:(NSError *)error DEPRECATED_ATTRIBUTE;
 @end
 
 
