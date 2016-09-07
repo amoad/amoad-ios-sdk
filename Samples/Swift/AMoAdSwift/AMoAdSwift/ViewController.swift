@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AMoAdViewDelegate {
 
   static let kSid = "管理画面から発行されるSIDを設定してください"
 
