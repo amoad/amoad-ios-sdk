@@ -134,12 +134,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = AMoAd;
 				TargetAttributes = {
 					E993CE5A1C1953DD002968B6 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = R483GUQ2NF;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -220,8 +221,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -243,7 +246,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -265,8 +268,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -282,9 +287,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -297,6 +303,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AMoAdWebViewSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.sample.AMoAdWebViewSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -315,6 +323,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AMoAdWebViewSwiftSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -323,6 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.sample.AMoAdWebViewSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
