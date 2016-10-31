@@ -1,4 +1,4 @@
-= AMoAd SDK Guide for iOS ver 4.10.1
+= AMoAd SDK Guide for iOS ver 4.11.0
 
 :numbered:
 :sectnums:
@@ -22,9 +22,7 @@ link:https://github.com/amoad/amoad-ios-sdk/wiki/InterstitialCodingGuide[こち�
 
 * **AVFoundation.framework、CoreMedia.frameworkの追加が必須になりました。**
 
-* **link:https://github.com/amoad/amoad-ios-sdk/wiki/Install#34-ats-app-transport-security-を抑制する[
-iOS 9のATS (App Transport Security) を抑制する方法について追記しました。
-必ずご確認ください！]**
+* **ATS (App Transport Security) に対応しました。ATSを抑制する設定は不要になりました。**
 
 NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら]まで 。
 
