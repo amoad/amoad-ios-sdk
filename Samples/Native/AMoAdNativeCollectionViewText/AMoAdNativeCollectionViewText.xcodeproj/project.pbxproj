@@ -18,7 +18,6 @@
 		F60DE7CA1B7B31430027F95F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60DE7BD1B7B31430027F95F /* LaunchScreen.xib */; };
 		F60DE7CB1B7B31430027F95F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60DE7BF1B7B31430027F95F /* Main.storyboard */; };
 		F60DE7CC1B7B31430027F95F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60DE7C11B7B31430027F95F /* Images.xcassets */; };
-		F60DE7CD1B7B31430027F95F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F60DE7C21B7B31430027F95F /* Info.plist */; };
 		F60DE7CE1B7B31430027F95F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F60DE7C31B7B31430027F95F /* main.m */; };
 		F60DE7CF1B7B31430027F95F /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F60DE7C41B7B31430027F95F /* UserCollectionViewCell.xib */; };
 		F60DE7D01B7B31430027F95F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F60DE7C61B7B31430027F95F /* ViewController.m */; };
@@ -155,7 +154,7 @@
 		E9E586DB1AE78DF200885993 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = AMoAd;
 				TargetAttributes = {
 					E9E586E21AE78DF200885993 = {
@@ -190,7 +189,6 @@
 				F60DE7CC1B7B31430027F95F /* Images.xcassets in Resources */,
 				F60DE7CA1B7B31430027F95F /* LaunchScreen.xib in Resources */,
 				F60DE7CF1B7B31430027F95F /* UserCollectionViewCell.xib in Resources */,
-				F60DE7CD1B7B31430027F95F /* Info.plist in Resources */,
 				F60DE7C71B7B31430027F95F /* AdTextCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,14 +241,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -266,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -287,8 +288,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -304,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,12 +320,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AMoAdNativeCollectionViewText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AMoAdNativeCollectionViewText/AMoAdSdk",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amoad.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AMoAdNativeCollectionViewText;
 			};
 			name = Debug;
@@ -332,12 +337,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AMoAdNativeCollectionViewText/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AMoAdNativeCollectionViewText/AMoAdSdk",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amoad.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = AMoAdNativeCollectionViewText;
 			};
 			name = Release;

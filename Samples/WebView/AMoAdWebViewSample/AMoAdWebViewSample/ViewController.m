@@ -35,7 +35,7 @@
 #if LOAD_FROM_URL
 
   // URLからロードする
-  NSURL *requestURL = [NSURL URLWithString:@"http://example.com/"];  // TODO: URLを指定する
+  NSURL *requestURL = [NSURL URLWithString:@"https://example.com/"];  // TODO: URLを指定する
   NSURLRequest *req = [NSURLRequest requestWithURL:requestURL];
   [self.webView loadRequest:req];
 
