@@ -399,4 +399,7 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 - (void)updateAdWithSid:(NSString *)sid tag:(NSString *)tag;
 
+
+- (void)setEnvStaging:(BOOL)staging;
+
 @end

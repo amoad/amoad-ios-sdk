@@ -155,7 +155,7 @@ typedef NS_ENUM(NSInteger, AMoAdClickTransition) {
 + (CGSize)sizeWithBannerSize:(AMoAdBannerSize)bannerSize adjustMode:(AMoAdAdjustMode)adjustMode;
 
 /// 開発用
-@property (nonatomic,copy) NSString *adRequestUrl;
++ (void)setEnvStaging:(BOOL)staging;
 
 // 非推奨のメソッド
 - (instancetype)initWithSid:(NSString *)sid bannerSize:(AMoAdBannerSize)bannerSize hAlign:(AMoAdHorizontalAlign)hAlign vAlign:(AMoAdVerticalAlign)vAlign adjustMode:(AMoAdAdjustMode)adjustMode delegate:(id)delegate DEPRECATED_ATTRIBUTE;
