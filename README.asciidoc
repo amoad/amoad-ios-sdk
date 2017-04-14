@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 4.12.0
+= AMoAd SDK for iOS ver 5.0.0
 
 :numbered:
 :sectnums:
@@ -9,22 +9,10 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** AMoAd.hのimportが必須になっています。
-** スタイルを管理画面よりHTML+CSSでデザインできる「ネイティブHTML広告」機能を追加しました。
-** アプリのコンテンツに広告画像とテキストを表示することができる「インフィード広告」機能を追加しました。
-** インタースティシャル広告が横画面に対応しました（Unityプラグイン、Cocos2d-xモジュールも公開中）。
-** インタースティシャル広告のプリロード（先読み）に対応しました。
-I/Fが変わっています。詳しくは
-link:https://github.com/amoad/amoad-ios-sdk/wiki/InterstitialCodingGuide[こちら]
-をご確認ください。
-** インタースティシャル動画広告配信に対応しました。
-** **[NEW] インライン動画広告配信に対応しました。**
+** インフィード AfiO 広告配信に対応しました
 
-* **AVFoundation.framework、CoreMedia.frameworkの追加が必須になりました。**
-
-* **ATS (App Transport Security) に対応しました。ATSを抑制する設定は不要になりました。**
-
-NOTE: AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら]まで 。
+== その他
+AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
 
 - link:https://github.com/amoad/amoad-android-sdk[AMoAd Android SDK]
 - link:https://github.com/amoad/amoad-unity-plugin[AMoAd Unity Plugin]
