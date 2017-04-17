@@ -30,7 +30,10 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
   AMoAdNativeViewUILabelServiceName = 5,
 
   /// リンク（UIView）
-  AMoAdNativeViewLink = 6
+  AMoAdNativeViewLink = 6,
+  
+  /// メイン動画（AMoAdNativeMainVideoView）
+  AMoAdNativeViewMainVideo = 7,
 };
 
 #pragma mark - デリゲート
