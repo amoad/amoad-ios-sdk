@@ -20,7 +20,7 @@
 		CFECAA691EA72EF2000C7EA5 /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = CFECAA571EA72EF2000C7EA5 /* amoad_panel.png */; };
 		CFECAA6A1EA72EF2000C7EA5 /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = CFECAA581EA72EF2000C7EA5 /* amoad_panel_l.png */; };
 		CFECAA6C1EA72F01000C7EA5 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFECAA641EA72EF2000C7EA5 /* libAMoAd.a */; };
-		CFECAA6F1EA7321A000C7EA5 /* button_hilighted.png in Resources */ = {isa = PBXBuildFile; fileRef = CFECAA6D1EA7321A000C7EA5 /* button_hilighted.png */; };
+		CFECAA6F1EA7321A000C7EA5 /* button_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = CFECAA6D1EA7321A000C7EA5 /* button_highlighted.png */; };
 		CFECAA701EA7321A000C7EA5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = CFECAA6E1EA7321A000C7EA5 /* button.png */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +54,7 @@
 		CFECAA621EA72EF2000C7EA5 /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
 		CFECAA631EA72EF2000C7EA5 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
 		CFECAA641EA72EF2000C7EA5 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
-		CFECAA6D1EA7321A000C7EA5 /* button_hilighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_hilighted.png; sourceTree = "<group>"; };
+		CFECAA6D1EA7321A000C7EA5 /* button_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_highlighted.png; sourceTree = "<group>"; };
 		CFECAA6E1EA7321A000C7EA5 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,7 +99,7 @@
 				CFECAA3D1EA72C67000C7EA5 /* LaunchScreen.storyboard */,
 				CFECAA461EA72CA0000C7EA5 /* AfioView.xib */,
 				CFECAA401EA72C67000C7EA5 /* Info.plist */,
-				CFECAA6D1EA7321A000C7EA5 /* button_hilighted.png */,
+				CFECAA6D1EA7321A000C7EA5 /* button_highlighted.png */,
 				CFECAA6E1EA7321A000C7EA5 /* button.png */,
 			);
 			path = AMoAdNativeAfiO;
@@ -210,7 +210,7 @@
 				CFECAA6A1EA72EF2000C7EA5 /* amoad_panel_l.png in Resources */,
 				CFECAA471EA72CA0000C7EA5 /* AfioView.xib in Resources */,
 				CFECAA691EA72EF2000C7EA5 /* amoad_panel.png in Resources */,
-				CFECAA6F1EA7321A000C7EA5 /* button_hilighted.png in Resources */,
+				CFECAA6F1EA7321A000C7EA5 /* button_highlighted.png in Resources */,
 				CFECAA671EA72EF2000C7EA5 /* amoad_link_btn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
