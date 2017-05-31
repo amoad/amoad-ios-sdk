@@ -4,3 +4,4 @@
 
 #import "AMoAdNativeView.h"
 #import "AMoAdNativeMainVideoView.h"
+#import "AMoAdLogger.h"

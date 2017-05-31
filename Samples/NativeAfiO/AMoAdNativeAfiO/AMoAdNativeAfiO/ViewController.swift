@@ -12,7 +12,7 @@ class ViewController: UIViewController, AMoAdNativeAppDelegate {
 
     @IBOutlet weak var adView: UIView!
 
-    let sid = "管理画面から取得した インフィード AfiO 広告枠 の SID を指定してください"
+    let sid = "62056d310111552c9b3760c1d92edf9204c5bf0c654403c40127579ccde9fe92"
     let tag = "任意のタグ名を指定してください"
     
     override func viewDidLoad() {
@@ -28,13 +28,23 @@ class ViewController: UIViewController, AMoAdNativeAppDelegate {
         // 広告ダウンロードが完了するまで View を非表示にする
         self.adView.isHidden = true
 
+        AMoAdLogger.shared().logging = true
+        AMoAdLogger.shared().trace = true
+
+        AMoAdNativeViewManager.shared().setEnvStaging(true)
+
         // 広告準備
         AMoAdNativeViewManager.shared().prepareAd(withSid: sid, iconPreloading: true, imagePreloading: true)
         // 広告取得
         AMoAdNativeViewManager.shared().renderAd(withSid: sid, tag: tag, view: view, delegate: self)
     }
 
+    func amoadNativeDidReceive(_ sid: String!, tag: String!, view: UIView!, state: AMoAdResult) {
+        print("\(Date().description) \(#function) [\(state)]")
+    }
+
     func amoadNativeImageDidReceive(_ sid: String!, tag: String!, view: UIView!, state: AMoAdResult) {
+        print("\(Date().description) \(#function) [\(state)]")
         // 広告ダウンロードが完了したら View を表示する
         if (state == .success) {
             self.adView.isHidden = false

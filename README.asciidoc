@@ -1,15 +1,22 @@
-= AMoAd SDK for iOS ver 5.0.1
+= AMoAd SDK for iOS ver 5.0.90 (preview)
 
 :numbered:
 :sectnums:
 
-- link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウンロード]
+- link:https://github.com/amoad/amoad-ios-sdk/archive/v5.1-preview.zip[ZIPをダウンロード]
 - link:https://github.com/amoad/amoad-ios-sdk/wiki[ドキュメント]
 
 == 更新情報
 
+広告クリック時に LP を WebView で開く機能を追加しました。
+( 対象: ネイティブ App 広告 / リストビュー広告 )
+
+=== 設定方法
+
+`renderAdWithSid:tag:view:` メソッドの tag に "OpenInWebView" で始まる文字列を指定すると、その広告はクリック時に WebView で LP を表示します。
+_( これは暫定的な設定方法です。正式リリース版では変更される可能性があります。 )_
+
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** インフィード AfiO 広告配信に対応しました
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
