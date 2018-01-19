@@ -27,6 +27,7 @@ fileprivate struct Const {
         Item(title: "ネイティブ HTML 広告 ( Swift )", storyboardName: "NativeHtmlSwift"),
         Item(title: "スクリーン ( プリロール ) 広告", storyboardName: "PreRoll"),
         Item(title: "インフィード AfiO 広告", storyboardName: "NativeAfio"),
+        Item(title: "インタースティシャル AfiO 広告", storyboardName: "InterstitialAfio"),
         Item(title: "旧ネイティブ広告", storyboardName: "Native")
     ]
 }
