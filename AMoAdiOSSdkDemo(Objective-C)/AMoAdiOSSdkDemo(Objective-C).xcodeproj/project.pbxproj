@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC5A10B11D913CCC000C2409 /* amoad_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5A109F1D913CCC000C2409 /* amoad_close_btn.png */; };
+		AC5A10B21D913CCC000C2409 /* amoad_close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10A01D913CCC000C2409 /* amoad_close_btn_h.png */; };
+		AC5A10B31D913CCC000C2409 /* amoad_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10A11D913CCC000C2409 /* amoad_link_btn.png */; };
+		AC5A10B41D913CCC000C2409 /* amoad_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10A21D913CCC000C2409 /* amoad_link_btn_h.png */; };
+		AC5A10B51D913CCC000C2409 /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10A31D913CCC000C2409 /* amoad_panel.png */; };
+		AC5A10B61D913CCC000C2409 /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10A41D913CCC000C2409 /* amoad_panel_l.png */; };
+		AC5A10B71D913CCC000C2409 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5A10B01D913CCC000C2409 /* libAMoAd.a */; };
+		AC5A10BD1D913CF2000C2409 /* AdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10B81D913CF2000C2409 /* AdCollectionViewCell.xib */; };
+		AC5A10BE1D913CF2000C2409 /* AdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10B91D913CF2000C2409 /* AdTableViewCell.xib */; };
+		AC5A10BF1D913CF2000C2409 /* AdViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10BA1D913CF2000C2409 /* AdViewCell.xib */; };
+		AC5A10C01D913CF2000C2409 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10BB1D913CF2000C2409 /* UserCollectionViewCell.xib */; };
+		AC5A10C11D913CF2000C2409 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10BC1D913CF2000C2409 /* UserTableViewCell.xib */; };
+		AC5A10D91D913D26000C2409 /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10C31D913D26000C2409 /* DisplayViewController.m */; };
+		AC5A10DA1D913D26000C2409 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10C51D913D26000C2409 /* FormViewController.m */; };
+		AC5A10DB1D913D26000C2409 /* InfeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10C71D913D26000C2409 /* InfeedViewController.m */; };
+		AC5A10DC1D913D26000C2409 /* InterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10C91D913D26000C2409 /* InterstitialViewController.m */; };
+		AC5A10DD1D913D26000C2409 /* item.png in Resources */ = {isa = PBXBuildFile; fileRef = AC5A10CA1D913D26000C2409 /* item.png */; };
+		AC5A10DE1D913D26000C2409 /* ListViewCVController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10CC1D913D26000C2409 /* ListViewCVController.m */; };
+		AC5A10DF1D913D26000C2409 /* ListViewTVController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10CE1D913D26000C2409 /* ListViewTVController.m */; };
+		AC5A10E01D913D26000C2409 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10D01D913D26000C2409 /* MainTableViewController.m */; };
+		AC5A10E11D913D26000C2409 /* NativeAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10D21D913D26000C2409 /* NativeAppViewController.m */; };
+		AC5A10E21D913D26000C2409 /* NativeHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10D41D913D26000C2409 /* NativeHtmlViewController.m */; };
+		AC5A10E31D913D26000C2409 /* Regexp.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10D61D913D26000C2409 /* Regexp.m */; };
+		AC5A10E41D913D26000C2409 /* ScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5A10D81D913D26000C2409 /* ScreenViewController.m */; };
+		AC5A10E71D914114000C2409 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5A10E61D914114000C2409 /* CoreMedia.framework */; };
+		AC5A10E91D91411E000C2409 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5A10E81D91411E000C2409 /* AVFoundation.framework */; };
+		AC5A10EB1D914126000C2409 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5A10EA1D914126000C2409 /* StoreKit.framework */; };
+		AC5A10ED1D914132000C2409 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5A10EC1D914132000C2409 /* ImageIO.framework */; };
+		AC5A10EF1D91413A000C2409 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5A10EE1D91413A000C2409 /* AdSupport.framework */; };
+		ACC86B701D913BCA00071A73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC86B6F1D913BCA00071A73 /* main.m */; };
+		ACC86B731D913BCA00071A73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC86B721D913BCA00071A73 /* AppDelegate.m */; };
+		ACC86B791D913BCA00071A73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC86B771D913BCA00071A73 /* Main.storyboard */; };
+		ACC86B7B1D913BCA00071A73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC86B7A1D913BCA00071A73 /* Assets.xcassets */; };
+		ACC86B7E1D913BCA00071A73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC86B7C1D913BCA00071A73 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC5A109E1D913CCC000C2409 /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
+		AC5A109F1D913CCC000C2409 /* amoad_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn.png; sourceTree = "<group>"; };
+		AC5A10A01D913CCC000C2409 /* amoad_close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn_h.png; sourceTree = "<group>"; };
+		AC5A10A11D913CCC000C2409 /* amoad_link_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn.png; sourceTree = "<group>"; };
+		AC5A10A21D913CCC000C2409 /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
+		AC5A10A31D913CCC000C2409 /* amoad_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel.png; sourceTree = "<group>"; };
+		AC5A10A41D913CCC000C2409 /* amoad_panel_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel_l.png; sourceTree = "<group>"; };
+		AC5A10A51D913CCC000C2409 /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
+		AC5A10A61D913CCC000C2409 /* AMoAdInfeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInfeed.h; sourceTree = "<group>"; };
+		AC5A10A71D913CCC000C2409 /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
+		AC5A10A81D913CCC000C2409 /* AMoAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdItem.h; sourceTree = "<group>"; };
+		AC5A10A91D913CCC000C2409 /* AMoAdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdList.h; sourceTree = "<group>"; };
+		AC5A10AA1D913CCC000C2409 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
+		AC5A10AB1D913CCC000C2409 /* AMoAdNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNative.h; sourceTree = "<group>"; };
+		AC5A10AC1D913CCC000C2409 /* AMoAdNativePreRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativePreRoll.h; sourceTree = "<group>"; };
+		AC5A10AD1D913CCC000C2409 /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeView.h; sourceTree = "<group>"; };
+		AC5A10AE1D913CCC000C2409 /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
+		AC5A10AF1D913CCC000C2409 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
+		AC5A10B01D913CCC000C2409 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
+		AC5A10B81D913CF2000C2409 /* AdCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdCollectionViewCell.xib; sourceTree = "<group>"; };
+		AC5A10B91D913CF2000C2409 /* AdTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdTableViewCell.xib; sourceTree = "<group>"; };
+		AC5A10BA1D913CF2000C2409 /* AdViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdViewCell.xib; sourceTree = "<group>"; };
+		AC5A10BB1D913CF2000C2409 /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
+		AC5A10BC1D913CF2000C2409 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		AC5A10C21D913D26000C2409 /* DisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayViewController.h; sourceTree = "<group>"; };
+		AC5A10C31D913D26000C2409 /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayViewController.m; sourceTree = "<group>"; };
+		AC5A10C41D913D26000C2409 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormViewController.h; sourceTree = "<group>"; };
+		AC5A10C51D913D26000C2409 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormViewController.m; sourceTree = "<group>"; };
+		AC5A10C61D913D26000C2409 /* InfeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfeedViewController.h; sourceTree = "<group>"; };
+		AC5A10C71D913D26000C2409 /* InfeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfeedViewController.m; sourceTree = "<group>"; };
+		AC5A10C81D913D26000C2409 /* InterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterstitialViewController.h; sourceTree = "<group>"; };
+		AC5A10C91D913D26000C2409 /* InterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterstitialViewController.m; sourceTree = "<group>"; };
+		AC5A10CA1D913D26000C2409 /* item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = item.png; sourceTree = "<group>"; };
+		AC5A10CB1D913D26000C2409 /* ListViewCVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewCVController.h; sourceTree = "<group>"; };
+		AC5A10CC1D913D26000C2409 /* ListViewCVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewCVController.m; sourceTree = "<group>"; };
+		AC5A10CD1D913D26000C2409 /* ListViewTVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewTVController.h; sourceTree = "<group>"; };
+		AC5A10CE1D913D26000C2409 /* ListViewTVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewTVController.m; sourceTree = "<group>"; };
+		AC5A10CF1D913D26000C2409 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		AC5A10D01D913D26000C2409 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		AC5A10D11D913D26000C2409 /* NativeAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeAppViewController.h; sourceTree = "<group>"; };
+		AC5A10D21D913D26000C2409 /* NativeAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeAppViewController.m; sourceTree = "<group>"; };
+		AC5A10D31D913D26000C2409 /* NativeHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeHtmlViewController.h; sourceTree = "<group>"; };
+		AC5A10D41D913D26000C2409 /* NativeHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeHtmlViewController.m; sourceTree = "<group>"; };
+		AC5A10D51D913D26000C2409 /* Regexp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Regexp.h; sourceTree = "<group>"; };
+		AC5A10D61D913D26000C2409 /* Regexp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Regexp.m; sourceTree = "<group>"; };
+		AC5A10D71D913D26000C2409 /* ScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenViewController.h; sourceTree = "<group>"; };
+		AC5A10D81D913D26000C2409 /* ScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenViewController.m; sourceTree = "<group>"; };
+		AC5A10E61D914114000C2409 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		AC5A10E81D91411E000C2409 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AC5A10EA1D914126000C2409 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AC5A10EC1D914132000C2409 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		AC5A10EE1D91413A000C2409 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		ACC86B6B1D913BCA00071A73 /* AMoAdiOSSdkDemo(Objective-C).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AMoAdiOSSdkDemo(Objective-C).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC86B6F1D913BCA00071A73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACC86B711D913BCA00071A73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ACC86B721D913BCA00071A73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ACC86B781D913BCA00071A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACC86B7A1D913BCA00071A73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACC86B7D1D913BCA00071A73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACC86B7F1D913BCA00071A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACC86B681D913BCA00071A73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5A10EF1D91413A000C2409 /* AdSupport.framework in Frameworks */,
+				AC5A10ED1D914132000C2409 /* ImageIO.framework in Frameworks */,
+				AC5A10EB1D914126000C2409 /* StoreKit.framework in Frameworks */,
+				AC5A10E91D91411E000C2409 /* AVFoundation.framework in Frameworks */,
+				AC5A10E71D914114000C2409 /* CoreMedia.framework in Frameworks */,
+				AC5A10B71D913CCC000C2409 /* libAMoAd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC5A109D1D913CCC000C2409 /* AMoAdSdk */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A109E1D913CCC000C2409 /* AMoAd.h */,
+				AC5A109F1D913CCC000C2409 /* amoad_close_btn.png */,
+				AC5A10A01D913CCC000C2409 /* amoad_close_btn_h.png */,
+				AC5A10A11D913CCC000C2409 /* amoad_link_btn.png */,
+				AC5A10A21D913CCC000C2409 /* amoad_link_btn_h.png */,
+				AC5A10A31D913CCC000C2409 /* amoad_panel.png */,
+				AC5A10A41D913CCC000C2409 /* amoad_panel_l.png */,
+				AC5A10A51D913CCC000C2409 /* AMoAdAnalytics.h */,
+				AC5A10A61D913CCC000C2409 /* AMoAdInfeed.h */,
+				AC5A10A71D913CCC000C2409 /* AMoAdInterstitial.h */,
+				AC5A10A81D913CCC000C2409 /* AMoAdItem.h */,
+				AC5A10A91D913CCC000C2409 /* AMoAdList.h */,
+				AC5A10AA1D913CCC000C2409 /* AMoAdLogger.h */,
+				AC5A10AB1D913CCC000C2409 /* AMoAdNative.h */,
+				AC5A10AC1D913CCC000C2409 /* AMoAdNativePreRoll.h */,
+				AC5A10AD1D913CCC000C2409 /* AMoAdNativeView.h */,
+				AC5A10AE1D913CCC000C2409 /* AMoAdView.h */,
+				AC5A10AF1D913CCC000C2409 /* AMoAdWeb.h */,
+				AC5A10B01D913CCC000C2409 /* libAMoAd.a */,
+			);
+			path = AMoAdSdk;
+			sourceTree = "<group>";
+		};
+		AC5A10E51D914113000C2409 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A10EE1D91413A000C2409 /* AdSupport.framework */,
+				AC5A10EC1D914132000C2409 /* ImageIO.framework */,
+				AC5A10EA1D914126000C2409 /* StoreKit.framework */,
+				AC5A10E81D91411E000C2409 /* AVFoundation.framework */,
+				AC5A10E61D914114000C2409 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACC86B621D913BCA00071A73 = {
+			isa = PBXGroup;
+			children = (
+				ACC86B6D1D913BCA00071A73 /* AMoAdiOSSdkDemo(Objective-C) */,
+				ACC86B6C1D913BCA00071A73 /* Products */,
+				AC5A10E51D914113000C2409 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACC86B6C1D913BCA00071A73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACC86B6B1D913BCA00071A73 /* AMoAdiOSSdkDemo(Objective-C).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACC86B6D1D913BCA00071A73 /* AMoAdiOSSdkDemo(Objective-C) */ = {
+			isa = PBXGroup;
+			children = (
+				AC5A109D1D913CCC000C2409 /* AMoAdSdk */,
+				AC5A10B81D913CF2000C2409 /* AdCollectionViewCell.xib */,
+				AC5A10B91D913CF2000C2409 /* AdTableViewCell.xib */,
+				AC5A10BA1D913CF2000C2409 /* AdViewCell.xib */,
+				AC5A10BB1D913CF2000C2409 /* UserCollectionViewCell.xib */,
+				AC5A10BC1D913CF2000C2409 /* UserTableViewCell.xib */,
+				ACC86B771D913BCA00071A73 /* Main.storyboard */,
+				ACC86B7C1D913BCA00071A73 /* LaunchScreen.storyboard */,
+				AC5A10CA1D913D26000C2409 /* item.png */,
+				ACC86B7A1D913BCA00071A73 /* Assets.xcassets */,
+				ACC86B7F1D913BCA00071A73 /* Info.plist */,
+				ACC86B711D913BCA00071A73 /* AppDelegate.h */,
+				ACC86B721D913BCA00071A73 /* AppDelegate.m */,
+				AC5A10D51D913D26000C2409 /* Regexp.h */,
+				AC5A10D61D913D26000C2409 /* Regexp.m */,
+				AC5A10CF1D913D26000C2409 /* MainTableViewController.h */,
+				AC5A10D01D913D26000C2409 /* MainTableViewController.m */,
+				AC5A10C41D913D26000C2409 /* FormViewController.h */,
+				AC5A10C51D913D26000C2409 /* FormViewController.m */,
+				AC5A10C21D913D26000C2409 /* DisplayViewController.h */,
+				AC5A10C31D913D26000C2409 /* DisplayViewController.m */,
+				AC5A10C81D913D26000C2409 /* InterstitialViewController.h */,
+				AC5A10C91D913D26000C2409 /* InterstitialViewController.m */,
+				AC5A10C61D913D26000C2409 /* InfeedViewController.h */,
+				AC5A10C71D913D26000C2409 /* InfeedViewController.m */,
+				AC5A10D31D913D26000C2409 /* NativeHtmlViewController.h */,
+				AC5A10D41D913D26000C2409 /* NativeHtmlViewController.m */,
+				AC5A10D71D913D26000C2409 /* ScreenViewController.h */,
+				AC5A10D81D913D26000C2409 /* ScreenViewController.m */,
+				AC5A10D11D913D26000C2409 /* NativeAppViewController.h */,
+				AC5A10D21D913D26000C2409 /* NativeAppViewController.m */,
+				AC5A10CB1D913D26000C2409 /* ListViewCVController.h */,
+				AC5A10CC1D913D26000C2409 /* ListViewCVController.m */,
+				AC5A10CD1D913D26000C2409 /* ListViewTVController.h */,
+				AC5A10CE1D913D26000C2409 /* ListViewTVController.m */,
+				ACC86B6E1D913BCA00071A73 /* Supporting Files */,
+			);
+			path = "AMoAdiOSSdkDemo(Objective-C)";
+			sourceTree = "<group>";
+		};
+		ACC86B6E1D913BCA00071A73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACC86B6F1D913BCA00071A73 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACC86B6A1D913BCA00071A73 /* AMoAdiOSSdkDemo(Objective-C) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACC86B821D913BCA00071A73 /* Build configuration list for PBXNativeTarget "AMoAdiOSSdkDemo(Objective-C)" */;
+			buildPhases = (
+				ACC86B671D913BCA00071A73 /* Sources */,
+				ACC86B681D913BCA00071A73 /* Frameworks */,
+				ACC86B691D913BCA00071A73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AMoAdiOSSdkDemo(Objective-C)";
+			productName = "AMoAdiOSSdkDemo(Objective-C)";
+			productReference = ACC86B6B1D913BCA00071A73 /* AMoAdiOSSdkDemo(Objective-C).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACC86B631D913BCA00071A73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = AMoAd;
+				TargetAttributes = {
+					ACC86B6A1D913BCA00071A73 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = R483GUQ2NF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ACC86B661D913BCA00071A73 /* Build configuration list for PBXProject "AMoAdiOSSdkDemo(Objective-C)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACC86B621D913BCA00071A73;
+			productRefGroup = ACC86B6C1D913BCA00071A73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACC86B6A1D913BCA00071A73 /* AMoAdiOSSdkDemo(Objective-C) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACC86B691D913BCA00071A73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5A10B41D913CCC000C2409 /* amoad_link_btn_h.png in Resources */,
+				AC5A10B11D913CCC000C2409 /* amoad_close_btn.png in Resources */,
+				AC5A10B61D913CCC000C2409 /* amoad_panel_l.png in Resources */,
+				AC5A10BE1D913CF2000C2409 /* AdTableViewCell.xib in Resources */,
+				ACC86B7E1D913BCA00071A73 /* LaunchScreen.storyboard in Resources */,
+				AC5A10B51D913CCC000C2409 /* amoad_panel.png in Resources */,
+				AC5A10BD1D913CF2000C2409 /* AdCollectionViewCell.xib in Resources */,
+				AC5A10BF1D913CF2000C2409 /* AdViewCell.xib in Resources */,
+				AC5A10C01D913CF2000C2409 /* UserCollectionViewCell.xib in Resources */,
+				ACC86B7B1D913BCA00071A73 /* Assets.xcassets in Resources */,
+				AC5A10C11D913CF2000C2409 /* UserTableViewCell.xib in Resources */,
+				AC5A10DD1D913D26000C2409 /* item.png in Resources */,
+				AC5A10B31D913CCC000C2409 /* amoad_link_btn.png in Resources */,
+				AC5A10B21D913CCC000C2409 /* amoad_close_btn_h.png in Resources */,
+				ACC86B791D913BCA00071A73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACC86B671D913BCA00071A73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACC86B731D913BCA00071A73 /* AppDelegate.m in Sources */,
+				AC5A10E31D913D26000C2409 /* Regexp.m in Sources */,
+				ACC86B701D913BCA00071A73 /* main.m in Sources */,
+				AC5A10E41D913D26000C2409 /* ScreenViewController.m in Sources */,
+				AC5A10DB1D913D26000C2409 /* InfeedViewController.m in Sources */,
+				AC5A10E21D913D26000C2409 /* NativeHtmlViewController.m in Sources */,
+				AC5A10E11D913D26000C2409 /* NativeAppViewController.m in Sources */,
+				AC5A10DC1D913D26000C2409 /* InterstitialViewController.m in Sources */,
+				AC5A10DE1D913D26000C2409 /* ListViewCVController.m in Sources */,
+				AC5A10DA1D913D26000C2409 /* FormViewController.m in Sources */,
+				AC5A10D91D913D26000C2409 /* DisplayViewController.m in Sources */,
+				AC5A10E01D913D26000C2409 /* MainTableViewController.m in Sources */,
+				AC5A10DF1D913D26000C2409 /* ListViewTVController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACC86B771D913BCA00071A73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACC86B781D913BCA00071A73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACC86B7C1D913BCA00071A73 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACC86B7D1D913BCA00071A73 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACC86B801D913BCA00071A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACC86B811D913BCA00071A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACC86B831D913BCA00071A73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R483GUQ2NF;
+				INFOPLIST_FILE = "AMoAdiOSSdkDemo(Objective-C)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdiOSSdkDemo(Objective-C)/AMoAdSdk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amoad.amoadiossdkdemo.AMoAdiOSSdkDemo-Objective-C-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ACC86B841D913BCA00071A73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R483GUQ2NF;
+				INFOPLIST_FILE = "AMoAdiOSSdkDemo(Objective-C)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdiOSSdkDemo(Objective-C)/AMoAdSdk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amoad.amoadiossdkdemo.AMoAdiOSSdkDemo-Objective-C-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACC86B661D913BCA00071A73 /* Build configuration list for PBXProject "AMoAdiOSSdkDemo(Objective-C)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC86B801D913BCA00071A73 /* Debug */,
+				ACC86B811D913BCA00071A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACC86B821D913BCA00071A73 /* Build configuration list for PBXNativeTarget "AMoAdiOSSdkDemo(Objective-C)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC86B831D913BCA00071A73 /* Debug */,
+				ACC86B841D913BCA00071A73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACC86B631D913BCA00071A73 /* Project object */;
+}

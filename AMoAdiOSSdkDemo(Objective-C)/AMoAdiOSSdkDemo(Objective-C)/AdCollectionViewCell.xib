@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eT7-iQ-tyd">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="207"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="207"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サービス名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZM-n4-dFK">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトルショット" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNs-bS-cHj">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトルロング" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1P-Uq-XbK">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T6U-ag-Yd6">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="09p-Pe-ctq"/>
+                            <constraint firstAttribute="width" constant="100" id="JXL-T2-Scx"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="T6U-ag-Yd6" firstAttribute="top" secondItem="eT7-iQ-tyd" secondAttribute="top" id="3uM-xs-fC1"/>
+                <constraint firstItem="AZM-n4-dFK" firstAttribute="leading" secondItem="eT7-iQ-tyd" secondAttribute="leading" constant="8" id="4e6-Ef-kom"/>
+                <constraint firstAttribute="trailing" secondItem="AZM-n4-dFK" secondAttribute="trailing" constant="8" id="6Zw-ez-sbE"/>
+                <constraint firstItem="T6U-ag-Yd6" firstAttribute="leading" secondItem="eT7-iQ-tyd" secondAttribute="leading" id="EER-1g-1hl"/>
+                <constraint firstItem="B1P-Uq-XbK" firstAttribute="leading" secondItem="eT7-iQ-tyd" secondAttribute="leading" constant="8" id="Uvw-Sr-yp4"/>
+                <constraint firstItem="PNs-bS-cHj" firstAttribute="top" secondItem="AZM-n4-dFK" secondAttribute="bottom" constant="8" id="Zh3-kd-xX9"/>
+                <constraint firstItem="PNs-bS-cHj" firstAttribute="leading" secondItem="eT7-iQ-tyd" secondAttribute="leading" constant="8" id="dgz-mW-4gp"/>
+                <constraint firstItem="B1P-Uq-XbK" firstAttribute="top" secondItem="PNs-bS-cHj" secondAttribute="bottom" constant="8" id="nJ5-Og-nb7"/>
+                <constraint firstAttribute="trailing" secondItem="B1P-Uq-XbK" secondAttribute="trailing" constant="8" id="q2R-7B-3Mz"/>
+                <constraint firstAttribute="trailing" secondItem="PNs-bS-cHj" secondAttribute="trailing" constant="8" id="smc-iq-YaW"/>
+                <constraint firstItem="AZM-n4-dFK" firstAttribute="top" secondItem="T6U-ag-Yd6" secondAttribute="bottom" constant="8" id="zMj-Cb-MD2"/>
+            </constraints>
+            <size key="customSize" width="150" height="43"/>
+            <point key="canvasLocation" x="-46" y="-217"/>
+        </collectionViewCell>
+    </objects>
+</document>
