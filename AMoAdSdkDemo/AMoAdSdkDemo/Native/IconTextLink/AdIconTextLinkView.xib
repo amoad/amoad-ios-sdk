@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CoX-gS-5k4">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-f7-kGb">
+                    <rect key="frame" x="8" y="7" width="86" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="3hX-eQ-0sO"/>
+                        <constraint firstAttribute="width" constant="86" id="WS7-Qi-QVt"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サービス名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMO-F5-ZH1">
+                    <rect key="frame" x="102" y="7" width="210" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Tb6-aN-4GY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトルロング" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93w-dz-ZMK">
+                    <rect key="frame" x="102" y="52" width="210" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="2Sb-fR-6td"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトルショート" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dF3-ue-6Bi">
+                    <rect key="frame" x="102" y="32" width="210" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="aAE-T6-exO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S39-3e-QlH">
+                    <rect key="frame" x="102" y="76" width="210" height="18"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="zB9-CY-Duc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <state key="normal" title="詳細ページを表示する">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.90035909414291382" green="0.90035909414291382" blue="0.90035909414291382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dF3-ue-6Bi" firstAttribute="leading" secondItem="QJa-f7-kGb" secondAttribute="trailing" constant="8" id="0OR-Ei-vny"/>
+                <constraint firstAttribute="trailing" secondItem="dF3-ue-6Bi" secondAttribute="trailing" constant="8" id="2Es-HG-GFb"/>
+                <constraint firstItem="dF3-ue-6Bi" firstAttribute="top" secondItem="EMO-F5-ZH1" secondAttribute="bottom" constant="15" id="3Ne-zS-n3e"/>
+                <constraint firstItem="dF3-ue-6Bi" firstAttribute="top" secondItem="EMO-F5-ZH1" secondAttribute="bottom" constant="4" id="B5x-60-IQ4"/>
+                <constraint firstItem="QJa-f7-kGb" firstAttribute="leading" secondItem="CoX-gS-5k4" secondAttribute="leading" constant="8" id="D7u-yO-2Z7"/>
+                <constraint firstItem="S39-3e-QlH" firstAttribute="top" secondItem="93w-dz-ZMK" secondAttribute="bottom" constant="8" id="J5N-0p-gPd"/>
+                <constraint firstItem="QJa-f7-kGb" firstAttribute="top" secondItem="CoX-gS-5k4" secondAttribute="top" constant="7" id="K4o-BF-OZc"/>
+                <constraint firstItem="EMO-F5-ZH1" firstAttribute="top" secondItem="CoX-gS-5k4" secondAttribute="top" constant="7" id="cn0-Lc-kMf"/>
+                <constraint firstItem="S39-3e-QlH" firstAttribute="leading" secondItem="QJa-f7-kGb" secondAttribute="trailing" constant="8" id="dBm-KE-NJg"/>
+                <constraint firstAttribute="trailing" secondItem="EMO-F5-ZH1" secondAttribute="trailing" constant="8" id="drN-ag-XXb"/>
+                <constraint firstAttribute="trailing" secondItem="S39-3e-QlH" secondAttribute="trailing" constant="180" id="fxr-TV-NZ7"/>
+                <constraint firstAttribute="trailing" secondItem="93w-dz-ZMK" secondAttribute="trailing" constant="8" id="hq7-Dq-pUy"/>
+                <constraint firstAttribute="bottom" secondItem="93w-dz-ZMK" secondAttribute="bottom" constant="7" id="nOq-ek-gpS"/>
+                <constraint firstItem="EMO-F5-ZH1" firstAttribute="leading" secondItem="QJa-f7-kGb" secondAttribute="trailing" constant="8" id="oNV-Pa-84I"/>
+                <constraint firstItem="93w-dz-ZMK" firstAttribute="leading" secondItem="QJa-f7-kGb" secondAttribute="trailing" constant="8" id="pRF-Lk-R7i"/>
+                <constraint firstItem="93w-dz-ZMK" firstAttribute="top" secondItem="dF3-ue-6Bi" secondAttribute="bottom" constant="4" id="tNp-Xw-ciS"/>
+                <constraint firstAttribute="trailing" secondItem="S39-3e-QlH" secondAttribute="trailing" constant="8" id="u4i-5n-G94"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3Ne-zS-n3e"/>
+                    <exclude reference="nOq-ek-gpS"/>
+                    <exclude reference="fxr-TV-NZ7"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="245" y="233"/>
+        </view>
+    </objects>
+</document>

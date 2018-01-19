@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF163242201098C60009ACEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF163241201098C60009ACEF /* AppDelegate.swift */; };
+		CF163244201098C60009ACEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF163243201098C60009ACEF /* ViewController.swift */; };
+		CF163247201098C60009ACEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF163245201098C60009ACEF /* Main.storyboard */; };
+		CF163249201098C60009ACEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF163248201098C60009ACEF /* Assets.xcassets */; };
+		CF16324C201098C60009ACEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16324A201098C60009ACEF /* LaunchScreen.storyboard */; };
+		CF16325920109E240009ACEF /* NativeAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16325420109E240009ACEF /* NativeAfio.storyboard */; };
+		CF16325A20109E240009ACEF /* AfioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF16325520109E240009ACEF /* AfioView.xib */; };
+		CF16325B20109E240009ACEF /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16325620109E240009ACEF /* button.png */; };
+		CF16325C20109E240009ACEF /* button_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16325720109E240009ACEF /* button_highlighted.png */; };
+		CF16325D20109E240009ACEF /* NativeAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16325820109E240009ACEF /* NativeAfioViewController.swift */; };
+		CF16329020109EB70009ACEF /* amoad_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16327D20109EB70009ACEF /* amoad_close_btn.png */; };
+		CF16329120109EB70009ACEF /* amoad_close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16327E20109EB70009ACEF /* amoad_close_btn_h.png */; };
+		CF16329220109EB70009ACEF /* amoad_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16327F20109EB70009ACEF /* amoad_link_btn.png */; };
+		CF16329320109EB70009ACEF /* amoad_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16328020109EB70009ACEF /* amoad_link_btn_h.png */; };
+		CF16329420109EB70009ACEF /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16328120109EB70009ACEF /* amoad_panel.png */; };
+		CF16329520109EB70009ACEF /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16328220109EB70009ACEF /* amoad_panel_l.png */; };
+		CF16329620109EB70009ACEF /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16328E20109EB70009ACEF /* button.png */; };
+		CF16329720109EB70009ACEF /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF16328F20109EB70009ACEF /* libAMoAd.a */; };
+		CF1632A02010A4020009ACEF /* initialImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = CF16329C2010A4020009ACEF /* initialImage.gif */; };
+		CF1632A12010A4020009ACEF /* Display.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16329E2010A4020009ACEF /* Display.storyboard */; };
+		CF1632A22010A4020009ACEF /* DisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF16329F2010A4020009ACEF /* DisplayViewController.m */; };
+		CF1632AD2010A60E0009ACEF /* user_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1632A52010A60D0009ACEF /* user_link_btn_h.png */; };
+		CF1632AE2010A60E0009ACEF /* user_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1632A62010A60D0009ACEF /* user_close_btn.png */; };
+		CF1632AF2010A60E0009ACEF /* user_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1632A72010A60D0009ACEF /* user_link_btn.png */; };
+		CF1632B02010A60E0009ACEF /* user_close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1632A82010A60D0009ACEF /* user_close_btn_h.png */; };
+		CF1632B12010A60E0009ACEF /* DisplayInterstitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632A92010A60D0009ACEF /* DisplayInterstitialViewController.m */; };
+		CF1632B22010A60E0009ACEF /* user_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1632AA2010A60D0009ACEF /* user_panel_l.png */; };
+		CF1632B32010A60E0009ACEF /* user_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1632AB2010A60D0009ACEF /* user_panel.png */; };
+		CF1632B42010A60E0009ACEF /* DisplayInterstitial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632AC2010A60E0009ACEF /* DisplayInterstitial.storyboard */; };
+		CF1632B92010AF8C0009ACEF /* DisplaySwift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632B62010AF8C0009ACEF /* DisplaySwift.storyboard */; };
+		CF1632BA2010AF8C0009ACEF /* DisplaySwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1632B72010AF8C0009ACEF /* DisplaySwiftViewController.swift */; };
+		CF1632BB2010AF8C0009ACEF /* b320_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1632B82010AF8C0009ACEF /* b320_50@2x.png */; };
+		CF1632C02010B1D80009ACEF /* PreRoll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632BE2010B1D80009ACEF /* PreRoll.storyboard */; };
+		CF1632C12010B1D80009ACEF /* PreRollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632BF2010B1D80009ACEF /* PreRollViewController.m */; };
+		CF1632D52010B5860009ACEF /* NativeHtml.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632D22010B5860009ACEF /* NativeHtml.storyboard */; };
+		CF1632D62010B5860009ACEF /* NativeHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632D32010B5860009ACEF /* NativeHtmlViewController.m */; };
+		CF1632D72010B5860009ACEF /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CF1632D42010B5860009ACEF /* index.html */; };
+		CF1632DD2010B8720009ACEF /* NativeHtmlSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1632DA2010B8720009ACEF /* NativeHtmlSwiftViewController.swift */; };
+		CF1632DE2010B8720009ACEF /* NativeHtmlSwift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632DB2010B8720009ACEF /* NativeHtmlSwift.storyboard */; };
+		CF1632DF2010B8720009ACEF /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CF1632DC2010B8720009ACEF /* index.html */; };
+		CF1632E42010B9F10009ACEF /* Native.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632E22010B9F10009ACEF /* Native.storyboard */; };
+		CF1632E52010B9F10009ACEF /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1632E32010B9F10009ACEF /* NativeViewController.swift */; };
+		CF1632EB2010BAC90009ACEF /* IconTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632E82010BAC90009ACEF /* IconTextViewController.m */; };
+		CF1632EC2010BAC90009ACEF /* IconText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632E92010BAC90009ACEF /* IconText.storyboard */; };
+		CF1632ED2010BAC90009ACEF /* AdIconTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1632EA2010BAC90009ACEF /* AdIconTextView.xib */; };
+		CF1632F32010BFB40009ACEF /* IconTextLink.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632EF2010BFB30009ACEF /* IconTextLink.storyboard */; };
+		CF1632F42010BFB40009ACEF /* AdIconTextLinkView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1632F02010BFB30009ACEF /* AdIconTextLinkView.xib */; };
+		CF1632F52010BFB40009ACEF /* IconTextLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632F22010BFB40009ACEF /* IconTextLinkViewController.m */; };
+		CF1632FB2010C1C50009ACEF /* AdImageTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1632F82010C1C50009ACEF /* AdImageTextView.xib */; };
+		CF1632FC2010C1C50009ACEF /* ImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632F92010C1C50009ACEF /* ImageTextViewController.m */; };
+		CF1632FD2010C1C50009ACEF /* ImageText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632FA2010C1C50009ACEF /* ImageText.storyboard */; };
+		CF1633032010C3E20009ACEF /* AdImageTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1633002010C3E20009ACEF /* AdImageTextView.xib */; };
+		CF1633042010C3E20009ACEF /* ImageTextCoder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1633012010C3E20009ACEF /* ImageTextCoder.storyboard */; };
+		CF1633052010C3E20009ACEF /* ImageTextCoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1633022010C3E20009ACEF /* ImageTextCoderViewController.m */; };
+		CF16330B2010C5A50009ACEF /* SingleTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1633072010C5A50009ACEF /* SingleTextViewController.m */; };
+		CF16330C2010C5A50009ACEF /* SingleText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1633082010C5A50009ACEF /* SingleText.storyboard */; };
+		CF16330D2010C5A50009ACEF /* AdTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF16330A2010C5A50009ACEF /* AdTextView.xib */; };
+		CF6C689420117EF200309CF1 /* AdIconTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C689020117EF200309CF1 /* AdIconTextTableViewCell.xib */; };
+		CF6C689520117EF200309CF1 /* TableViewIconText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C689120117EF200309CF1 /* TableViewIconText.storyboard */; };
+		CF6C689620117EF200309CF1 /* TableViewIconTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C689220117EF200309CF1 /* TableViewIconTextViewController.m */; };
+		CF6C689720117EF200309CF1 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C689320117EF200309CF1 /* UserTableViewCell.xib */; };
+		CF6C689E2011812C00309CF1 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68992011812B00309CF1 /* UserTableViewCell.xib */; };
+		CF6C689F2011812C00309CF1 /* TableViewImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C689A2011812B00309CF1 /* TableViewImageTextViewController.m */; };
+		CF6C68A02011812C00309CF1 /* AdImageTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C689B2011812B00309CF1 /* AdImageTextTableViewCell.xib */; };
+		CF6C68A12011812C00309CF1 /* TableViewImageText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C689D2011812C00309CF1 /* TableViewImageText.storyboard */; };
+		CF6C68A8201183F200309CF1 /* AdTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68A4201183F200309CF1 /* AdTextTableViewCell.xib */; };
+		CF6C68A9201183F200309CF1 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68A5201183F200309CF1 /* UserTableViewCell.xib */; };
+		CF6C68AA201183F200309CF1 /* TableViewSingleText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68A6201183F200309CF1 /* TableViewSingleText.storyboard */; };
+		CF6C68AB201183F200309CF1 /* TableViewSingleTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C68A7201183F200309CF1 /* TableViewSingleTextViewController.m */; };
+		CF6C68B22011853200309CF1 /* AdIconTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68AE2011853200309CF1 /* AdIconTextCollectionViewCell.xib */; };
+		CF6C68B32011853200309CF1 /* CollectionViewIconText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68AF2011853200309CF1 /* CollectionViewIconText.storyboard */; };
+		CF6C68B42011853200309CF1 /* CollectionViewIconTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C68B02011853200309CF1 /* CollectionViewIconTextViewController.m */; };
+		CF6C68B52011853200309CF1 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68B12011853200309CF1 /* UserCollectionViewCell.xib */; };
+		CF6C68BC201188D900309CF1 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68B7201188D800309CF1 /* UserCollectionViewCell.xib */; };
+		CF6C68BD201188D900309CF1 /* AdImageTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68B8201188D800309CF1 /* AdImageTextCollectionViewCell.xib */; };
+		CF6C68BE201188D900309CF1 /* CollectionViewImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C68B9201188D800309CF1 /* CollectionViewImageTextViewController.m */; };
+		CF6C68BF201188D900309CF1 /* CollectionViewImageText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68BA201188D800309CF1 /* CollectionViewImageText.storyboard */; };
+		CF6C68C620118A9000309CF1 /* CollectionViewSingleTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C68C120118A9000309CF1 /* CollectionViewSingleTextViewController.m */; };
+		CF6C68C720118A9000309CF1 /* AdTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68C220118A9000309CF1 /* AdTextCollectionViewCell.xib */; };
+		CF6C68C820118A9000309CF1 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68C320118A9000309CF1 /* UserCollectionViewCell.xib */; };
+		CF6C68C920118A9000309CF1 /* CollectionViewSingleText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68C520118A9000309CF1 /* CollectionViewSingleText.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF16323E201098C50009ACEF /* AMoAdSdkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdSdkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF163241201098C60009ACEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF163243201098C60009ACEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF163246201098C60009ACEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF163248201098C60009ACEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF16324B201098C60009ACEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF16324D201098C60009ACEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF16325420109E240009ACEF /* NativeAfio.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeAfio.storyboard; sourceTree = "<group>"; };
+		CF16325520109E240009ACEF /* AfioView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AfioView.xib; sourceTree = "<group>"; };
+		CF16325620109E240009ACEF /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		CF16325720109E240009ACEF /* button_highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_highlighted.png; sourceTree = "<group>"; };
+		CF16325820109E240009ACEF /* NativeAfioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeAfioViewController.swift; sourceTree = "<group>"; };
+		CF16327C20109EB70009ACEF /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
+		CF16327D20109EB70009ACEF /* amoad_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn.png; sourceTree = "<group>"; };
+		CF16327E20109EB70009ACEF /* amoad_close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn_h.png; sourceTree = "<group>"; };
+		CF16327F20109EB70009ACEF /* amoad_link_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn.png; sourceTree = "<group>"; };
+		CF16328020109EB70009ACEF /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
+		CF16328120109EB70009ACEF /* amoad_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel.png; sourceTree = "<group>"; };
+		CF16328220109EB70009ACEF /* amoad_panel_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel_l.png; sourceTree = "<group>"; };
+		CF16328320109EB70009ACEF /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
+		CF16328420109EB70009ACEF /* AMoAdInfeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInfeed.h; sourceTree = "<group>"; };
+		CF16328520109EB70009ACEF /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
+		CF16328620109EB70009ACEF /* AMoAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdItem.h; sourceTree = "<group>"; };
+		CF16328720109EB70009ACEF /* AMoAdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdList.h; sourceTree = "<group>"; };
+		CF16328820109EB70009ACEF /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
+		CF16328920109EB70009ACEF /* AMoAdNativeMainVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeMainVideoView.h; sourceTree = "<group>"; };
+		CF16328A20109EB70009ACEF /* AMoAdNativePreRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativePreRoll.h; sourceTree = "<group>"; };
+		CF16328B20109EB70009ACEF /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeView.h; sourceTree = "<group>"; };
+		CF16328C20109EB70009ACEF /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
+		CF16328D20109EB70009ACEF /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
+		CF16328E20109EB70009ACEF /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		CF16328F20109EB70009ACEF /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
+		CF16329820109EDE0009ACEF /* AMoAdSdkDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AMoAdSdkDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF16329C2010A4020009ACEF /* initialImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = initialImage.gif; sourceTree = "<group>"; };
+		CF16329D2010A4020009ACEF /* DisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayViewController.h; sourceTree = "<group>"; };
+		CF16329E2010A4020009ACEF /* Display.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Display.storyboard; sourceTree = "<group>"; };
+		CF16329F2010A4020009ACEF /* DisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayViewController.m; sourceTree = "<group>"; };
+		CF1632A42010A60D0009ACEF /* DisplayInterstitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayInterstitialViewController.h; sourceTree = "<group>"; };
+		CF1632A52010A60D0009ACEF /* user_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_link_btn_h.png; sourceTree = "<group>"; };
+		CF1632A62010A60D0009ACEF /* user_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_close_btn.png; sourceTree = "<group>"; };
+		CF1632A72010A60D0009ACEF /* user_link_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_link_btn.png; sourceTree = "<group>"; };
+		CF1632A82010A60D0009ACEF /* user_close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_close_btn_h.png; sourceTree = "<group>"; };
+		CF1632A92010A60D0009ACEF /* DisplayInterstitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayInterstitialViewController.m; sourceTree = "<group>"; };
+		CF1632AA2010A60D0009ACEF /* user_panel_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_panel_l.png; sourceTree = "<group>"; };
+		CF1632AB2010A60D0009ACEF /* user_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_panel.png; sourceTree = "<group>"; };
+		CF1632AC2010A60E0009ACEF /* DisplayInterstitial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplayInterstitial.storyboard; sourceTree = "<group>"; };
+		CF1632B62010AF8C0009ACEF /* DisplaySwift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplaySwift.storyboard; sourceTree = "<group>"; };
+		CF1632B72010AF8C0009ACEF /* DisplaySwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplaySwiftViewController.swift; sourceTree = "<group>"; };
+		CF1632B82010AF8C0009ACEF /* b320_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "b320_50@2x.png"; sourceTree = "<group>"; };
+		CF1632BD2010B1D80009ACEF /* PreRollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreRollViewController.h; sourceTree = "<group>"; };
+		CF1632BE2010B1D80009ACEF /* PreRoll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PreRoll.storyboard; sourceTree = "<group>"; };
+		CF1632BF2010B1D80009ACEF /* PreRollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreRollViewController.m; sourceTree = "<group>"; };
+		CF1632D12010B5860009ACEF /* NativeHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeHtmlViewController.h; sourceTree = "<group>"; };
+		CF1632D22010B5860009ACEF /* NativeHtml.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeHtml.storyboard; sourceTree = "<group>"; };
+		CF1632D32010B5860009ACEF /* NativeHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeHtmlViewController.m; sourceTree = "<group>"; };
+		CF1632D42010B5860009ACEF /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		CF1632DA2010B8720009ACEF /* NativeHtmlSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeHtmlSwiftViewController.swift; sourceTree = "<group>"; };
+		CF1632DB2010B8720009ACEF /* NativeHtmlSwift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeHtmlSwift.storyboard; sourceTree = "<group>"; };
+		CF1632DC2010B8720009ACEF /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		CF1632E22010B9F10009ACEF /* Native.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Native.storyboard; sourceTree = "<group>"; };
+		CF1632E32010B9F10009ACEF /* NativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
+		CF1632E72010BAC90009ACEF /* IconTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconTextViewController.h; sourceTree = "<group>"; };
+		CF1632E82010BAC90009ACEF /* IconTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconTextViewController.m; sourceTree = "<group>"; };
+		CF1632E92010BAC90009ACEF /* IconText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IconText.storyboard; sourceTree = "<group>"; };
+		CF1632EA2010BAC90009ACEF /* AdIconTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdIconTextView.xib; sourceTree = "<group>"; };
+		CF1632EF2010BFB30009ACEF /* IconTextLink.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = IconTextLink.storyboard; sourceTree = "<group>"; };
+		CF1632F02010BFB30009ACEF /* AdIconTextLinkView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdIconTextLinkView.xib; sourceTree = "<group>"; };
+		CF1632F12010BFB30009ACEF /* IconTextLinkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconTextLinkViewController.h; sourceTree = "<group>"; };
+		CF1632F22010BFB40009ACEF /* IconTextLinkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconTextLinkViewController.m; sourceTree = "<group>"; };
+		CF1632F72010C1C50009ACEF /* ImageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTextViewController.h; sourceTree = "<group>"; };
+		CF1632F82010C1C50009ACEF /* AdImageTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdImageTextView.xib; sourceTree = "<group>"; };
+		CF1632F92010C1C50009ACEF /* ImageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTextViewController.m; sourceTree = "<group>"; };
+		CF1632FA2010C1C50009ACEF /* ImageText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageText.storyboard; sourceTree = "<group>"; };
+		CF1632FF2010C3E20009ACEF /* ImageTextCoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTextCoderViewController.h; sourceTree = "<group>"; };
+		CF1633002010C3E20009ACEF /* AdImageTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdImageTextView.xib; sourceTree = "<group>"; };
+		CF1633012010C3E20009ACEF /* ImageTextCoder.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ImageTextCoder.storyboard; sourceTree = "<group>"; };
+		CF1633022010C3E20009ACEF /* ImageTextCoderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTextCoderViewController.m; sourceTree = "<group>"; };
+		CF1633072010C5A50009ACEF /* SingleTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleTextViewController.m; sourceTree = "<group>"; };
+		CF1633082010C5A50009ACEF /* SingleText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SingleText.storyboard; sourceTree = "<group>"; };
+		CF1633092010C5A50009ACEF /* SingleTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleTextViewController.h; sourceTree = "<group>"; };
+		CF16330A2010C5A50009ACEF /* AdTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdTextView.xib; sourceTree = "<group>"; };
+		CF6C688F20117EF200309CF1 /* TableViewIconTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewIconTextViewController.h; sourceTree = "<group>"; };
+		CF6C689020117EF200309CF1 /* AdIconTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdIconTextTableViewCell.xib; sourceTree = "<group>"; };
+		CF6C689120117EF200309CF1 /* TableViewIconText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewIconText.storyboard; sourceTree = "<group>"; };
+		CF6C689220117EF200309CF1 /* TableViewIconTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewIconTextViewController.m; sourceTree = "<group>"; };
+		CF6C689320117EF200309CF1 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		CF6C68992011812B00309CF1 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		CF6C689A2011812B00309CF1 /* TableViewImageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewImageTextViewController.m; sourceTree = "<group>"; };
+		CF6C689B2011812B00309CF1 /* AdImageTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdImageTextTableViewCell.xib; sourceTree = "<group>"; };
+		CF6C689C2011812B00309CF1 /* TableViewImageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewImageTextViewController.h; sourceTree = "<group>"; };
+		CF6C689D2011812C00309CF1 /* TableViewImageText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewImageText.storyboard; sourceTree = "<group>"; };
+		CF6C68A3201183F200309CF1 /* TableViewSingleTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewSingleTextViewController.h; sourceTree = "<group>"; };
+		CF6C68A4201183F200309CF1 /* AdTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdTextTableViewCell.xib; sourceTree = "<group>"; };
+		CF6C68A5201183F200309CF1 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		CF6C68A6201183F200309CF1 /* TableViewSingleText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewSingleText.storyboard; sourceTree = "<group>"; };
+		CF6C68A7201183F200309CF1 /* TableViewSingleTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewSingleTextViewController.m; sourceTree = "<group>"; };
+		CF6C68AD2011853200309CF1 /* CollectionViewIconTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewIconTextViewController.h; sourceTree = "<group>"; };
+		CF6C68AE2011853200309CF1 /* AdIconTextCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdIconTextCollectionViewCell.xib; sourceTree = "<group>"; };
+		CF6C68AF2011853200309CF1 /* CollectionViewIconText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionViewIconText.storyboard; sourceTree = "<group>"; };
+		CF6C68B02011853200309CF1 /* CollectionViewIconTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewIconTextViewController.m; sourceTree = "<group>"; };
+		CF6C68B12011853200309CF1 /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
+		CF6C68B7201188D800309CF1 /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
+		CF6C68B8201188D800309CF1 /* AdImageTextCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdImageTextCollectionViewCell.xib; sourceTree = "<group>"; };
+		CF6C68B9201188D800309CF1 /* CollectionViewImageTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewImageTextViewController.m; sourceTree = "<group>"; };
+		CF6C68BA201188D800309CF1 /* CollectionViewImageText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionViewImageText.storyboard; sourceTree = "<group>"; };
+		CF6C68BB201188D800309CF1 /* CollectionViewImageTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewImageTextViewController.h; sourceTree = "<group>"; };
+		CF6C68C120118A9000309CF1 /* CollectionViewSingleTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewSingleTextViewController.m; sourceTree = "<group>"; };
+		CF6C68C220118A9000309CF1 /* AdTextCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdTextCollectionViewCell.xib; sourceTree = "<group>"; };
+		CF6C68C320118A9000309CF1 /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
+		CF6C68C420118A9000309CF1 /* CollectionViewSingleTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewSingleTextViewController.h; sourceTree = "<group>"; };
+		CF6C68C520118A9000309CF1 /* CollectionViewSingleText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionViewSingleText.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF16323B201098C50009ACEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF16329720109EB70009ACEF /* libAMoAd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF163235201098C50009ACEF = {
+			isa = PBXGroup;
+			children = (
+				CF16327B20109EB70009ACEF /* AMoAdSdk */,
+				CF163240201098C50009ACEF /* AMoAdSdkDemo */,
+				CF16323F201098C50009ACEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF16323F201098C50009ACEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF16323E201098C50009ACEF /* AMoAdSdkDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF163240201098C50009ACEF /* AMoAdSdkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CF16329820109EDE0009ACEF /* AMoAdSdkDemo-Bridging-Header.h */,
+				CF163241201098C60009ACEF /* AppDelegate.swift */,
+				CF163243201098C60009ACEF /* ViewController.swift */,
+				CF163245201098C60009ACEF /* Main.storyboard */,
+				CF163248201098C60009ACEF /* Assets.xcassets */,
+				CF16324A201098C60009ACEF /* LaunchScreen.storyboard */,
+				CF16324D201098C60009ACEF /* Info.plist */,
+				CF16329B2010A3A00009ACEF /* Display */,
+				CF1632B52010AF430009ACEF /* DisplaySwift */,
+				CF1632A32010A5C20009ACEF /* DisplayInterstitial */,
+				CF1632C82010B52F0009ACEF /* NativeHTML */,
+				CF1632D92010B84A0009ACEF /* NativeHTMLSwift */,
+				CF1632BC2010B1950009ACEF /* PreRoll */,
+				CF16325320109D790009ACEF /* NativeAfiO */,
+				CF1632E12010B9D70009ACEF /* Native */,
+			);
+			path = AMoAdSdkDemo;
+			sourceTree = "<group>";
+		};
+		CF16325320109D790009ACEF /* NativeAfiO */ = {
+			isa = PBXGroup;
+			children = (
+				CF16325520109E240009ACEF /* AfioView.xib */,
+				CF16325720109E240009ACEF /* button_highlighted.png */,
+				CF16325620109E240009ACEF /* button.png */,
+				CF16325420109E240009ACEF /* NativeAfio.storyboard */,
+				CF16325820109E240009ACEF /* NativeAfioViewController.swift */,
+			);
+			path = NativeAfiO;
+			sourceTree = "<group>";
+		};
+		CF16327B20109EB70009ACEF /* AMoAdSdk */ = {
+			isa = PBXGroup;
+			children = (
+				CF16327C20109EB70009ACEF /* AMoAd.h */,
+				CF16327D20109EB70009ACEF /* amoad_close_btn.png */,
+				CF16327E20109EB70009ACEF /* amoad_close_btn_h.png */,
+				CF16327F20109EB70009ACEF /* amoad_link_btn.png */,
+				CF16328020109EB70009ACEF /* amoad_link_btn_h.png */,
+				CF16328120109EB70009ACEF /* amoad_panel.png */,
+				CF16328220109EB70009ACEF /* amoad_panel_l.png */,
+				CF16328320109EB70009ACEF /* AMoAdAnalytics.h */,
+				CF16328420109EB70009ACEF /* AMoAdInfeed.h */,
+				CF16328520109EB70009ACEF /* AMoAdInterstitial.h */,
+				CF16328620109EB70009ACEF /* AMoAdItem.h */,
+				CF16328720109EB70009ACEF /* AMoAdList.h */,
+				CF16328820109EB70009ACEF /* AMoAdLogger.h */,
+				CF16328920109EB70009ACEF /* AMoAdNativeMainVideoView.h */,
+				CF16328A20109EB70009ACEF /* AMoAdNativePreRoll.h */,
+				CF16328B20109EB70009ACEF /* AMoAdNativeView.h */,
+				CF16328C20109EB70009ACEF /* AMoAdView.h */,
+				CF16328D20109EB70009ACEF /* AMoAdWeb.h */,
+				CF16328E20109EB70009ACEF /* button.png */,
+				CF16328F20109EB70009ACEF /* libAMoAd.a */,
+			);
+			name = AMoAdSdk;
+			path = AMoAdSdkDemo/AMoAdSdk;
+			sourceTree = "<group>";
+		};
+		CF16329B2010A3A00009ACEF /* Display */ = {
+			isa = PBXGroup;
+			children = (
+				CF16329E2010A4020009ACEF /* Display.storyboard */,
+				CF16329D2010A4020009ACEF /* DisplayViewController.h */,
+				CF16329F2010A4020009ACEF /* DisplayViewController.m */,
+				CF16329C2010A4020009ACEF /* initialImage.gif */,
+			);
+			path = Display;
+			sourceTree = "<group>";
+		};
+		CF1632A32010A5C20009ACEF /* DisplayInterstitial */ = {
+			isa = PBXGroup;
+			children = (
+				CF1632AC2010A60E0009ACEF /* DisplayInterstitial.storyboard */,
+				CF1632A42010A60D0009ACEF /* DisplayInterstitialViewController.h */,
+				CF1632A92010A60D0009ACEF /* DisplayInterstitialViewController.m */,
+				CF1632A82010A60D0009ACEF /* user_close_btn_h.png */,
+				CF1632A62010A60D0009ACEF /* user_close_btn.png */,
+				CF1632A52010A60D0009ACEF /* user_link_btn_h.png */,
+				CF1632A72010A60D0009ACEF /* user_link_btn.png */,
+				CF1632AA2010A60D0009ACEF /* user_panel_l.png */,
+				CF1632AB2010A60D0009ACEF /* user_panel.png */,
+			);
+			path = DisplayInterstitial;
+			sourceTree = "<group>";
+		};
+		CF1632B52010AF430009ACEF /* DisplaySwift */ = {
+			isa = PBXGroup;
+			children = (
+				CF1632B82010AF8C0009ACEF /* b320_50@2x.png */,
+				CF1632B62010AF8C0009ACEF /* DisplaySwift.storyboard */,
+				CF1632B72010AF8C0009ACEF /* DisplaySwiftViewController.swift */,
+			);
+			path = DisplaySwift;
+			sourceTree = "<group>";
+		};
+		CF1632BC2010B1950009ACEF /* PreRoll */ = {
+			isa = PBXGroup;
+			children = (
+				CF1632BE2010B1D80009ACEF /* PreRoll.storyboard */,
+				CF1632BD2010B1D80009ACEF /* PreRollViewController.h */,
+				CF1632BF2010B1D80009ACEF /* PreRollViewController.m */,
+			);
+			path = PreRoll;
+			sourceTree = "<group>";
+		};
+		CF1632C82010B52F0009ACEF /* NativeHTML */ = {
+			isa = PBXGroup;
+			children = (
+				CF1632D42010B5860009ACEF /* index.html */,
+				CF1632D22010B5860009ACEF /* NativeHtml.storyboard */,
+				CF1632D12010B5860009ACEF /* NativeHtmlViewController.h */,
+				CF1632D32010B5860009ACEF /* NativeHtmlViewController.m */,
+			);
+			path = NativeHTML;
+			sourceTree = "<group>";
+		};
+		CF1632D92010B84A0009ACEF /* NativeHTMLSwift */ = {
+			isa = PBXGroup;
+			children = (
+				CF1632DC2010B8720009ACEF /* index.html */,
+				CF1632DB2010B8720009ACEF /* NativeHtmlSwift.storyboard */,
+				CF1632DA2010B8720009ACEF /* NativeHtmlSwiftViewController.swift */,
+			);
+			path = NativeHTMLSwift;
+			sourceTree = "<group>";
+		};
+		CF1632E12010B9D70009ACEF /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				CF1632E22010B9F10009ACEF /* Native.storyboard */,
+				CF1632E32010B9F10009ACEF /* NativeViewController.swift */,
+				CF1632E62010BA580009ACEF /* IconText */,
+				CF1632EE2010BEE80009ACEF /* IconTextLink */,
+				CF1632F62010C18A0009ACEF /* ImageText */,
+				CF1632FE2010C3AA0009ACEF /* ImageTextCoder */,
+				CF1633062010C5500009ACEF /* SingleText */,
+				CF6C688E20117EA100309CF1 /* TableViewIconText */,
+				CF6C6898201180D100309CF1 /* TableViewImageText */,
+				CF6C68A22011838700309CF1 /* TableViewSingleText */,
+				CF6C68AC201184F700309CF1 /* CollectionViewIconText */,
+				CF6C68B62011888600309CF1 /* CollectionViewImageText */,
+				CF6C68C020118A5600309CF1 /* CollectionViewSingleText */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
+		CF1632E62010BA580009ACEF /* IconText */ = {
+			isa = PBXGroup;
+			children = (
+				CF1632EA2010BAC90009ACEF /* AdIconTextView.xib */,
+				CF1632E92010BAC90009ACEF /* IconText.storyboard */,
+				CF1632E72010BAC90009ACEF /* IconTextViewController.h */,
+				CF1632E82010BAC90009ACEF /* IconTextViewController.m */,
+			);
+			path = IconText;
+			sourceTree = "<group>";
+		};
+		CF1632EE2010BEE80009ACEF /* IconTextLink */ = {
+			isa = PBXGroup;
+			children = (
+				CF1632F02010BFB30009ACEF /* AdIconTextLinkView.xib */,
+				CF1632EF2010BFB30009ACEF /* IconTextLink.storyboard */,
+				CF1632F12010BFB30009ACEF /* IconTextLinkViewController.h */,
+				CF1632F22010BFB40009ACEF /* IconTextLinkViewController.m */,
+			);
+			path = IconTextLink;
+			sourceTree = "<group>";
+		};
+		CF1632F62010C18A0009ACEF /* ImageText */ = {
+			isa = PBXGroup;
+			children = (
+				CF1632F82010C1C50009ACEF /* AdImageTextView.xib */,
+				CF1632FA2010C1C50009ACEF /* ImageText.storyboard */,
+				CF1632F72010C1C50009ACEF /* ImageTextViewController.h */,
+				CF1632F92010C1C50009ACEF /* ImageTextViewController.m */,
+			);
+			path = ImageText;
+			sourceTree = "<group>";
+		};
+		CF1632FE2010C3AA0009ACEF /* ImageTextCoder */ = {
+			isa = PBXGroup;
+			children = (
+				CF1633002010C3E20009ACEF /* AdImageTextView.xib */,
+				CF1633012010C3E20009ACEF /* ImageTextCoder.storyboard */,
+				CF1632FF2010C3E20009ACEF /* ImageTextCoderViewController.h */,
+				CF1633022010C3E20009ACEF /* ImageTextCoderViewController.m */,
+			);
+			path = ImageTextCoder;
+			sourceTree = "<group>";
+		};
+		CF1633062010C5500009ACEF /* SingleText */ = {
+			isa = PBXGroup;
+			children = (
+				CF16330A2010C5A50009ACEF /* AdTextView.xib */,
+				CF1633082010C5A50009ACEF /* SingleText.storyboard */,
+				CF1633092010C5A50009ACEF /* SingleTextViewController.h */,
+				CF1633072010C5A50009ACEF /* SingleTextViewController.m */,
+			);
+			path = SingleText;
+			sourceTree = "<group>";
+		};
+		CF6C688E20117EA100309CF1 /* TableViewIconText */ = {
+			isa = PBXGroup;
+			children = (
+				CF6C689020117EF200309CF1 /* AdIconTextTableViewCell.xib */,
+				CF6C689120117EF200309CF1 /* TableViewIconText.storyboard */,
+				CF6C688F20117EF200309CF1 /* TableViewIconTextViewController.h */,
+				CF6C689220117EF200309CF1 /* TableViewIconTextViewController.m */,
+				CF6C689320117EF200309CF1 /* UserTableViewCell.xib */,
+			);
+			path = TableViewIconText;
+			sourceTree = "<group>";
+		};
+		CF6C6898201180D100309CF1 /* TableViewImageText */ = {
+			isa = PBXGroup;
+			children = (
+				CF6C689B2011812B00309CF1 /* AdImageTextTableViewCell.xib */,
+				CF6C689D2011812C00309CF1 /* TableViewImageText.storyboard */,
+				CF6C689C2011812B00309CF1 /* TableViewImageTextViewController.h */,
+				CF6C689A2011812B00309CF1 /* TableViewImageTextViewController.m */,
+				CF6C68992011812B00309CF1 /* UserTableViewCell.xib */,
+			);
+			path = TableViewImageText;
+			sourceTree = "<group>";
+		};
+		CF6C68A22011838700309CF1 /* TableViewSingleText */ = {
+			isa = PBXGroup;
+			children = (
+				CF6C68A4201183F200309CF1 /* AdTextTableViewCell.xib */,
+				CF6C68A6201183F200309CF1 /* TableViewSingleText.storyboard */,
+				CF6C68A3201183F200309CF1 /* TableViewSingleTextViewController.h */,
+				CF6C68A7201183F200309CF1 /* TableViewSingleTextViewController.m */,
+				CF6C68A5201183F200309CF1 /* UserTableViewCell.xib */,
+			);
+			path = TableViewSingleText;
+			sourceTree = "<group>";
+		};
+		CF6C68AC201184F700309CF1 /* CollectionViewIconText */ = {
+			isa = PBXGroup;
+			children = (
+				CF6C68AE2011853200309CF1 /* AdIconTextCollectionViewCell.xib */,
+				CF6C68AF2011853200309CF1 /* CollectionViewIconText.storyboard */,
+				CF6C68AD2011853200309CF1 /* CollectionViewIconTextViewController.h */,
+				CF6C68B02011853200309CF1 /* CollectionViewIconTextViewController.m */,
+				CF6C68B12011853200309CF1 /* UserCollectionViewCell.xib */,
+			);
+			path = CollectionViewIconText;
+			sourceTree = "<group>";
+		};
+		CF6C68B62011888600309CF1 /* CollectionViewImageText */ = {
+			isa = PBXGroup;
+			children = (
+				CF6C68B8201188D800309CF1 /* AdImageTextCollectionViewCell.xib */,
+				CF6C68BA201188D800309CF1 /* CollectionViewImageText.storyboard */,
+				CF6C68BB201188D800309CF1 /* CollectionViewImageTextViewController.h */,
+				CF6C68B9201188D800309CF1 /* CollectionViewImageTextViewController.m */,
+				CF6C68B7201188D800309CF1 /* UserCollectionViewCell.xib */,
+			);
+			path = CollectionViewImageText;
+			sourceTree = "<group>";
+		};
+		CF6C68C020118A5600309CF1 /* CollectionViewSingleText */ = {
+			isa = PBXGroup;
+			children = (
+				CF6C68C220118A9000309CF1 /* AdTextCollectionViewCell.xib */,
+				CF6C68C520118A9000309CF1 /* CollectionViewSingleText.storyboard */,
+				CF6C68C420118A9000309CF1 /* CollectionViewSingleTextViewController.h */,
+				CF6C68C120118A9000309CF1 /* CollectionViewSingleTextViewController.m */,
+				CF6C68C320118A9000309CF1 /* UserCollectionViewCell.xib */,
+			);
+			path = CollectionViewSingleText;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF16323D201098C50009ACEF /* AMoAdSdkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF163250201098C60009ACEF /* Build configuration list for PBXNativeTarget "AMoAdSdkDemo" */;
+			buildPhases = (
+				CF16323A201098C50009ACEF /* Sources */,
+				CF16323B201098C50009ACEF /* Frameworks */,
+				CF16323C201098C50009ACEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AMoAdSdkDemo;
+			productName = AMoAdSdkDemo;
+			productReference = CF16323E201098C50009ACEF /* AMoAdSdkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF163236201098C50009ACEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = AMoAd;
+				TargetAttributes = {
+					CF16323D201098C50009ACEF = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CF163239201098C50009ACEF /* Build configuration list for PBXProject "AMoAdSdkDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF163235201098C50009ACEF;
+			productRefGroup = CF16323F201098C50009ACEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF16323D201098C50009ACEF /* AMoAdSdkDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF16323C201098C50009ACEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6C68BF201188D900309CF1 /* CollectionViewImageText.storyboard in Resources */,
+				CF1632B42010A60E0009ACEF /* DisplayInterstitial.storyboard in Resources */,
+				CF1632AE2010A60E0009ACEF /* user_close_btn.png in Resources */,
+				CF16329120109EB70009ACEF /* amoad_close_btn_h.png in Resources */,
+				CF6C68BC201188D900309CF1 /* UserCollectionViewCell.xib in Resources */,
+				CF6C68A9201183F200309CF1 /* UserTableViewCell.xib in Resources */,
+				CF1632AD2010A60E0009ACEF /* user_link_btn_h.png in Resources */,
+				CF6C689420117EF200309CF1 /* AdIconTextTableViewCell.xib in Resources */,
+				CF6C68C720118A9000309CF1 /* AdTextCollectionViewCell.xib in Resources */,
+				CF6C68B22011853200309CF1 /* AdIconTextCollectionViewCell.xib in Resources */,
+				CF6C68BD201188D900309CF1 /* AdImageTextCollectionViewCell.xib in Resources */,
+				CF1632A02010A4020009ACEF /* initialImage.gif in Resources */,
+				CF1632E42010B9F10009ACEF /* Native.storyboard in Resources */,
+				CF1632AF2010A60E0009ACEF /* user_link_btn.png in Resources */,
+				CF6C68AA201183F200309CF1 /* TableViewSingleText.storyboard in Resources */,
+				CF6C68C820118A9000309CF1 /* UserCollectionViewCell.xib in Resources */,
+				CF1632B02010A60E0009ACEF /* user_close_btn_h.png in Resources */,
+				CF1632DE2010B8720009ACEF /* NativeHtmlSwift.storyboard in Resources */,
+				CF16329520109EB70009ACEF /* amoad_panel_l.png in Resources */,
+				CF16329020109EB70009ACEF /* amoad_close_btn.png in Resources */,
+				CF6C68B32011853200309CF1 /* CollectionViewIconText.storyboard in Resources */,
+				CF1632B92010AF8C0009ACEF /* DisplaySwift.storyboard in Resources */,
+				CF6C68A02011812C00309CF1 /* AdImageTextTableViewCell.xib in Resources */,
+				CF1632F42010BFB40009ACEF /* AdIconTextLinkView.xib in Resources */,
+				CF16324C201098C60009ACEF /* LaunchScreen.storyboard in Resources */,
+				CF1633032010C3E20009ACEF /* AdImageTextView.xib in Resources */,
+				CF16325B20109E240009ACEF /* button.png in Resources */,
+				CF1633042010C3E20009ACEF /* ImageTextCoder.storyboard in Resources */,
+				CF1632BB2010AF8C0009ACEF /* b320_50@2x.png in Resources */,
+				CF16325A20109E240009ACEF /* AfioView.xib in Resources */,
+				CF1632DF2010B8720009ACEF /* index.html in Resources */,
+				CF16325C20109E240009ACEF /* button_highlighted.png in Resources */,
+				CF16329620109EB70009ACEF /* button.png in Resources */,
+				CF1632FD2010C1C50009ACEF /* ImageText.storyboard in Resources */,
+				CF6C689520117EF200309CF1 /* TableViewIconText.storyboard in Resources */,
+				CF16330D2010C5A50009ACEF /* AdTextView.xib in Resources */,
+				CF6C68B52011853200309CF1 /* UserCollectionViewCell.xib in Resources */,
+				CF163249201098C60009ACEF /* Assets.xcassets in Resources */,
+				CF16329420109EB70009ACEF /* amoad_panel.png in Resources */,
+				CF16325920109E240009ACEF /* NativeAfio.storyboard in Resources */,
+				CF1632ED2010BAC90009ACEF /* AdIconTextView.xib in Resources */,
+				CF1632FB2010C1C50009ACEF /* AdImageTextView.xib in Resources */,
+				CF163247201098C60009ACEF /* Main.storyboard in Resources */,
+				CF6C689720117EF200309CF1 /* UserTableViewCell.xib in Resources */,
+				CF16329220109EB70009ACEF /* amoad_link_btn.png in Resources */,
+				CF6C689E2011812C00309CF1 /* UserTableViewCell.xib in Resources */,
+				CF1632EC2010BAC90009ACEF /* IconText.storyboard in Resources */,
+				CF6C68A8201183F200309CF1 /* AdTextTableViewCell.xib in Resources */,
+				CF1632D72010B5860009ACEF /* index.html in Resources */,
+				CF6C68C920118A9000309CF1 /* CollectionViewSingleText.storyboard in Resources */,
+				CF1632B22010A60E0009ACEF /* user_panel_l.png in Resources */,
+				CF16329320109EB70009ACEF /* amoad_link_btn_h.png in Resources */,
+				CF1632C02010B1D80009ACEF /* PreRoll.storyboard in Resources */,
+				CF16330C2010C5A50009ACEF /* SingleText.storyboard in Resources */,
+				CF1632A12010A4020009ACEF /* Display.storyboard in Resources */,
+				CF1632D52010B5860009ACEF /* NativeHtml.storyboard in Resources */,
+				CF1632F32010BFB40009ACEF /* IconTextLink.storyboard in Resources */,
+				CF6C68A12011812C00309CF1 /* TableViewImageText.storyboard in Resources */,
+				CF1632B32010A60E0009ACEF /* user_panel.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF16323A201098C50009ACEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6C68BE201188D900309CF1 /* CollectionViewImageTextViewController.m in Sources */,
+				CF1632C12010B1D80009ACEF /* PreRollViewController.m in Sources */,
+				CF1632DD2010B8720009ACEF /* NativeHtmlSwiftViewController.swift in Sources */,
+				CF1632BA2010AF8C0009ACEF /* DisplaySwiftViewController.swift in Sources */,
+				CF1632D62010B5860009ACEF /* NativeHtmlViewController.m in Sources */,
+				CF163244201098C60009ACEF /* ViewController.swift in Sources */,
+				CF1632E52010B9F10009ACEF /* NativeViewController.swift in Sources */,
+				CF1632F52010BFB40009ACEF /* IconTextLinkViewController.m in Sources */,
+				CF6C689F2011812C00309CF1 /* TableViewImageTextViewController.m in Sources */,
+				CF1632EB2010BAC90009ACEF /* IconTextViewController.m in Sources */,
+				CF6C68AB201183F200309CF1 /* TableViewSingleTextViewController.m in Sources */,
+				CF16325D20109E240009ACEF /* NativeAfioViewController.swift in Sources */,
+				CF163242201098C60009ACEF /* AppDelegate.swift in Sources */,
+				CF1632A22010A4020009ACEF /* DisplayViewController.m in Sources */,
+				CF6C68C620118A9000309CF1 /* CollectionViewSingleTextViewController.m in Sources */,
+				CF1633052010C3E20009ACEF /* ImageTextCoderViewController.m in Sources */,
+				CF1632FC2010C1C50009ACEF /* ImageTextViewController.m in Sources */,
+				CF1632B12010A60E0009ACEF /* DisplayInterstitialViewController.m in Sources */,
+				CF6C689620117EF200309CF1 /* TableViewIconTextViewController.m in Sources */,
+				CF6C68B42011853200309CF1 /* CollectionViewIconTextViewController.m in Sources */,
+				CF16330B2010C5A50009ACEF /* SingleTextViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF163245201098C60009ACEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF163246201098C60009ACEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF16324A201098C60009ACEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF16324B201098C60009ACEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF16324E201098C60009ACEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF16324F201098C60009ACEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF163251201098C60009ACEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R483GUQ2NF;
+				INFOPLIST_FILE = AMoAdSdkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdSdkDemo/AMoAdSdk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.AMoAdSdkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AMoAdSdkDemo/AMoAdSdkDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF163252201098C60009ACEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R483GUQ2NF;
+				INFOPLIST_FILE = AMoAdSdkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdSdkDemo/AMoAdSdk",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amoad.AMoAdSdkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AMoAdSdkDemo/AMoAdSdkDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF163239201098C50009ACEF /* Build configuration list for PBXProject "AMoAdSdkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF16324E201098C60009ACEF /* Debug */,
+				CF16324F201098C60009ACEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF163250201098C60009ACEF /* Build configuration list for PBXNativeTarget "AMoAdSdkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF163251201098C60009ACEF /* Debug */,
+				CF163252201098C60009ACEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF163236201098C50009ACEF /* Project object */;
+}
