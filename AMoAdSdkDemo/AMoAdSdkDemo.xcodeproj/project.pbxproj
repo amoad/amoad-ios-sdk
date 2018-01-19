@@ -88,6 +88,8 @@
 		CF6C68C720118A9000309CF1 /* AdTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68C220118A9000309CF1 /* AdTextCollectionViewCell.xib */; };
 		CF6C68C820118A9000309CF1 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68C320118A9000309CF1 /* UserCollectionViewCell.xib */; };
 		CF6C68C920118A9000309CF1 /* CollectionViewSingleText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68C520118A9000309CF1 /* CollectionViewSingleText.storyboard */; };
+		CFDD409B2011A9E000EADF2E /* InterstitialAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD409A2011A9E000EADF2E /* InterstitialAfioViewController.swift */; };
+		CFDD409D2011AA1300EADF2E /* InterstitialAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDD409C2011AA1300EADF2E /* InterstitialAfio.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -202,6 +204,9 @@
 		CF6C68C320118A9000309CF1 /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
 		CF6C68C420118A9000309CF1 /* CollectionViewSingleTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewSingleTextViewController.h; sourceTree = "<group>"; };
 		CF6C68C520118A9000309CF1 /* CollectionViewSingleText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionViewSingleText.storyboard; sourceTree = "<group>"; };
+		CFDD409A2011A9E000EADF2E /* InterstitialAfioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAfioViewController.swift; sourceTree = "<group>"; };
+		CFDD409C2011AA1300EADF2E /* InterstitialAfio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterstitialAfio.storyboard; sourceTree = "<group>"; };
+		CFDD409E2011AA5C00EADF2E /* AMoAdInterstitialVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitialVideo.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +255,7 @@
 				CF1632D92010B84A0009ACEF /* NativeHTMLSwift */,
 				CF1632BC2010B1950009ACEF /* PreRoll */,
 				CF16325320109D790009ACEF /* NativeAfiO */,
+				CFDD40992011A9B900EADF2E /* InterstitialAfiO */,
 				CF1632E12010B9D70009ACEF /* Native */,
 			);
 			path = AMoAdSdkDemo;
@@ -280,6 +286,7 @@
 				CF16328320109EB70009ACEF /* AMoAdAnalytics.h */,
 				CF16328420109EB70009ACEF /* AMoAdInfeed.h */,
 				CF16328520109EB70009ACEF /* AMoAdInterstitial.h */,
+				CFDD409E2011AA5C00EADF2E /* AMoAdInterstitialVideo.h */,
 				CF16328620109EB70009ACEF /* AMoAdItem.h */,
 				CF16328720109EB70009ACEF /* AMoAdList.h */,
 				CF16328820109EB70009ACEF /* AMoAdLogger.h */,
@@ -510,6 +517,15 @@
 			path = CollectionViewSingleText;
 			sourceTree = "<group>";
 		};
+		CFDD40992011A9B900EADF2E /* InterstitialAfiO */ = {
+			isa = PBXGroup;
+			children = (
+				CFDD409C2011AA1300EADF2E /* InterstitialAfio.storyboard */,
+				CFDD409A2011A9E000EADF2E /* InterstitialAfioViewController.swift */,
+			);
+			path = InterstitialAfiO;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -619,6 +635,7 @@
 				CF1632EC2010BAC90009ACEF /* IconText.storyboard in Resources */,
 				CF6C68A8201183F200309CF1 /* AdTextTableViewCell.xib in Resources */,
 				CF1632D72010B5860009ACEF /* index.html in Resources */,
+				CFDD409D2011AA1300EADF2E /* InterstitialAfio.storyboard in Resources */,
 				CF6C68C920118A9000309CF1 /* CollectionViewSingleText.storyboard in Resources */,
 				CF1632B22010A60E0009ACEF /* user_panel_l.png in Resources */,
 				CF16329320109EB70009ACEF /* amoad_link_btn_h.png in Resources */,
@@ -640,6 +657,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF6C68BE201188D900309CF1 /* CollectionViewImageTextViewController.m in Sources */,
+				CFDD409B2011A9E000EADF2E /* InterstitialAfioViewController.swift in Sources */,
 				CF1632C12010B1D80009ACEF /* PreRollViewController.m in Sources */,
 				CF1632DD2010B8720009ACEF /* NativeHtmlSwiftViewController.swift in Sources */,
 				CF1632BA2010AF8C0009ACEF /* DisplaySwiftViewController.swift in Sources */,
