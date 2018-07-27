@@ -10,6 +10,7 @@
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
 ** インタースティシャル AfiO 広告配信に対応しました
+** beta版にてプレイアブル広告配信に対応しました
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
