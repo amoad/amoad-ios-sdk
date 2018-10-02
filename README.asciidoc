@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 5.2.2
+= AMoAd SDK for iOS ver 5.2.3
 
 :numbered:
 :sectnums:
@@ -9,8 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** インタースティシャル AfiO 広告配信に対応しました
-** プレイアブル広告配信に対応しました
+** Xcode10 の Build System に対応しました
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
