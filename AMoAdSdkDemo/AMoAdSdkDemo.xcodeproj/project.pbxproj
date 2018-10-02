@@ -14,7 +14,6 @@
 		CF16324C201098C60009ACEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16324A201098C60009ACEF /* LaunchScreen.storyboard */; };
 		CF16325920109E240009ACEF /* NativeAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF16325420109E240009ACEF /* NativeAfio.storyboard */; };
 		CF16325A20109E240009ACEF /* AfioView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF16325520109E240009ACEF /* AfioView.xib */; };
-		CF16325B20109E240009ACEF /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16325620109E240009ACEF /* button.png */; };
 		CF16325C20109E240009ACEF /* button_highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16325720109E240009ACEF /* button_highlighted.png */; };
 		CF16325D20109E240009ACEF /* NativeAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16325820109E240009ACEF /* NativeAfioViewController.swift */; };
 		CF16329020109EB70009ACEF /* amoad_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16327D20109EB70009ACEF /* amoad_close_btn.png */; };
@@ -43,7 +42,6 @@
 		CF1632C12010B1D80009ACEF /* PreRollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632BF2010B1D80009ACEF /* PreRollViewController.m */; };
 		CF1632D52010B5860009ACEF /* NativeHtml.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632D22010B5860009ACEF /* NativeHtml.storyboard */; };
 		CF1632D62010B5860009ACEF /* NativeHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632D32010B5860009ACEF /* NativeHtmlViewController.m */; };
-		CF1632D72010B5860009ACEF /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CF1632D42010B5860009ACEF /* index.html */; };
 		CF1632DD2010B8720009ACEF /* NativeHtmlSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1632DA2010B8720009ACEF /* NativeHtmlSwiftViewController.swift */; };
 		CF1632DE2010B8720009ACEF /* NativeHtmlSwift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632DB2010B8720009ACEF /* NativeHtmlSwift.storyboard */; };
 		CF1632DF2010B8720009ACEF /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CF1632DC2010B8720009ACEF /* index.html */; };
@@ -58,7 +56,6 @@
 		CF1632FB2010C1C50009ACEF /* AdImageTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1632F82010C1C50009ACEF /* AdImageTextView.xib */; };
 		CF1632FC2010C1C50009ACEF /* ImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632F92010C1C50009ACEF /* ImageTextViewController.m */; };
 		CF1632FD2010C1C50009ACEF /* ImageText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632FA2010C1C50009ACEF /* ImageText.storyboard */; };
-		CF1633032010C3E20009ACEF /* AdImageTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1633002010C3E20009ACEF /* AdImageTextView.xib */; };
 		CF1633042010C3E20009ACEF /* ImageTextCoder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1633012010C3E20009ACEF /* ImageTextCoder.storyboard */; };
 		CF1633052010C3E20009ACEF /* ImageTextCoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1633022010C3E20009ACEF /* ImageTextCoderViewController.m */; };
 		CF16330B2010C5A50009ACEF /* SingleTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1633072010C5A50009ACEF /* SingleTextViewController.m */; };
@@ -67,26 +64,22 @@
 		CF6C689420117EF200309CF1 /* AdIconTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C689020117EF200309CF1 /* AdIconTextTableViewCell.xib */; };
 		CF6C689520117EF200309CF1 /* TableViewIconText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C689120117EF200309CF1 /* TableViewIconText.storyboard */; };
 		CF6C689620117EF200309CF1 /* TableViewIconTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C689220117EF200309CF1 /* TableViewIconTextViewController.m */; };
-		CF6C689720117EF200309CF1 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C689320117EF200309CF1 /* UserTableViewCell.xib */; };
 		CF6C689E2011812C00309CF1 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68992011812B00309CF1 /* UserTableViewCell.xib */; };
 		CF6C689F2011812C00309CF1 /* TableViewImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C689A2011812B00309CF1 /* TableViewImageTextViewController.m */; };
 		CF6C68A02011812C00309CF1 /* AdImageTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C689B2011812B00309CF1 /* AdImageTextTableViewCell.xib */; };
 		CF6C68A12011812C00309CF1 /* TableViewImageText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C689D2011812C00309CF1 /* TableViewImageText.storyboard */; };
 		CF6C68A8201183F200309CF1 /* AdTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68A4201183F200309CF1 /* AdTextTableViewCell.xib */; };
-		CF6C68A9201183F200309CF1 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68A5201183F200309CF1 /* UserTableViewCell.xib */; };
 		CF6C68AA201183F200309CF1 /* TableViewSingleText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68A6201183F200309CF1 /* TableViewSingleText.storyboard */; };
 		CF6C68AB201183F200309CF1 /* TableViewSingleTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C68A7201183F200309CF1 /* TableViewSingleTextViewController.m */; };
 		CF6C68B22011853200309CF1 /* AdIconTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68AE2011853200309CF1 /* AdIconTextCollectionViewCell.xib */; };
 		CF6C68B32011853200309CF1 /* CollectionViewIconText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68AF2011853200309CF1 /* CollectionViewIconText.storyboard */; };
 		CF6C68B42011853200309CF1 /* CollectionViewIconTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C68B02011853200309CF1 /* CollectionViewIconTextViewController.m */; };
 		CF6C68B52011853200309CF1 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68B12011853200309CF1 /* UserCollectionViewCell.xib */; };
-		CF6C68BC201188D900309CF1 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68B7201188D800309CF1 /* UserCollectionViewCell.xib */; };
 		CF6C68BD201188D900309CF1 /* AdImageTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68B8201188D800309CF1 /* AdImageTextCollectionViewCell.xib */; };
 		CF6C68BE201188D900309CF1 /* CollectionViewImageTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C68B9201188D800309CF1 /* CollectionViewImageTextViewController.m */; };
 		CF6C68BF201188D900309CF1 /* CollectionViewImageText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68BA201188D800309CF1 /* CollectionViewImageText.storyboard */; };
 		CF6C68C620118A9000309CF1 /* CollectionViewSingleTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6C68C120118A9000309CF1 /* CollectionViewSingleTextViewController.m */; };
 		CF6C68C720118A9000309CF1 /* AdTextCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68C220118A9000309CF1 /* AdTextCollectionViewCell.xib */; };
-		CF6C68C820118A9000309CF1 /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68C320118A9000309CF1 /* UserCollectionViewCell.xib */; };
 		CF6C68C920118A9000309CF1 /* CollectionViewSingleText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68C520118A9000309CF1 /* CollectionViewSingleText.storyboard */; };
 		CFDD409B2011A9E000EADF2E /* InterstitialAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD409A2011A9E000EADF2E /* InterstitialAfioViewController.swift */; };
 		CFDD409D2011AA1300EADF2E /* InterstitialAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDD409C2011AA1300EADF2E /* InterstitialAfio.storyboard */; };
@@ -553,7 +546,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = AMoAd;
 				TargetAttributes = {
 					CF16323D201098C50009ACEF = {
@@ -590,8 +583,6 @@
 				CF1632B42010A60E0009ACEF /* DisplayInterstitial.storyboard in Resources */,
 				CF1632AE2010A60E0009ACEF /* user_close_btn.png in Resources */,
 				CF16329120109EB70009ACEF /* amoad_close_btn_h.png in Resources */,
-				CF6C68BC201188D900309CF1 /* UserCollectionViewCell.xib in Resources */,
-				CF6C68A9201183F200309CF1 /* UserTableViewCell.xib in Resources */,
 				CF1632AD2010A60E0009ACEF /* user_link_btn_h.png in Resources */,
 				CF6C689420117EF200309CF1 /* AdIconTextTableViewCell.xib in Resources */,
 				CF6C68C720118A9000309CF1 /* AdTextCollectionViewCell.xib in Resources */,
@@ -601,7 +592,6 @@
 				CF1632E42010B9F10009ACEF /* Native.storyboard in Resources */,
 				CF1632AF2010A60E0009ACEF /* user_link_btn.png in Resources */,
 				CF6C68AA201183F200309CF1 /* TableViewSingleText.storyboard in Resources */,
-				CF6C68C820118A9000309CF1 /* UserCollectionViewCell.xib in Resources */,
 				CF1632B02010A60E0009ACEF /* user_close_btn_h.png in Resources */,
 				CF1632DE2010B8720009ACEF /* NativeHtmlSwift.storyboard in Resources */,
 				CF16329520109EB70009ACEF /* amoad_panel_l.png in Resources */,
@@ -611,8 +601,6 @@
 				CF6C68A02011812C00309CF1 /* AdImageTextTableViewCell.xib in Resources */,
 				CF1632F42010BFB40009ACEF /* AdIconTextLinkView.xib in Resources */,
 				CF16324C201098C60009ACEF /* LaunchScreen.storyboard in Resources */,
-				CF1633032010C3E20009ACEF /* AdImageTextView.xib in Resources */,
-				CF16325B20109E240009ACEF /* button.png in Resources */,
 				CF1633042010C3E20009ACEF /* ImageTextCoder.storyboard in Resources */,
 				CF1632BB2010AF8C0009ACEF /* b320_50@2x.png in Resources */,
 				CF16325A20109E240009ACEF /* AfioView.xib in Resources */,
@@ -629,12 +617,10 @@
 				CF1632ED2010BAC90009ACEF /* AdIconTextView.xib in Resources */,
 				CF1632FB2010C1C50009ACEF /* AdImageTextView.xib in Resources */,
 				CF163247201098C60009ACEF /* Main.storyboard in Resources */,
-				CF6C689720117EF200309CF1 /* UserTableViewCell.xib in Resources */,
 				CF16329220109EB70009ACEF /* amoad_link_btn.png in Resources */,
 				CF6C689E2011812C00309CF1 /* UserTableViewCell.xib in Resources */,
 				CF1632EC2010BAC90009ACEF /* IconText.storyboard in Resources */,
 				CF6C68A8201183F200309CF1 /* AdTextTableViewCell.xib in Resources */,
-				CF1632D72010B5860009ACEF /* index.html in Resources */,
 				CFDD409D2011AA1300EADF2E /* InterstitialAfio.storyboard in Resources */,
 				CF6C68C920118A9000309CF1 /* CollectionViewSingleText.storyboard in Resources */,
 				CF1632B22010A60E0009ACEF /* user_panel_l.png in Resources */,
@@ -717,6 +703,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -724,6 +711,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -751,7 +739,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -774,6 +762,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -781,6 +770,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -802,7 +792,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

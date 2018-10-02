@@ -51,7 +51,7 @@ class DisplaySwiftViewController: UIViewController {
   }
 
   func AMoAdViewDidFailToReceiveAd(_ amoadView: AMoAdView!, error: NSError!) {
-    print("広告の取得に失敗した（error:\(error)）")
+    print("広告の取得に失敗した（error:\(String(describing: error))）")
   }
 
   func AMoAdViewDidReceiveEmptyAd(_ amoadView: AMoAdView!) {
