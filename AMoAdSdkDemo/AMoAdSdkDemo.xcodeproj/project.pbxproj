@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		46ABAE9CDA5F9A3CF80BD7BF /* Pods_AMoAdSdkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180728CD470F9BA83BBEBF9D /* Pods_AMoAdSdkDemo.framework */; };
+		660E59F5216C926500116F53 /* InfeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660E59F4216C926500116F53 /* InfeedViewController.m */; };
+		660E59F7216C953E00116F53 /* Infeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660E59F6216C953E00116F53 /* Infeed.storyboard */; };
+		660E59F9216C978B00116F53 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 660E59F8216C978B00116F53 /* user.png */; };
+		660E59FB216C981E00116F53 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 660E59FA216C981E00116F53 /* UserCell.xib */; };
 		CF163242201098C60009ACEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF163241201098C60009ACEF /* AppDelegate.swift */; };
 		CF163244201098C60009ACEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF163243201098C60009ACEF /* ViewController.swift */; };
 		CF163247201098C60009ACEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF163245201098C60009ACEF /* Main.storyboard */; };
@@ -80,6 +84,11 @@
 
 /* Begin PBXFileReference section */
 		180728CD470F9BA83BBEBF9D /* Pods_AMoAdSdkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMoAdSdkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		660E59F3216C926500116F53 /* InfeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfeedViewController.h; sourceTree = "<group>"; };
+		660E59F4216C926500116F53 /* InfeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfeedViewController.m; sourceTree = "<group>"; };
+		660E59F6216C953E00116F53 /* Infeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Infeed.storyboard; sourceTree = "<group>"; };
+		660E59F8216C978B00116F53 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		660E59FA216C981E00116F53 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		84965864DBDD35D530830A2A /* Pods-AMoAdSdkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdSdkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMoAdSdkDemo/Pods-AMoAdSdkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CF16323E201098C50009ACEF /* AMoAdSdkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdSdkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF163241201098C60009ACEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +198,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		660E59F2216C91CC00116F53 /* Infeed */ = {
+			isa = PBXGroup;
+			children = (
+				660E59F8216C978B00116F53 /* user.png */,
+				660E59F3216C926500116F53 /* InfeedViewController.h */,
+				660E59F4216C926500116F53 /* InfeedViewController.m */,
+				660E59F6216C953E00116F53 /* Infeed.storyboard */,
+				660E59FA216C981E00116F53 /* UserCell.xib */,
+			);
+			path = Infeed;
+			sourceTree = "<group>";
+		};
 		73DA96A0C0F8A8B7EEFAE799 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +264,7 @@
 				CF16325320109D790009ACEF /* NativeAfiO */,
 				CFDD40992011A9B900EADF2E /* InterstitialAfiO */,
 				CF1632E12010B9D70009ACEF /* Native */,
+				660E59F2216C91CC00116F53 /* Infeed */,
 			);
 			path = AMoAdSdkDemo;
 			sourceTree = "<group>";
@@ -557,6 +579,7 @@
 				CF1632AF2010A60E0009ACEF /* user_link_btn.png in Resources */,
 				CF6C68AA201183F200309CF1 /* TableViewSingleText.storyboard in Resources */,
 				CF1632B02010A60E0009ACEF /* user_close_btn_h.png in Resources */,
+				660E59FB216C981E00116F53 /* UserCell.xib in Resources */,
 				CF1632DE2010B8720009ACEF /* NativeHtmlSwift.storyboard in Resources */,
 				CF6C68B32011853200309CF1 /* CollectionViewIconText.storyboard in Resources */,
 				CF1632B92010AF8C0009ACEF /* DisplaySwift.storyboard in Resources */,
@@ -566,9 +589,11 @@
 				CF1633042010C3E20009ACEF /* ImageTextCoder.storyboard in Resources */,
 				CF1632BB2010AF8C0009ACEF /* b320_50@2x.png in Resources */,
 				CF16325A20109E240009ACEF /* AfioView.xib in Resources */,
+				660E59F7216C953E00116F53 /* Infeed.storyboard in Resources */,
 				CF1632DF2010B8720009ACEF /* index.html in Resources */,
 				CF16325C20109E240009ACEF /* button_highlighted.png in Resources */,
 				CF1632FD2010C1C50009ACEF /* ImageText.storyboard in Resources */,
+				660E59F9216C978B00116F53 /* user.png in Resources */,
 				CF6C689520117EF200309CF1 /* TableViewIconText.storyboard in Resources */,
 				CF16330D2010C5A50009ACEF /* AdTextView.xib in Resources */,
 				CF6C68B52011853200309CF1 /* UserCollectionViewCell.xib in Resources */,
@@ -632,6 +657,7 @@
 				CF1632F52010BFB40009ACEF /* IconTextLinkViewController.m in Sources */,
 				CF6C689F2011812C00309CF1 /* TableViewImageTextViewController.m in Sources */,
 				CF1632EB2010BAC90009ACEF /* IconTextViewController.m in Sources */,
+				660E59F5216C926500116F53 /* InfeedViewController.m in Sources */,
 				CF6C68AB201183F200309CF1 /* TableViewSingleTextViewController.m in Sources */,
 				CF16325D20109E240009ACEF /* NativeAfioViewController.swift in Sources */,
 				CF163242201098C60009ACEF /* AppDelegate.swift in Sources */,
