@@ -6,8 +6,8 @@
 //
 //
 #import "DisplayInterstitialViewController.h"
-#import "AMoAdLogger.h"
-#import "AMoAdInterstitial.h"
+#import <AMoAd/AMoAdLogger.h>
+#import <AMoAd/AMoAdInterstitial.h>
 
 @interface DisplayInterstitialViewController ()
 @property (weak, nonatomic) IBOutlet UISwitch *autoReloadSwitch;
