@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 5.2.3
+= AMoAd SDK for iOS ver 5.2.4
 
 :numbered:
 :sectnums:
@@ -9,7 +9,8 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** Xcode10 の Build System に対応しました
+** ファイル形式をframeworkに変更しました
+** CocoaPodsによるインストールに対応しました
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
