@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 AMoAd. All rights reserved.
 //
 #import "PreRollViewController.h"
-#import "AMoAdNativePreRoll.h"
-#import "AMoAdAnalytics.h"
-#import "AMoAdLogger.h"
+#import <AMoAd/AMoAdNativePreRoll.h>
+#import <AMoAd/AMoAdAnalytics.h>
+#import <AMoAd/AMoAdLogger.h>
 
 static NSString *const kSid = @"管理画面から取得したプリロール広告のsidを指定してください";
 static NSString *const kTag = @"UserPreRollAd";

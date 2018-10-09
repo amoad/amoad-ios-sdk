@@ -6,8 +6,8 @@
 //  Copyright © 2015年 AMoAd. All rights reserved.
 //
 #import "NativeHtmlViewController.h"
-#import "AMoAdWeb.h"
-#import "AMoAdLogger.h"
+#import <AMoAd/AMoAdWeb.h>
+#import <AMoAd/AMoAdLogger.h>
 
 #define LOAD_FROM_URL 1     /* URLからロードする場合、1を指定する */
 #define LOAD_FROM_FILE 0    /* ファイルからロードする場合、1を指定する */
