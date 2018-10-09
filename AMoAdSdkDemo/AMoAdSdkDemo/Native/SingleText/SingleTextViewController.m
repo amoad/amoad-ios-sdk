@@ -7,8 +7,8 @@
 //
 
 #import "SingleTextViewController.h"
-#import "AMoAdNativeView.h"
-#import "AMoAdLogger.h"
+#import <AMoAd/AMoAdNativeView.h>
+#import <AMoAd/AMoAdLogger.h>
 
 static NSString *const kSid = @"管理画面から取得したネイティブ（App）一行テキストのsidを指定してください";
 static NSString *const kTag1 = @"Ad01";

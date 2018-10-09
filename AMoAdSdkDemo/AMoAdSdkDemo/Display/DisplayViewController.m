@@ -7,8 +7,8 @@
 //
 
 #import "DisplayViewController.h"
-#import "AMoAdView.h"
-#import "AMoAdLogger.h"
+#import <AMoAd/AMoAdView.h>
+#import <AMoAd/AMoAdLogger.h>
 
 @interface DisplayViewController () <AMoAdViewDelegate>
 

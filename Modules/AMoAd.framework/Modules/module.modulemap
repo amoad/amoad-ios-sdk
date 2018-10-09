@@ -1,0 +1,8 @@
+module AMoAd {
+  umbrella "Headers"
+  link framework "AdSupport"
+  link framework "AVFoundation"
+  link framework "CoreMedia"
+  link framework "ImageIO"
+  link framework "StoreKit"
+}
