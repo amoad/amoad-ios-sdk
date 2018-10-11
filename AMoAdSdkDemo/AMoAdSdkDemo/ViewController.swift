@@ -23,13 +23,14 @@ fileprivate struct Const {
         Item(title: "ディスプレイ広告", storyboardName: "Display"),
         Item(title: "ディスプレイ広告 ( Swift )", storyboardName: "DisplaySwift"),
         Item(title: "インタースティシャル広告", storyboardName: "DisplayInterstitial"),
-        Item(title: "ネイティブ HTML 広告", storyboardName: "NativeHtml"),
-        Item(title: "ネイティブ HTML 広告 ( Swift )", storyboardName: "NativeHtmlSwift"),
+        Item(title: "WebView 広告", storyboardName: "WebView"),
+        Item(title: "WebView 広告 ( Swift )", storyboardName: "SwiftWebView"),
         Item(title: "スクリーン ( プリロール ) 広告", storyboardName: "PreRoll"),
         Item(title: "インフィード AfiO 広告", storyboardName: "NativeAfio"),
         Item(title: "インタースティシャル AfiO 広告", storyboardName: "InterstitialAfio"),
         Item(title: "旧ネイティブ広告", storyboardName: "Native"),
-        Item(title: "インフィード広告", storyboardName: "Infeed")
+        Item(title: "インフィード広告", storyboardName: "Infeed"),
+        Item(title: "NativeHtml 広告", storyboardName: "NativeHtml")
     ]
 }
 

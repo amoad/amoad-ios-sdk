@@ -10,6 +10,7 @@
 #import <AMoAd/AMoAdItem.h>
 #import <AMoAd/AMoAdList.h>
 #import <AMoAd/AMoAdLogger.h>
+#import <AMoAd/AMoAdNative.h>
 #import <AMoAd/AMoAdNativeMainVideoView.h>
 #import <AMoAd/AMoAdNativePreRoll.h>
 #import <AMoAd/AMoAdNativeView.h>

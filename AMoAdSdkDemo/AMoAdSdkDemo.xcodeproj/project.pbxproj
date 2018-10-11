@@ -12,6 +12,8 @@
 		660E59F7216C953E00116F53 /* Infeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660E59F6216C953E00116F53 /* Infeed.storyboard */; };
 		660E59F9216C978B00116F53 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 660E59F8216C978B00116F53 /* user.png */; };
 		660E59FB216C981E00116F53 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 660E59FA216C981E00116F53 /* UserCell.xib */; };
+		66D67077216E0851007984D3 /* NativeHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D67076216E0851007984D3 /* NativeHtmlViewController.m */; };
+		66D67079216E0986007984D3 /* NativeHtml.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D67078216E0986007984D3 /* NativeHtml.storyboard */; };
 		CF163242201098C60009ACEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF163241201098C60009ACEF /* AppDelegate.swift */; };
 		CF163244201098C60009ACEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF163243201098C60009ACEF /* ViewController.swift */; };
 		CF163247201098C60009ACEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF163245201098C60009ACEF /* Main.storyboard */; };
@@ -37,10 +39,10 @@
 		CF1632BB2010AF8C0009ACEF /* b320_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF1632B82010AF8C0009ACEF /* b320_50@2x.png */; };
 		CF1632C02010B1D80009ACEF /* PreRoll.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632BE2010B1D80009ACEF /* PreRoll.storyboard */; };
 		CF1632C12010B1D80009ACEF /* PreRollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632BF2010B1D80009ACEF /* PreRollViewController.m */; };
-		CF1632D52010B5860009ACEF /* NativeHtml.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632D22010B5860009ACEF /* NativeHtml.storyboard */; };
-		CF1632D62010B5860009ACEF /* NativeHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632D32010B5860009ACEF /* NativeHtmlViewController.m */; };
-		CF1632DD2010B8720009ACEF /* NativeHtmlSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1632DA2010B8720009ACEF /* NativeHtmlSwiftViewController.swift */; };
-		CF1632DE2010B8720009ACEF /* NativeHtmlSwift.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632DB2010B8720009ACEF /* NativeHtmlSwift.storyboard */; };
+		CF1632D52010B5860009ACEF /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632D22010B5860009ACEF /* WebView.storyboard */; };
+		CF1632D62010B5860009ACEF /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1632D32010B5860009ACEF /* WebViewController.m */; };
+		CF1632DD2010B8720009ACEF /* SwiftWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1632DA2010B8720009ACEF /* SwiftWebViewController.swift */; };
+		CF1632DE2010B8720009ACEF /* SwiftWebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632DB2010B8720009ACEF /* SwiftWebView.storyboard */; };
 		CF1632DF2010B8720009ACEF /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CF1632DC2010B8720009ACEF /* index.html */; };
 		CF1632E42010B9F10009ACEF /* Native.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF1632E22010B9F10009ACEF /* Native.storyboard */; };
 		CF1632E52010B9F10009ACEF /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1632E32010B9F10009ACEF /* NativeViewController.swift */; };
@@ -89,6 +91,9 @@
 		660E59F6216C953E00116F53 /* Infeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Infeed.storyboard; sourceTree = "<group>"; };
 		660E59F8216C978B00116F53 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		660E59FA216C981E00116F53 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		66D67075216E0851007984D3 /* NativeHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeHtmlViewController.h; sourceTree = "<group>"; };
+		66D67076216E0851007984D3 /* NativeHtmlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeHtmlViewController.m; sourceTree = "<group>"; };
+		66D67078216E0986007984D3 /* NativeHtml.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeHtml.storyboard; sourceTree = "<group>"; };
 		84965864DBDD35D530830A2A /* Pods-AMoAdSdkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdSdkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMoAdSdkDemo/Pods-AMoAdSdkDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CF16323E201098C50009ACEF /* AMoAdSdkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdSdkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF163241201098C60009ACEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,12 +127,12 @@
 		CF1632BD2010B1D80009ACEF /* PreRollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreRollViewController.h; sourceTree = "<group>"; };
 		CF1632BE2010B1D80009ACEF /* PreRoll.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PreRoll.storyboard; sourceTree = "<group>"; };
 		CF1632BF2010B1D80009ACEF /* PreRollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreRollViewController.m; sourceTree = "<group>"; };
-		CF1632D12010B5860009ACEF /* NativeHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeHtmlViewController.h; sourceTree = "<group>"; };
-		CF1632D22010B5860009ACEF /* NativeHtml.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeHtml.storyboard; sourceTree = "<group>"; };
-		CF1632D32010B5860009ACEF /* NativeHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeHtmlViewController.m; sourceTree = "<group>"; };
+		CF1632D12010B5860009ACEF /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		CF1632D22010B5860009ACEF /* WebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		CF1632D32010B5860009ACEF /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		CF1632D42010B5860009ACEF /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
-		CF1632DA2010B8720009ACEF /* NativeHtmlSwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeHtmlSwiftViewController.swift; sourceTree = "<group>"; };
-		CF1632DB2010B8720009ACEF /* NativeHtmlSwift.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeHtmlSwift.storyboard; sourceTree = "<group>"; };
+		CF1632DA2010B8720009ACEF /* SwiftWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebViewController.swift; sourceTree = "<group>"; };
+		CF1632DB2010B8720009ACEF /* SwiftWebView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SwiftWebView.storyboard; sourceTree = "<group>"; };
 		CF1632DC2010B8720009ACEF /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		CF1632E22010B9F10009ACEF /* Native.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Native.storyboard; sourceTree = "<group>"; };
 		CF1632E32010B9F10009ACEF /* NativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +215,16 @@
 			path = Infeed;
 			sourceTree = "<group>";
 		};
+		66D67074216E059C007984D3 /* NativeHtml */ = {
+			isa = PBXGroup;
+			children = (
+				66D67075216E0851007984D3 /* NativeHtmlViewController.h */,
+				66D67076216E0851007984D3 /* NativeHtmlViewController.m */,
+				66D67078216E0986007984D3 /* NativeHtml.storyboard */,
+			);
+			path = NativeHtml;
+			sourceTree = "<group>";
+		};
 		73DA96A0C0F8A8B7EEFAE799 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,13 +273,14 @@
 				CF16329B2010A3A00009ACEF /* Display */,
 				CF1632B52010AF430009ACEF /* DisplaySwift */,
 				CF1632A32010A5C20009ACEF /* DisplayInterstitial */,
-				CF1632C82010B52F0009ACEF /* NativeHTML */,
-				CF1632D92010B84A0009ACEF /* NativeHTMLSwift */,
+				CF1632C82010B52F0009ACEF /* WebView */,
+				CF1632D92010B84A0009ACEF /* SwiftWebView */,
 				CF1632BC2010B1950009ACEF /* PreRoll */,
 				CF16325320109D790009ACEF /* NativeAfiO */,
 				CFDD40992011A9B900EADF2E /* InterstitialAfiO */,
 				CF1632E12010B9D70009ACEF /* Native */,
 				660E59F2216C91CC00116F53 /* Infeed */,
+				66D67074216E059C007984D3 /* NativeHtml */,
 			);
 			path = AMoAdSdkDemo;
 			sourceTree = "<group>";
@@ -328,25 +344,25 @@
 			path = PreRoll;
 			sourceTree = "<group>";
 		};
-		CF1632C82010B52F0009ACEF /* NativeHTML */ = {
+		CF1632C82010B52F0009ACEF /* WebView */ = {
 			isa = PBXGroup;
 			children = (
 				CF1632D42010B5860009ACEF /* index.html */,
-				CF1632D22010B5860009ACEF /* NativeHtml.storyboard */,
-				CF1632D12010B5860009ACEF /* NativeHtmlViewController.h */,
-				CF1632D32010B5860009ACEF /* NativeHtmlViewController.m */,
+				CF1632D22010B5860009ACEF /* WebView.storyboard */,
+				CF1632D12010B5860009ACEF /* WebViewController.h */,
+				CF1632D32010B5860009ACEF /* WebViewController.m */,
 			);
-			path = NativeHTML;
+			path = WebView;
 			sourceTree = "<group>";
 		};
-		CF1632D92010B84A0009ACEF /* NativeHTMLSwift */ = {
+		CF1632D92010B84A0009ACEF /* SwiftWebView */ = {
 			isa = PBXGroup;
 			children = (
 				CF1632DC2010B8720009ACEF /* index.html */,
-				CF1632DB2010B8720009ACEF /* NativeHtmlSwift.storyboard */,
-				CF1632DA2010B8720009ACEF /* NativeHtmlSwiftViewController.swift */,
+				CF1632DB2010B8720009ACEF /* SwiftWebView.storyboard */,
+				CF1632DA2010B8720009ACEF /* SwiftWebViewController.swift */,
 			);
-			path = NativeHTMLSwift;
+			path = SwiftWebView;
 			sourceTree = "<group>";
 		};
 		CF1632E12010B9D70009ACEF /* Native */ = {
@@ -568,6 +584,7 @@
 			files = (
 				CF6C68BF201188D900309CF1 /* CollectionViewImageText.storyboard in Resources */,
 				CF1632B42010A60E0009ACEF /* DisplayInterstitial.storyboard in Resources */,
+				66D67079216E0986007984D3 /* NativeHtml.storyboard in Resources */,
 				CF1632AE2010A60E0009ACEF /* user_close_btn.png in Resources */,
 				CF1632AD2010A60E0009ACEF /* user_link_btn_h.png in Resources */,
 				CF6C689420117EF200309CF1 /* AdIconTextTableViewCell.xib in Resources */,
@@ -580,7 +597,7 @@
 				CF6C68AA201183F200309CF1 /* TableViewSingleText.storyboard in Resources */,
 				CF1632B02010A60E0009ACEF /* user_close_btn_h.png in Resources */,
 				660E59FB216C981E00116F53 /* UserCell.xib in Resources */,
-				CF1632DE2010B8720009ACEF /* NativeHtmlSwift.storyboard in Resources */,
+				CF1632DE2010B8720009ACEF /* SwiftWebView.storyboard in Resources */,
 				CF6C68B32011853200309CF1 /* CollectionViewIconText.storyboard in Resources */,
 				CF1632B92010AF8C0009ACEF /* DisplaySwift.storyboard in Resources */,
 				CF6C68A02011812C00309CF1 /* AdImageTextTableViewCell.xib in Resources */,
@@ -611,7 +628,7 @@
 				CF1632C02010B1D80009ACEF /* PreRoll.storyboard in Resources */,
 				CF16330C2010C5A50009ACEF /* SingleText.storyboard in Resources */,
 				CF1632A12010A4020009ACEF /* Display.storyboard in Resources */,
-				CF1632D52010B5860009ACEF /* NativeHtml.storyboard in Resources */,
+				CF1632D52010B5860009ACEF /* WebView.storyboard in Resources */,
 				CF1632F32010BFB40009ACEF /* IconTextLink.storyboard in Resources */,
 				CF6C68A12011812C00309CF1 /* TableViewImageText.storyboard in Resources */,
 				CF1632B32010A60E0009ACEF /* user_panel.png in Resources */,
@@ -649,9 +666,9 @@
 				CF6C68BE201188D900309CF1 /* CollectionViewImageTextViewController.m in Sources */,
 				CFDD409B2011A9E000EADF2E /* InterstitialAfioViewController.swift in Sources */,
 				CF1632C12010B1D80009ACEF /* PreRollViewController.m in Sources */,
-				CF1632DD2010B8720009ACEF /* NativeHtmlSwiftViewController.swift in Sources */,
+				CF1632DD2010B8720009ACEF /* SwiftWebViewController.swift in Sources */,
 				CF1632BA2010AF8C0009ACEF /* DisplaySwiftViewController.swift in Sources */,
-				CF1632D62010B5860009ACEF /* NativeHtmlViewController.m in Sources */,
+				CF1632D62010B5860009ACEF /* WebViewController.m in Sources */,
 				CF163244201098C60009ACEF /* ViewController.swift in Sources */,
 				CF1632E52010B9F10009ACEF /* NativeViewController.swift in Sources */,
 				CF1632F52010BFB40009ACEF /* IconTextLinkViewController.m in Sources */,
@@ -662,6 +679,7 @@
 				CF16325D20109E240009ACEF /* NativeAfioViewController.swift in Sources */,
 				CF163242201098C60009ACEF /* AppDelegate.swift in Sources */,
 				CF1632A22010A4020009ACEF /* DisplayViewController.m in Sources */,
+				66D67077216E0851007984D3 /* NativeHtmlViewController.m in Sources */,
 				CF6C68C620118A9000309CF1 /* CollectionViewSingleTextViewController.m in Sources */,
 				CF1633052010C3E20009ACEF /* ImageTextCoderViewController.m in Sources */,
 				CF1632FC2010C1C50009ACEF /* ImageTextViewController.m in Sources */,
@@ -814,7 +832,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = R483GUQ2NF;
 				INFOPLIST_FILE = AMoAdSdkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -840,7 +858,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = R483GUQ2NF;
 				INFOPLIST_FILE = AMoAdSdkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
