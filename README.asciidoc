@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 5.2.4
+= AMoAd SDK for iOS ver 5.2.5
 
 :numbered:
 :sectnums:
@@ -9,12 +9,9 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** ファイル形式をframeworkに変更しました
-** CocoaPodsによるインストールに対応しました
+** amoad-nativelist-ios-sdk、amoad-native-ios-sdk を amoad-ios-sdk に統合しました。
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
 
 - link:https://github.com/amoad/amoad-android-sdk[AMoAd Android SDK]
-- link:https://github.com/amoad/amoad-unity-plugin[AMoAd Unity Plugin]
-- link:https://github.com/amoad/amoad-cocos2dx-module[AMoAd Cocos2d-x Module]
