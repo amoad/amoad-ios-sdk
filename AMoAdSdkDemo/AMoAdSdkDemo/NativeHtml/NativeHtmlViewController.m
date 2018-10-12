@@ -2,6 +2,9 @@
 //  NativeHtmlViewController.m
 //  AMoAdSdkDemo
 //
+//  Created by AMoAd on 2018/10/10.
+//  Copyright © 2018年 AMoAd. All rights reserved.
+//
 
 #import "NativeHtmlViewController.h"
 #import <AMoAd/AMoAdNative.h>   // [SDK] ネイティブHTML広告

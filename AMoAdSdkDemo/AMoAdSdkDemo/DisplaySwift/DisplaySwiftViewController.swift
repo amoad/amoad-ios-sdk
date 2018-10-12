@@ -2,6 +2,9 @@
 //  DisplaySwiftViewController.swift
 //  AMoAdSdkDemo
 //
+//  Created by AMoAd on 2016/07/21.
+//  Copyright © 2016年 AMoAd. All rights reserved.
+//
 
 import UIKit
 

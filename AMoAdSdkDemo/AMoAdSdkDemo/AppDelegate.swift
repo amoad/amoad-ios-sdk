@@ -2,6 +2,9 @@
 //  AppDelegate.swift
 //  AMoAdSdkDemo
 //
+//  Created by AMoAd on 18/01/2018.
+//  Copyright © 2018 AMoAd. All rights reserved.
+//
 
 import UIKit
 

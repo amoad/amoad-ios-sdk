@@ -2,6 +2,9 @@
 //  DisplayInterstitialViewController.m
 //  AMoAdSdkDemo
 //
+//  Created by AMoAd on 2016/05/12.
+//  Copyright © 2016年 AMoAd. All rights reserved.
+//
 
 #import "DisplayInterstitialViewController.h"
 #import <AMoAd/AMoAdLogger.h>

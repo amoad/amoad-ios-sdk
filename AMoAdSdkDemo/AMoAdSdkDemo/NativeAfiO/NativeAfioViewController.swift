@@ -2,6 +2,9 @@
 //  NativeAfioViewController.swift
 //  AMoAdSdkDemo
 //
+//  Created by AMoAd on 19/04/2017.
+//  Copyright © 2017 AMoAd. All rights reserved.
+//
 
 import UIKit
 
