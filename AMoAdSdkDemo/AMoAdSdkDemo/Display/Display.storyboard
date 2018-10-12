@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="width" constant="320" id="Klr-1E-lkb"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="sid" value="管理画面から取得したsidを指定してください"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sid" value="管理画面から発行されるSIDを設定してください"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="rotate_transition" value="flip_from_left"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="click_transition" value="jump"/>
                                 </userDefinedRuntimeAttributes>

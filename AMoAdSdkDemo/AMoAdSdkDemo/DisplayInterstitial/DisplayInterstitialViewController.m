@@ -3,8 +3,9 @@
 //  AMoAdSdkDemo
 //
 //  Created by AMoAd on 2016/05/10.
+//  Copyright © 2016年 AMoAd. All rights reserved.
 //
-//
+
 #import "DisplayInterstitialViewController.h"
 #import <AMoAd/AMoAdLogger.h>
 #import <AMoAd/AMoAdInterstitial.h>
@@ -16,8 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *consoleTextView;
 @end
 
-// [SDK] 管理画面から取得したsidを入力してください
-static NSString *const kSid = @"62056d310111552c000000000000000000000000000000000000000000000000";
+static NSString *const kSid = @"管理画面から発行されるSIDを設定してください";
 
 @implementation DisplayInterstitialViewController
 
