@@ -9,7 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** amoad-nativelist-ios-sdk、amoad-native-ios-sdk を amoad-ios-sdk に統合しました。
+** amoad-nativelist-ios-sdk、amoad-native-ios-sdk で公開していたデモアプリをamoad-ios-sdkのデモアプリに統合しました。
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
