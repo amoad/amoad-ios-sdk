@@ -2,9 +2,7 @@
 //  TableViewIconTextViewController.m
 //  AMoAdSdkDemo
 //
-//  Created by AMoAd on 2015/01/26.
-//  Copyright (c) 2015年 AMoAd, Inc. All rights reserved.
-//
+
 #import "TableViewIconTextViewController.h"
 #import <AMoAd/AMoAdNativeView.h>
 #import <AMoAd/AMoAdLogger.h>
