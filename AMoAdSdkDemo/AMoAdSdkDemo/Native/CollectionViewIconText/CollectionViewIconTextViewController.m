@@ -7,7 +7,7 @@
 #import <AMoAd/AMoAdNativeView.h>
 #import <AMoAd/AMoAdLogger.h>
 
-static NSString *const kSid = @"管理画面から取得したリストビュー、アイコン画像＋テキストのsidを指定してください";
+static NSString *const kSid = @"管理画面から発行されるSIDを設定してください";
 static NSString *const kTag = @"Ad01";
 static NSString *const kNibName = @"AdIconTextCollectionViewCell";
 static const NSInteger kBeginIndex = 2; // アプリリリース時は管理画面と同じ値を指定することを推奨します（0以上）

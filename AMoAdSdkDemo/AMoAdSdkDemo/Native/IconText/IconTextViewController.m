@@ -7,7 +7,7 @@
 #import <AMoAd/AMoAdNativeView.h>
 #import <AMoAd/AMoAdLogger.h>
 
-static NSString *const kSid = @"管理画面から取得したネイティブ（App）アイコン＋テキストのsidを指定してください";
+static NSString *const kSid = @"管理画面から発行されるSIDを設定してください";
 static NSString *const kTag1 = @"Ad01";
 static NSString *const kTag2 = @"Ad02";
 static NSString *const kNibName = @"AdIconTextView";

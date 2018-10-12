@@ -131,8 +131,8 @@
 @property (nonatomic,readwrite,strong) NSArray<UserItem *> *dataArray;
 @end
 
-static NSString *const kSid1 = @"62056d310111552c000000000000000000000000000000000000000000000000"; // Infeed
-static NSString *const kSid2 = @"62056d310111552c000000000000000000000000000000000000000000000000"; // Top banner (Infeed)
+static NSString *const kSid1 = @"管理画面から発行されるSIDを設定してください"; // Infeed
+static NSString *const kSid2 = @"管理画面から発行されるSIDを設定してください"; // Top banner (Infeed)
 
 static const NSInteger kDataCount = 20;
 

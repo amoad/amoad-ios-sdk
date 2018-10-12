@@ -11,8 +11,7 @@
 
 @end
 
-// [SDK] 管理画面から取得したsidを入力してください
-static NSString *const kSid = @"62056d310111552c000000000000000000000000000000000000000000000000";
+static NSString *const kSid = @"管理画面から発行されるSIDを設定してください";
 static NSString *const kTag = @"Ad01";
 
 @implementation NativeHtmlViewController

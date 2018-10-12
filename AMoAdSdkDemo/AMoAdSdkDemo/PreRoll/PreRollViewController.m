@@ -8,7 +8,7 @@
 #import <AMoAd/AMoAdAnalytics.h>
 #import <AMoAd/AMoAdLogger.h>
 
-static NSString *const kSid = @"管理画面から取得したプリロール広告のsidを指定してください";
+static NSString *const kSid = @"管理画面から発行されるSIDを設定してください";
 static NSString *const kTag = @"UserPreRollAd";
 
 @interface PreRollViewController ()

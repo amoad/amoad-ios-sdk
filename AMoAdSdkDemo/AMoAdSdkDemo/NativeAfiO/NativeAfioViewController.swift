@@ -9,7 +9,7 @@ class NativeAfioViewController: UIViewController, AMoAdNativeAppDelegate {
 
     @IBOutlet weak var adView: UIView!
 
-    let sid = "管理画面から取得した インフィード AfiO 広告枠 の SID を指定してください"
+    let sid = "管理画面から発行されるSIDを設定してください"
     let tag = "任意のタグ名を指定してください"
     
     override func viewDidLoad() {
