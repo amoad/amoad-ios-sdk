@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NativeAfioViewController: UIViewController, AMoAdNativeAppDelegate {
+class NativeAfioViewController: UIViewController, AMoAdNativeAppDelegate, AMoAdNativeVideoAppDelegate {
 
     @IBOutlet weak var adView: UIView!
 
@@ -32,6 +32,9 @@ class NativeAfioViewController: UIViewController, AMoAdNativeAppDelegate {
         AMoAdNativeViewManager.shared().prepareAd(withSid: sid, iconPreloading: true, imagePreloading: true)
         // 広告取得
         AMoAdNativeViewManager.shared().renderAd(withSid: sid, tag: tag, view: view, delegate: self)
+        // AMoAdNativeMainVideoViewを取得
+        guard let videoView = self.adView.viewWithTag(7) as? AMoAdNativeMainVideoView else { return }
+        videoView.delegate = self
     }
 
     func amoadNativeImageDidReceive(_ sid: String!, tag: String!, view: UIView!, state: AMoAdResult) {
@@ -46,6 +49,18 @@ class NativeAfioViewController: UIViewController, AMoAdNativeAppDelegate {
         self.adView.isHidden = true
         // 広告更新
         AMoAdNativeViewManager.shared().updateAd(withSid: sid, tag: tag)
+    }
+    
+    func amoadNativeVideoDidStart(_ amoadNativeMainVideoView: UIView!) {
+        NSLog("\(#function) 動画再生開始")
+    }
+    
+    func amoadNativeVideoDidComplete(_ amoadNativeMainVideoView: UIView!) {
+        NSLog("\(#function) 動画再生完了")
+    }
+    
+    func amoadNativeVideoDidFailToPlay(_ amoadNativeMainVideoView: UIView!) {
+        NSLog("\(#function) 動画再生失敗")
     }
 }
 
