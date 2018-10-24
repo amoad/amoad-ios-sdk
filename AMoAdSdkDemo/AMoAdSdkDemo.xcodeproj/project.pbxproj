@@ -12,6 +12,7 @@
 		660E59F7216C953E00116F53 /* Infeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660E59F6216C953E00116F53 /* Infeed.storyboard */; };
 		660E59F9216C978B00116F53 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 660E59F8216C978B00116F53 /* user.png */; };
 		660E59FB216C981E00116F53 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 660E59FA216C981E00116F53 /* UserCell.xib */; };
+		6640BFFF21804EBA001709B5 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = CF16325620109E240009ACEF /* button.png */; };
 		66D67077216E0851007984D3 /* NativeHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D67076216E0851007984D3 /* NativeHtmlViewController.m */; };
 		66D67079216E0986007984D3 /* NativeHtml.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66D67078216E0986007984D3 /* NativeHtml.storyboard */; };
 		CF163242201098C60009ACEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF163241201098C60009ACEF /* AppDelegate.swift */; };
@@ -582,6 +583,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6640BFFF21804EBA001709B5 /* button.png in Resources */,
 				CF6C68BF201188D900309CF1 /* CollectionViewImageText.storyboard in Resources */,
 				CF1632B42010A60E0009ACEF /* DisplayInterstitial.storyboard in Resources */,
 				66D67079216E0986007984D3 /* NativeHtml.storyboard in Resources */,
