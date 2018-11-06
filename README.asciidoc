@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 5.2.6
+= AMoAd SDK for iOS ver 5.2.7
 
 :numbered:
 :sectnums:
@@ -9,8 +9,8 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** インフィード AfiO 広告の動画再生・終了時の通知機能に対応しました。
-** 画像読み込み時にSDK がクラッシュする場合がある不具合を修正しました。
+** インタースティシャル AfiO 広告が特定View階層の時に表示されない問題に対応しました。
+
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
