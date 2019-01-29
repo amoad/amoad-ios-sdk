@@ -34,6 +34,9 @@ typedef NS_ENUM(NSInteger, AMoAdNativeView) {
   
   /// メイン動画（AMoAdNativeMainVideoView）
   AMoAdNativeViewMainVideo = 7,
+  
+  /// インフォメーションアイコン（UIView）
+  AMoAdNativeViewInfomationIcon = 8,
 };
 
 #pragma mark - デリゲート
