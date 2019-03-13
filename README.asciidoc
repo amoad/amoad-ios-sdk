@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 5.2.9
+= AMoAd SDK for iOS ver 5.2.10
 
 :numbered:
 :sectnums:
@@ -9,7 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** インタースティシャル AfiO 広告が特定View階層の時に表示されない問題に対応しました。
+** プロジェクト構成の見直しと不要ファイルを削除しました。
 
 
 == その他
