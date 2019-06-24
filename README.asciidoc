@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 5.2.13
+= AMoAd SDK for iOS ver 5.2.16
 
 :numbered:
 :sectnums:
@@ -10,6 +10,8 @@
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
 ** 内部APIの一部をSwiftに移行しました
+** 特定条件下でインプレションが通知されない不具合を修正しました
+** 特定クリエイティブの広告情報取得に失敗する不具合を修正しました
 ** 軽微な不具合を修正しました
 
 
