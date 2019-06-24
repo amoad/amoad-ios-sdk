@@ -18,8 +18,9 @@
 /// @param tag 同じsidを複数のビューで使用するときの識別子<br />任意の文字列を指定できます
 /// @param view 広告を描画するビュー
 /// @param analytics 広告分析情報
+/// @param isFullscreenClickable Linkボタンだけでなく全画面のタップを有効にするか
 /// @param completion 広告受信完了Block
-+ (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view analytics:(AMoAdAnalytics *)analytics completion:(void (^)(NSString *sid, NSString *tag, UIView *view, AMoAdResult result))completion;
++ (void)renderAdWithSid:(NSString *)sid tag:(NSString *)tag view:(UIView *)view analytics:(AMoAdAnalytics *)analytics isFullscreenClickable:(BOOL)isFullscreenClickable completion:(void (^)(NSString *sid, NSString *tag, UIView *view, AMoAdResult result))completion;
 
 /// ビューのサイズが変わったとき再レイアウトする
 /// @param sid 管理画面から取得した64文字の英数字

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46ABAE9CDA5F9A3CF80BD7BF /* Pods_AMoAdSdkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180728CD470F9BA83BBEBF9D /* Pods_AMoAdSdkDemo.framework */; };
 		660E59F5216C926500116F53 /* InfeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 660E59F4216C926500116F53 /* InfeedViewController.m */; };
 		660E59F7216C953E00116F53 /* Infeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660E59F6216C953E00116F53 /* Infeed.storyboard */; };
 		660E59F9216C978B00116F53 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 660E59F8216C978B00116F53 /* user.png */; };
@@ -83,10 +82,11 @@
 		CF6C68C920118A9000309CF1 /* CollectionViewSingleText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF6C68C520118A9000309CF1 /* CollectionViewSingleText.storyboard */; };
 		CFDD409B2011A9E000EADF2E /* InterstitialAfioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD409A2011A9E000EADF2E /* InterstitialAfioViewController.swift */; };
 		CFDD409D2011AA1300EADF2E /* InterstitialAfio.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDD409C2011AA1300EADF2E /* InterstitialAfio.storyboard */; };
+		EB73FDC7A17D6E711EF04619 /* Pods_AMoAdSdkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA6F2F2107668142CB87D04 /* Pods_AMoAdSdkDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		180728CD470F9BA83BBEBF9D /* Pods_AMoAdSdkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMoAdSdkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CF6B5B682FD6AC7D8551D99 /* Pods-AMoAdSdkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdSdkDemo.release.xcconfig"; path = "Target Support Files/Pods-AMoAdSdkDemo/Pods-AMoAdSdkDemo.release.xcconfig"; sourceTree = "<group>"; };
 		660E59F3216C926500116F53 /* InfeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfeedViewController.h; sourceTree = "<group>"; };
 		660E59F4216C926500116F53 /* InfeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfeedViewController.m; sourceTree = "<group>"; };
 		660E59F6216C953E00116F53 /* Infeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Infeed.storyboard; sourceTree = "<group>"; };
@@ -95,7 +95,8 @@
 		66D67075216E0851007984D3 /* NativeHtmlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeHtmlViewController.h; sourceTree = "<group>"; };
 		66D67076216E0851007984D3 /* NativeHtmlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeHtmlViewController.m; sourceTree = "<group>"; };
 		66D67078216E0986007984D3 /* NativeHtml.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeHtml.storyboard; sourceTree = "<group>"; };
-		84965864DBDD35D530830A2A /* Pods-AMoAdSdkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdSdkDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMoAdSdkDemo/Pods-AMoAdSdkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		903EF332C67EAF7D4532CF5C /* Pods-AMoAdSdkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdSdkDemo.debug.xcconfig"; path = "Target Support Files/Pods-AMoAdSdkDemo/Pods-AMoAdSdkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CDA6F2F2107668142CB87D04 /* Pods_AMoAdSdkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMoAdSdkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF16323E201098C50009ACEF /* AMoAdSdkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMoAdSdkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF163241201098C60009ACEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF163243201098C60009ACEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -189,7 +190,6 @@
 		CF6C68C520118A9000309CF1 /* CollectionViewSingleText.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CollectionViewSingleText.storyboard; sourceTree = "<group>"; };
 		CFDD409A2011A9E000EADF2E /* InterstitialAfioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAfioViewController.swift; sourceTree = "<group>"; };
 		CFDD409C2011AA1300EADF2E /* InterstitialAfio.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterstitialAfio.storyboard; sourceTree = "<group>"; };
-		F51DD000309B9C0932F80FF2 /* Pods-AMoAdSdkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdSdkDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMoAdSdkDemo/Pods-AMoAdSdkDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,13 +197,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46ABAE9CDA5F9A3CF80BD7BF /* Pods_AMoAdSdkDemo.framework in Frameworks */,
+				EB73FDC7A17D6E711EF04619 /* Pods_AMoAdSdkDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56E4D27DF2D8617D9813A53F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				903EF332C67EAF7D4532CF5C /* Pods-AMoAdSdkDemo.debug.xcconfig */,
+				3CF6B5B682FD6AC7D8551D99 /* Pods-AMoAdSdkDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		660E59F2216C91CC00116F53 /* Infeed */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,21 +236,12 @@
 			path = NativeHtml;
 			sourceTree = "<group>";
 		};
-		73DA96A0C0F8A8B7EEFAE799 /* Frameworks */ = {
+		AD0904893B9F4A0FA7EF9722 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				180728CD470F9BA83BBEBF9D /* Pods_AMoAdSdkDemo.framework */,
+				CDA6F2F2107668142CB87D04 /* Pods_AMoAdSdkDemo.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		92260DCA9B7E54A7AF000513 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				84965864DBDD35D530830A2A /* Pods-AMoAdSdkDemo.debug.xcconfig */,
-				F51DD000309B9C0932F80FF2 /* Pods-AMoAdSdkDemo.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF163235201098C50009ACEF = {
@@ -248,8 +249,8 @@
 			children = (
 				CF163240201098C50009ACEF /* AMoAdSdkDemo */,
 				CF16323F201098C50009ACEF /* Products */,
-				92260DCA9B7E54A7AF000513 /* Pods */,
-				73DA96A0C0F8A8B7EEFAE799 /* Frameworks */,
+				56E4D27DF2D8617D9813A53F /* Pods */,
+				AD0904893B9F4A0FA7EF9722 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -529,11 +530,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF163250201098C60009ACEF /* Build configuration list for PBXNativeTarget "AMoAdSdkDemo" */;
 			buildPhases = (
-				C85C1A1B500486CD2681E1C0 /* [CP] Check Pods Manifest.lock */,
+				E49310A18FDF8BE9313A079F /* [CP] Check Pods Manifest.lock */,
 				CF16323A201098C50009ACEF /* Sources */,
 				CF16323B201098C50009ACEF /* Frameworks */,
 				CF16323C201098C50009ACEF /* Resources */,
-				7A9384C4DF53A5D32870663D /* [CP] Embed Pods Frameworks */,
+				139B69AF4440999B602CEFCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -641,7 +642,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7A9384C4DF53A5D32870663D /* [CP] Embed Pods Frameworks */ = {
+		139B69AF4440999B602CEFCC /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -659,16 +660,20 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AMoAdSdkDemo/Pods-AMoAdSdkDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C85C1A1B500486CD2681E1C0 /* [CP] Check Pods Manifest.lock */ = {
+		E49310A18FDF8BE9313A079F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-AMoAdSdkDemo-checkManifestLockResult.txt",
 			);
@@ -848,7 +853,7 @@
 		};
 		CF163251201098C60009ACEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84965864DBDD35D530830A2A /* Pods-AMoAdSdkDemo.debug.xcconfig */;
+			baseConfigurationReference = 903EF332C67EAF7D4532CF5C /* Pods-AMoAdSdkDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -874,7 +879,7 @@
 		};
 		CF163252201098C60009ACEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F51DD000309B9C0932F80FF2 /* Pods-AMoAdSdkDemo.release.xcconfig */;
+			baseConfigurationReference = 3CF6B5B682FD6AC7D8551D99 /* Pods-AMoAdSdkDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
