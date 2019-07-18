@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 5.2.17
+= AMoAd SDK for iOS ver 5.2.18
 
 :numbered:
 :sectnums:
@@ -9,7 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** 内部APIの一部をSwiftに移行しました
+** 広告リフレッシュ設定が効かない不具合の修正
 
 
 == その他
