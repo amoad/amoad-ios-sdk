@@ -42,7 +42,7 @@ static NSString *const kTag = @"UserPreRollAd";
   self.view.hidden = YES; // 広告取得成功まで非表示にする（推奨）
 
   // [SDK] プリロール広告を描画する
-  [AMoAdNativePreRoll renderAdWithSid:kSid tag:kTag view:self.view analytics:analytics completion:^(NSString *sid, NSString *tag, UIView *view, AMoAdResult state) {
+  [AMoAdNativePreRoll renderAdWithSid:kSid tag:kTag view:self.view analytics:analytics isFullscreenClickable: false completion:^(NSString *sid, NSString *tag, UIView *view, AMoAdResult state) {
     switch (state) {
       case AMoAdResultSuccess:
         self.view.hidden = NO;  // 広告取得成功後、表示する（推奨）
