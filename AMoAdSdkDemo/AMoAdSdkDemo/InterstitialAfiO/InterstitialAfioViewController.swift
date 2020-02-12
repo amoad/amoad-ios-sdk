@@ -3,7 +3,7 @@
 //  AMoAdSdkDemo
 //
 //  Created by AMoAd on 19/01/2018.
-//  Copyright © 2018 AMoAd. All rights reserved.
+//  Copyright © 2018 CA Wise Inc. All rights reserved.
 //
 
 import UIKit

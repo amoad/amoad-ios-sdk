@@ -3,7 +3,7 @@
 //  AMoAdSdkDemo
 //
 //  Created by AMoAd on 2016/05/10.
-//  Copyright © 2016年 AMoAd. All rights reserved.
+//  Copyright © 2016年 CA Wise Inc. All rights reserved.
 //
 
 #import "DisplayInterstitialViewController.h"
