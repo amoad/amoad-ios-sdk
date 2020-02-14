@@ -3,7 +3,7 @@
 //  AMoAdSdkDemo
 //
 //  Created by AMoAd on 2018/10/10.
-//  Copyright © 2018年 CA Wise Inc. All rights reserved.
+//  Copyright © 2018年 CA Wise, Inc. All rights reserved.
 //
 
 #import "NativeHtmlViewController.h"
