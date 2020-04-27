@@ -2,5 +2,8 @@ platform :ios, '9.0'
 target 'AMoAdSdkDemo' do
   use_frameworks!
   pod "AMoAd"
+  pod 'SnapKit'
+  pod 'ObjectMapper'
+  pod 'ReachabilitySwift'
 end
 
