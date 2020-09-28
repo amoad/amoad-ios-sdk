@@ -9,7 +9,9 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** コピーライトの修正とリファクタリング
+** Xcode12に対応
+** ネイティブ広告でアニメーションGIFに対応
+** プリロール広告のCTA位置を変更
 
 
 == その他
