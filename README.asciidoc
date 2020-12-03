@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 6.1.0
+= AMoAd SDK for iOS ver 6.1.1
 
 :numbered:
 :sectnums:
@@ -9,9 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** Xcode12に対応
-** ネイティブ広告でアニメーションGIFに対応
-** プリロール広告のCTA位置を変更
+** Xcode12.2に対応
 
 
 == その他
