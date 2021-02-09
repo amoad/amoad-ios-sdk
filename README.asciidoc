@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 6.1.2
+= AMoAd SDK for iOS ver 6.1.3
 
 :numbered:
 :sectnums:
@@ -9,7 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** Xcode12.3に対応
+** Xcode12.4に対応
 
 
 == その他
