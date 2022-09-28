@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 6.1.7
+= AMoAd SDK for iOS ver 6.1.8
 
 :numbered:
 :sectnums:
@@ -9,7 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** Xcode13.3に対応
+** Xcode14に対応。対応iOSバージョンを11.0以上に変更。32bit iOSシミュレーターのサポートを終了。
 
 
 == その他
