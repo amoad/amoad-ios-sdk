@@ -9,8 +9,9 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** Xcode14に対応。対応iOSバージョンを11.0以上に変更。32bit iOSシミュレーターのサポートを終了。
-
+** 依存ライブラリのバージョンアップ。
+*** [SnapKit](https://cocoapods.org/pods/SnapKit): v5.6.0
+*** [ReachabilitySwift](https://cocoapods.org/pods/ReachabilitySwift): v5.0.0
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
