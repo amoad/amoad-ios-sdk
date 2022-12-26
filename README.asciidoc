@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 6.1.11
+= AMoAd SDK for iOS ver 6.1.12
 
 :numbered:
 :sectnums:
