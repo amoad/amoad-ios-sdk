@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 6.1.14
+= AMoAd SDK for iOS ver 6.1.15
 
 :numbered:
 :sectnums:
@@ -9,7 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** インターステシャル動画広告の改修
+** Module Stability対応
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
