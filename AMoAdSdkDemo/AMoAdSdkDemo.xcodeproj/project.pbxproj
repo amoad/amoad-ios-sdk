@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,6 +37,7 @@
 		615388442452C43B00568D6D /* NativeListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6153883C2452C43A00568D6D /* NativeListViewCell.xib */; };
 		615388452452C43B00568D6D /* NativeAppIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6153883D2452C43A00568D6D /* NativeAppIconView.xib */; };
 		A2A70ADC4D7638C9B6F817DB /* Pods_AMoAdSdkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0985F482D61858735CFF54CE /* Pods_AMoAdSdkDemo.framework */; };
+		E35142A12A27130C008354D7 /* AMoAd.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35142A02A27130C008354D7 /* AMoAd.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		6153883C2452C43A00568D6D /* NativeListViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NativeListViewCell.xib; path = View/NativeListViewCell.xib; sourceTree = "<group>"; };
 		6153883D2452C43A00568D6D /* NativeAppIconView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NativeAppIconView.xib; path = View/NativeAppIconView.xib; sourceTree = "<group>"; };
 		6386232EEBF1D89559509170 /* Pods-AMoAdSdkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMoAdSdkDemo.release.xcconfig"; path = "Target Support Files/Pods-AMoAdSdkDemo/Pods-AMoAdSdkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E35142A02A27130C008354D7 /* AMoAd.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AMoAd.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35142A12A27130C008354D7 /* AMoAd.xcframework in Frameworks */,
 				A2A70ADC4D7638C9B6F817DB /* Pods_AMoAdSdkDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +103,7 @@
 		615387DB2452A6DD00568D6D = {
 			isa = PBXGroup;
 			children = (
+				E35142A02A27130C008354D7 /* AMoAd.xcframework */,
 				615387E62452A6DE00568D6D /* AMoAdSdkDemo */,
 				615387E52452A6DE00568D6D /* Products */,
 				06ED3E6AA0F1CE07A424F521 /* Pods */,

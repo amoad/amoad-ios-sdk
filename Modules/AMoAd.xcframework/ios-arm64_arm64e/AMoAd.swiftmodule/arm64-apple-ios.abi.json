@@ -21106,344 +21106,344 @@
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
-      "kind": "StringLiteral",
-      "offset": 376,
-      "length": 17,
-      "value": "\"amoad_panel.png\""
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
-      "kind": "StringLiteral",
-      "offset": 606,
-      "length": 19,
-      "value": "\"amoad_panel_l.png\""
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
-      "kind": "StringLiteral",
-      "offset": 831,
-      "length": 20,
-      "value": "\"amoad_link_btn.png\""
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
-      "kind": "StringLiteral",
-      "offset": 1065,
-      "length": 22,
-      "value": "\"amoad_link_btn_h.png\""
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
-      "kind": "StringLiteral",
-      "offset": 1297,
-      "length": 21,
-      "value": "\"amoad_close_btn.png\""
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
-      "kind": "StringLiteral",
-      "offset": 1535,
-      "length": 23,
-      "value": "\"amoad_close_btn_h.png\""
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 2247,
+      "offset": 1063,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 2490,
+      "offset": 1306,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 2533,
+      "offset": 1349,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 2775,
+      "offset": 1591,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 3082,
+      "offset": 1898,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
+      "kind": "StringLiteral",
+      "offset": 2730,
+      "length": 67,
+      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/interstitial\/amoad_panel.png\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
+      "kind": "StringLiteral",
+      "offset": 2840,
+      "length": 69,
+      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/interstitial\/amoad_panel_l.png\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
+      "kind": "StringLiteral",
+      "offset": 2949,
+      "length": 71,
+      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/interstitial\/amoad_close_btn.png\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
+      "kind": "StringLiteral",
+      "offset": 3073,
+      "length": 73,
+      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/interstitial\/amoad_close_btn_h.png\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
+      "kind": "StringLiteral",
+      "offset": 3185,
+      "length": 70,
+      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/interstitial\/amoad_link_btn.png\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
+      "kind": "StringLiteral",
+      "offset": 3307,
+      "length": 72,
+      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/interstitial\/amoad_link_btn_h.png\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 4262,
+      "offset": 3459,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 4287,
+      "offset": 3484,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 4398,
+      "offset": 3595,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 4423,
+      "offset": 3620,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "FloatLiteral",
-      "offset": 4686,
+      "offset": 3828,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "StringLiteral",
-      "offset": 5045,
+      "offset": 4187,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 5264,
+      "offset": 4406,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 6173,
+      "offset": 6181,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 6207,
+      "offset": 6215,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 6534,
+      "offset": 6542,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "StringLiteral",
-      "offset": 6574,
+      "offset": 6582,
       "length": 29,
       "value": "\"self.adView sendImpresstion\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "StringLiteral",
-      "offset": 6703,
+      "offset": 6711,
       "length": 39,
       "value": "\"AMoAdInterstitialSite sendImpresstion\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "StringLiteral",
-      "offset": 6880,
+      "offset": 6888,
       "length": 40,
       "value": "\"AMoAdThreadが作成されていない\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "StringLiteral",
-      "offset": 7180,
+      "offset": 7188,
       "length": 30,
       "value": "\"self.preloadedAdView is nil.\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 7518,
+      "offset": 7585,
       "length": 3,
       "value": "380"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 7564,
+      "offset": 7631,
       "length": 3,
       "value": "310"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 7619,
+      "offset": 7686,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 7640,
+      "offset": 7707,
       "length": 3,
       "value": "250"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 7694,
+      "offset": 7761,
       "length": 3,
       "value": "280"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 7715,
+      "offset": 7782,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 7769,
+      "offset": 7836,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 7789,
+      "offset": 7856,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "FloatLiteral",
-      "offset": 8221,
+      "offset": 8263,
       "length": 3,
       "value": "3.3"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "FloatLiteral",
-      "offset": 8258,
+      "offset": 8300,
       "length": 3,
       "value": "3.3"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 8272,
+      "offset": 8314,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 8318,
+      "offset": 8360,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 8500,
+      "offset": 8542,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 8536,
+      "offset": 8578,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 8549,
+      "offset": 8591,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 8625,
+      "offset": 8667,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "IntegerLiteral",
-      "offset": 8629,
+      "offset": 8671,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 9719,
+      "offset": 9976,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 9780,
+      "offset": 10037,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 9962,
+      "offset": 10219,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 10065,
+      "offset": 10322,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 10142,
+      "offset": 10399,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 10230,
+      "offset": 10487,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "StringLiteral",
-      "offset": 10586,
+      "offset": 10843,
       "length": 89,
       "value": "\"クリック処理に失敗しました（対象の広告ビューがありません）\""
     },
@@ -21457,7 +21457,7 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdInterstitialSite.swift",
       "kind": "BooleanLiteral",
-      "offset": 11236,
+      "offset": 11493,
       "length": 4,
       "value": "true"
     },
