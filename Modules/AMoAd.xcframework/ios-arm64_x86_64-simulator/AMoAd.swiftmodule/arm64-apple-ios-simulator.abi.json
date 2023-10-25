@@ -3705,6 +3705,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AMoAd",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -8459,6 +8469,269 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "AMoAdNativeFullScreenVideo",
+        "printedName": "AMoAdNativeFullScreenVideo",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "prepareAd",
+            "printedName": "prepareAd(sid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AMoAd@objc(cs)AMoAdNativeFullScreenVideo(cm)prepareAdWithSid:",
+            "mangledName": "$s5AMoAd0aB21NativeFullScreenVideoC07prepareB03sidySS_tFZ",
+            "moduleName": "AMoAd",
+            "static": true,
+            "objc_name": "prepareAdWithSid:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "renderAd",
+            "printedName": "renderAd(sid:tag:view:analytics:nativeAppDelegate:videoDelegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AMoAd.AMoAdAnalytics?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AMoAdAnalytics",
+                    "printedName": "AMoAd.AMoAdAnalytics",
+                    "usr": "c:@M@AMoAd@objc(cs)AMoAdAnalytics"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AMoAd.AMoAdNativeAppDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AMoAdNativeAppDelegate",
+                    "printedName": "AMoAd.AMoAdNativeAppDelegate",
+                    "usr": "c:@M@AMoAd@objc(pl)AMoAdNativeAppDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AMoAd.AMoAdNativeVideoAppDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AMoAdNativeVideoAppDelegate",
+                    "printedName": "AMoAd.AMoAdNativeVideoAppDelegate",
+                    "usr": "c:@M@AMoAd@objc(pl)AMoAdNativeVideoAppDelegate"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AMoAd@objc(cs)AMoAdNativeFullScreenVideo(cm)renderAdWithSid:tag:view:analytics:nativeAppDelegate:videoDelegate:",
+            "mangledName": "$s5AMoAd0aB21NativeFullScreenVideoC06renderB03sid3tag4view9analytics17nativeAppDelegate05videoN0ySS_SSSo6UIViewCAA0aB9AnalyticsCSgAA0abcmN0_pSgAA0abcfmN0_pSgtFZ",
+            "moduleName": "AMoAd",
+            "static": true,
+            "objc_name": "renderAdWithSid:tag:view:analytics:nativeAppDelegate:videoDelegate:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutAd",
+            "printedName": "layoutAd(sid:tag:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AMoAd@objc(cs)AMoAdNativeFullScreenVideo(cm)layoutAdWithSid:tag:",
+            "mangledName": "$s5AMoAd0aB21NativeFullScreenVideoC06layoutB03sid3tagySS_SStFZ",
+            "moduleName": "AMoAd",
+            "static": true,
+            "objc_name": "layoutAdWithSid:tag:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AMoAdNativeFullScreenVideo",
+                "printedName": "AMoAd.AMoAdNativeFullScreenVideo",
+                "usr": "c:@M@AMoAd@objc(cs)AMoAdNativeFullScreenVideo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AMoAd@objc(cs)AMoAdNativeFullScreenVideo(im)init",
+            "mangledName": "$s5AMoAd0aB21NativeFullScreenVideoCACycfc",
+            "moduleName": "AMoAd",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AMoAd@objc(cs)AMoAdNativeFullScreenVideo",
+        "mangledName": "$s5AMoAd0aB21NativeFullScreenVideoC",
+        "moduleName": "AMoAd",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AMoAd",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "WebKit",
         "printedName": "WebKit",
@@ -11601,8 +11874,8 @@
             "moduleName": "AMoAd",
             "declAttributes": [
               "HasInitialValue",
-              "Custom",
               "HasStorage",
+              "Custom",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC"
@@ -11862,6 +12135,117 @@
             "mangledName": "$s5AMoAd0aB19NativeMainVideoViewC20didImageButtonTappedyyypF",
             "moduleName": "AMoAd",
             "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "storeOverlayDidFailToLoad",
+            "printedName": "storeOverlayDidFailToLoad(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SKOverlay",
+                "printedName": "StoreKit.SKOverlay",
+                "usr": "c:objc(cs)SKOverlay"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AMoAd@objc(cs)AMoAdNativeMainVideoView(im)storeOverlay:didFailToLoadWithError:",
+            "mangledName": "$s5AMoAd0aB19NativeMainVideoViewC25storeOverlayDidFailToLoad_5errorySo9SKOverlayC_s5Error_ptF",
+            "moduleName": "AMoAd",
+            "objc_name": "storeOverlay:didFailToLoadWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "storeOverlayWillStartPresentation",
+            "printedName": "storeOverlayWillStartPresentation(_:transitionContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SKOverlay",
+                "printedName": "StoreKit.SKOverlay",
+                "usr": "c:objc(cs)SKOverlay"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TransitionContext",
+                "printedName": "StoreKit.SKOverlay.TransitionContext",
+                "usr": "c:objc(cs)SKOverlayTransitionContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AMoAd@objc(cs)AMoAdNativeMainVideoView(im)storeOverlay:willStartPresentation:",
+            "mangledName": "$s5AMoAd0aB19NativeMainVideoViewC33storeOverlayWillStartPresentation_17transitionContextySo9SKOverlayC_So0n10TransitionM0CtF",
+            "moduleName": "AMoAd",
+            "objc_name": "storeOverlay:willStartPresentation:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "storeOverlayDidFinishDismissal",
+            "printedName": "storeOverlayDidFinishDismissal(_:transitionContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SKOverlay",
+                "printedName": "StoreKit.SKOverlay",
+                "usr": "c:objc(cs)SKOverlay"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TransitionContext",
+                "printedName": "StoreKit.SKOverlay.TransitionContext",
+                "usr": "c:objc(cs)SKOverlayTransitionContext"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AMoAd@objc(cs)AMoAdNativeMainVideoView(im)storeOverlay:didFinishDismissal:",
+            "mangledName": "$s5AMoAd0aB19NativeMainVideoViewC30storeOverlayDidFinishDismissal_17transitionContextySo9SKOverlayC_So0n10TransitionM0CtF",
+            "moduleName": "AMoAd",
+            "objc_name": "storeOverlay:didFinishDismissal:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
               "Custom",
               "AccessControl"
             ],
@@ -15902,23 +16286,72 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
       "kind": "StringLiteral",
-      "offset": 412,
+      "offset": 328,
+      "length": 5,
+      "value": "\"3.0\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 348,
+      "length": 5,
+      "value": "\"4.0\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
       "length": 5,
       "value": "\"0.0\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
       "kind": "FloatLiteral",
-      "offset": 739,
+      "offset": 779,
+      "length": 4,
+      "value": "16.1"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
+      "kind": "FloatLiteral",
+      "offset": 869,
+      "length": 4,
+      "value": "14.6"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
+      "kind": "FloatLiteral",
+      "offset": 959,
       "length": 4,
       "value": "14.5"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
       "kind": "IntegerLiteral",
-      "offset": 829,
+      "offset": 1049,
       "length": 2,
       "value": "14"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 1424,
+      "length": 43,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 1449,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 1466,
+      "length": 1,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
@@ -15937,7 +16370,21 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
       "kind": "StringLiteral",
-      "offset": 412,
+      "offset": 328,
+      "length": 5,
+      "value": "\"3.0\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 348,
+      "length": 5,
+      "value": "\"4.0\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
+      "kind": "StringLiteral",
+      "offset": 452,
       "length": 5,
       "value": "\"0.0\""
     },
@@ -17246,86 +17693,429 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 3763,
+      "offset": 3799,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 3793,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4198,
+      "offset": 4204,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4383,
+      "offset": 4389,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4587,
+      "offset": 4593,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4778,
+      "offset": 4784,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4974,
+      "offset": 4980,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 5166,
+      "offset": 5172,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 5356,
+      "offset": 5362,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 5549,
+      "offset": 5555,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "StringLiteral",
-      "offset": 6123,
+      "offset": 6129,
       "length": 39,
       "value": "\"info is nil. (event.url: \""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideo.swift",
       "kind": "StringLiteral",
-      "offset": 6161,
+      "offset": 6167,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 15,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "StringLiteral",
+      "offset": 497,
+      "length": 1,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "StringLiteral",
+      "offset": 504,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1938,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2013,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "StringLiteral",
+      "offset": 2397,
+      "length": 25,
+      "value": "\"Unknown: \""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "StringLiteral",
+      "offset": 2421,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 3133,
+      "length": 5,
+      "value": "320.0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 3148,
+      "length": 5,
+      "value": "480.0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 3204,
+      "length": 5,
+      "value": "240.0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 3219,
+      "length": 4,
+      "value": "48.0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 3732,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 3756,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3886,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3892,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4293,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4333,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4396,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 6372,
+      "length": 4,
+      "value": "76.0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6377,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 6389,
+      "length": 5,
+      "value": "174.0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6395,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6406,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6409,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 6421,
+      "length": 3,
+      "value": "0.9"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 6534,
+      "length": 4,
+      "value": "84.0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6539,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 6551,
+      "length": 5,
+      "value": "138.0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6557,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6568,
+      "length": 2,
+      "value": "49"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6571,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 6583,
+      "length": 3,
+      "value": "0.9"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "StringLiteral",
+      "offset": 6638,
+      "length": 20,
+      "value": "\"詳細はこちら\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6715,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "FloatLiteral",
+      "offset": 6759,
+      "length": 3,
+      "value": "0.7"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6804,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6861,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6872,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "StringLiteral",
+      "offset": 6927,
+      "length": 16,
+      "value": "\"Helvetica-Bold\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6958,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7092,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7098,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7108,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7119,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7904,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8133,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8245,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8380,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8605,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideoSite.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8715,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeSite.swift",
@@ -17870,41 +18660,41 @@
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeSite.swift",
       "kind": "StringLiteral",
       "offset": 13081,
-      "length": 52,
+      "length": 64,
       "value": "\"&skversion=\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeSite.swift",
       "kind": "StringLiteral",
-      "offset": 13132,
+      "offset": 13144,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeSite.swift",
       "kind": "StringLiteral",
-      "offset": 13161,
+      "offset": 13173,
       "length": 27,
       "value": "\"&sourceapp=\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeSite.swift",
       "kind": "StringLiteral",
-      "offset": 13187,
+      "offset": 13199,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeSite.swift",
       "kind": "StringLiteral",
-      "offset": 13216,
+      "offset": 13228,
       "length": 51,
       "value": "\"&skadnetids=\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeSite.swift",
       "kind": "StringLiteral",
-      "offset": 13266,
+      "offset": 13278,
       "length": 2,
       "value": "\"\""
     },
@@ -18156,35 +18946,35 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdInfoIcon.swift",
       "kind": "StringLiteral",
-      "offset": 472,
+      "offset": 285,
       "length": 37,
       "value": "\"https:\/\/www.amoad.com\/sp\/guideline\/\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdInfoIcon.swift",
       "kind": "StringLiteral",
-      "offset": 543,
+      "offset": 356,
       "length": 53,
       "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/movie\/info.png\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdInfoIcon.swift",
       "kind": "IntegerLiteral",
-      "offset": 626,
+      "offset": 431,
       "length": 2,
-      "value": "40"
+      "value": "20"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdInfoIcon.swift",
       "kind": "IntegerLiteral",
-      "offset": 659,
+      "offset": 456,
       "length": 2,
-      "value": "40"
+      "value": "20"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdInfoIcon.swift",
       "kind": "StringLiteral",
-      "offset": 398,
+      "offset": 211,
       "length": 13,
       "value": "\"AMoAd.AMoAdInfoIcon\""
     },
@@ -20012,41 +20802,41 @@
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdReq.swift",
       "kind": "StringLiteral",
       "offset": 1608,
-      "length": 52,
+      "length": 64,
       "value": "\"&skversion=\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdReq.swift",
       "kind": "StringLiteral",
-      "offset": 1659,
+      "offset": 1671,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdReq.swift",
       "kind": "StringLiteral",
-      "offset": 1688,
+      "offset": 1700,
       "length": 27,
       "value": "\"&sourceapp=\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdReq.swift",
       "kind": "StringLiteral",
-      "offset": 1714,
+      "offset": 1726,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdReq.swift",
       "kind": "StringLiteral",
-      "offset": 1743,
+      "offset": 1755,
       "length": 51,
       "value": "\"&skadnetids=\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Display\/AMoAdReq.swift",
       "kind": "StringLiteral",
-      "offset": 1793,
+      "offset": 1805,
       "length": 2,
       "value": "\"\""
     },
@@ -20819,6 +21609,20 @@
       "offset": 5128,
       "length": 17,
       "value": "\"adsIcon is nil.\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 655,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeFullScreenVideo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 679,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Web\/AMoAdWeb.swift",
@@ -22757,7 +23561,7 @@
       "kind": "StringLiteral",
       "offset": 274,
       "length": 8,
-      "value": "\"6.1.16\""
+      "value": "\"6.1.17\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdSettings.swift",
@@ -22937,105 +23741,175 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 485,
+      "offset": 591,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 526,
+      "offset": 632,
       "length": 7,
       "value": "\"skadn\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 566,
+      "offset": 672,
       "length": 12,
       "value": "\"itunesitem\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 610,
+      "offset": 716,
       "length": 10,
       "value": "\"campaign\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 653,
+      "offset": 756,
+      "length": 18,
+      "value": "\"sourceidentifier\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
+      "kind": "StringLiteral",
+      "offset": 807,
       "length": 9,
       "value": "\"network\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 695,
+      "offset": 849,
       "length": 11,
       "value": "\"sourceapp\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 731,
+      "offset": 885,
       "length": 5,
       "value": "\"ext\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 773,
+      "offset": 927,
       "length": 21,
       "value": "\"validImpMillSeconds\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 2533,
+      "offset": 979,
+      "length": 11,
+      "value": "\"skoverlay\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
+      "kind": "StringLiteral",
+      "offset": 1034,
+      "length": 28,
+      "value": "\"startDisplayingMillSeconds\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
+      "kind": "StringLiteral",
+      "offset": 1111,
+      "length": 32,
+      "value": "\"maxDisplayDurationMilliSeconds\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
+      "kind": "StringLiteral",
+      "offset": 2842,
       "length": 50,
       "value": "\"Invalid Parameter. json=\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 2582,
+      "offset": 2891,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
+      "kind": "StringLiteral",
+      "offset": 3292,
+      "length": 88,
+      "value": "\"Invalid Parameter. The sourceidentifier is not included. json=\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
+      "kind": "StringLiteral",
+      "offset": 3379,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
+      "kind": "StringLiteral",
+      "offset": 3712,
+      "length": 82,
+      "value": "\"Invalid Parameter.　The campaign is not included. json=\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
+      "kind": "StringLiteral",
+      "offset": 3793,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "IntegerLiteral",
-      "offset": 2978,
+      "offset": 4160,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "IntegerLiteral",
-      "offset": 3158,
+      "offset": 4340,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "IntegerLiteral",
-      "offset": 3206,
+      "offset": 4388,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4823,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4906,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 3443,
+      "offset": 5237,
       "length": 75,
       "value": "\"Invalid Parameter. not supported SKAdNetwork version. version =\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdParam.swift",
       "kind": "StringLiteral",
-      "offset": 3517,
+      "offset": 5311,
       "length": 2,
       "value": "\"\""
     },
@@ -23217,142 +24091,156 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4347,
+      "offset": 4304,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4501,
+      "offset": 4384,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4707,
+      "offset": 4562,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4768,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4752,
+      "offset": 4813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4787,
+      "offset": 4848,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 5680,
+      "offset": 5741,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "StringLiteral",
-      "offset": 5975,
+      "offset": 6036,
       "length": 27,
       "value": "\"Called from wrong thread.\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 6132,
+      "offset": 6193,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "StringLiteral",
-      "offset": 8616,
+      "offset": 8677,
       "length": 27,
       "value": "\"Called from wrong thread.\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "StringLiteral",
-      "offset": 8972,
+      "offset": 9033,
       "length": 67,
       "value": "\"[ERROR] set audio session category: \""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "StringLiteral",
-      "offset": 9038,
+      "offset": 9099,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "StringLiteral",
-      "offset": 9354,
+      "offset": 9415,
       "length": 27,
       "value": "\"Called from wrong thread.\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "StringLiteral",
-      "offset": 9613,
+      "offset": 9674,
       "length": 27,
       "value": "\"Called from wrong thread.\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 11166,
+      "offset": 11254,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "IntegerLiteral",
-      "offset": 11182,
+      "offset": 11270,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 14655,
+      "offset": 14743,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 15650,
+      "offset": 15738,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 15904,
+      "offset": 15992,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 16424,
+      "offset": 16512,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 16785,
+      "offset": 16873,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
+      "kind": "FloatLiteral",
+      "offset": 16969,
+      "length": 3,
+      "value": "0.0"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdNetworkState.swift",
@@ -24610,14 +25498,14 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdFidelity.swift",
       "kind": "StringLiteral",
-      "offset": 2356,
+      "offset": 2370,
       "length": 12,
       "value": "\"fidelities\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdFidelity.swift",
       "kind": "StringLiteral",
-      "offset": 2452,
+      "offset": 2466,
       "length": 10,
       "value": "\"fidelity\""
     },
@@ -24988,254 +25876,331 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1943,
-      "length": 5,
-      "value": "false"
+      "offset": 1704,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2014,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2380,
+      "offset": 1739,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3088,
+      "offset": 2626,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3375,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3446,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4538,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3230,
+      "offset": 4680,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 3340,
+      "offset": 4790,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 3352,
+      "offset": 4802,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 3363,
+      "offset": 4813,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 3375,
+      "offset": 4825,
       "length": 3,
       "value": "0.7"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3410,
+      "offset": 4860,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3437,
+      "offset": 4887,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3475,
+      "offset": 4925,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3590,
+      "offset": 5040,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3658,
+      "offset": 5108,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3674,
+      "offset": 5124,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3743,
+      "offset": 5180,
       "length": 2,
-      "value": "22"
+      "value": "20"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3759,
+      "offset": 5196,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3834,
-      "length": 2,
-      "value": "-5"
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3850,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3927,
+      "offset": 5271,
       "length": 2,
       "value": "-5"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3943,
+      "offset": 5287,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5366,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4923,
+      "offset": 6346,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5905,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "FloatLiteral",
-      "offset": 6908,
+      "offset": 8364,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 6955,
+      "offset": 8411,
       "length": 6,
       "value": "\"%.0f\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 8042,
+      "offset": 9498,
       "length": 53,
       "value": "\"SKAdNetwork.startImpressionに失敗しました。\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 8150,
+      "offset": 9606,
       "length": 35,
       "value": "\"SKAdNetwork.startImpression送信\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 8861,
+      "offset": 10321,
       "length": 51,
       "value": "\"SKAdNetwork.endImpressionに失敗しました。\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "StringLiteral",
-      "offset": 8967,
+      "offset": 10427,
       "length": 33,
       "value": "\"SKAdNetwork.endImpression送信\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9364,
+      "offset": 10820,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9542,
+      "offset": 10998,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9732,
+      "offset": 11188,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9909,
+      "offset": 11365,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10121,
+      "offset": 11577,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10236,
+      "offset": 11692,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10353,
+      "offset": 11809,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12722,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13225,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "StringLiteral",
+      "offset": 15612,
+      "length": 44,
+      "value": "\"SKOverlayの描画に失敗しました。\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "StringLiteral",
+      "offset": 16326,
+      "length": 64,
+      "value": "\"クリック通知送信エラー（url=\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "StringLiteral",
+      "offset": 16388,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "StringLiteral",
+      "offset": 16536,
+      "length": 109,
+      "value": "\"クリック通知送信エラー（url=\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "StringLiteral",
+      "offset": 16598,
+      "length": 1,
+      "value": "\", response=\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "StringLiteral",
+      "offset": 16641,
+      "length": 3,
+      "value": "\"）\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "StringLiteral",
+      "offset": 16710,
+      "length": 60,
+      "value": "\"クリック通知を送信（url=\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "StringLiteral",
+      "offset": 16766,
+      "length": 3,
+      "value": "\"）\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
+      "kind": "StringLiteral",
+      "offset": 16996,
+      "length": 41,
+      "value": "\"SKOverlayを非表示にしました。\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdHw.swift",
@@ -27172,14 +28137,42 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3413,
+      "offset": 3342,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideoViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3522,
+      "offset": 3451,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideoViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3515,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideoViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3531,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideoViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3596,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdInterstitialVideoViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3612,
       "length": 4,
       "value": "true"
     },

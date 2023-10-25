@@ -236,6 +236,13 @@ extension AMoAd.AMoAdView : UIKit.UIGestureRecognizerDelegate {
   @objc optional func amoadInterstitialVideoWillDismiss(amoadInterstitialVideo: AMoAd.AMoAdInterstitialVideo)
   @objc optional func amoadInterstitialVideoDidClickAd(amoadInterstitialVideo: AMoAd.AMoAdInterstitialVideo)
 }
+@_inheritsConvenienceInitializers @objc public class AMoAdNativeFullScreenVideo : ObjectiveC.NSObject {
+  @objc public static func prepareAd(sid: Swift.String)
+  @objc public static func renderAd(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, analytics: AMoAd.AMoAdAnalytics? = nil, nativeAppDelegate: (any AMoAd.AMoAdNativeAppDelegate)? = nil, videoDelegate: (any AMoAd.AMoAdNativeVideoAppDelegate)? = nil)
+  @objc public static func layoutAd(sid: Swift.String, tag: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdWeb : ObjectiveC.NSObject {
   @objc public static func prepareAd()
   @objc public static func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
@@ -323,6 +330,12 @@ extension AMoAd.AMoAdNativeMainVideoView {
 }
 extension AMoAd.AMoAdNativeMainVideoView {
   @_Concurrency.MainActor(unsafe) public func didImageButtonTapped(_ sender: Any)
+}
+@available(iOS 14.5, *)
+extension AMoAd.AMoAdNativeMainVideoView : StoreKit.SKOverlayDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func storeOverlayDidFailToLoad(_ overlay: StoreKit.SKOverlay, error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func storeOverlayWillStartPresentation(_ overlay: StoreKit.SKOverlay, transitionContext: StoreKit.SKOverlay.TransitionContext)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func storeOverlayDidFinishDismissal(_ overlay: StoreKit.SKOverlay, transitionContext: StoreKit.SKOverlay.TransitionContext)
 }
 @_inheritsConvenienceInitializers @objc public class AMoAdNativeViewCoder : ObjectiveC.NSObject {
   @objc public var titleShortAttributes: Swift.Dictionary<Foundation.NSAttributedString.Key, Any>?
