@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 6.1.17
+= AMoAd SDK for iOS ver 6.1.18
 
 :numbered:
 :sectnums:
@@ -9,9 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** フルスクリーン動画広告を実装
-** SKAdNetwork4.0に対応
-** SKOverlayに対応
+** Xcode14.1でのビルドできるように対応
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
