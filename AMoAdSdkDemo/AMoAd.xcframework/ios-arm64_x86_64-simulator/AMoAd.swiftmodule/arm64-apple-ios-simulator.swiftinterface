@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AMoAd
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -59,9 +59,9 @@ import _StringProcessing
   }
   @objc public static var logLevel: AMoAd.AMoAdLogger.LogLevel
   @objc public static var onTrace: ((Swift.String) -> ())?
-  @objc public static func fatal(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, error: (any Swift.Error)?, message: Swift.String)
-  @objc public static func error(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, error: (any Swift.Error)?, message: Swift.String)
-  @objc public static func warn(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, error: (any Swift.Error)?, message: Swift.String)
+  @objc public static func fatal(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, error: Swift.Error?, message: Swift.String)
+  @objc public static func error(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, error: Swift.Error?, message: Swift.String)
+  @objc public static func warn(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, error: Swift.Error?, message: Swift.String)
   @objc public static func info(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, message: Swift.String)
   @objc public static func debug(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, message: Swift.String)
   @objc public static func trace(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, message: Swift.String)
@@ -85,7 +85,7 @@ import _StringProcessing
   @objc optional func amoadNativeDidClick(sid: Swift.String, tag: Swift.String, view: UIKit.UIView)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdInterstitialVideo : ObjectiveC.NSObject {
-  @objc weak public var delegate: (any AMoAd.AMoAdInterstitialVideoDelegate)?
+  @objc weak public var delegate: AMoAd.AMoAdInterstitialVideoDelegate?
   @objc public var isLoaded: Swift.Bool {
     get
   }
@@ -119,7 +119,7 @@ extension AMoAd.AMoAdInterstitialVideo {
 }
 @objc public protocol AMoAdViewDelegate {
   @objc optional func amoadViewDidReceiveAd(view: AMoAd.AMoAdView)
-  @objc optional func amoadViewDidFailToReceiveAd(error: any Swift.Error)
+  @objc optional func amoadViewDidFailToReceiveAd(error: Swift.Error)
   @objc optional func amoadViewDidReceiveEmptyAd(view: AMoAd.AMoAdView)
   @objc optional func amoadViewDidClick(view: AMoAd.AMoAdView)
   @objc optional func amoadViewWillClickBack(view: AMoAd.AMoAdView)
@@ -134,7 +134,7 @@ extension AMoAd.AMoAdInterstitialVideo {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any ObjectiveC.NSObject & AMoAd.AMoAdViewDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (ObjectiveC.NSObject & AMoAd.AMoAdViewDelegate)?
   @objc @_Concurrency.MainActor(unsafe) public var rotateTransition: UIKit.UIView.AnimationTransition
   @objc @_Concurrency.MainActor(unsafe) public var clickTransition: AMoAd.AMoAdClickTransition
   @objc @_Concurrency.MainActor(unsafe) public var horizontalAlign: AMoAd.AMoAdHorizontalAlign
@@ -220,9 +220,9 @@ extension AMoAd.AMoAdView : UIKit.UIGestureRecognizerDelegate {
   @objc public static func setLinkButton(sid: Swift.String, image: UIKit.UIImage?, highlighted: UIKit.UIImage?)
   @objc public static func setCloseButton(sid: Swift.String, image: UIKit.UIImage?, highlighted: UIKit.UIImage?)
   @objc public static func setAutoReload(sid: Swift.String, isAutoReload: Swift.Bool)
-  @objc public static func loadAd(sid: Swift.String, completion: ((Swift.String, AMoAd.AMoAdResult, (any Swift.Error)?) -> ())?)
+  @objc public static func loadAd(sid: Swift.String, completion: ((Swift.String, AMoAd.AMoAdResult, Swift.Error?) -> ())?)
   @objc public static func isLoadedAd(sid: Swift.String) -> Swift.Bool
-  @objc public static func showAd(sid: Swift.String, completion: ((Swift.String, AMoAd.AMoAdInterstitialResult, (any Swift.Error)?) -> ())?)
+  @objc public static func showAd(sid: Swift.String, completion: ((Swift.String, AMoAd.AMoAdInterstitialResult, Swift.Error?) -> ())?)
   @objc public static func closeAd(sid: Swift.String)
   @objc override dynamic public init()
   @objc deinit
@@ -238,7 +238,7 @@ extension AMoAd.AMoAdView : UIKit.UIGestureRecognizerDelegate {
 }
 @_inheritsConvenienceInitializers @objc public class AMoAdNativeFullScreenVideo : ObjectiveC.NSObject {
   @objc public static func prepareAd(sid: Swift.String)
-  @objc public static func renderAd(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, analytics: AMoAd.AMoAdAnalytics? = nil, nativeAppDelegate: (any AMoAd.AMoAdNativeAppDelegate)? = nil, videoDelegate: (any AMoAd.AMoAdNativeVideoAppDelegate)? = nil)
+  @objc public static func renderAd(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, analytics: AMoAd.AMoAdAnalytics? = nil, nativeAppDelegate: AMoAd.AMoAdNativeAppDelegate? = nil, videoDelegate: AMoAd.AMoAdNativeVideoAppDelegate? = nil)
   @objc public static func layoutAd(sid: Swift.String, tag: Swift.String)
   @objc override dynamic public init()
   @objc deinit
@@ -298,7 +298,7 @@ extension AMoAd.AMoAdView : UIKit.UIGestureRecognizerDelegate {
 }
 @objc extension AMoAd.AMoAdNativeViewManager {
   @objc dynamic public func prepareAd(sid: Swift.String, iconPreloading: Swift.Bool = false, imagePreloading: Swift.Bool = false)
-  @objc dynamic public func renderAd(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, coder: AMoAd.AMoAdNativeViewCoder? = nil, delegate: (any AMoAd.AMoAdNativeAppDelegate)? = nil)
+  @objc dynamic public func renderAd(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, coder: AMoAd.AMoAdNativeViewCoder? = nil, delegate: AMoAd.AMoAdNativeAppDelegate? = nil)
   @objc dynamic public func clearAd(sid: Swift.String, tag: Swift.String? = nil)
 }
 @objc extension AMoAd.AMoAdNativeViewManager {
@@ -308,8 +308,8 @@ extension AMoAd.AMoAdView : UIKit.UIGestureRecognizerDelegate {
   @objc dynamic public func register(sid: Swift.String, tag: Swift.String, collectionView: UIKit.UICollectionView, nib: UIKit.UINib, coder: AMoAd.AMoAdNativeViewCoder? = nil)
 }
 @_hasMissingDesignatedInitializers @objc public class AMoAdNativeViewItem : ObjectiveC.NSObject {
-  @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath, delegate: (any AMoAd.AMoAdNativeListViewDelegate)? = nil) -> UIKit.UITableViewCell
-  @objc public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath, delegate: (any AMoAd.AMoAdNativeListViewDelegate)? = nil) -> UIKit.UICollectionViewCell
+  @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath, delegate: AMoAd.AMoAdNativeListViewDelegate? = nil) -> UIKit.UITableViewCell
+  @objc public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath, delegate: AMoAd.AMoAdNativeListViewDelegate? = nil) -> UIKit.UICollectionViewCell
   @objc deinit
 }
 @objc public protocol AMoAdNativeVideoAppDelegate {
@@ -318,7 +318,7 @@ extension AMoAd.AMoAdView : UIKit.UIGestureRecognizerDelegate {
   @objc func amoadNativeVideoDidFailToPlay(view: UIKit.UIView)
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class AMoAdNativeMainVideoView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any AMoAd.AMoAdNativeVideoAppDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: AMoAd.AMoAdNativeVideoAppDelegate?
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
@@ -333,7 +333,7 @@ extension AMoAd.AMoAdNativeMainVideoView {
 }
 @available(iOS 14.5, *)
 extension AMoAd.AMoAdNativeMainVideoView : StoreKit.SKOverlayDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func storeOverlayDidFailToLoad(_ overlay: StoreKit.SKOverlay, error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func storeOverlayDidFailToLoad(_ overlay: StoreKit.SKOverlay, error: Swift.Error)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func storeOverlayWillStartPresentation(_ overlay: StoreKit.SKOverlay, transitionContext: StoreKit.SKOverlay.TransitionContext)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func storeOverlayDidFinishDismissal(_ overlay: StoreKit.SKOverlay, transitionContext: StoreKit.SKOverlay.TransitionContext)
 }
