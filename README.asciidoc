@@ -14,4 +14,5 @@
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
 
+- link:https://github.com/amoad/amoad-ios-max-adapter[AMoAd Max Mediation Adapter SDK]
 - link:https://github.com/amoad/amoad-android-sdk[AMoAd Android SDK]
