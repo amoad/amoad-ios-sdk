@@ -9726,6 +9726,68 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "AMoAdSettings",
+        "printedName": "AMoAdSettings",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "SDK_VERSION",
+            "printedName": "SDK_VERSION",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5AMoAd0aB8SettingsV11SDK_VERSIONSSvpZ",
+            "mangledName": "$s5AMoAd0aB8SettingsV11SDK_VERSIONSSvpZ",
+            "moduleName": "AMoAd",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5AMoAd0aB8SettingsV11SDK_VERSIONSSvgZ",
+                "mangledName": "$s5AMoAd0aB8SettingsV11SDK_VERSIONSSvgZ",
+                "moduleName": "AMoAd",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:5AMoAd0aB8SettingsV",
+        "mangledName": "$s5AMoAd0aB8SettingsV",
+        "moduleName": "AMoAd",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -17210,14 +17272,14 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdSettings.swift",
       "kind": "StringLiteral",
-      "offset": 274,
+      "offset": 302,
       "length": 8,
-      "value": "\"6.1.18\""
+      "value": "\"6.1.19\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdSettings.swift",
       "kind": "StringLiteral",
-      "offset": 319,
+      "offset": 347,
       "length": 24,
       "value": "\"866k9ut3g3.skadnetwork\""
     },
