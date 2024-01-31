@@ -262,6 +262,11 @@ extension AMoAd.AMoAdView : UIKit.UIGestureRecognizerDelegate {
   @objc public static func setViewabilityTrackingCell(cell: UIKit.UIView, adItem: AMoAd.AMoAdItem?)
   @objc deinit
 }
+public struct AMoAdSettings {
+  public static var SDK_VERSION: Swift.String {
+    get
+  }
+}
 @objc public protocol AMoAdNativeListViewDelegate {
   @objc optional func amoadNativeDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, indexPath: Foundation.IndexPath, state: AMoAd.AMoAdResult)
   @objc optional func amoadNativeIconDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, indexPath: Foundation.IndexPath, state: AMoAd.AMoAdResult)
