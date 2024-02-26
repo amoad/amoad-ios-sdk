@@ -9789,6 +9789,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AMoAd",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -15996,6 +16006,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdImageButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 373,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Models\/AMoAdSKAdVersion.swift",
       "kind": "StringLiteral",
       "offset": 288,
@@ -16710,6 +16727,125 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4671,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4689,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4709,
+      "length": 11,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4671,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4689,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4709,
+      "length": 11,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4671,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4689,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4709,
+      "length": 11,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5449,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5457,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5467,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5478,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6604,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6612,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6622,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/Extension\/UIViewExtension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6633,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdIdfa.swift",
       "kind": "StringLiteral",
       "offset": 335,
@@ -16867,22 +17003,22 @@
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdSoundButton.swift",
       "kind": "StringLiteral",
       "offset": 402,
-      "length": 57,
-      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/movie\/sound_on.png\""
+      "length": 59,
+      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/movie\/sound_on40.png\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdSoundButton.swift",
       "kind": "StringLiteral",
-      "offset": 503,
-      "length": 58,
-      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/movie\/sound_off.png\""
+      "offset": 505,
+      "length": 60,
+      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/movie\/sound_off40.png\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdSoundButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 589,
+      "offset": 593,
       "length": 2,
-      "value": "40"
+      "value": "30"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdSoundButton.swift",
@@ -17274,7 +17410,7 @@
       "kind": "StringLiteral",
       "offset": 302,
       "length": 8,
-      "value": "\"6.1.19\""
+      "value": "\"6.1.20\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdSettings.swift",
@@ -17282,6 +17418,76 @@
       "offset": 347,
       "length": 24,
       "value": "\"866k9ut3g3.skadnetwork\""
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButtonSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 291,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButtonSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButtonSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 332,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButtonSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 291,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButtonSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButtonSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 332,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButtonSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 291,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButtonSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 312,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButtonSettings.swift",
+      "kind": "IntegerLiteral",
+      "offset": 332,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButtonSettings.swift",
+      "kind": "FloatLiteral",
+      "offset": 1002,
+      "length": 3,
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdViewabilityMonitoringView.swift",
@@ -17335,35 +17541,35 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4304,
+      "offset": 4316,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4562,
+      "offset": 4574,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4768,
+      "offset": 4780,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4813,
+      "offset": 4825,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeVideo.swift",
       "kind": "BooleanLiteral",
-      "offset": 4848,
+      "offset": 4860,
       "length": 5,
       "value": "false"
     },
@@ -18337,22 +18543,22 @@
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdReplayButton.swift",
       "kind": "StringLiteral",
       "offset": 264,
-      "length": 55,
-      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/movie\/replay.png\""
+      "length": 57,
+      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/movie\/replay40.png\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdReplayButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 349,
+      "offset": 343,
       "length": 2,
-      "value": "40"
+      "value": "30"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdReplayButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 382,
+      "offset": 368,
       "length": 2,
-      "value": "40"
+      "value": "30"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdReplayButton.swift",
@@ -18497,21 +18703,21 @@
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2626,
+      "offset": 2625,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3375,
+      "offset": 3417,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd Native\/AMoAdNativeMainVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3446,
+      "offset": 3488,
       "length": 5,
       "value": "false"
     },
@@ -18561,15 +18767,15 @@
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButton.swift",
       "kind": "StringLiteral",
       "offset": 243,
-      "length": 54,
-      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/movie\/close.png\""
+      "length": 69,
+      "value": "\"https:\/\/i.amoad.com\/creatives\/shared\/interstitial_video\/close40.png\""
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButton.swift",
       "kind": "IntegerLiteral",
-      "offset": 325,
+      "offset": 340,
       "length": 2,
-      "value": "40"
+      "value": "30"
     },
     {
       "filePath": "\/Users\/s17989\/dev\/ultima\/sdk\/ultima-ios-sdk\/AMoAd\/AMoAd\/AMoAdCloseButton.swift",
