@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 6.1.19
+= AMoAd SDK for iOS ver 6.1.20
 
 :numbered:
 :sectnums:
@@ -9,7 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** AMoAd Max Mediation Adapterに対応
+** インタースティシャル動画広告の各コンポーネントの素材を変更
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
