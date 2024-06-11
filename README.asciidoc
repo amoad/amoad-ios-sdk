@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 6.1.21
+= AMoAd SDK for iOS ver 6.1.22
 
 :numbered:
 :sectnums:
@@ -9,7 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** AMoAdInterstitialVideoDelegateが2重で発火される不具合を修正
+** AMoAdViewのキャッシュを削除する処理を追加
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。

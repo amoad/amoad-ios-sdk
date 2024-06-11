@@ -152,6 +152,7 @@ extension AMoAd.AMoAdInterstitialVideo {
   @_Concurrency.MainActor(unsafe) @objc override convenience dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
   @objc @_Concurrency.MainActor(unsafe) public func show()
   @objc @_Concurrency.MainActor(unsafe) public func hide()
+  @objc @_Concurrency.MainActor(unsafe) public func reset()
   @objc @_Concurrency.MainActor(unsafe) public func setClickCustomScheme(scheme: Swift.String, handler: @escaping (Swift.String) -> ())
   @objc @_Concurrency.MainActor(unsafe) public func setClickCustomSchemes(schemes: [Swift.String], handler: @escaping (Swift.String) -> ())
   @objc @_Concurrency.MainActor(unsafe) public func setClickCustomHandler(handler: @escaping (Swift.String) -> ())
