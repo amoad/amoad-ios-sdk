@@ -1,0 +1,4 @@
+module OMSDK_Cyberagentcojp3 {
+    header "Headers/OMIDImports.h"
+    export *
+}

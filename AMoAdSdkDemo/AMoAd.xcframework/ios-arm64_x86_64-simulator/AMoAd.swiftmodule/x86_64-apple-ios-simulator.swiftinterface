@@ -11,6 +11,7 @@ import CommonCrypto/*.CC_MD5_DIGEST_LENGTH*/
 import CoreFoundation
 import CoreMedia
 import Foundation
+import OMSDK_Cyberagentcojp3
 import StoreKit
 import Swift
 import SystemConfiguration
@@ -24,7 +25,7 @@ import _StringProcessing
   @objc public var titleShort: Swift.String?
   @objc public var titleLong: Swift.String?
   @objc public var serviceName: Swift.String?
-  @objc public var link: Swift.String
+  @objc public var link: Foundation.URL?
   @objc public var unitNo: Swift.Int
   @objc public func onClick()
   @objc public func onClick(schemes: [Swift.String]?, handler: ((Swift.String) -> ())?)
@@ -106,6 +107,13 @@ extension AMoAd.AMoAdInterstitialVideo : AMoAd.AMoAdNativeAppDelegate {
 extension AMoAd.AMoAdInterstitialVideo {
   public func closeButtonDidClicked(viewController: UIKit.UIViewController)
 }
+public struct AMoAdVastResource : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension AMoAd.AMoAdVastResource : Swift.Equatable {
+  public static func == (a: AMoAd.AMoAdVastResource, b: AMoAd.AMoAdVastResource) -> Swift.Bool
+}
 @objc public enum AMoAdHorizontalAlign : Swift.Int {
   case none = 0
   case left = 1
@@ -152,6 +160,7 @@ extension AMoAd.AMoAdInterstitialVideo {
   @_Concurrency.MainActor(unsafe) @objc override convenience dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
   @objc @_Concurrency.MainActor(unsafe) public func show()
   @objc @_Concurrency.MainActor(unsafe) public func hide()
+  @objc @_Concurrency.MainActor(unsafe) public func reset()
   @objc @_Concurrency.MainActor(unsafe) public func setClickCustomScheme(scheme: Swift.String, handler: @escaping (Swift.String) -> ())
   @objc @_Concurrency.MainActor(unsafe) public func setClickCustomSchemes(schemes: [Swift.String], handler: @escaping (Swift.String) -> ())
   @objc @_Concurrency.MainActor(unsafe) public func setClickCustomHandler(handler: @escaping (Swift.String) -> ())
