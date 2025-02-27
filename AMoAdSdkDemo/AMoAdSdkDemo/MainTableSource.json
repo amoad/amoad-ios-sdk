@@ -1,200 +1,240 @@
 [
-  {
-    "name": "ディスプレイ広告",
-    "rows": [
-      {
-        "name": "バナー(320 x 50)",
-        "identifier": "display",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "width": 320,
-        "height": 50
-      },
-      {
-        "name": "バナー(320 x 100)",
-        "identifier": "display",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "width": 320,
-        "height": 100
-      },
-      {
-        "name": "バナー(300 x 250)",
-        "identifier": "display",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "width": 300,
-        "height": 250
-      },
-      {
-        "name": "バナー(300 x 100)",
-        "identifier": "display",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "width": 300,
-        "height": 100
-      },
-      {
-        "name": "バナー(728 x 90)",
-        "identifier": "display",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "width": 728,
-        "height": 90
-      },
-      {
-        "name": "アイコンテキスト(320 x 50)",
-        "identifier": "display",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "width": 320,
-        "height": 50
-      },
-      {
-        "name": "HTML(300 x 250)",
-        "identifier": "display",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "width": 300,
-        "height": 250
-      },
-      {
-        "name": "HTML(AMoAdタグ)",
-        "identifier": "display",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "width": 300,
-        "height": 250
-      },
-      {
-        "name": "動画(300 x 250)",
-        "identifier": "display",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "width": 300,
-        "height": 250
-      },
-      {
-        "name": "Gif(320 x 50)",
-        "identifier": "display",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "width": 320,
-        "height": 50
-      }
-    ]
-  },
-  {
-    "name": "インタースティシャル広告",
-    "rows": [
-      {
-        "name": "バナー",
-        "identifier": "interstitial",
-        "sid": "管理画面から発行されるSIDを設定してください"
-      }
-    ]
-  },
-  {
-    "name": "インフィード広告",
-    "rows": [
-      {
-        "name": "ネイティブ(リンクボタンあり)",
-        "identifier": "native",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "nibName": "NativeAppViewWithLink"
-      },
-      {
-        "name": "ネイティブ(リンクボタンなし)",
-        "identifier": "native",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "nibName": "NativeAppViewWithoutLink"
-      },
-      {
-        "name": "アイコン画像＋テキスト",
-        "identifier": "native",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "nibName": "NativeAppIconTextView"
-      },
-      {
-        "name": "1行テキスト",
-        "identifier": "native",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "nibName": "NativeAppOneLineTextView"
-      },
-      {
-        "name": "アイコン画像",
-        "identifier": "native",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "nibName": "NativeAppIconView"
-      },
-      {
-        "name": "リストビュー",
-        "identifier": "listview",
-        "sid": "管理画面から発行されるSIDを設定してください"
-      },
-      {
-        "name": "プリロール",
-        "identifier": "preroll",
-        "sid": "管理画面から発行されるSIDを設定してください"
-      }
-    ]
-  },
-  {
-    "name": "インフィードAfiO広告",
-    "rows": [
-      {
-        "name": "AfiO横動画(リンクあり)",
-        "identifier": "infeed_afio",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "nibName": "InfeedAfiOViewWithLink"
-      },
-      {
-        "name": "AfiO横動画(リンクなし)",
-        "identifier": "infeed_afio",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "nibName": "InfeedAfiOViewWithoutLink"
-      }
-    ]
-  },
-  {
-    "name": "インタースティシャルAfiO広告",
-    "rows": [
-      {
-        "name": "AfiO横動画",
-        "identifier": "interstitial_afio",
-        "sid": "管理画面から発行されるSIDを設定してください"
-      }
-    ]
-  },
-  {
-    "name": "WebView",
-    "rows": [
-      {
-        "name": "WKWebView(ディスプレイ)",
-        "identifier": "wkwebview",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "jsType": "display"
-      },
-      {
-        "name": "UIWebView(ディスプレイ)",
-        "identifier": "uiwebview",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "jsType": "display"
-      },
-      {
-        "name": "WKWebView(インフィード)",
-        "identifier": "wkwebview",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "jsType": "native"
-      },
-      {
-        "name": "UIWebView(インフィード)",
-        "identifier": "uiwebview",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "jsType": "native"
-      },
-      {
-        "name": "WKWebView(AfiO)",
-        "identifier": "wkwebview",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "jsType": "native"
-      },
-      {
-        "name": "UIWebView(AfiO)",
-        "identifier": "uiwebview",
-        "sid": "管理画面から発行されるSIDを設定してください",
-        "jsType": "native"
-      }
-    ]
-  }
+    {
+        "name": "ディスプレイ広告",
+        "rows": [
+            {
+                "name": "バナー(320 x 50)",
+                "identifier": "display",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "width": 320,
+                "height": 50
+            },
+            {
+                "name": "バナー(320 x 100)",
+                "identifier": "display",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "width": 320,
+                "height": 100
+            },
+            {
+                "name": "バナー(300 x 250)",
+                "identifier": "display",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "width": 300,
+                "height": 250
+            },
+            {
+                "name": "バナー(300 x 100)",
+                "identifier": "display",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "width": 300,
+                "height": 100
+            },
+            {
+                "name": "バナー(728 x 90)",
+                "identifier": "display",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "width": 728,
+                "height": 90
+            },
+            {
+                "name": "アイコンテキスト(320 x 50)",
+                "identifier": "display",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "width": 320,
+                "height": 50
+            },
+            {
+                "name": "HTML(300 x 250)",
+                "identifier": "display",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "width": 300,
+                "height": 250
+            },
+            {
+                "name": "HTML(AMoAdタグ)",
+                "identifier": "display",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "width": 300,
+                "height": 250
+            },
+            {
+                "name": "動画(300 x 250)",
+                "identifier": "display",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "width": 300,
+                "height": 250
+            },
+            {
+                "name": "Gif(320 x 50)",
+                "identifier": "display",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "width": 320,
+                "height": 50
+            }
+        ]
+    },
+    {
+        "name": "インタースティシャル広告",
+        "rows": [
+            {
+                "name": "バナー",
+                "identifier": "interstitial",
+                "sid": "管理画面から発行されるSIDを設定してください"
+            }
+        ]
+    },
+    {
+        "name": "インフィード広告",
+        "rows": [
+            {
+                "name": "ネイティブ(リンクボタンあり)",
+                "identifier": "native",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "nibName": "NativeAppViewWithLink"
+            },
+            {
+                "name": "ネイティブ(リンクボタンなし)",
+                "identifier": "native",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "nibName": "NativeAppViewWithoutLink"
+            },
+            {
+                "name": "アイコン画像＋テキスト",
+                "identifier": "native",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "nibName": "NativeAppIconTextView"
+            },
+            {
+                "name": "1行テキスト",
+                "identifier": "native",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "nibName": "NativeAppOneLineTextView"
+            },
+            {
+                "name": "アイコン画像",
+                "identifier": "native",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "nibName": "NativeAppIconView"
+            },
+            {
+                "name": "リストビュー",
+                "identifier": "listview",
+                "sid": "管理画面から発行されるSIDを設定してください"
+            },
+            {
+                "name": "プリロール",
+                "identifier": "preroll",
+                "sid": "管理画面から発行されるSIDを設定してください"
+            }
+        ]
+    },
+    {
+        "name": "インフィードAfiO広告",
+        "rows": [
+            {
+                "name": "AfiO横動画(リンクあり)",
+                "identifier": "infeed_afio",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "nibName": "InfeedAfiOViewWithLink"
+            },
+            {
+                "name": "AfiO横動画(リンクなし)",
+                "identifier": "infeed_afio",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "nibName": "InfeedAfiOViewWithoutLink"
+            }
+        ]
+    },
+    {
+        "name": "インタースティシャルAfiO広告",
+        "rows": [
+            {
+                "name": "AfiO横動画",
+                "identifier": "interstitial_afio",
+                "sid": "管理画面から発行されるSIDを設定してください"
+            }
+        ]
+    },
+    {
+        "name": "MAX Mediation広告",
+        "rows": [
+            {
+                "name": "Rewarded広告",
+                "identifier": "max_rewarded",
+                "sid": "AppLovin管理画面から発行されるAdUnitIDを設定してください"
+            },
+            {
+                "name": "Mrec広告",
+                "identifier": "max_mrec",
+                "sid": "AppLovin管理画面から発行されるAdUnitIDを設定してください"
+            },
+            {
+                "name": "Rewarded広告",
+                "identifier": "admob_rewarded",
+                "sid": "AdMob管理画面から発行されるAdUnitIDを設定してください"
+            },
+            {
+                "name": "Mrec広告",
+                "identifier": "admob_banner",
+                "sid": "AdMob管理画面から発行されるAdUnitIDを設定してください"
+            },
+        ]
+    },
+    {
+        "name": "AdMob Mediation広告",
+        "rows": [
+            {
+                "name": "Rewarded広告",
+                "identifier": "admob_rewarded",
+                "sid": "AdMob管理画面から発行されるAdUnitIDを設定してください"
+            },
+            {
+                "name": "banner広告",
+                "identifier": "admob_banner",
+                "sid": "AdMob管理画面から発行されるAdUnitIDを設定してください"
+            },
+        ]
+    },
+    {
+        "name": "WebView",
+        "rows": [
+            {
+                "name": "WKWebView(ディスプレイ)",
+                "identifier": "wkwebview",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "jsType": "display"
+            },
+            {
+                "name": "UIWebView(ディスプレイ)",
+                "identifier": "uiwebview",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "jsType": "display"
+            },
+            {
+                "name": "WKWebView(インフィード)",
+                "identifier": "wkwebview",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "jsType": "native"
+            },
+            {
+                "name": "UIWebView(インフィード)",
+                "identifier": "uiwebview",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "jsType": "native"
+            },
+            {
+                "name": "WKWebView(AfiO)",
+                "identifier": "wkwebview",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "jsType": "native"
+            },
+            {
+                "name": "UIWebView(AfiO)",
+                "identifier": "uiwebview",
+                "sid": "管理画面から発行されるSIDを設定してください",
+                "jsType": "native"
+            }
+        ]
+    }
 ]
