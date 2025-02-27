@@ -488,6 +488,66 @@
             </objects>
             <point key="canvasLocation" x="2354" y="6550"/>
         </scene>
+        <!--Max Interstitial Ad View Controller-->
+        <scene sceneID="bfh-f7-2M1">
+            <objects>
+                <viewController storyboardIdentifier="max_interstitial" id="hxs-cL-ZcQ" customClass="MaxInterstitialAdViewController" customModule="AMoAdSdkDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3dc-of-cCg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jL-UT-RLh">
+                                <rect key="frame" x="107" y="148" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="fzT-nf-EbV"/>
+                                    <constraint firstAttribute="height" constant="50" id="pf9-Kh-FdR"/>
+                                </constraints>
+                                <state key="normal" title="広告リクエスト"/>
+                                <connections>
+                                    <action selector="onTapLoad" destination="hxs-cL-ZcQ" eventType="touchUpInside" id="a1E-1P-K0O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fi2-JC-rhq">
+                                <rect key="frame" x="107" y="228" width="200" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="baO-Lg-Lj6"/>
+                                    <constraint firstAttribute="height" constant="50" id="trU-iH-7gl"/>
+                                </constraints>
+                                <state key="normal" title="表示"/>
+                                <connections>
+                                    <action selector="onTapShow" destination="hxs-cL-ZcQ" eventType="touchUpInside" id="A7l-rW-Ly0"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W6D-9m-ma6">
+                                <rect key="frame" x="15" y="293" width="384" height="584"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ue9-BX-Hh4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W6D-9m-ma6" firstAttribute="top" secondItem="Fi2-JC-rhq" secondAttribute="bottom" constant="15" id="DZo-N1-HMW"/>
+                            <constraint firstItem="ue9-BX-Hh4" firstAttribute="trailing" secondItem="W6D-9m-ma6" secondAttribute="trailing" constant="15" id="EV0-wj-SeG"/>
+                            <constraint firstItem="W6D-9m-ma6" firstAttribute="leading" secondItem="ue9-BX-Hh4" secondAttribute="leading" constant="15" id="FFT-4d-mTv"/>
+                            <constraint firstItem="W6D-9m-ma6" firstAttribute="bottom" secondItem="ue9-BX-Hh4" secondAttribute="bottom" constant="15" id="FLU-Dg-5Tx"/>
+                            <constraint firstItem="3jL-UT-RLh" firstAttribute="top" secondItem="ue9-BX-Hh4" secondAttribute="top" constant="100" id="Uk7-Wa-zWG"/>
+                            <constraint firstItem="Fi2-JC-rhq" firstAttribute="centerX" secondItem="3dc-of-cCg" secondAttribute="centerX" id="WhO-ES-TXa"/>
+                            <constraint firstItem="W6D-9m-ma6" firstAttribute="centerX" secondItem="3dc-of-cCg" secondAttribute="centerX" id="cFp-0K-viy"/>
+                            <constraint firstItem="Fi2-JC-rhq" firstAttribute="top" secondItem="3jL-UT-RLh" secondAttribute="bottom" constant="30" id="lpY-rY-Rqy"/>
+                            <constraint firstItem="Fi2-JC-rhq" firstAttribute="top" secondItem="3jL-UT-RLh" secondAttribute="bottom" constant="30" id="wF2-1K-4Ux"/>
+                            <constraint firstItem="3jL-UT-RLh" firstAttribute="centerX" secondItem="3dc-of-cCg" secondAttribute="centerX" id="xev-XX-3e8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logView" destination="W6D-9m-ma6" id="7RV-DD-GXU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lJ-7c-zlQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="5825"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="darkTextColor">

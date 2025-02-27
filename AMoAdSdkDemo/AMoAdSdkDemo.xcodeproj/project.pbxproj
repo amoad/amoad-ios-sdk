@@ -45,6 +45,7 @@
 		E3CEE60C2D7002F30069EE07 /* MaxMrecAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CEE60B2D7002F30069EE07 /* MaxMrecAdViewController.swift */; };
 		E3CEE60E2D7007190069EE07 /* AdMobRewardedAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CEE60D2D7007190069EE07 /* AdMobRewardedAdViewController.swift */; };
 		E3CEE6102D7007730069EE07 /* AdMobBannerAdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CEE60F2D7007730069EE07 /* AdMobBannerAdController.swift */; };
+		E3CEE6142D701A200069EE07 /* MaxInterstitialAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CEE6132D701A200069EE07 /* MaxInterstitialAdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		E3CEE60B2D7002F30069EE07 /* MaxMrecAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxMrecAdViewController.swift; sourceTree = "<group>"; };
 		E3CEE60D2D7007190069EE07 /* AdMobRewardedAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobRewardedAdViewController.swift; sourceTree = "<group>"; };
 		E3CEE60F2D7007730069EE07 /* AdMobBannerAdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobBannerAdController.swift; sourceTree = "<group>"; };
+		E3CEE6132D701A200069EE07 /* MaxInterstitialAdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxInterstitialAdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				E3CEE60B2D7002F30069EE07 /* MaxMrecAdViewController.swift */,
 				E3CEE60D2D7007190069EE07 /* AdMobRewardedAdViewController.swift */,
 				E3CEE60F2D7007730069EE07 /* AdMobBannerAdController.swift */,
+				E3CEE6132D701A200069EE07 /* MaxInterstitialAdViewController.swift */,
 			);
 			path = AMoAdSdkDemo;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				6153881E2452AE8700568D6D /* JsType.swift in Sources */,
 				6153881C2452AE8700568D6D /* PageItemViewController.swift in Sources */,
 				E3CEE60C2D7002F30069EE07 /* MaxMrecAdViewController.swift in Sources */,
+				E3CEE6142D701A200069EE07 /* MaxInterstitialAdViewController.swift in Sources */,
 				6153880F2452AE8700568D6D /* UIWebViewViewController.swift in Sources */,
 				E3CEE6102D7007730069EE07 /* AdMobBannerAdController.swift in Sources */,
 				615388112452AE8700568D6D /* AMoAdResultExtension.swift in Sources */,

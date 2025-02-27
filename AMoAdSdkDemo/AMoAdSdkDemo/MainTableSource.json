@@ -165,6 +165,11 @@
                 "sid": "AppLovin管理画面から発行されるAdUnitIDを設定してください"
             },
             {
+                "name": "Interstitial広告",
+                "identifier": "max_interstitial",
+                "sid": "AppLovin管理画面から発行されるAdUnitIDを設定してください"
+            },
+            {
                 "name": "Mrec広告",
                 "identifier": "max_mrec",
                 "sid": "AppLovin管理画面から発行されるAdUnitIDを設定してください"

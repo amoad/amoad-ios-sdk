@@ -91,6 +91,11 @@ class MasterViewController: UITableViewController {
             vc.adUnitId = row.sid
             vc.navigationItem.title = row.name
             self.navigationController?.pushViewController(vc, animated: true)
+        case "max_interstitial":
+            let vc = srotyboard.instantiateViewController(withIdentifier: identifier) as!  MaxInterstitialAdViewController
+            vc.adUnitId = row.sid
+            vc.navigationItem.title = row.name
+            self.navigationController?.pushViewController(vc, animated: true)
         case "max_mrec":
             let vc = srotyboard.instantiateViewController(withIdentifier: identifier) as!  MaxMrecAdViewController
             vc.adUnitId = row.sid
