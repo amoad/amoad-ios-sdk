@@ -169,16 +169,6 @@
                 "identifier": "max_mrec",
                 "sid": "AppLovin管理画面から発行されるAdUnitIDを設定してください"
             },
-            {
-                "name": "Rewarded広告",
-                "identifier": "admob_rewarded",
-                "sid": "AdMob管理画面から発行されるAdUnitIDを設定してください"
-            },
-            {
-                "name": "Mrec広告",
-                "identifier": "admob_banner",
-                "sid": "AdMob管理画面から発行されるAdUnitIDを設定してください"
-            },
         ]
     },
     {

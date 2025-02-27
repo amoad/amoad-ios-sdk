@@ -368,8 +368,8 @@
                                     <action selector="onTapShow" destination="UwP-zy-xFG" eventType="touchUpInside" id="GlO-jY-HcP"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c1e-Rk-c9Q">
-                                <rect key="frame" x="15" y="278" width="384" height="584"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c1e-Rk-c9Q">
+                                <rect key="frame" x="15" y="293" width="384" height="584"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -380,10 +380,14 @@
                         <constraints>
                             <constraint firstItem="RcD-kr-c6m" firstAttribute="centerX" secondItem="Tzm-j4-G0L" secondAttribute="centerX" id="1fb-3T-dnd"/>
                             <constraint firstItem="c1e-Rk-c9Q" firstAttribute="top" secondItem="RcD-kr-c6m" secondAttribute="bottom" constant="15" id="DPG-v6-Uac"/>
+                            <constraint firstItem="4gw-W1-3gS" firstAttribute="trailing" secondItem="c1e-Rk-c9Q" secondAttribute="trailing" constant="15" id="EtW-gX-n51"/>
                             <constraint firstItem="RcD-kr-c6m" firstAttribute="top" secondItem="eGq-CE-nW5" secondAttribute="bottom" constant="30" id="HMv-fo-vXa"/>
                             <constraint firstItem="eGq-CE-nW5" firstAttribute="centerX" secondItem="Tzm-j4-G0L" secondAttribute="centerX" id="Hbc-Er-upI"/>
+                            <constraint firstItem="c1e-Rk-c9Q" firstAttribute="top" secondItem="RcD-kr-c6m" secondAttribute="bottom" constant="15" id="MH7-e5-D0T"/>
                             <constraint firstItem="c1e-Rk-c9Q" firstAttribute="centerX" secondItem="Tzm-j4-G0L" secondAttribute="centerX" id="NRe-UH-Thj"/>
                             <constraint firstItem="eGq-CE-nW5" firstAttribute="top" secondItem="4gw-W1-3gS" secondAttribute="top" constant="100" id="RUH-4c-IJt"/>
+                            <constraint firstItem="c1e-Rk-c9Q" firstAttribute="leading" secondItem="4gw-W1-3gS" secondAttribute="leading" constant="15" id="jWJ-hF-5fr"/>
+                            <constraint firstItem="c1e-Rk-c9Q" firstAttribute="bottom" secondItem="4gw-W1-3gS" secondAttribute="bottom" constant="15" id="mo2-by-f8v"/>
                         </constraints>
                     </view>
                     <connections>
@@ -425,7 +429,7 @@
                                 </constraints>
                                 <state key="normal" title="広告リクエスト"/>
                                 <connections>
-                                    <action selector="onTapLoad" destination="UwP-zy-xFG" eventType="touchUpInside" id="oBw-4b-d8n"/>
+                                    <action selector="onTapLoad" destination="iGc-7U-xfo" eventType="touchUpInside" id="Fmc-wm-ELs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lq-Af-8vf">
@@ -436,11 +440,11 @@
                                 </constraints>
                                 <state key="normal" title="表示"/>
                                 <connections>
-                                    <action selector="onTapShow" destination="UwP-zy-xFG" eventType="touchUpInside" id="Ckd-Fp-X6f"/>
+                                    <action selector="onTapShow" destination="iGc-7U-xfo" eventType="touchUpInside" id="JuB-Yi-P2n"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dRD-B5-TyL">
-                                <rect key="frame" x="15" y="278" width="384" height="584"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dRD-B5-TyL">
+                                <rect key="frame" x="15" y="293" width="384" height="584"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -450,13 +454,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dRD-B5-TyL" firstAttribute="centerX" secondItem="Frx-hI-2PI" secondAttribute="centerX" id="8co-2m-OcC"/>
+                            <constraint firstItem="oFL-HV-lZ4" firstAttribute="trailing" secondItem="dRD-B5-TyL" secondAttribute="trailing" constant="15" id="FbH-Yx-X9V"/>
+                            <constraint firstItem="dRD-B5-TyL" firstAttribute="top" secondItem="4Lq-Af-8vf" secondAttribute="bottom" constant="15" id="M06-p3-BTR"/>
                             <constraint firstItem="4Lq-Af-8vf" firstAttribute="centerX" secondItem="Frx-hI-2PI" secondAttribute="centerX" id="V4M-CD-H9x"/>
+                            <constraint firstItem="dRD-B5-TyL" firstAttribute="leading" secondItem="oFL-HV-lZ4" secondAttribute="leading" constant="15" id="VE6-2J-QHv"/>
                             <constraint firstItem="4Lq-Af-8vf" firstAttribute="top" secondItem="yX3-GV-j1S" secondAttribute="bottom" constant="30" id="Y9j-MB-cKK"/>
                             <constraint firstItem="yX3-GV-j1S" firstAttribute="centerX" secondItem="Frx-hI-2PI" secondAttribute="centerX" id="eob-KS-RjJ"/>
                             <constraint firstItem="yX3-GV-j1S" firstAttribute="top" secondItem="oFL-HV-lZ4" secondAttribute="top" constant="100" id="hpR-YA-oMF"/>
+                            <constraint firstItem="dRD-B5-TyL" firstAttribute="bottom" secondItem="oFL-HV-lZ4" secondAttribute="bottom" constant="15" id="pub-qv-79k"/>
                             <constraint firstItem="dRD-B5-TyL" firstAttribute="top" secondItem="4Lq-Af-8vf" secondAttribute="bottom" constant="15" id="z2b-uh-ZeG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logView" destination="dRD-B5-TyL" id="KuU-XQ-Gb8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1E4-gM-6ac" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
