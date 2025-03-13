@@ -103,6 +103,7 @@ import _StringProcessing
 extension AMoAd.AMoAdInterstitialVideo : AMoAd.AMoAdNativeAppDelegate {
   @objc dynamic public func amoadNativeDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, state: AMoAd.AMoAdResult)
   @objc dynamic public func amoadNativeImageDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, state: AMoAd.AMoAdResult)
+  @objc dynamic public func amoadNativeDidClick(sid: Swift.String, tag: Swift.String, view: UIKit.UIView)
 }
 extension AMoAd.AMoAdInterstitialVideo {
   public func closeButtonDidClicked(viewController: UIKit.UIViewController)

@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 6.2.4
+= AMoAd SDK for iOS ver 6.2.5
 
 :numbered:
 :sectnums:
@@ -9,7 +9,7 @@
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** OMSDK_Cyberagentcojp3.frameworkからbitcodeを削除しました。
+** インタースティシャル動画広告枠click時のコールバックを追加
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
