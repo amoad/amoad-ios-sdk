@@ -6,6 +6,12 @@
 - link:https://github.com/amoad/amoad-ios-sdk/archive/master.zip[ZIPをダウンロード]
 - link:https://github.com/amoad/amoad-ios-sdk/wiki[ドキュメント]
 
+== Swift Package Manager
+
+Xcode の File > Add Package Dependencies... に以下の URL を指定し、`AMoAd` プロダクトをアプリターゲットに追加してください。
+
+ https://github.com/amoad/amoad-ios-sdk
+
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
