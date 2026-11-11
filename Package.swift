@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "AMoAd",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v15)
     ],
     products: [
         .library(name: "AMoAd", targets: ["AMoAdTarget"])

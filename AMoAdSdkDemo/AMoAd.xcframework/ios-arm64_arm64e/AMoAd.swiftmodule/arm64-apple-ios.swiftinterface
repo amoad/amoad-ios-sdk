@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AMoAd
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name AMoAd
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import AVFoundation
 import AdSupport
 import AppTrackingTransparency
@@ -20,389 +20,388 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @objc public class AMoAdItem : ObjectiveC.NSObject {
-  @objc public var iconUrl: Swift.String?
-  @objc public var imageUrl: Swift.String?
-  @objc public var titleShort: Swift.String?
-  @objc public var titleLong: Swift.String?
-  @objc public var serviceName: Swift.String?
-  @objc public var link: Foundation.URL?
-  @objc public var unitNo: Swift.Int
+@_inheritsConvenienceInitializers @objc public class AMoAdItem : ObjectiveC::NSObject {
+  @objc public var iconUrl: Swift::String?
+  @objc public var imageUrl: Swift::String?
+  @objc public var titleShort: Swift::String?
+  @objc public var titleLong: Swift::String?
+  @objc public var serviceName: Swift::String?
+  @objc public var link: Foundation::URL?
+  @objc public var unitNo: Swift::Int
   @objc public func onClick()
-  @objc public func onClick(schemes: [Swift.String]?, handler: ((Swift.String) -> ())?)
+  @objc public func onClick(schemes: [Swift::String]?, handler: ((Swift::String) -> ())?)
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public enum AMoAdBannerSize : Swift.Int {
+@objc public enum AMoAdBannerSize : Swift::Int {
   case B320x50 = 0
   case B320x100 = 1
   case B300x250 = 2
   case B728x90 = 3
   case B300x100 = 4
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class AMoAdLogger : ObjectiveC.NSObject {
-  @objc public enum LogLevel : Swift.Int {
+@_inheritsConvenienceInitializers @objc public class AMoAdLogger : ObjectiveC::NSObject {
+  @objc public enum LogLevel : Swift::Int {
     case fatal = 0
     case error = 1
     case warn = 2
     case info = 3
     case debug = 4
     case trace = 5
-    public init?(rawValue: Swift.Int)
-    public typealias RawValue = Swift.Int
-    public var rawValue: Swift.Int {
+    public init?(rawValue: Swift::Int)
+    public typealias RawValue = Swift::Int
+    public var rawValue: Swift::Int {
       get
     }
   }
-  @objc public static var logLevel: AMoAd.AMoAdLogger.LogLevel
-  @objc public static var onTrace: ((Swift.String) -> ())?
-  @objc public static func fatal(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, error: (any Swift.Error)?, message: Swift.String)
-  @objc public static func error(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, error: (any Swift.Error)?, message: Swift.String)
-  @objc public static func warn(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, error: (any Swift.Error)?, message: Swift.String)
-  @objc public static func info(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, message: Swift.String)
-  @objc public static func debug(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, message: Swift.String)
-  @objc public static func trace(file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, message: Swift.String)
+  @objc public static var logLevel: AMoAd::AMoAdLogger.AMoAd::LogLevel
+  @objc public static var onTrace: ((Swift::String) -> ())?
+  @objc public static func fatal(file: Swift::String = #file, function: Swift::String = #function, line: Swift::Int = #line, error: (any Swift::Error)?, message: Swift::String)
+  @objc public static func error(file: Swift::String = #file, function: Swift::String = #function, line: Swift::Int = #line, error: (any Swift::Error)?, message: Swift::String)
+  @objc public static func warn(file: Swift::String = #file, function: Swift::String = #function, line: Swift::Int = #line, error: (any Swift::Error)?, message: Swift::String)
+  @objc public static func info(file: Swift::String = #file, function: Swift::String = #function, line: Swift::Int = #line, message: Swift::String)
+  @objc public static func debug(file: Swift::String = #file, function: Swift::String = #function, line: Swift::Int = #line, message: Swift::String)
+  @objc public static func trace(file: Swift::String = #file, function: Swift::String = #function, line: Swift::Int = #line, message: Swift::String)
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public enum AMoAdResult : Swift.Int {
+@objc public enum AMoAdResult : Swift::Int {
   case success
   case failure
   case empty
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
 @objc public protocol AMoAdNativeAppDelegate {
-  @objc optional func amoadNativeDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, state: AMoAd.AMoAdResult)
-  @objc optional func amoadNativeIconDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, state: AMoAd.AMoAdResult)
-  @objc optional func amoadNativeImageDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, state: AMoAd.AMoAdResult)
-  @objc optional func amoadNativeDidClick(sid: Swift.String, tag: Swift.String, view: UIKit.UIView)
+  @objc optional func amoadNativeDidReceive(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, state: AMoAd::AMoAdResult)
+  @objc optional func amoadNativeIconDidReceive(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, state: AMoAd::AMoAdResult)
+  @objc optional func amoadNativeImageDidReceive(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, state: AMoAd::AMoAdResult)
+  @objc optional func amoadNativeDidClick(sid: Swift::String, tag: Swift::String, view: UIKit::UIView)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdInterstitialVideo : ObjectiveC.NSObject {
-  @objc weak public var delegate: (any AMoAd.AMoAdInterstitialVideoDelegate)?
-  @objc public var isLoaded: Swift.Bool {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdInterstitialVideo : ObjectiveC::NSObject {
+  @objc weak public var delegate: (any AMoAd::AMoAdInterstitialVideoDelegate)?
+  @objc public var isLoaded: Swift::Bool {
     get
   }
-  @objc public var isCancellable: Swift.Bool {
+  @objc public var isCancellable: Swift::Bool {
     @objc get
     @objc set
   }
-  @objc public static func shared(sid: Swift.String, tag: Swift.String) -> AMoAd.AMoAdInterstitialVideo
+  @objc public static func shared(sid: Swift::String, tag: Swift::String) -> AMoAd::AMoAdInterstitialVideo
   @objc public func load()
   @objc public func show()
   @objc public func dismiss()
   @objc deinit
 }
-extension AMoAd.AMoAdInterstitialVideo : AMoAd.AMoAdNativeAppDelegate {
-  @objc dynamic public func amoadNativeDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, state: AMoAd.AMoAdResult)
-  @objc dynamic public func amoadNativeImageDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, state: AMoAd.AMoAdResult)
-  @objc dynamic public func amoadNativeDidClick(sid: Swift.String, tag: Swift.String, view: UIKit.UIView)
+extension AMoAd::AMoAdInterstitialVideo : AMoAd::AMoAdNativeAppDelegate {
+  @objc dynamic public func amoadNativeDidReceive(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, state: AMoAd::AMoAdResult)
+  @objc dynamic public func amoadNativeImageDidReceive(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, state: AMoAd::AMoAdResult)
+  @objc dynamic public func amoadNativeDidClick(sid: Swift::String, tag: Swift::String, view: UIKit::UIView)
 }
-extension AMoAd.AMoAdInterstitialVideo {
-  public func closeButtonDidClicked(viewController: UIKit.UIViewController)
+extension AMoAd::AMoAdInterstitialVideo {
+  public func closeButtonDidClicked(viewController: UIKit::UIViewController)
 }
-public struct AMoAdVastResource : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public struct AMoAdVastResource : Swift::Codable {
+  public func encode(to encoder: any Swift::Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
 }
-extension AMoAd.AMoAdVastResource : Swift.Equatable {
-  public static func == (a: AMoAd.AMoAdVastResource, b: AMoAd.AMoAdVastResource) -> Swift.Bool
+extension AMoAd::AMoAdVastResource : Swift::Equatable {
+  public static func == (a: AMoAd::AMoAdVastResource, b: AMoAd::AMoAdVastResource) -> Swift::Bool
 }
-@objc public enum AMoAdHorizontalAlign : Swift.Int {
+@objc public enum AMoAdHorizontalAlign : Swift::Int {
   case none = 0
   case left = 1
   case center = 2
   case right = 3
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
 @objc public protocol AMoAdViewDelegate {
-  @objc optional func amoadViewDidReceiveAd(view: AMoAd.AMoAdView)
-  @objc optional func amoadViewDidFailToReceiveAd(error: any Swift.Error)
-  @objc optional func amoadViewDidReceiveEmptyAd(view: AMoAd.AMoAdView)
-  @objc optional func amoadViewDidClick(view: AMoAd.AMoAdView)
-  @objc optional func amoadViewWillClickBack(view: AMoAd.AMoAdView)
-  @objc optional func amoadViewDidClickBack(view: AMoAd.AMoAdView)
+  @objc optional func amoadViewDidReceiveAd(view: AMoAd::AMoAdView)
+  @objc optional func amoadViewDidFailToReceiveAd(error: any Swift::Error)
+  @objc optional func amoadViewDidReceiveEmptyAd(view: AMoAd::AMoAdView)
+  @objc optional func amoadViewDidClick(view: AMoAd::AMoAdView)
+  @objc optional func amoadViewWillClickBack(view: AMoAd::AMoAdView)
+  @objc optional func amoadViewDidClickBack(view: AMoAd::AMoAdView)
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class AMoAdView : UIKit.UIImageView {
-  @objc @_Concurrency.MainActor @preconcurrency public var sid: Swift.String? {
+@_inheritsConvenienceInitializers @objc @_Concurrency::MainActor @preconcurrency public class AMoAdView : UIKit::UIImageView {
+  @objc @_Concurrency::MainActor @preconcurrency public var sid: Swift::String? {
     @objc get
     @objc set
   }
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var image: UIKit.UIImage? {
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public var image: UIKit::UIImage? {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any ObjectiveC.NSObject & AMoAd.AMoAdViewDelegate)?
-  @objc @_Concurrency.MainActor @preconcurrency public var rotateTransition: UIKit.UIView.AnimationTransition
-  @objc @_Concurrency.MainActor @preconcurrency public var clickTransition: AMoAd.AMoAdClickTransition
-  @objc @_Concurrency.MainActor @preconcurrency public var horizontalAlign: AMoAd.AMoAdHorizontalAlign
-  @objc @_Concurrency.MainActor @preconcurrency public var verticalAlign: AMoAd.AMoAdVerticalAlign
-  @objc @_Concurrency.MainActor @preconcurrency public var adjustMode: AMoAd.AMoAdAdjustMode {
+  @objc @_Concurrency::MainActor @preconcurrency weak public var delegate: (any ObjectiveC::NSObject & AMoAd::AMoAdViewDelegate)?
+  @objc @_Concurrency::MainActor @preconcurrency public var rotateTransition: UIKit::UIView.UIKit::AnimationTransition
+  @objc @_Concurrency::MainActor @preconcurrency public var clickTransition: AMoAd::AMoAdClickTransition
+  @objc @_Concurrency::MainActor @preconcurrency public var horizontalAlign: AMoAd::AMoAdHorizontalAlign
+  @objc @_Concurrency::MainActor @preconcurrency public var verticalAlign: AMoAd::AMoAdVerticalAlign
+  @objc @_Concurrency::MainActor @preconcurrency public var adjustMode: AMoAd::AMoAdAdjustMode {
     @objc get
     @objc set
   }
-  @objc @_Concurrency.MainActor @preconcurrency public var networkTimeoutMillis: Swift.Int
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @objc @_Concurrency.MainActor @preconcurrency public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?, adjustMode: AMoAd.AMoAdAdjustMode)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor @preconcurrency @objc convenience dynamic public init()
-  @_Concurrency.MainActor @preconcurrency @objc override convenience dynamic public init(image: UIKit.UIImage?)
-  @_Concurrency.MainActor @preconcurrency @objc override convenience dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
-  @objc @_Concurrency.MainActor @preconcurrency public func show()
-  @objc @_Concurrency.MainActor @preconcurrency public func hide()
-  @objc @_Concurrency.MainActor @preconcurrency public func reset()
-  @objc @_Concurrency.MainActor @preconcurrency public func setClickCustomScheme(scheme: Swift.String, handler: @escaping (Swift.String) -> ())
-  @objc @_Concurrency.MainActor @preconcurrency public func setClickCustomSchemes(schemes: [Swift.String], handler: @escaping (Swift.String) -> ())
-  @objc @_Concurrency.MainActor @preconcurrency public func setClickCustomHandler(handler: @escaping (Swift.String) -> ())
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toSuperview newSuperview: UIKit.UIView?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc @_Concurrency::MainActor @preconcurrency public var networkTimeoutMillis: Swift::Int
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation::CGRect)
+  @objc @_Concurrency::MainActor @preconcurrency public init(image: UIKit::UIImage?, highlightedImage: UIKit::UIImage?, adjustMode: AMoAd::AMoAdAdjustMode)
+  @_Concurrency::MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation::NSCoder)
+  @_Concurrency::MainActor @preconcurrency @objc convenience dynamic public init()
+  @_Concurrency::MainActor @preconcurrency @objc override convenience dynamic public init(image: UIKit::UIImage?)
+  @_Concurrency::MainActor @preconcurrency @objc override convenience dynamic public init(image: UIKit::UIImage?, highlightedImage: UIKit::UIImage?)
+  @objc @_Concurrency::MainActor @preconcurrency public func show()
+  @objc @_Concurrency::MainActor @preconcurrency public func hide()
+  @objc @_Concurrency::MainActor @preconcurrency public func reset()
+  @objc @_Concurrency::MainActor @preconcurrency public func setClickCustomScheme(scheme: Swift::String, handler: @escaping (Swift::String) -> ())
+  @objc @_Concurrency::MainActor @preconcurrency public func setClickCustomSchemes(schemes: [Swift::String], handler: @escaping (Swift::String) -> ())
+  @objc @_Concurrency::MainActor @preconcurrency public func setClickCustomHandler(handler: @escaping (Swift::String) -> ())
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func willMove(toSuperview newSuperview: UIKit::UIView?)
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func willMove(toWindow newWindow: UIKit::UIWindow?)
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift::Set<UIKit::UITouch>, with event: UIKit::UIEvent?)
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func touchesMoved(_ touches: Swift::Set<UIKit::UITouch>, with event: UIKit::UIEvent?)
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func touchesEnded(_ touches: Swift::Set<UIKit::UITouch>, with event: UIKit::UIEvent?)
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public func touchesCancelled(_ touches: Swift::Set<UIKit::UITouch>, with event: UIKit::UIEvent?)
   @objc deinit
 }
-extension AMoAd.AMoAdView : QuartzCore.CAAnimationDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func animationDidStop(_ anim: QuartzCore.CAAnimation, finished flag: Swift.Bool)
+extension AMoAd::AMoAdView : QuartzCore::CAAnimationDelegate {
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func animationDidStop(_ anim: QuartzCore::CAAnimation, finished flag: Swift::Bool)
 }
-extension AMoAd.AMoAdView : WebKit.WKNavigationDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+extension AMoAd::AMoAdView : WebKit::WKNavigationDelegate {
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit::WKWebView, decidePolicyFor navigationAction: WebKit::WKNavigationAction, decisionHandler: @escaping (WebKit::WKNavigationActionPolicy) -> Swift::Void)
 }
-extension AMoAd.AMoAdView : WebKit.WKUIDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+extension AMoAd::AMoAdView : WebKit::WKUIDelegate {
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit::WKWebView, createWebViewWith configuration: WebKit::WKWebViewConfiguration, for navigationAction: WebKit::WKNavigationAction, windowFeatures: WebKit::WKWindowFeatures) -> WebKit::WKWebView?
 }
-extension AMoAd.AMoAdView : UIKit.UIGestureRecognizerDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+extension AMoAd::AMoAdView : UIKit::UIGestureRecognizerDelegate {
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit::UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit::UIGestureRecognizer) -> Swift::Bool
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AMoAdSKAdSetting : ObjectiveC.NSObject {
-  @objc public static let shared: AMoAd.AMoAdSKAdSetting
-  @objc final public func setSourceAppId(sourceAppId: Swift.String)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class AMoAdSKAdSetting : ObjectiveC::NSObject {
+  @objc public static let shared: AMoAd::AMoAdSKAdSetting
+  @objc final public func setSourceAppId(sourceAppId: Swift::String)
   @objc deinit
 }
-@objc public enum AMoAdVerticalAlign : Swift.Int {
+@objc public enum AMoAdVerticalAlign : Swift::Int {
   case none = 0
   case top = 1
   case middle = 2
   case bottom = 3
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc public enum AMoAdInterstitialResult : Swift.Int {
+@objc public enum AMoAdInterstitialResult : Swift::Int {
   case click
   case close
   case duplicated
   case closeFromApp
   case failure
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc public enum AMoAdClickTransition : Swift.Int {
+@objc public enum AMoAdClickTransition : Swift::Int {
   case none = 0
   case jump = 1
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class AMoAdInterstitial : ObjectiveC.NSObject {
-  @objc public static func registerAd(sid: Swift.String)
-  @objc public static func setNetworkTimeout(sid: Swift.String, millis: Swift.Int)
-  @objc public static func setPortraitPanel(sid: Swift.String, image: UIKit.UIImage?)
-  @objc public static func setLandscapePanel(sid: Swift.String, image: UIKit.UIImage?)
-  @objc public static func setLinkButton(sid: Swift.String, image: UIKit.UIImage?, highlighted: UIKit.UIImage?)
-  @objc public static func setCloseButton(sid: Swift.String, image: UIKit.UIImage?, highlighted: UIKit.UIImage?)
-  @objc public static func setAutoReload(sid: Swift.String, isAutoReload: Swift.Bool)
-  @objc public static func loadAd(sid: Swift.String, completion: ((Swift.String, AMoAd.AMoAdResult, (any Swift.Error)?) -> ())?)
-  @objc public static func isLoadedAd(sid: Swift.String) -> Swift.Bool
-  @objc public static func showAd(sid: Swift.String, completion: ((Swift.String, AMoAd.AMoAdInterstitialResult, (any Swift.Error)?) -> ())?)
-  @objc public static func closeAd(sid: Swift.String)
+@_inheritsConvenienceInitializers @objc public class AMoAdInterstitial : ObjectiveC::NSObject {
+  @objc public static func registerAd(sid: Swift::String)
+  @objc public static func setNetworkTimeout(sid: Swift::String, millis: Swift::Int)
+  @objc public static func setPortraitPanel(sid: Swift::String, image: UIKit::UIImage?)
+  @objc public static func setLandscapePanel(sid: Swift::String, image: UIKit::UIImage?)
+  @objc public static func setLinkButton(sid: Swift::String, image: UIKit::UIImage?, highlighted: UIKit::UIImage?)
+  @objc public static func setCloseButton(sid: Swift::String, image: UIKit::UIImage?, highlighted: UIKit::UIImage?)
+  @objc public static func setAutoReload(sid: Swift::String, isAutoReload: Swift::Bool)
+  @objc public static func loadAd(sid: Swift::String, completion: ((Swift::String, AMoAd::AMoAdResult, (any Swift::Error)?) -> ())?)
+  @objc public static func isLoadedAd(sid: Swift::String) -> Swift::Bool
+  @objc public static func showAd(sid: Swift::String, completion: ((Swift::String, AMoAd::AMoAdInterstitialResult, (any Swift::Error)?) -> ())?)
+  @objc public static func closeAd(sid: Swift::String)
   @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol AMoAdInterstitialVideoDelegate {
-  @objc optional func amoadInterstitialVideoDidLoadAd(amoadInterstitialVideo: AMoAd.AMoAdInterstitialVideo, result: AMoAd.AMoAdResult)
-  @objc optional func amoadInterstitialVideoDidStart(amoadInterstitialVideo: AMoAd.AMoAdInterstitialVideo)
-  @objc optional func amoadInterstitialVideoDidComplete(amoadInterstitialVideo: AMoAd.AMoAdInterstitialVideo)
-  @objc optional func amoadInterstitialVideoDidFailToPlay(amoadInterstitialVideo: AMoAd.AMoAdInterstitialVideo)
-  @objc optional func amoadInterstitialVideoDidShow(amoadInterstitialVideo: AMoAd.AMoAdInterstitialVideo)
-  @objc optional func amoadInterstitialVideoWillDismiss(amoadInterstitialVideo: AMoAd.AMoAdInterstitialVideo)
-  @objc optional func amoadInterstitialVideoDidClickAd(amoadInterstitialVideo: AMoAd.AMoAdInterstitialVideo)
+  @objc optional func amoadInterstitialVideoDidLoadAd(amoadInterstitialVideo: AMoAd::AMoAdInterstitialVideo, result: AMoAd::AMoAdResult)
+  @objc optional func amoadInterstitialVideoDidStart(amoadInterstitialVideo: AMoAd::AMoAdInterstitialVideo)
+  @objc optional func amoadInterstitialVideoDidComplete(amoadInterstitialVideo: AMoAd::AMoAdInterstitialVideo)
+  @objc optional func amoadInterstitialVideoDidFailToPlay(amoadInterstitialVideo: AMoAd::AMoAdInterstitialVideo)
+  @objc optional func amoadInterstitialVideoDidShow(amoadInterstitialVideo: AMoAd::AMoAdInterstitialVideo)
+  @objc optional func amoadInterstitialVideoWillDismiss(amoadInterstitialVideo: AMoAd::AMoAdInterstitialVideo)
+  @objc optional func amoadInterstitialVideoDidClickAd(amoadInterstitialVideo: AMoAd::AMoAdInterstitialVideo)
 }
-@_inheritsConvenienceInitializers @objc public class AMoAdNativeFullScreenVideo : ObjectiveC.NSObject {
-  @objc public static func prepareAd(sid: Swift.String)
-  @objc public static func renderAd(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, analytics: AMoAd.AMoAdAnalytics? = nil, nativeAppDelegate: (any AMoAd.AMoAdNativeAppDelegate)? = nil, videoDelegate: (any AMoAd.AMoAdNativeVideoAppDelegate)? = nil)
-  @objc public static func layoutAd(sid: Swift.String, tag: Swift.String)
+@_inheritsConvenienceInitializers @objc public class AMoAdNativeFullScreenVideo : ObjectiveC::NSObject {
+  @objc public static func prepareAd(sid: Swift::String)
+  @objc public static func renderAd(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, analytics: AMoAd::AMoAdAnalytics? = nil, nativeAppDelegate: (any AMoAd::AMoAdNativeAppDelegate)? = nil, videoDelegate: (any AMoAd::AMoAdNativeVideoAppDelegate)? = nil)
+  @objc public static func layoutAd(sid: Swift::String, tag: Swift::String)
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdWeb : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdWeb : ObjectiveC::NSObject {
   @objc public static func prepareAd()
-  @objc public static func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
-  public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @objc public static func webView(_ webView: WebKit::WKWebView, decidePolicyFor navigationAction: WebKit::WKNavigationAction, decisionHandler: @escaping (WebKit::WKNavigationActionPolicy) -> Swift::Void)
+  public func webView(_ webView: WebKit::WKWebView, createWebViewWith configuration: WebKit::WKWebViewConfiguration, for navigationAction: WebKit::WKNavigationAction, windowFeatures: WebKit::WKWindowFeatures) -> WebKit::WKWebView?
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdList : ObjectiveC.NSObject {
-  @objc public var ads: [AMoAd.AMoAdItem]?
-  @objc public static func parse(dic: [Swift.String : Any]) -> AMoAd.AMoAdList
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdList : ObjectiveC::NSObject {
+  @objc public var ads: [AMoAd::AMoAdItem]?
+  @objc public static func parse(dic: [Swift::String : Any]) -> AMoAd::AMoAdList
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdInfeed : ObjectiveC.NSObject {
-  @objc public static func setNetworkTimeoutMillis(millis: Swift.Int)
-  @objc public static func load(sid: Swift.String, completion: @escaping (AMoAd.AMoAdResult, AMoAd.AMoAdList?) -> ())
-  @objc public static func setViewabilityTrackingCell(cell: UIKit.UIView, adItem: AMoAd.AMoAdItem?)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdInfeed : ObjectiveC::NSObject {
+  @objc public static func setNetworkTimeoutMillis(millis: Swift::Int)
+  @objc public static func load(sid: Swift::String, completion: @escaping (AMoAd::AMoAdResult, AMoAd::AMoAdList?) -> ())
+  @objc public static func setViewabilityTrackingCell(cell: UIKit::UIView, adItem: AMoAd::AMoAdItem?)
   @objc deinit
 }
 public struct AMoAdSettings {
-  public static var SDK_VERSION: Swift.String {
+  public static var SDK_VERSION: Swift::String {
     get
   }
 }
 @available(*, deprecated, message: "リストビュー広告は廃止されました。このデリゲートのメソッドが呼び出されることはありません。")
 @objc public protocol AMoAdNativeListViewDelegate {
-  @objc optional func amoadNativeDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, indexPath: Foundation.IndexPath, state: AMoAd.AMoAdResult)
-  @objc optional func amoadNativeIconDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, indexPath: Foundation.IndexPath, state: AMoAd.AMoAdResult)
-  @objc optional func amoadNativeImageDidReceive(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, indexPath: Foundation.IndexPath, state: AMoAd.AMoAdResult)
-  @objc optional func amoadNativeDidClick(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, indexPath: Foundation.IndexPath)
+  @objc optional func amoadNativeDidReceive(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, indexPath: Foundation::IndexPath, state: AMoAd::AMoAdResult)
+  @objc optional func amoadNativeIconDidReceive(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, indexPath: Foundation::IndexPath, state: AMoAd::AMoAdResult)
+  @objc optional func amoadNativeImageDidReceive(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, indexPath: Foundation::IndexPath, state: AMoAd::AMoAdResult)
+  @objc optional func amoadNativeDidClick(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, indexPath: Foundation::IndexPath)
 }
-@objc public enum AMoAdAdjustMode : Swift.Int {
+@objc public enum AMoAdAdjustMode : Swift::Int {
   case fixed = 0
   case responsive = 1
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class AMoAdNativePreRoll : ObjectiveC.NSObject {
-  @objc public static func prepareAd(sid: Swift.String)
-  @objc public static func renderAd(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, analytics: AMoAd.AMoAdAnalytics?, isFullscreenClickable: Swift.Bool, completion: ((Swift.String, Swift.String, UIKit.UIView, AMoAd.AMoAdResult) -> ())?)
-  @objc public static func layoutAd(sid: Swift.String, tag: Swift.String)
+@_inheritsConvenienceInitializers @objc public class AMoAdNativePreRoll : ObjectiveC::NSObject {
+  @objc public static func prepareAd(sid: Swift::String)
+  @objc public static func renderAd(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, analytics: AMoAd::AMoAdAnalytics?, isFullscreenClickable: Swift::Bool, completion: ((Swift::String, Swift::String, UIKit::UIView, AMoAd::AMoAdResult) -> ())?)
+  @objc public static func layoutAd(sid: Swift::String, tag: Swift::String)
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class AMoAdNativeViewManager : ObjectiveC.NSObject {
-  @objc public static var shared: AMoAd.AMoAdNativeViewManager {
+@_inheritsConvenienceInitializers @objc public class AMoAdNativeViewManager : ObjectiveC::NSObject {
+  @objc public static var shared: AMoAd::AMoAdNativeViewManager {
     @objc get
   }
-  @objc public var isAdvertisingTrackingEnabled: Swift.Bool {
+  @objc public var isAdvertisingTrackingEnabled: Swift::Bool {
     @objc get
     @objc set
   }
-  @objc public func updateAd(sid: Swift.String, tag: Swift.String)
+  @objc public func updateAd(sid: Swift::String, tag: Swift::String)
   @objc override dynamic public init()
   @objc deinit
 }
-@objc extension AMoAd.AMoAdNativeViewManager {
-  @objc dynamic public func prepareAd(sid: Swift.String, iconPreloading: Swift.Bool = false, imagePreloading: Swift.Bool = false)
-  @objc dynamic public func renderAd(sid: Swift.String, tag: Swift.String, view: UIKit.UIView, coder: AMoAd.AMoAdNativeViewCoder? = nil, delegate: (any AMoAd.AMoAdNativeAppDelegate)? = nil)
-  @objc dynamic public func clearAd(sid: Swift.String, tag: Swift.String? = nil)
+@objc extension AMoAd::AMoAdNativeViewManager {
+  @objc dynamic public func prepareAd(sid: Swift::String, iconPreloading: Swift::Bool = false, imagePreloading: Swift::Bool = false)
+  @objc dynamic public func renderAd(sid: Swift::String, tag: Swift::String, view: UIKit::UIView, coder: AMoAd::AMoAdNativeViewCoder? = nil, delegate: (any AMoAd::AMoAdNativeAppDelegate)? = nil)
+  @objc dynamic public func clearAd(sid: Swift::String, tag: Swift::String? = nil)
 }
-@objc extension AMoAd.AMoAdNativeViewManager {
+@objc extension AMoAd::AMoAdNativeViewManager {
   @available(*, deprecated, message: "リストビュー広告は廃止されました。defaultBeginIndex・defaultIntervalは無視されます。prepareAd(sid:iconPreloading:imagePreloading:)を使用してください。")
-  @objc dynamic public func prepareAd(sid: Swift.String, defaultBeginIndex: Swift.Int, defaultInterval: Swift.Int, iconPreloading: Swift.Bool = false, imagePreloading: Swift.Bool = false)
+  @objc dynamic public func prepareAd(sid: Swift::String, defaultBeginIndex: Swift::Int, defaultInterval: Swift::Int, iconPreloading: Swift::Bool = false, imagePreloading: Swift::Bool = false)
   @available(*, deprecated, message: "リストビュー広告は廃止されました。広告は挿入されず、渡された配列をそのまま返します。")
-  @objc dynamic public func array(sid: Swift.String, tag: Swift.String, array: [Swift.AnyObject]?) -> [Swift.AnyObject]
+  @objc dynamic public func array(sid: Swift::String, tag: Swift::String, array: [Swift::AnyObject]?) -> [Swift::AnyObject]
   @available(*, deprecated, message: "リストビュー広告は廃止されました。何も行いません。")
-  @objc dynamic public func register(sid: Swift.String, tag: Swift.String, tableView: UIKit.UITableView, nib: UIKit.UINib, coder: AMoAd.AMoAdNativeViewCoder? = nil)
+  @objc dynamic public func register(sid: Swift::String, tag: Swift::String, tableView: UIKit::UITableView, nib: UIKit::UINib, coder: AMoAd::AMoAdNativeViewCoder? = nil)
   @available(*, deprecated, message: "リストビュー広告は廃止されました。何も行いません。")
-  @objc dynamic public func register(sid: Swift.String, tag: Swift.String, collectionView: UIKit.UICollectionView, nib: UIKit.UINib, coder: AMoAd.AMoAdNativeViewCoder? = nil)
+  @objc dynamic public func register(sid: Swift::String, tag: Swift::String, collectionView: UIKit::UICollectionView, nib: UIKit::UINib, coder: AMoAd::AMoAdNativeViewCoder? = nil)
 }
 @_inheritsConvenienceInitializers @available(*, deprecated, message: "リストビュー広告は廃止されました。")
-@objc public class AMoAdNativeViewItem : ObjectiveC.NSObject {
+@objc public class AMoAdNativeViewItem : ObjectiveC::NSObject {
   @available(*, deprecated, message: "リストビュー広告は廃止されました。空のセルを返します。")
-  @objc public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath, delegate: (any AMoAd.AMoAdNativeListViewDelegate)? = nil) -> UIKit.UITableViewCell
+  @objc public func tableView(_ tableView: UIKit::UITableView, cellForRowAt indexPath: Foundation::IndexPath, delegate: (any AMoAd::AMoAdNativeListViewDelegate)? = nil) -> UIKit::UITableViewCell
   @available(*, deprecated, message: "リストビュー広告は廃止されました。空のセルを返します。")
-  @objc public func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath, delegate: (any AMoAd.AMoAdNativeListViewDelegate)? = nil) -> UIKit.UICollectionViewCell
+  @objc public func collectionView(_ collectionView: UIKit::UICollectionView, cellForItemAt indexPath: Foundation::IndexPath, delegate: (any AMoAd::AMoAdNativeListViewDelegate)? = nil) -> UIKit::UICollectionViewCell
   @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol AMoAdNativeVideoAppDelegate {
-  @objc func amoadNativeVideoDidStart(view: UIKit.UIView)
-  @objc func amoadNativeVideoDidComplete(view: UIKit.UIView)
-  @objc func amoadNativeVideoDidFailToPlay(view: UIKit.UIView)
+  @objc func amoadNativeVideoDidStart(view: UIKit::UIView)
+  @objc func amoadNativeVideoDidComplete(view: UIKit::UIView)
+  @objc func amoadNativeVideoDidFailToPlay(view: UIKit::UIView)
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class AMoAdNativeMainVideoView : UIKit.UIView {
-  @objc @_Concurrency.MainActor @preconcurrency weak public var delegate: (any AMoAd.AMoAdNativeVideoAppDelegate)?
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+@_inheritsConvenienceInitializers @objc @_Concurrency::MainActor @preconcurrency public class AMoAdNativeMainVideoView : UIKit::UIView {
+  @objc @_Concurrency::MainActor @preconcurrency weak public var delegate: (any AMoAd::AMoAdNativeVideoAppDelegate)?
+  @_Concurrency::MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation::NSCoder)
+  @_Concurrency::MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation::CGRect)
   @objc deinit
 }
-extension AMoAd.AMoAdNativeMainVideoView {
-  @_Concurrency.MainActor @preconcurrency public func didStartVideo()
-  @_Concurrency.MainActor @preconcurrency public func didUpdateProgress()
-  @_Concurrency.MainActor @preconcurrency public func didStopVideo(playedSeconds: Foundation.TimeInterval)
+extension AMoAd::AMoAdNativeMainVideoView {
+  @_Concurrency::MainActor @preconcurrency public func didStartVideo()
+  @_Concurrency::MainActor @preconcurrency public func didUpdateProgress()
+  @_Concurrency::MainActor @preconcurrency public func didStopVideo(playedSeconds: Foundation::TimeInterval)
 }
-@available(iOS 14.5, *)
-extension AMoAd.AMoAdNativeMainVideoView : StoreKit.SKOverlayDelegate {
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func storeOverlayDidFailToLoad(_ overlay: StoreKit.SKOverlay, error: any Swift.Error)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func storeOverlayWillStartPresentation(_ overlay: StoreKit.SKOverlay, transitionContext: StoreKit.SKOverlay.TransitionContext)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func storeOverlayDidFinishDismissal(_ overlay: StoreKit.SKOverlay, transitionContext: StoreKit.SKOverlay.TransitionContext)
+extension AMoAd::AMoAdNativeMainVideoView : StoreKit::SKOverlayDelegate {
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func storeOverlayDidFailToLoad(_ overlay: StoreKit::SKOverlay, error: any Swift::Error)
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func storeOverlayWillStartPresentation(_ overlay: StoreKit::SKOverlay, transitionContext: StoreKit::SKOverlay.StoreKit::TransitionContext)
+  @_Concurrency::MainActor @preconcurrency @objc dynamic public func storeOverlayDidFinishDismissal(_ overlay: StoreKit::SKOverlay, transitionContext: StoreKit::SKOverlay.StoreKit::TransitionContext)
 }
-@_inheritsConvenienceInitializers @objc public class AMoAdNativeViewCoder : ObjectiveC.NSObject {
-  @objc public var titleShortAttributes: Swift.Dictionary<Foundation.NSAttributedString.Key, Any>?
-  @objc public var titleLongAttributes: Swift.Dictionary<Foundation.NSAttributedString.Key, Any>?
-  @objc public var serviceNameAttributes: Swift.Dictionary<Foundation.NSAttributedString.Key, Any>?
-  @objc public var numberOfTapsRequired: Swift.Int
+@_inheritsConvenienceInitializers @objc public class AMoAdNativeViewCoder : ObjectiveC::NSObject {
+  @objc public var titleShortAttributes: Swift::Dictionary<Foundation::NSAttributedString.Foundation::Key, Any>?
+  @objc public var titleLongAttributes: Swift::Dictionary<Foundation::NSAttributedString.Foundation::Key, Any>?
+  @objc public var serviceNameAttributes: Swift::Dictionary<Foundation::NSAttributedString.Foundation::Key, Any>?
+  @objc public var numberOfTapsRequired: Swift::Int
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class AMoAdAnalytics : ObjectiveC.NSObject {
-  @objc public var publisherParam: [Swift.String : Swift.String]?
-  @objc public init(reportId: Swift.String)
+@_inheritsConvenienceInitializers @objc public class AMoAdAnalytics : ObjectiveC::NSObject {
+  @objc public var publisherParam: [Swift::String : Swift::String]?
+  @objc public init(reportId: Swift::String)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdNative : ObjectiveC.NSObject {
-  @objc public static func load(sid: Swift.String, tag: Swift.String, frame: CoreFoundation.CGRect, completion: ((Swift.String, Swift.String, AMoAd.AMoAdResult) -> ())?)
-  @objc public static func view(sid: Swift.String, tag: Swift.String) -> UIKit.UIView?
-  @objc public static func disposeView(sid: Swift.String, tag: Swift.String)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AMoAdNative : ObjectiveC::NSObject {
+  @objc public static func load(sid: Swift::String, tag: Swift::String, frame: CoreFoundation::CGRect, completion: ((Swift::String, Swift::String, AMoAd::AMoAdResult) -> ())?)
+  @objc public static func view(sid: Swift::String, tag: Swift::String) -> UIKit::UIView?
+  @objc public static func disposeView(sid: Swift::String, tag: Swift::String)
   @objc public static func disposeAllView()
-  @objc public static func reload(sid: Swift.String, tag: Swift.String)
-  @objc public static func show(sid: Swift.String, tag: Swift.String)
-  @objc public static func hide(sid: Swift.String, tag: Swift.String)
-  @objc public static func startRotation(sid: Swift.String, tag: Swift.String, seconds: Swift.Int)
-  @objc public static func stopRotation(sid: Swift.String, tag: Swift.String)
+  @objc public static func reload(sid: Swift::String, tag: Swift::String)
+  @objc public static func show(sid: Swift::String, tag: Swift::String)
+  @objc public static func hide(sid: Swift::String, tag: Swift::String)
+  @objc public static func startRotation(sid: Swift::String, tag: Swift::String, seconds: Swift::Int)
+  @objc public static func stopRotation(sid: Swift::String, tag: Swift::String)
   @objc deinit
 }
-extension AMoAd.AMoAdBannerSize : Swift.Equatable {}
-extension AMoAd.AMoAdBannerSize : Swift.Hashable {}
-extension AMoAd.AMoAdBannerSize : Swift.RawRepresentable {}
-extension AMoAd.AMoAdLogger.LogLevel : Swift.Equatable {}
-extension AMoAd.AMoAdLogger.LogLevel : Swift.Hashable {}
-extension AMoAd.AMoAdLogger.LogLevel : Swift.RawRepresentable {}
-extension AMoAd.AMoAdResult : Swift.Equatable {}
-extension AMoAd.AMoAdResult : Swift.Hashable {}
-extension AMoAd.AMoAdResult : Swift.RawRepresentable {}
-extension AMoAd.AMoAdHorizontalAlign : Swift.Equatable {}
-extension AMoAd.AMoAdHorizontalAlign : Swift.Hashable {}
-extension AMoAd.AMoAdHorizontalAlign : Swift.RawRepresentable {}
-extension AMoAd.AMoAdVerticalAlign : Swift.Equatable {}
-extension AMoAd.AMoAdVerticalAlign : Swift.Hashable {}
-extension AMoAd.AMoAdVerticalAlign : Swift.RawRepresentable {}
-extension AMoAd.AMoAdInterstitialResult : Swift.Equatable {}
-extension AMoAd.AMoAdInterstitialResult : Swift.Hashable {}
-extension AMoAd.AMoAdInterstitialResult : Swift.RawRepresentable {}
-extension AMoAd.AMoAdClickTransition : Swift.Equatable {}
-extension AMoAd.AMoAdClickTransition : Swift.Hashable {}
-extension AMoAd.AMoAdClickTransition : Swift.RawRepresentable {}
-extension AMoAd.AMoAdAdjustMode : Swift.Equatable {}
-extension AMoAd.AMoAdAdjustMode : Swift.Hashable {}
-extension AMoAd.AMoAdAdjustMode : Swift.RawRepresentable {}
+extension AMoAd::AMoAdBannerSize : Swift::Equatable {}
+extension AMoAd::AMoAdBannerSize : Swift::Hashable {}
+extension AMoAd::AMoAdBannerSize : Swift::RawRepresentable {}
+extension AMoAd::AMoAdLogger.AMoAd::LogLevel : Swift::Equatable {}
+extension AMoAd::AMoAdLogger.AMoAd::LogLevel : Swift::Hashable {}
+extension AMoAd::AMoAdLogger.AMoAd::LogLevel : Swift::RawRepresentable {}
+extension AMoAd::AMoAdResult : Swift::Equatable {}
+extension AMoAd::AMoAdResult : Swift::Hashable {}
+extension AMoAd::AMoAdResult : Swift::RawRepresentable {}
+extension AMoAd::AMoAdHorizontalAlign : Swift::Equatable {}
+extension AMoAd::AMoAdHorizontalAlign : Swift::Hashable {}
+extension AMoAd::AMoAdHorizontalAlign : Swift::RawRepresentable {}
+extension AMoAd::AMoAdVerticalAlign : Swift::Equatable {}
+extension AMoAd::AMoAdVerticalAlign : Swift::Hashable {}
+extension AMoAd::AMoAdVerticalAlign : Swift::RawRepresentable {}
+extension AMoAd::AMoAdInterstitialResult : Swift::Equatable {}
+extension AMoAd::AMoAdInterstitialResult : Swift::Hashable {}
+extension AMoAd::AMoAdInterstitialResult : Swift::RawRepresentable {}
+extension AMoAd::AMoAdClickTransition : Swift::Equatable {}
+extension AMoAd::AMoAdClickTransition : Swift::Hashable {}
+extension AMoAd::AMoAdClickTransition : Swift::RawRepresentable {}
+extension AMoAd::AMoAdAdjustMode : Swift::Equatable {}
+extension AMoAd::AMoAdAdjustMode : Swift::Hashable {}
+extension AMoAd::AMoAdAdjustMode : Swift::RawRepresentable {}
