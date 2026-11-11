@@ -1,4 +1,4 @@
-= AMoAd SDK for iOS ver 6.3.0
+= AMoAd SDK for iOS ver 6.4.0
 
 :numbered:
 :sectnums:
@@ -15,9 +15,10 @@ Xcode の File > Add Package Dependencies... に以下の URL を指定し、`AM
 == 更新情報
 
 * link:https://github.com/amoad/amoad-ios-sdk/releases[リリース履歴]
-** インタースティシャル動画で、再生完了後にストアを自動で表示できるようにしました。
-** リストビュー広告の提供を終了しました。
-** 動画・画像の取得処理を見直し、読み込みとメモリの扱いを改善しました。
+** インタースティシャル動画で、リッチメディア広告を表示できるようにしました。
+** Scene ベースのアプリで、インタースティシャル広告が表示されない不具合を修正しました。
+** 広告を削除しても、広告ビューが解放されずに残り続ける問題を修正しました。
+** 動作環境を iOS 15.0 以上に引き上げました。
 
 == その他
 AMoAd SDKに関する技術的なお問い合わせ・ご要望は link:https://github.com/amoad/amoad-ios-sdk/issues[こちら] まで 。
